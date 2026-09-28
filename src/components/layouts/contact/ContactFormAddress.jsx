@@ -122,11 +122,11 @@ const ContactFormAddress = () => {
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary pb-2">
-                      Malaysia Head Office
+                      Dhaka Head Office
                     </h5>
                     <PBase
                       text={
-                        "1, B-G-26 Block B,Merchant Square@Tropicana selatan, Bandar Utama, 47410 Petaling Jaya, Selangor, Malaysia"
+                        "Flat No : 5 D , House No : 50 , Road No: 3 , Block : C , Dhaka Uddyan Housing , Mohammadpur , Dhaka - 1207"
                       }
                       className={" text-secondary"}
                     />
@@ -160,7 +160,7 @@ const ContactFormAddress = () => {
                       E-mail Address
                     </h5>
                     <PBase
-                      text={"info@ipathwaymy.com"}
+                      text={"globalalliance.my@gmail.com"}
                       className={" text-secondary"}
                     />
                   </div>
