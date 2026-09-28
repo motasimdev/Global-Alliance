@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+@theme {
+  --color-primary: #f21a1f;
+  --color-secondary: #222262;
+  --color-tertiary: #d5d5ff;
+  /* ==================================== */
+}
+
+.input {
+  @apply w-full rounded-lg border border-gray-300 px-4 py-3 text-sm
+  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent;
+}
+
+.mySwiper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
