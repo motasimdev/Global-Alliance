@@ -15,7 +15,7 @@ const Footer = () => {
         <Container>
           <div className="">
             {/* Logo */}
-            <NavLink to={"/"} className="w-15 h-12.5 block mx-auto flex">
+            <NavLink to={"/"} className="w-15 h-12.5 mx-auto flex">
               <img
                 src={logo}
                 alt="Global Alliance"
