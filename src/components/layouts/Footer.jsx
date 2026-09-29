@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
-import logo from "/src/assets/logo.png";
+import logo from "/src/assets/logo.svg";
 import Container from "../Container";
 import PBase from "../PBase";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa6";
@@ -15,15 +15,14 @@ const Footer = () => {
         <Container>
           <div className="">
             {/* Logo */}
-            <NavLink to={"/"} className="w-15 h-12.5 mx-auto flex">
+            <NavLink to={"/"} className="flex justify-center">
               <img
                 src={logo}
                 alt="Global Alliance"
-                className="w-full h-full"
+                className="w-32 lg:w-42 h-full"
                 loading="lazy"
                 decoding="async"
               />
-              <h4 className="font-bold text-2xl leading-5 pt-1 text-primary"><span className="text-secondary">Global</span> Alliance</h4>
             </NavLink>
             {/* Logo */}
 

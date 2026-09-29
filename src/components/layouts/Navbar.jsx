@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import { NavLink } from "react-router";
-import logo from "/src/assets/logo.png";
+import logo from "/src/assets/logo.svg";
 import {
   FaRegCircleUser,
   FaUserGraduate,
@@ -36,7 +36,7 @@ const Navbar = () => {
       <Container>
         <div className="hidden lg:flex justify-between items-center">
           {/* Logo */}
-          <NavLink to={"/"} className="w-15 h-12.5 flex">
+          <NavLink to={"/"} className="w-45 h-12.5">
             <img
               src={logo}
               alt="Global Alliance"
@@ -44,9 +44,6 @@ const Navbar = () => {
               loading="lazy"
               decoding="async"
             />
-            <h4 className="font-bold text-2xl leading-5 pt-1 text-primary">
-              <span className="text-secondary">Global</span> Alliance
-            </h4>
           </NavLink>
           {/* Logo */}
 
@@ -150,7 +147,7 @@ const Navbar = () => {
       <div className={`lg:hidden py-2 px-3 md:px-5 bg-white z-50`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <NavLink to={"/"} className="max-w-12 flex">
+          <NavLink to={"/"} className="max-w-32 flex">
             <img
               src={logo}
               alt="Global Alliance"
@@ -158,9 +155,6 @@ const Navbar = () => {
               loading="lazy"
               decoding="async"
             />
-            <h4 className="font-bold text-xl leading-5 pt-1 text-primary">
-              <span className="text-secondary">Global</span> Alliance
-            </h4>
           </NavLink>
           {/* Logo */}
 
