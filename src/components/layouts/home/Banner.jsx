@@ -183,7 +183,7 @@ const Banner = () => {
           </div>
         </Container>
       </section>
-      <div className="bg-[#f9f5e8] py-2 lg:py-6">
+      <div className="bg-[#e6e6ece0] py-2 lg:py-6">
         <Marquee speed={80} gradient={false} pauseOnHover={true}>
           {university_logo.map((uni, index) => (
             <div key={index} className="mx-10 flex items-center justify-center">
