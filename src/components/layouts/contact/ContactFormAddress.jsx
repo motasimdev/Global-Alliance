@@ -122,7 +122,7 @@ const ContactFormAddress = () => {
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary pb-2">
-                      Dhaka Head Office
+                      Bangladesh Regional Office
                     </h5>
                     <PBase
                       text={
@@ -143,7 +143,7 @@ const ContactFormAddress = () => {
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary">Phone</h5>
-                    <PBase text={"+60 13-9247 098"} className={" text-secondary"} />
+                    <PBase text={"+1 (437) 388-4088"} className={" text-secondary"} />
                   </div>
                 </div>
               </div>

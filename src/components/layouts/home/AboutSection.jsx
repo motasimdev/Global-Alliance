@@ -14,22 +14,15 @@ const AboutSection = () => {
         <Container>
           <div className="md:flex justify-between items-center">
             <div className="md:w-[50%] pb-3 md:pb-0">
-              <ViewportAnimation
-                from="-translate-y-8 md:-translate-x-11 md:translate-y-0 opacity-50"
-                duration={800}
-                once={true}
-                delay={200}
-              >
-                <div className={"w-full h-50 md:h-80 lg:h-110"}>
-                  <img
-                    src={about}
-                    alt="about"
-                    className="w-full h-full"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </ViewportAnimation>
+              <div className={"w-full h-50 md:h-80 lg:h-110"}>
+                <img
+                  src={about}
+                  alt="about"
+                  className="w-full h-full"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
             <div className="md:w-[45%]">
               <ViewportAnimation
@@ -70,20 +63,11 @@ const AboutSection = () => {
                   className={"lg:pr-20 py-3 lg:py-5 text-justify"}
                 />
               </ViewportAnimation>
-              <ViewportAnimation
-                from="-translate-y-2 md:-translate-y-3 md:translate-x-0"
-                duration={1000}
-                once={true}
-                delay={200}
-              >
-                <div className="w-full flex justify-center md:justify-normal">
-                  <NavLink to={"become-a-partner"}>
-                    <Button className={"font-bold"}>
-                      Book Your Appointment
-                    </Button>
-                  </NavLink>
-                </div>
-              </ViewportAnimation>
+              <div className="w-full flex justify-center md:justify-normal">
+                <NavLink to={"become-a-partner"}>
+                  <Button className={"font-bold"}>Book Your Appointment</Button>
+                </NavLink>
+              </div>
             </div>
           </div>
         </Container>

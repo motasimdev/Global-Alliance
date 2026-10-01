@@ -17,9 +17,11 @@ import Psm from "../../Psm";
 
 import Marquee from "react-fast-marquee";
 import CountUp from "react-countup";
+import Button from "../../Button";
+import { Link } from "react-router";
 
 const Banner = () => {
-  const [ref, isInView] = useInView({once:true})
+  const [ref, isInView] = useInView({ once: true });
   //counter up
   const onComplete = () => {
     console.log("Completed");
@@ -63,27 +65,16 @@ const Banner = () => {
           <div className="relative md:flex justify-between items-center md:gap-x-8 lg:gap-x-0">
             <div className="md:w-[50%]">
               <h1 className="text-4xl md:text-[40px] lg:text-[54px] leading-11 md:leading-13 lg:leading-16 lg:pr-23 text-secondary font-extrabold animate-in fade-in slide-in-from-top-8 duration-700">
-                Expert Guidance For{" "}
-                <span className="text-primary">International Students</span> In
-                Malaysia
+                Gateway to <span className="text-primary">Global Student </span>
+                Recruitment
               </h1>
               <p className="text-[22px] text-secondary lg:pr-26 pt-5 pb-3 lg:text-justify">
                 We simplify everything, from selecting the perfect university to
                 obtaining your student visa.
               </p>
-              {/* <div className="max-w-135 flex items-center z-10">
-                <div className="w-full">
-                  <Select
-                    options={universities}
-                    onMenuOpen={() => console.log("menu opened")}
-                    onMenuClose={() => console.log("menu closed")}
-                    placeholder="Search university"
-                    onChange={(selected) => console.log(selected.value)}
-                    isSearchable
-                    maxMenuHeight="160px"
-                  />
-                </div>
-              </div> */}
+              <Link to={"/become-a-partner"}>
+                <Button>Become a Partner</Button>
+              </Link>
             </div>
 
             {/* ======================================= */}
@@ -127,17 +118,24 @@ const Banner = () => {
                         fetchPriority="high"
                       />
                     </div>
-                    <div className="bg-primary rounded-xl px-3 md:px-4 py-2 md:pt-4 md:pb-2 text-center md:text-left">
-                      <p
-                        className={"text-white font-medium text-xl md:text-2xl"}
-                      >
-                        {" "}
-                        Student Visa
-                      </p>
-                      <Psm
-                        text={"Unlock global education with a student visa!"}
-                        className={"text-white py-1.5 md:py-2.5"}
-                      />
+                    <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
+                      <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0">
+                        <RiGraduationCapFill className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
+                      </div>
+                      <div className="ml-5">
+                        <PBase
+                          text={"Study Destination"}
+                          className={"text-white font-semibold"}
+                        />
+                        <CountUp
+                          className="account-balance text-xl md:text-2xl text-white font-bold"
+                          start={0}
+                          end={15}
+                          duration={3}
+                          useEasing={true}
+                          separator=","
+                        />{" "}
+                      </div>
                     </div>
                   </div>
                   {/* ==============box two======== */}
@@ -145,15 +143,16 @@ const Banner = () => {
 
                 {/* ================================ */}
                 <div className="md:w-[40%] flex flex-col gap-y-4">
-                  <div className="w-full h-76 md:h-42 lg:h-56">
-                    <img
+                  <div className="bg-[url(/src/assets/university.webp)] bg-cover bg-center rounded-xl">
+                    <div className="w-full h-76 md:h-42 lg:h-56 pt-14"></div>
+                    {/* <img
                       src={university}
-                      alt="group study"
+                      alt="university"
                       className="w-full h-full rounded-xl"
                       loading="eager"
                       decoding="async"
                       fetchPriority="high"
-                    />
+                    /> */}
                   </div>
                   {/* ============= */}
                   <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
@@ -184,7 +183,7 @@ const Banner = () => {
           </div>
         </Container>
       </section>
-      <div className="bg-[#f3e6be] py-2 lg:py-6">
+      <div className="bg-[#f9f5e8] py-2 lg:py-6">
         <Marquee speed={80} gradient={false} pauseOnHover={true}>
           {university_logo.map((uni, index) => (
             <div key={index} className="mx-10 flex items-center justify-center">
