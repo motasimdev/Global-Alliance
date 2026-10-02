@@ -19,6 +19,9 @@ import Marquee from "react-fast-marquee";
 import CountUp from "react-countup";
 import Button from "../../Button";
 import { Link } from "react-router";
+import { FaArrowRight } from "react-icons/fa6";
+import { GiTiedScroll } from "react-icons/gi";
+import { SiOrganicmaps } from "react-icons/si";
 
 const Banner = () => {
   const [ref, isInView] = useInView({ once: true });
@@ -63,17 +66,20 @@ const Banner = () => {
       <section className="relative bg-linear-to-b from-tertiary to-[#e6e6ec] pt-15 pb-5 md:pb-20 lg:pt-20 lg:pb-30">
         <Container>
           <div className="relative md:flex justify-between items-center md:gap-x-8 lg:gap-x-0">
-            <div className="md:w-[50%]">
-              <h1 className="text-4xl md:text-[40px] lg:text-[54px] leading-11 md:leading-13 lg:leading-16 lg:pr-23 text-secondary font-extrabold animate-in fade-in slide-in-from-top-8 duration-700">
+            <div className="md:w-[50%] ">
+              <h1 className=" lg:pr-23 text-[40px] lg:text-[58px] leading-11 md:leading-13 lg:leading-16 text-secondary font-extrabold animate-in fade-in slide-in-from-bottom-8 duration-700">
                 Gateway to <span className="text-primary">Global Student </span>
                 Recruitment
               </h1>
-              <p className="text-[22px] text-secondary lg:pr-26 pt-5 pb-3 lg:text-justify">
+              <p className="text-[22px] text-secondary lg:pr-26 pt-5 pb-3 lg:text-justify animate-in fade-in slide-in-from-bottom-8 duration-700">
                 We simplify everything, from selecting the perfect university to
                 obtaining your student visa.
               </p>
               <Link to={"/become-a-partner"}>
-                <Button>Become a Partner</Button>
+                {/* <Button className="animate-in fade-in slide-in-from-bottom-8 duration-800">
+                  Become a Partner
+                </Button> */}
+                <button className="py-2 lg:py-3 px-4 lg:px-4 mt-4 lg:mt-8 text-[14px] md:text-lg font-medium lg:font-bold rounded-xl bg-secondary text-white border border-white flex items-center gap-x-4 cursor-pointer  hover:bg-primary transition duration-300 ">Become a Partner <FaArrowRight className="animate-bounce mt-1 "/> </button>
               </Link>
             </div>
 
@@ -120,7 +126,7 @@ const Banner = () => {
                     </div>
                     <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                       <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0">
-                        <RiGraduationCapFill className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
+                        < SiOrganicmaps className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                       </div>
                       <div className="ml-5">
                         <PBase
@@ -157,7 +163,7 @@ const Banner = () => {
                   {/* ============= */}
                   <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                     <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0">
-                      <RiGraduationCapFill className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
+                      <GiTiedScroll className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                     </div>
                     <div className="ml-5">
                       <PBase

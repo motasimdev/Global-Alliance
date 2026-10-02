@@ -26,35 +26,35 @@ const AboutSection = () => {
             </div>
             <div className="md:w-[45%]">
               <ViewportAnimation
-                from="-translate-y-8 md:translate-x-11 md:translate-y-0 opacity-0"
+                from="translate-y-8 md:translate-x-11 md:translate-y-0 opacity-0"
                 duration={1000}
                 once={true}
-                delay={200}
+                delay={100}
               >
                 <h3 className="text-secondary text-[32px] md:text-4xl leading-8 lg:leading-11 font-bold lg:pr-30 text-center md:text-left py-3 md:py-0">
                   The Trusted Partner for Your Study Abroad Success
                 </h3>
               </ViewportAnimation>
               <ViewportAnimation
-                from="-translate-x-8 md:translate-x-11 md:translate-y-0 opacity-0"
+                from="translate-y-8 md:translate-x-11 md:translate-y-0 opacity-0"
                 duration={1000}
                 once={true}
-                delay={200}
+                delay={100}
               >
-                <PBase
+                <PBase 
                   text={
                     "Empowering your future with the world’s most trusted higher education specialist"
                   }
                   className={
-                    "pt-3 lg:pt-5 text-primary font-medium lg:pr-30 text-center md:text-left"
+                    "pt-3 lg:pt-5 text-primary font-semibold lg:pr-30 text-center md:text-left"
                   }
                 />
               </ViewportAnimation>
               <ViewportAnimation
-                from="translate-x-8 md:translate-x-11 md:translate-y-0 opacity-0"
+                from="translate-y-8 md:translate-x-11 md:translate-y-0 opacity-0"
                 duration={1000}
                 once={true}
-                delay={200}
+                delay={100}
               >
                 <P18
                   text={
@@ -64,9 +64,18 @@ const AboutSection = () => {
                 />
               </ViewportAnimation>
               <div className="w-full flex justify-center md:justify-normal">
-                <NavLink to={"become-a-partner"}>
-                  <Button className={"font-bold"}>Book Your Appointment</Button>
-                </NavLink>
+                <ViewportAnimation
+                  from="translate-y-8 md:translate-x-11 md:translate-y-0 opacity-0"
+                  duration={1000}
+                  once={true}
+                  delay={100}
+                >
+                  <NavLink to={"become-a-partner"}>
+                    <Button className={"font-bold"}>
+                      Book Your Appointment
+                    </Button>
+                  </NavLink>
+                </ViewportAnimation>
               </div>
             </div>
           </div>
