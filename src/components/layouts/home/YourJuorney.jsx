@@ -6,6 +6,8 @@ import journeyThree from "/src/assets/your-journey03.svg";
 import Button from "../../Button";
 import P18 from "../../P18";
 import ViewportAnimation from "../../ViewportAnimation";
+import { TbMapPin2 } from "react-icons/tb";
+
 
 const YourJuorney = () => {
   return (
@@ -16,10 +18,11 @@ const YourJuorney = () => {
             from="translate-y-8 md:-translate-x-11 md:translate-y-0 opacity-50"
             duration={1000}
             once={true}
-          >
-            <h4 className="pb-3 md:pb-0 text-lg lg:text-[32px] font-semibold secondary">
-              Your path into global universities -
+            >
+            <h4 className="relative pb-3 md:pb-0 text-[20px] md:[28px] lg:text-[32px] font-semibold secondary text-center z-10">
+              - Your path into global universities -
             </h4>
+            <TbMapPin2 className="absolute right-1/2 translate-x-1/2 -top-4 text-9xl md:text-8xl lg:text-9xl text-violet-300 opacity-40 rotate-30"/>
           </ViewportAnimation>
           <ViewportAnimation
             from="translate-y-6 md:-translate-x-11 md:translate-y-0 opacity-50"
@@ -27,7 +30,7 @@ const YourJuorney = () => {
             once={true}
             delay={100}
           >
-            <p className="lg:text-2xl secondary font-semibold">
+            <p className="lg:text-2xl secondary font-semibold text-center">
               We’ve helped 50,000+ international students get into university.
             </p>
           </ViewportAnimation>
@@ -104,7 +107,7 @@ const YourJuorney = () => {
                   duration={1200}
                   once={true}
                 >
-                  <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
+                  <h3 className="text-[32px] md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
                     Support with every step
                   </h3>
                 </ViewportAnimation>

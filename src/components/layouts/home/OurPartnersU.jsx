@@ -30,7 +30,7 @@ const OurPartnersU = () => {
         <Container>
           <div className="text-center pb-8 lg:pb-12">
             <ViewportAnimation
-              from="translate-y-2 lg:translate-y-4 opacity-80 lg:opacity-70"
+              from="translate-y-4 lg:translate-y-6 opacity-80 lg:opacity-70"
               duration={1200}
               once={true}
             >
@@ -42,12 +42,12 @@ const OurPartnersU = () => {
           </div>
           <div className="w-full overflow-visible relative">
             <ViewportAnimation
-              from="translate-y-2 lg:translate-y-4 opacity-80 lg:opacity-50"
+              from="translate-y-4 lg:translate-y-6 opacity-80 lg:opacity-50"
               duration={1200}
               once={true}
             >
               <Swiper
-                preventClicks={true}
+                preventClicks={false}
                 observer={true}
                 observeParents={true}
                 slidesPerView={1}

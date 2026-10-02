@@ -2,7 +2,7 @@ import { useInView } from "../../../hooks/useInView";
 import { cn } from "../../../utils/cn";
 import Container from "../../Container";
 import Select from "react-select";
-import { RiGraduationCapFill } from "react-icons/ri";
+import { PiGraduationCapFill } from "react-icons/pi";
 import PBase from "../../PBase";
 import grpStudy from "/src/assets/group-study.webp";
 import university from "/src/assets/university.webp";
@@ -14,6 +14,7 @@ import UNIRAZAK from "/src/assets/university-logos/Official-UNIRAZAK-Logo.webp";
 import SEGI from "/src/assets/university-logos/SEGi-University.webp";
 import UOW from "/src/assets/university-logos/UOW-logoo.webp";
 import Psm from "../../Psm";
+import P18 from "../../P18";
 
 import Marquee from "react-fast-marquee";
 import CountUp from "react-countup";
@@ -79,7 +80,7 @@ const Banner = () => {
                 {/* <Button className="animate-in fade-in slide-in-from-bottom-8 duration-800">
                   Become a Partner
                 </Button> */}
-                <button className="py-2 lg:py-3 px-4 lg:px-4 mt-4 lg:mt-8 text-[14px] md:text-lg font-medium lg:font-bold rounded-xl bg-secondary text-white border border-white flex items-center gap-x-4 cursor-pointer  hover:bg-primary transition duration-300 ">Become a Partner <FaArrowRight className="animate-bounce mt-1 "/> </button>
+                <button className="py-2 lg:py-3 px-4 lg:px-4 mt-4 lg:mt-8 text-[14px] md:text-lg font-medium lg:font-bold rounded-xl bg-secondary text-white border border-white flex items-center gap-x-4 cursor-pointer  hover:bg-primary transition duration-300 shadow-xl shadow-gray-400">Become a Partner <FaArrowRight className="animate-bounce mt-1 "/> </button>
               </Link>
             </div>
 
@@ -90,22 +91,22 @@ const Banner = () => {
                   {/* ==============box one======== */}
                   <div className="flex justify-center py-4 md:py-5 md:px-8 bg-secondary rounded-xl">
                     <div className="size-9 md:size-14 rounded-full bg-white flex items-center justify-center shrink-0">
-                      <RiGraduationCapFill className="text-secondary text-2xl md:text-4xl " />
+                      <PiGraduationCapFill className="text-secondary text-2xl md:text-4xl " />
                     </div>
-                    <div className="ml-5">
-                      <PBase
+                    <div className="relative ml-5">
+                      <P18
                         text={"University"}
                         className={"text-white font-semibold"}
                       />
                       <CountUp
-                        className="account-balance text-xl md:text-2xl text-white font-bold"
+                        className="relative account-balance text-xl md:text-2xl text-white font-bold z-10"
                         start={0}
                         end={29}
                         duration={3}
                         useEasing={false}
                         separator=","
                       />{" "}
-                      <span className="text-xl md:text-2xl text-white font-bold">
+                      <span className="relative text-xl md:text-2xl text-white font-bold z-10">
                         +
                       </span>
                     </div>
@@ -124,12 +125,12 @@ const Banner = () => {
                         fetchPriority="high"
                       />
                     </div>
-                    <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
-                      <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0">
+                    <div className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center lg:text-left bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
+                      <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0 mx-auto">
                         < SiOrganicmaps className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                       </div>
-                      <div className="ml-5">
-                        <PBase
+                      <div className="lg:ml-5 mt-3 lg:mt-0">
+                        <P18
                           text={"Study Destination"}
                           className={"text-white font-semibold"}
                         />
@@ -161,12 +162,12 @@ const Banner = () => {
                     /> */}
                   </div>
                   {/* ============= */}
-                  <div className="flex justify-center py-4 md:py-5 md:px-5 lg:px-8 bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
-                    <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0">
+                  <div className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
+                    <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0 mx-auto">
                       <GiTiedScroll className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                     </div>
-                    <div className="ml-5">
-                      <PBase
+                    <div className="lg:ml-5 mt-3 lg:mt-0">
+                      <P18
                         text={"Student helped"}
                         className={"text-white font-semibold"}
                       />

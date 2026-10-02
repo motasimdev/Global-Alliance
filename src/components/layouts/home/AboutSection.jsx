@@ -41,7 +41,7 @@ const AboutSection = () => {
                 once={true}
                 delay={100}
               >
-                <PBase 
+                <P18 
                   text={
                     "Empowering your future with the world’s most trusted higher education specialist"
                   }
