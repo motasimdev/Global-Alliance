@@ -36,7 +36,7 @@ const YourJuorney = () => {
           </ViewportAnimation>
           {/* ==================================== */}
           <div className="relative mt-8 lg:mt-20 overflow-hidden pb-50 md:pb-8">
-            <div className="absolute lg:-top-71 lg:left-111 rounded-full py-47 md:py-70 lg:py-140 px-8.5 md:px-20 lg:px-29.5 lg:-rotate-71 bg-linear-to-b from-secondary to-[#d5d5ff] z-0"></div>
+            <div className="absolute lg:-top-71 lg:left-111 rounded-full py-47 md:py-70 lg:py-140 px-8.5 md:px-20 lg:px-29.5 lg:-rotate-71 bg-linear-to-b from-[#a0a0ed] to-[#d5d5ff] z-0"></div>
             <ViewportAnimation
               from="translate-y-2 lg:translate-y-6"
               duration={1200}
@@ -70,7 +70,7 @@ const YourJuorney = () => {
                 duration={1200}
                 once={true}
               >
-                <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold pr-5 uppercase">
+                <h3 className="text-[32px] leading-9 md:leading-12 md:text-[42px] lg:text-5xl text-primary font-extrabold pr-5 uppercase">
                   Choose your pathway
                 </h3>
               </ViewportAnimation>
@@ -107,7 +107,7 @@ const YourJuorney = () => {
                   duration={1200}
                   once={true}
                 >
-                  <h3 className="text-[32px] md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
+                  <h3 className="text-[32px] leading-9 md:leading-12 md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
                     Support with every step
                   </h3>
                 </ViewportAnimation>
@@ -180,7 +180,7 @@ const YourJuorney = () => {
                   duration={1200}
                   once={true}
                 >
-                  <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
+                  <h3 className="text-[32px] leading-9 md:leading-12 md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
                     Gain entry to your dream university
                   </h3>
                 </ViewportAnimation>

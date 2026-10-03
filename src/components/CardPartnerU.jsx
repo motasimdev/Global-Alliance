@@ -5,7 +5,7 @@ const CardPartnerU = ({
   image,
   alt,
   heading,
-  description,
+  city,
   to,
   target,
   className,
@@ -29,7 +29,7 @@ const CardPartnerU = ({
             {heading}
           </h5>
           <div className="hidden md:block py-2.5"></div>
-          <p className="mb-6 line-clamp-3 text-justify">{description}</p>
+          <p className="mb-6 line-clamp-3 text-justify">{city}</p>
           <a
             href={to}
             target={target}

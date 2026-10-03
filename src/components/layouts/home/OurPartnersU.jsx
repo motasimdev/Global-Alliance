@@ -81,7 +81,7 @@ const OurPartnersU = () => {
                     image={slideOne}
                     alt={"Asia Pacific University"}
                     heading={"Study in Asia Pacific University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -93,7 +93,7 @@ const OurPartnersU = () => {
                     image={slideTwo}
                     alt={"Cyberjaya University"}
                     heading={"Study in Cyberjaya University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -105,7 +105,7 @@ const OurPartnersU = () => {
                     image={slideThree}
                     alt={"INTI University"}
                     heading={"Study in INTI University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -117,7 +117,7 @@ const OurPartnersU = () => {
                     image={slideFour}
                     alt={"Linkcoln University"}
                     heading={"Study in Linkcoln University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -129,7 +129,7 @@ const OurPartnersU = () => {
                     image={slideFive}
                     alt={"Nilai University"}
                     heading={"Study in Nilai University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -141,7 +141,7 @@ const OurPartnersU = () => {
                     image={slideSix}
                     alt={"Segi University"}
                     heading={"Study in Segi University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -153,7 +153,7 @@ const OurPartnersU = () => {
                     image={slideSeven}
                     alt={"Taylors University"}
                     heading={"Study in Taylors University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -165,7 +165,7 @@ const OurPartnersU = () => {
                     image={slideEight}
                     alt={"Unirazak University"}
                     heading={"Study in Unirazak University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
@@ -177,7 +177,7 @@ const OurPartnersU = () => {
                     image={slideNine}
                     alt={"Wollongong University"}
                     heading={"Study in Wollongong University"}
-                    description={
+                    city={
                       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse explicabo recusandae consequuntur reiciendis aut, ipsa sapiente reprehenderit fugit facilis rem nesciunt ad optio ratione et quod repudiandae perferendis qui. Quam eligendi minima atque alias harum eveniet inventore accusamus? Inventore itaque libero voluptas tenetur?"
                     }
                   />
