@@ -89,11 +89,11 @@ const Banner = () => {
               <div className="md:flex justify-end md:gap-x-4 lg:gap-x-7">
                 <div className="md:w-[45%] flex flex-col gap-y-3">
                   {/* ==============box one======== */}
-                  <div className="flex justify-center py-4 md:py-5 md:px-8 bg-secondary rounded-xl">
-                    <div className="size-9 md:size-14 rounded-full bg-white flex items-center justify-center shrink-0">
+                  <div className="lg:flex justify-center py-4 md:py-5 md:px-8 bg-secondary rounded-xl">
+                    <div className="size-9 md:size-14 rounded-full bg-white flex items-center justify-center shrink-0 mx-auto">
                       <PiGraduationCapFill className="text-secondary text-2xl md:text-4xl " />
                     </div>
-                    <div className="relative ml-5">
+                    <div className="relative lg:ml-5 text-center lg:text-left mt-3 lg:mt-0">
                       <P18
                         text={"University"}
                         className={"text-white font-semibold"}
