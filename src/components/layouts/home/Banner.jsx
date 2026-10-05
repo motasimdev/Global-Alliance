@@ -64,7 +64,7 @@ const Banner = () => {
   ];
   return (
     <>
-      <section className="relative bg-linear-to-b from-white to-[#e6e6ec] pt-10 pb-5 md:pb-20 lg:pt-20 lg:pb-30">
+      <section className="relative bg-linear-to-b from-white to-[#e6e6ec] pt-10 pb-5 md:pb-20 lg:pt-15 lg:pb-30">
         <Container>
           <div className="relative md:flex justify-between items-center md:gap-x-8 lg:gap-x-0">
             <div className="md:w-[50%] ">

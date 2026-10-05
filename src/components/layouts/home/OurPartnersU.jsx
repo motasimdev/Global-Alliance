@@ -35,7 +35,7 @@ const OurPartnersU = () => {
               once={true}
             >
               <Heading
-                text={"Our Partner University"}
+                text={"Your Destination University"}
                 className={"inline text-secondary"}
               />
             </ViewportAnimation>

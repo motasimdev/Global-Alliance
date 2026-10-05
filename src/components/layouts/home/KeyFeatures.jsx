@@ -15,20 +15,20 @@ const KeyFeatures = () => {
         <Container>
           <div className="">
             <div className="text-center">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-secondary">
+              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
                 Grow your business with Global Alliance
               </h4>
               <Heading
                 text={"Key features of Global Alliance"}
                 className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
               />
-              <p className="text-sm md:text-base lg:text-[18px] font-semibold text-[#dd1518]">
+              <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
                 These are our core strengths that make us stand out in the
                 market and worthy of your attention
               </p>
             </div>
             {/* ==================================================================== */}
-            <div className="grid grid-cols-3 gap-x-10 gap-y-10 justify-center lg:justify-between md:px-20 lg:px-0 mt-8 md:mt-10 lg:mt-12">
+            <div className="grid grid-cols-3 gap-x-10 gap-y-10 justify-center lg:justify-between md:px-20 lg:px-0 mt-8 md:mt-10 lg:mt-15">
               <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-[#434389] pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
@@ -60,7 +60,7 @@ const KeyFeatures = () => {
                   }
                   heading={"Access to Global Universities"}
                   para={
-                    "Campora allow you to access our partner institutions, making the process much easier."
+                    "Global Alliance allow you to access our partner institutions, making the process much easier."
                   }
                 />
               </div>
