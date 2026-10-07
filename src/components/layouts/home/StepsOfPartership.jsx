@@ -5,7 +5,7 @@ import Heading from "../../Heading";
 const StepsOfPartership = () => {
   return (
     <>
-      <section className="pt-15 md:pt-20 pb-18 md:pb-20 lg:py-25 bg-secondary/9">
+      <section className="lg:my-10 pt-15 md:pt-20 pb-18 md:pb-20 lg:py-25 bg-secondary/9">
         <Container>
           <div className="">
             <div className="text-center">

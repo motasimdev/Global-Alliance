@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const CardPartnerU = ({
+const UniversityCard = ({
   image,
   alt,
   heading,
@@ -60,4 +60,4 @@ const CardPartnerU = ({
   );
 };
 
-export default CardPartnerU;
+export default UniversityCard;

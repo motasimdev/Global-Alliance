@@ -19,7 +19,7 @@ import slideSeven from "/src/assets/Taylors-University.webp";
 import slideEight from "/src/assets/unirazak-university.webp";
 import slideNine from "/src/assets/wollongong-university.webp";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
-import CardPartnerU from "../../CardPartnerU";
+import CardPartnerU from "../../UniversityCard";
 import Heading from "../../Heading";
 import ViewportAnimation from "../../ViewportAnimation";
 

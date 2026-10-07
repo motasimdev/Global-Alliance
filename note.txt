@@ -5,4 +5,4 @@
 
 (done)=> current step bad jabe. gae website thke step ashbe. design hbe box. (step er ss assets e ase)
 => home page e section add hbe (ss ase assets e)
-=> about us e section add hbe. (ss ase assets e`)
+=> about us e section add hbe. (ss ase assets e`) 
