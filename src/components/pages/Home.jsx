@@ -4,6 +4,7 @@ import BecomeAPartnerSection from "../layouts/home/BecomeAPartnerSection";
 import KeyFeatures from "../layouts/home/KeyFeatures";
 import StepsOfPartership from "../layouts/home/StepsOfPartership";
 import IntroducingOurselves from "../layouts/home/IntroducingOurselves";
+import WhyUs from "../layouts/home/WhyUs";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <KeyFeatures/>
       <StepsOfPartership/>
       <IntroducingOurselves/>
+      <WhyUs/>
       <OurPartnersU />
       <BecomeAPartnerSection/>
     </>
