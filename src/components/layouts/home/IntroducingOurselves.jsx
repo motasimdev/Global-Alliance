@@ -26,7 +26,7 @@ const IntroducingOurselves = () => {
             </div>
             {/* ============================================================ */}
             <div className="relative lg:flex">
-              <div className="relative bg-tertiary shadow-2xl lg:w-1/2 p-14 md:px-35 md:py-10 lg:p-24 rounded-full text-center overflow-hidden">
+              <div className="relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:p-24 rounded-full text-center overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-70">
                   <p className="absolute -left-30 lg:-left-41 top-1/2 -translate-y-1/2 text-[40px] md:text-[50px] lg:text-[55px] text-white font-extrabold -rotate-90">
                     WHO WE ARE
