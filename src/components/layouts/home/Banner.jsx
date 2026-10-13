@@ -4,8 +4,7 @@ import Container from "../../Container";
 import Select from "react-select";
 import { PiGraduationCapFill } from "react-icons/pi";
 import PBase from "../../PBase";
-import grpStudy from "/src/assets/map.png";
-import university from "/src/assets/university.webp";
+import map from "/src/assets/map.png";
 import APU from "/src/assets/university-logos/APU-logo.webp";
 import INTI from "/src/assets/university-logos/INTI-40.webp";
 import NILAI from "/src/assets/university-logos/nilai.webp";
@@ -117,7 +116,7 @@ const Banner = () => {
                   <div className="bg-[#b5b5f8] pt-2 md:pt-2.5 px-2 md:px-3 lg:px-4 pb-3 md:pb-5 rounded-xl flex flex-col gap-y-2 shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                     <div className="w-full h-54 md:h-30 lg:h-40">
                       <img
-                        src={grpStudy}
+                        src={map}
                         alt="group study"
                         className="w-full h-full rounded-xl"
                         loading="eager"
@@ -150,8 +149,8 @@ const Banner = () => {
 
                 {/* ================================ */}
                 <div className="md:w-[40%] flex flex-col gap-y-4">
-                  <div className="bg-[url(/src/assets/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56">
-                    <div className="w-full mt-58 md:mt-22 lg:mt-41 rounded-b-xl px-2 bg-[#00000081]">
+                  <div className="bg-[url(/src/assets/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end">
+                    <div className="w-full rounded-b-xl px-2 py-3 md:py-0 lg:py-3 bg-[#00000081]">
                       {/* <Psm text={""} className={"text-white"}/> */}
                     <p className="text-base md:text-xs lg:text-sm text-white">The University of al-Qarawiyyin in Fez, Morocco, founded in 859 CE, The oldest university in the world.</p>
                     </div>

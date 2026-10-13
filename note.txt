@@ -20,3 +20,17 @@ Section 03 — Our University Network
 - View University link
 নিচে Explore All Universities button থাকবে।
 গুরুত্বপূর্ণ: কেবল বাস্তবে partner বা অনুমোদিত institution হলে সেই পরিচয় ব্যবহার করবে। অন্য university-র তথ্য দেখালে সেটিকে partner university বলে উপস্থাপন করবে না। Network-এর আকার ছোট হলে অল্প কয়েকটি card দেখিয়ে directory-তে link দেওয়াই ভালো।
+
+
+আমার মতে, প্রথম version-এ এই field-গুলো রাখা যায়:
+Field	Type
+Full Name	Text
+Agency / Company Name	Text
+Business Email	Email
+Phone / WhatsApp	Tel
+Country	Select
+Organisation Type	Select
+Preferred Destinations	Multi-select বা checkbox
+Message	Textarea
+Organisation Type-এর উদাহরণ: Education Agency, Independent Recruiter, Institutional Partner, Other।
+Submit button-এর text হতে পারে Submit Partnership Enquiry।
