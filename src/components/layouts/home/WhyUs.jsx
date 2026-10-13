@@ -34,7 +34,7 @@ const WhyUs = () => {
             <div className="md:flex justify-between md:gap-x-4 lg:gap-x-0">
               <div className="mb-10 md:w-1/2 flex items-center">
                 <div className="mx-auto border-2 border-gray-400">
-                  <img src={whyUs} alt="" className="w-[500px] shadow-lg md:shadow-2xl shadow-gray-500" />
+                  <img src={whyUs} alt="" className="w-125 shadow-lg md:shadow-2xl shadow-gray-500" />
                 </div>
               </div>
 
