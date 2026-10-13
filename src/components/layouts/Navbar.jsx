@@ -97,7 +97,7 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to="/our-services"
+                  to="/recruiter"
                   className={({ isActive }) =>
                     `px-3 py-2 font-bold text-base uppercase border-b-2 ${
                       isActive
@@ -106,7 +106,7 @@ const Navbar = () => {
                     }`
                   }
                 >
-                  Our Services
+                 Recruiter
                 </NavLink>
               </li>
 
@@ -228,7 +228,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/our-services"
+                    to="/recruiter"
                     className={({ isActive }) =>
                       `block px-4 py-3 font-medium${
                         isActive
@@ -238,7 +238,7 @@ const Navbar = () => {
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Our Services
+                    Recruiter
                   </NavLink>
                 </li>
                 <li>

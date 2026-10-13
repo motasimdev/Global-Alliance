@@ -2,8 +2,8 @@ import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
 import PBase from "../../PBase";
-import missionImage from "/src/assets/handshakee.svg";
-import visionImage from "/src/assets/map2.jpg";
+import missionImage from "/src/assets/about-us/handshake.jpg";
+import visionImage from "/src/assets/about-us/world-wide.jpg";
 
 const AboutMission = () => {
   return (

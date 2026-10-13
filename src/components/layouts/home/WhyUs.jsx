@@ -21,7 +21,7 @@ const WhyUs = () => {
               </h4>
               <Heading
                 text={"The Direct Link Between Universities and Global Agents"}
-                className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
+                className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4 lg:px-40"}
               />
               <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
                 Our platform streamlines recruitment, enhances visibility, and

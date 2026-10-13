@@ -12,6 +12,7 @@ import universityDetails from "../components/layouts/university/universityDetail
 import Login from "../components/pages/Login";
 import Signup from "../components/pages/Signup";
 import Error from "../components/pages/Error";
+import Recruiter from "../components/pages/Recruiter";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -31,9 +32,13 @@ const AppRoutes = createBrowserRouter([
         path: "university",
         Component: University,
       },
+      // {
+      //   path: "our-services",
+      //   Component: OurServices,
+      // },
       {
-        path: "our-services",
-        Component: OurServices,
+        path: "recruiter",
+        Component: Recruiter,
       },
       {
         path: "blogs",
