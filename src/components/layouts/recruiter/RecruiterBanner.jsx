@@ -7,7 +7,7 @@ const RecruiterBanner = () => {
   return (
     <section>
       <div className="">
-        <div className="bg-[url(/src/assets/recruiter/recruiter2.jfif)] py-10 md:py-20 bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url(/src/assets/recruiter/recruiter2.jfif)] py-10 lg:py-20 bg-no-repeat bg-center bg-cover">
           <Container>
             <div className="md:flex">
               <div className="md:w-1/2">

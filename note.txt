@@ -6,3 +6,17 @@
 (done)=> current step bad jabe. gae website thke step ashbe. design hbe box. (step er ss assets e ase)
 (done)=> home page e section add hbe (ss ase assets e)
 (done)=> about us e section add hbe. (ss ase assets e`) 
+
+
+Section 03 — Our University Network
+তুমি Global Alliance homepage-এর জন্য যে university information card বানানোর পরিকল্পনা করছ, সেই existing component-টাই এখানে reuse করা যেতে পারে।
+
+
+প্রতিটি card-এ রাখতে পারো:
+- University logo ও নাম
+- Country এবং location
+- University-এর ছোট description
+- Available study levels বা programs, যদি data থাকে
+- View University link
+নিচে Explore All Universities button থাকবে।
+গুরুত্বপূর্ণ: কেবল বাস্তবে partner বা অনুমোদিত institution হলে সেই পরিচয় ব্যবহার করবে। অন্য university-র তথ্য দেখালে সেটিকে partner university বলে উপস্থাপন করবে না। Network-এর আকার ছোট হলে অল্প কয়েকটি card দেখিয়ে directory-তে link দেওয়াই ভালো।
