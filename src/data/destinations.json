@@ -40,6 +40,10 @@
 
     "costOfLivingBreakdown": [
       {
+        "description": "€600–1,000 / month; Madrid and Barcelona highest, Valencia and Granada affordable.",
+        "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
+      },
+      {
         "costItem": "Tuition (public master)",
         "low": 1500,
         "typical": 3000,
@@ -134,19 +138,23 @@
     "admissionRequirementsAndEligibility": {
       "academic": [
         "Relevant previous academic qualification.",
-        "Academic transcripts and certificates.",
-        "Meet the selected program's entry requirements."
+        "55–60%+ for public universities, 65%+ for top business schools.",
+        "Three-year and four-year bachelor's accepted for master's.",
+        "Equivalence/recognition of degree required; formal Homologation may be needed for regulated professions."
       ],
       "language": [
-        "Spanish proficiency for programs taught in Spanish, where required.",
-        "English proficiency for English-taught programs, where required."
+        "Spanish: DELE B1/B2 for Spanish-taught tracks; recommended even for English tracks.",
+        "English: IELTS 6.5 or TOEFL 90 for English-taught programmes; IE/ESADE often ask higher.",
+        "Medium of Instruction (MOI) certificate may be accepted by select private institutions."
       ],
       "financial": [
-        "Provide financial evidence if required for the relevant application or visa."
+        "Proof of sufficient financial means (e.g., bank statement) to cover tuition fees and living expenses as required for university admission and visa application."
       ],
       "other": [
-        "Valid passport.",
-        "Additional documents specified by the university or relevant authority."
+        "GMAT: required for top MBA programmes (IE, IESE, ESADE).",
+        "Standard documents: Statement of Purpose (SOP), CV/Resume, Letters of Recommendation (LORs).",
+        "Additional selection steps: Video essay, online interview, or portfolio (for creative fields) where applicable.",
+        "Valid passport and university-specific additional documents."
       ],
       "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
     },
@@ -154,65 +162,124 @@
     "applicationProcessStepByStep": [
       {
         "step": 1,
-        "title": "Choose a Program",
-        "description": "Research universities and select a suitable program."
+        "title": "Submit Application to University",
+        "description": "Apply directly to the university (Jan–Jun for September)."
       },
       {
         "step": 2,
-        "title": "Check Eligibility",
-        "description": "Review academic, language and program-specific entry requirements."
+        "title": "Submit Required Documents",
+        "description": "Submit transcripts, IELTS, SOP, CV and LORs; GMAT for MBA."
       },
       {
         "step": 3,
-        "title": "Prepare Documents",
-        "description": "Collect transcripts, certificates, identification and required supporting documents."
+        "title": "Receive Admission & Pay Fee",
+        "description": " Receive offer; pay the enrolment fee."
       },
       {
         "step": 4,
-        "title": "Submit Application",
-        "description": "Apply through the university's official application process."
+        "title": "Build Visa File",
+        "description": "Build the visa file: proof of funds, no-co-payment insurance, medical certificate, apostilled police clearance."
       },
       {
         "step": 5,
-        "title": "Receive Admission Decision",
-        "description": "Follow the university's instructions regarding the offer and enrollment."
+        "title": "Submit Visa Application",
+        "description": "Submit the student visa at the Spanish consulate."
+      },
+      {
+        "step": 6,
+        "title": "Arrival & TIE Application",
+        "description": "Arrive; book a cita previa and apply for the TIE within 30 days."
+      },
+      {
+        "step": 7,
+        "title": "Post-Study Job-Search Residence",
+        "description": " Before the student permit expires, apply for the 24-month job-search residence."
       }
     ],
 
     "popularCourses": [
-      "Business and Management",
-      "Computer Science and Information Technology",
-      "Engineering",
-      "Tourism and Hospitality",
-      "Arts and Humanities",
+      "MBA & International Business",
+      "MBA and MSc Business Analytics",
+      "MSc Renewable Energy and Sustainability",
+      "MSc Tourism and Hospitality Management",
+      "MSc Computer Science and Telecommunications",
+      "MSc Architecture and Design",
+      "MSc Finance and International Business",
+      "MSc Biotech and Biomedicine",
+      "Sports Management",
+      "Data Science & Artificial Intelligence",
       "Health and Life Sciences"
     ],
 
     "scholarshipsAndFunding": {
-      "overview": "Funding may be available through universities, public programs and other eligible organizations. Availability and eligibility must be checked individually.",
+      "title": "Named scholarships & funding",
+      "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
+      "overview": "MECD/MAEC-AECID scholarships, university merit awards, EU Erasmus+, regional grants.",
       "fundingOptions": [
-        "University scholarships",
-        "Merit-based funding",
-        "Need-based financial assistance, where available",
-        "External grants and mobility funding"
+        {
+          "icon": "university",
+          "title": "MAEC-AECID Scholarships",
+          "subtitle": "Tuition + stipend + travel",
+          "description": "International students via Spanish cooperation; varies by country and programme."
+        },
+        {
+          "icon": "university",
+          "title": "University merit awards",
+          "subtitle": "10–50% tuition reduction",
+          "description": "Top applicants; varies by institution, often automatic."
+        },
+        {
+          "icon": "university",
+          "title": "IE / ESADE / IESE fellowships",
+          "subtitle": "Tuition + stipend + travel",
+          "description": "International students via Spanish cooperation; varies by country and programme."
+        },
+        {
+          "icon": "university",
+          "title": "Erasmus+ mobility",
+          "subtitle": "400–520/month for exchange",
+          "description": "Exchange students within the Erasmus programme."
+        },
+        {
+          "icon": "university",
+          "title": "Regional government grants",
+          "subtitle": "Variable",
+          "description": "Some autonomous communities offer grants to international students."
+        },
+        {
+          "icon": "university",
+          "title": "La Caixa Foundation fellowships",
+          "subtitle": "Full tuition + living",
+          "description": "Postgraduate STEM and social science; highly competitive."
+        }
       ]
     },
 
     "postStudyWorkAndPRPathway": {
-      "summary": "Eligible graduates may explore applicable job-search, employment or other residence pathways. Eligibility and procedures depend on current Spanish immigration law.",
+      "summary": "The 2024 reform grants graduates a 24-month job-search residence (estancia por búsqueda de empleo) to apply from inside Spain before the student permit expires. Securing qualifying employment transitions the graduate to a work permit or EU Blue Card, leading toward permanent residence after 5 years and citizenship after 10 years.",
       "pathways": [
         {
-          "name": "Post-study residence option",
-          "description": "Dummy placeholder for a qualifying graduate pathway.",
-          "eligibility": "Must be verified against current official requirements."
+          "name": "Job-Search Residence (24 Months)",
+          "description": "A 2-year graduate job-search visa introduced under the 2024 reform, applied for from inside Spain before the student permit expires.",
+          "eligibility": "Must be applied while holding a valid student permit/residency in Spain."
         },
         {
-          "name": "Employment-based residence",
-          "description": "A potential route for eligible graduates who meet the relevant employment and immigration conditions.",
-          "eligibility": "Depends on the specific permit and applicant circumstances."
+          "name": "Work and Residence Permit / EU Blue Card",
+          "description": "Transition to a standard work and residency permit upon securing qualifying employment, or an EU Blue Card for qualifying highly-paid roles.",
+          "eligibility": "Securing a valid job offer that meets employment and salary thresholds."
+        },
+        {
+          "name": "Permanent Residence (Larga Duración)",
+          "description": "Eligibility for permanent residency after completing 5 years of continuous legal residence in Spain.",
+          "eligibility": "5 years of continuous legal stay."
+        },
+        {
+          "name": "Spanish Citizenship",
+          "description": "Standard route requires 10 years of legal residence (Note: The 2-year exception applies only to Ibero-American nationals, not to India).",
+          "eligibility": "10 years of continuous legal residence for Indian nationals."
         }
       ],
-      "prNotes": "Permanent residence is not automatic after graduation. Confirm qualifying residence periods and all current legal requirements."
+      "prNotes": "Permanent residence is not automatic after graduation and requires 5 years of continuous legal stay. Citizenship requires 10 years for Indian nationals (as the 2-year fast-track is restricted to Ibero-American countries)."
     },
 
     "challengesAndHowWeHelp": [
@@ -235,13 +302,11 @@
     ],
 
     "whoThisDestinationSuitsBest": [
-      "Students looking for European higher education options.",
-      "Students interested in Spanish language and culture.",
-      "Students seeking programs in business, technology, tourism or other available fields.",
-      "Students whose academic background and budget match the selected program."
+      "Spain suits students seeking low public tuition, Mediterranean lifestyle and the new 2-year graduate job-search visa — especially for business, hospitality, renewable energy and sports management — provided they can navigate regional tuition variation and some bureaucracy."
     ],
 
     "currentTrendsAndB2BOpportunities": {
+      "description": "The 2024 two-year graduate job-search visa is a game-changer for post-study planning. Spain’s renewable energy, hospitality and tech sectors are hiring. Indian student numbers are rising with Spain’s push into South Asian markets.",
       "trends": [
         "Interest in international study options across different degree levels.",
         "Demand for clear guidance on tuition, admission and visa processes."
@@ -256,24 +321,45 @@
 
     "faqs": [
       {
-        "question": "Can international students study in Spain?",
+        "question": "How does Spain’s new post-study visa work?",
         "answer": "Yes, subject to meeting the selected institution's admission requirements and any applicable immigration requirements."
       },
       {
-        "question": "How much does studying in Spain cost?",
-        "answer": "Costs depend on the institution, program, location and lifestyle. Check current tuition schedules and living-cost estimates."
+        "question": "Is public tuition the same for Indian students in Spain?",
+        "answer": "It varies by region — some charge non-EU students the EU rate, others charge more. We verify the regional rules for each chosen university before application."
       },
       {
-        "question": "Can students work while studying?",
-        "answer": "Work rights depend on the student's authorization and current rules. Confirm the applicable conditions before accepting employment."
+        "question": "Does Spain offer post-study work rights?",
+        "answer": "Yes — the 2024 reform grants a 24-month job-search residence (estancia por búsqueda de empleo), among the most generous in the EU, applied for from inside Spain before the student permit expires."
       },
       {
-        "question": "Are scholarships available?",
-        "answer": "Some universities and organizations offer funding. Eligibility, coverage and deadlines vary."
+        "question": "Is Spain affordable for Bangladeshi students?",
+        "answer": "Yes — public master's tuition is €1,500–4,000/year with €560–850/month living outside Madrid and Barcelona. It is one of the best value propositions in the EU with a generous post-study runway."
+      },
+      {
+        "question": "Do I need to speak Spanish to work in Spain?",
+        "answer": "For most local employment outside multinationals and tourism, yes — B1–B2 is effectively required. Start Spanish before departure; it decides whether the 24-month window produces a job."
+      },
+      {
+        "question": "What causes Spanish visa refusals?",
+        "answer": "Insurance and apostille errors more than academic weakness. Choose insurance that explicitly states no co-payment, and apostille the police clearance and academic documents early"
+      },
+      {
+        "question": "What is the cita previa and why does it matter?",
+        "answer": "The appointment system for the TIE (foreigner identity card) and other procedures. Appointments fill in hours, so book the moment they open — delays affect enrolment and bank account opening."
+      },
+      {
+        "question": "Can I get permanent residency in Spain?",
+        "answer": "Yes — permanent residence (larga duración) is available after five years of continuous legal residence. Citizenship takes 10 years for Indian nationals (2 years for Ibero-Americans, not applicable)."
       }
     ],
 
-    "completeSpainBrief": "Spain is a potential study destination for international students considering European higher education. Applicants should compare programs, verify tuition and living costs, review admission criteria and confirm current visa and work regulations before making a decision.",
+    "completeBrief": [
+      "Spain became a serious post-study destination in 2024, when the new job-search residence gave graduates 24 months to find qualifying employment — matching the UK at a fraction of the tuition. Public universities charge €1,500–4,000 per year, private business schools such as IE and ESADE compete globally, and living costs outside Madrid and Barcelona are moderate.",
+      "Spanish at B1–B2 is the practical requirement for local employment outside multinationals and tourism. Students who plan for this from the first semester convert the 24-month window into a job; those who do not often leave when it expires.",
+      "Spain's strengths are renewable energy, tourism management, biotech, design and business. The country is a European leader in solar and wind, and the tourism and hospitality management programmes are among the world's best. The 2024 reform also simplified the transition from student to employee status.",
+      "For partners, Spain is a value destination with a generous post-study runway, but insurance and apostille errors cause more refusals than academic weakness. Present the 2024 job-search residence explicitly — many families still assume Spain has no post-study route."
+    ],
 
     "fullCostBreakdown": [
       {
@@ -325,195 +411,218 @@
 
     "prosAndCons": {
       "advantages": [
-        "Wide variety of academic disciplines.",
-        "Opportunities to experience Spanish culture and language.",
-        "Different city and lifestyle options."
+        "24-month post-study job-search residence, among the most generous in the EU.",
+        "Low public tuition with globally ranked private business schools as an alternative.",
+        "Moderate living costs outside the two largest cities.",
+        "Strong sectors: renewable energy, tourism management, biotech and business.",
+        "Schengen mobility and a clear five-year permanent-residence pathway.",
+        "High quality of life and a warm climate."
       ],
       "tradeOffsToDisclose": [
-        "Tuition and living costs vary by city and institution.",
-        "Some programs require Spanish-language proficiency.",
-        "Admission, visa and employment outcomes are not guaranteed."
+        "Spanish is required for most local employment.",
+        "Graduate salaries are lower than in Northern Europe.",
+        "Homologation of foreign degrees can be slow for regulated professions.",
+        "Administrative appointments (cita previa) are a recurring bottleneck.",
+        "Insurance and apostille errors are the common refusal causes."
       ]
     },
 
     "applicationAndVisaProcess": [
       {
         "step": 1,
-        "title": "Secure Admission",
-        "description": "Complete the university's admission requirements and follow its enrollment instructions.",
-        "documentsRequired": [
-          "Academic certificates",
-          "Academic transcripts",
-          "Passport",
-          "Language evidence, if required"
-        ]
+        "title": "Application and admission",
+        "description": "Apply directly to the university; most master's programmes admit between January and June for September."
       },
       {
         "step": 2,
-        "title": "Review Visa Requirements",
-        "description": "Check the current requirements published by the relevant Spanish consulate or official authority.",
-        "documentsRequired": [
-          "Valid passport",
-          "Admission or enrollment evidence",
-          "Financial evidence, if required",
-          "Insurance and other documents, as applicable"
-        ]
+        "title": "Tuition and enrolment",
+        "description": "Pay the enrolment fee and obtain the official acceptance document."
       },
       {
         "step": 3,
-        "title": "Submit the Visa Application",
-        "description": "Follow the applicable appointment, submission and document procedures.",
-        "documentsRequired": [
-          "Completed application forms",
-          "Required supporting documents"
-        ]
+        "title": "Student visa application",
+        "description": "Submit at the Spanish consulate with proof of funds (about €600/month), insurance, medical certificate and police clearance."
       },
       {
         "step": 4,
-        "title": "Prepare for Departure",
-        "description": "Arrange accommodation, travel and any required post-arrival formalities.",
-        "documentsRequired": [
-          "Admission documents",
-          "Travel documents",
-          "Copies of relevant official paperwork"
-        ]
+        "title": "TIE card",
+        "description": "TIE card Within 30 days of arrival, book a cita previa and apply for the foreigner identity card."
+      },
+      {
+        "step": 5,
+        "title": "Job-search residence",
+        "description": "Before the student permit expires, apply for the 24-month job-search residence from inside Spain."
       }
     ],
 
     "documentChecklist": [
       {
-        "category": "Academic",
-        "documents": [
-          "Academic certificates",
-          "Academic transcripts",
-          "Certified translations or legalization, if required"
-        ]
+        "One": "University acceptance letter and enrolment proof"
       },
       {
-        "category": "Identity",
-        "documents": [
-          "Valid passport",
-          "Passport-size photographs, if required"
-        ]
+        "two": "Proof of financial means (IPREM-based, about €7,200/year)"
       },
       {
-        "category": "Language",
-        "documents": ["Accepted language test result, if required"]
+        "three": "Private health insurance with full coverage and no co-payment"
       },
       {
-        "category": "Visa",
-        "documents": [
-          "Admission evidence",
-          "Financial evidence",
-          "Insurance and medical or background documents, if required by current rules"
-        ]
+        "four": "Medical certificate confirming no public-health risk"
+      },
+      {
+        "five": "Police clearance certificate, apostilled"
+      },
+      {
+        "six": "Academic documents with sworn translations where required"
       }
     ],
 
     "partnerOperatingNotes": [
-      "Verify the institution's current admission requirements before advising applicants.",
-      "Confirm intake availability and deadlines for each program.",
-      "Use official tuition schedules when preparing quotations.",
-      "Never promise admission, scholarships, employment or permanent residence."
+      "Insurance and apostille errors cause more Spanish refusals than academic weakness.",
+      "Present the 2024 job-search residence explicitly — many families still assume Spain has no post-study route.",
+      "Position Spain on value, lifestyle and the generous post-study runway.",
+      "Coach Spanish language planning from the first counselling session."
     ],
 
     "practicalTips": [
-      "Compare cities and total living costs before choosing a university.",
-      "Check whether the program is taught in English or Spanish.",
-      "Start document preparation well before the published deadline.",
-      "Verify current immigration instructions through official sources."
-    ],
-
-    "namedScholarshipsAndFunding": [
-      {
-        "name": "Scholarship name to be researched",
-        "provider": "Official provider to be confirmed",
-        "fundingType": "Merit-based / need-based / other",
-        "eligibility": "To be verified",
-        "coverage": "To be verified",
-        "deadline": "To be verified",
-        "officialWebsite": ""
-      }
+      "Book the consulate and cita previa appointments the moment they open; they fill in hours.",
+      "Choose insurance that explicitly states no co-payment — the common cause of consulate rejection.",
+      "Start Spanish before departure; it decides whether the 24-month window produces a job.",
+      "Choose Valencia, Seville, Malaga or Bilbao over Madrid and Barcelona for 25–35% lower living costs.",
+      "Open a Spanish bank account early; required for the TIE and salary.",
+      "Apply for the job-search residence before the student permit expires — the transition is domestic."
     ],
 
     "accommodation": {
-      "types": [
-        "University residence",
-        "Shared apartment",
-        "Private rental",
-        "Homestay"
-      ],
-      "costs": [
+      "options": [
+        {
+          "type": "University residence",
+          "costRange": {
+            "low": 300,
+            "high": 600,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Limited places available; early application is recommended.",
+          "bestFor": "Students wanting on-campus convenience and community life."
+        },
         {
           "type": "Shared apartment",
-          "low": 300,
-          "typical": 600,
-          "high": 900,
-          "currency": "EUR",
-          "period": "month",
-          "notes": "Illustrative values; location and included bills affect the cost."
+          "costRange": {
+            "low": 300,
+            "high": 600,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Popular choice found via platforms like Idealista, Fotocasa, and student Facebook groups.",
+          "bestFor": "Budget-conscious students looking to share living expenses."
+        },
+        {
+          "type": "Private studio",
+          "costRange": {
+            "low": 600,
+            "high": 1000,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Independent living units, mostly available in major cities like Madrid and Barcelona.",
+          "bestFor": "Students preferring complete privacy."
+        },
+        {
+          "type": "Homestay",
+          "costRange": {
+            "low": 400,
+            "high": 600,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Living with a local host family, often including meal plans.",
+          "bestFor": "Great for language learning and cultural immersion."
         }
       ],
-      "howToFind": [
-        "Check university accommodation services.",
-        "Compare reputable rental platforms.",
-        "Confirm contract terms and additional charges before paying."
+      "generalTips": [
+        "Sign a registered lease (contrato de arrendamiento), which is strictly required for the TIE application and Empadronamiento (city registration).",
+        "Madrid and Barcelona are the most expensive cities; living in Valencia, Seville, or Bilbao is approximately 25–35% cheaper.",
+        "Always beware of rental scams; never send money upfront without verifying the property or signing an official contract."
       ]
     },
 
     "partTimeWorkRulesOpportunitiesAndEarnings": {
+      "description": "Students may work 20 hours/week during term with a work authorisation, or up to 30 hours/week in some reform scenarios. Wages run €7–12/hour, with hospitality, retail, tutoring and tech internships the common roles. Local language is usually required for customer-facing work; English-only roles exist in tech and multinationals.",
       "rules": [
-        "Check the current work conditions applicable to the student's immigration status.",
-        "Confirm any working-hour restrictions before employment."
-      ],
-      "opportunities": [
-        "Hospitality",
-        "Retail",
-        "Tutoring or language-related work, where qualified"
-      ],
-      "earnings": {
-        "currency": "EUR",
-        "low": null,
-        "typical": null,
-        "high": null,
-        "period": "hour",
-        "notes": "Research current local wage data before publishing estimates."
-      }
+        "Allowance: 20 hours/week with work authorisation.",
+        "Wages: €7–12/hour; €600–1,000/month typical.",
+        "Hospitality and retail: common, often Spanish-required.",
+        "Tech and multinational internships: English-only, better paid.",
+        "NIE (foreigner number) required before starting any paid work."
+      ]
     },
 
     "careerOpportunitiesAndSalaryRanges": [
       {
-        "field": "Information Technology",
+        "field": "Renewable Energy",
         "typicalStartingSalary": {
-          "low": null,
-          "high": null,
+          "low": "30,000",
+          "high": "42,000",
           "currency": "EUR",
           "period": "year"
         },
-        "demandLevel": "To be researched",
-        "notes": "Salary varies by city, role, experience and language skills."
+        "demandLevel": "high",
+        "notes": "Spain leads EU solar and wind"
       },
       {
-        "field": "Business and Management",
+        "field": "Software / Data",
         "typicalStartingSalary": {
-          "low": null,
-          "high": null,
+          "low": "28,000",
+          "high": "40,000",
           "currency": "EUR",
           "period": "year"
         },
-        "demandLevel": "To be researched",
-        "notes": "Use current salary sources and distinguish gross from net pay."
+        "demandLevel": "Medium-high",
+        "notes": "Barcelona and Madrid tech hubs"
       },
       {
         "field": "Tourism and Hospitality",
         "typicalStartingSalary": {
-          "low": null,
-          "high": null,
+          "low": "26,000",
+          "high": "36,000",
           "currency": "EUR",
           "period": "year"
         },
-        "demandLevel": "To be researched",
-        "notes": "Employment can be seasonal and location-dependent."
+        "demandLevel": "High",
+        "notes": "World-leading sector"
+      },
+      {
+        "field": "Business / Finance",
+        "typicalStartingSalary": {
+          "low": "30,000",
+          "high": "45,000",
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Medium-high",
+        "notes": "IE/ESADE networks"
+      },
+      {
+        "field": "Engineering",
+        "typicalStartingSalary": {
+          "low": "28,000",
+          "high": "38,000",
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Medium",
+        "notes": "Industrial and telecom"
+      },
+      {
+        "field": "Biotech",
+        "typicalStartingSalary": {
+          "low": "28,000",
+          "high": "38,000",
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Growing",
+        "notes": "Barcelona science cluster"
       }
     ]
   }
