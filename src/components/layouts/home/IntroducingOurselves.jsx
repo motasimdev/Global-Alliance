@@ -8,7 +8,7 @@ import { MdOutlineDoneAll } from "react-icons/md";
 const IntroducingOurselves = () => {
   return (
     <>
-      <section className="lg:my-10 pt-15 md:pt-20 pb-18 md:pb-20 lg:py-20">
+      <section className="pt-15 md:pt-20 pb-18 md:pb-20 lg:py-10">
         <Container>
           <div className="">
             <div className="text-center mb-10">

@@ -164,13 +164,13 @@ const OurPartnersU = () => {
           </Swiper>
 
           <button
-            className="swiper-button-prev-custom hidden md:flex absolute left-[-48px] md:left-[-56px] lg:left-[-64px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-secondary/20 shadow-lg text-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300"
+            className="swiper-button-prev-custom hidden md:flex absolute left-[-48px] md:left-[-56px] lg:left-[-64px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-secondary/20 shadow-lg text-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 cursor-pointer"
             aria-label="Previous slide"
           >
             <FaChevronLeft className="text-xl md:text-2xl" />
           </button>
           <button
-            className="swiper-button-next-custom hidden md:flex absolute right-[-48px] md:right-[-56px] lg:right-[-64px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-secondary/20 shadow-lg text-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300"
+            className="swiper-button-next-custom hidden md:flex absolute right-[-48px] md:right-[-56px] lg:right-[-64px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-secondary/20 shadow-lg text-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 cursor-pointer"
             aria-label="Next slide"
           >
             <FaChevronRight className="text-xl md:text-2xl" />

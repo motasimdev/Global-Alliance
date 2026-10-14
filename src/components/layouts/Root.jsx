@@ -47,7 +47,7 @@ const Root = () => {
             {show && (
               <button
                 onClick={scrollTop}
-                className="w-11 h-11 md:w-10 md:h-10 bg-white dark:bg-zinc-800 text-secondary rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all hover:scale-110 active:scale-95 border border-gray-100 dark:border-zinc-700"
+                className="w-11 h-11 md:w-7 md:h-7 bg-white dark:bg-zinc-800 text-secondary rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all hover:scale-110 active:scale-95 border border-gray-100 dark:border-zinc-700"
                 aria-label="Scroll to top"
               >
                 <FaChevronCircleUp className="text-2xl text-white" />
@@ -55,7 +55,7 @@ const Root = () => {
             )}
 
             {/* WhatsApp Icon Widget */}
-            <div className="relative w-12 h-12 md:w-10 md:h-10 bg-green-600 rounded-full flex items-center justify-center shadow-xl">
+            <div className="relative w-12 h-12 md:w-15 md:h-15 bg-green-600 rounded-full flex items-center justify-center shadow-xl">
               <a
                 href="https://wa.me/1234567890"
                 target="_blank"
