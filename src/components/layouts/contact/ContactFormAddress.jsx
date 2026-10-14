@@ -118,7 +118,7 @@ const ContactFormAddress = () => {
               <div className="p-10 bg-tertiary rounded-xl">
                 <div className="flex items-center gap-x-6">
                   <div className="py-1.5 px-1.5 bg-white rounded-full">
-                    <IoLocationOutline className="text-secondary text-[40px]" />
+                    <IoLocationOutline className="text-primary text-[40px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary pb-2">
@@ -139,7 +139,7 @@ const ContactFormAddress = () => {
               <div className="p-10 bg-tertiary rounded-xl">
                 <div className="flex items-center gap-x-6">
                   <div className="py-3 px-3 bg-white rounded-full">
-                    <FiPhoneCall className="text-secondary text-[32px]" />
+                    <FiPhoneCall className="text-primary text-[32px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary">Phone</h5>
@@ -153,7 +153,7 @@ const ContactFormAddress = () => {
               <div className="p-10 bg-tertiary rounded-xl">
                 <div className="flex items-center gap-x-6">
                   <div className="py-2 px-2 bg-white rounded-full">
-                    <MdOutlineMailOutline className="text-secondary text-[36px]" />
+                    <MdOutlineMailOutline className="text-primary text-[36px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary">

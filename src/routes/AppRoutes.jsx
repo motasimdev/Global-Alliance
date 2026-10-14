@@ -13,6 +13,7 @@ import Login from "../components/pages/Login";
 import Signup from "../components/pages/Signup";
 import Error from "../components/pages/Error";
 import Recruiter from "../components/pages/Recruiter";
+import Destination from "../components/pages/Destination";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const AppRoutes = createBrowserRouter([
       {
         path: "university",
         Component: University,
+      },
+      {
+        path: "destination",
+        Component: Destination,
       },
       // {
       //   path: "our-services",

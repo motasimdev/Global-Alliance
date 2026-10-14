@@ -7,7 +7,7 @@ import whyUs from "/src/assets/images/why-us.png";
 const WhyUs = () => {
   return (
     <>
-      <section className="relative lg:my-20 pt-15 md:pt-20 pb-18 md:pb-20 lg:py-20 bg-secondary/9">
+      <section className="relative lg:mt-20 lg:mb-10 pt-15 md:pt-20 pb-18 md:pb-20 lg:py-20 bg-secondary/9">
         <Container>
           <div className="">
             {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">  

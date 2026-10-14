@@ -8,33 +8,32 @@ import aboutOne from "/src/assets/about-us/aboutOne.svg";
 import aboutTwo from "/src/assets/about-us/aboutTwosvg.svg";
 import aboutThree from "/src/assets/about-us/aboutThree.svg";
 import aboutFour from "/src/assets/about-us/aboutFour.svg";
+import P18 from "../../P18";
 
 const AboutHeader = () => {
   return (
     <>
-      <section className="pt-10 md:pt-15 pb-5 md:pb-20 lg:pt-15 lg:pb-15">
-        <Container>
-          <div className="text-center">
-            <div className="md:flex items-center gap-x-2 justify-center">
-              <Heading text={"About Our"} className={"text-secondary"} />
-              <Heading
-                text={"Global Alliance"}
-                className={"text-primary"}
+      <section className="bg-[url(/src/assets/about-us/bg.jfif)] bg-cover bg-center bg-no-repeat">
+        <div className="bg-[#00000025] pt-10 md:pt-15 pb-5 md:pb-20 lg:pt-15 lg:pb-15 " >
+          <Container>
+            <div className="text-center">
+              <div className="md:flex items-center gap-x-2 justify-center">
+                <Heading text={"About Our"} className={"text-secondary"} />
+                <Heading text={"Global Alliance"} className={"text-primary"} />
+              </div>
+              <P18
+                text={
+                  "At Global Alliance, we are transforming international student recruitment by building a robust, transparent, and technology-driven B2B ecosystem. We bridge the gap between world-class educational institutions and ambitious education agencies, cutting out unnecessary complexities to make global student mobility smoother than ever."
+                }
+                className={"py-5 lg:px-20 text-justify md:text-center text-secondary"}
               />
-            </div>
-            <PBase
-              text={
-                "At Global Alliance, we are transforming international student recruitment by building a robust, transparent, and technology-driven B2B ecosystem. We bridge the gap between world-class educational institutions and ambitious education agencies, cutting out unnecessary complexities to make global student mobility smoother than ever."
-              }
-              className={"py-5 lg:px-30 text-justify md:text-center"}
-            />
-            {/* <Link to={""}>
+              {/* <Link to={""}>
               <Button>Learn More</Button>
             </Link> */}
-          </div>
+            </div>
 
-          {/* ===================================== */}
-          <div className="flex justify-between items-baseline mt-5 md:mt-9 lg:mt-0">
+            {/* ===================================== */}
+            {/* <div className="flex justify-between items-baseline mt-5 md:mt-9 lg:mt-0">
             <div className="w-[25%] h-27 md:h-auto rounded-2xl bg-[#ffffff]">
               <img
                 src={aboutThree}
@@ -71,8 +70,9 @@ const AboutHeader = () => {
                 decoding="async"
               />
             </div>
-          </div>
-        </Container>
+          </div> */}
+          </Container>
+        </div>
       </section>
     </>
   );

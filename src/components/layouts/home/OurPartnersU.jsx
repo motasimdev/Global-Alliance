@@ -14,7 +14,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const universities = [
   {
     image: "/src/assets/asia-pacific-university.webp",
-    alt: "Asia Pacific University",
+    name: "Asia Pacific University",
     heading: "Asia Pacific University of Technology & Innovation",
     country: "Malaysia",
     city: "Kuala Lumpur",
@@ -25,18 +25,18 @@ const universities = [
   },
   {
     image: "/src/assets/cyberjaya-university.webp",
-    alt: "Cyberjaya University",
+    name: "Cyberjaya University",
     heading: "Cyberjaya University College of Medical Sciences",
     country: "Malaysia",
     city: "Cyberjaya",
-    description: "Specialized in medical sciences and healthcare education with modern facilities and clinical partnerships.",
+    description: "Specialized in medical sciences and henamehcare education with modern facilities and clinical partnerships.",
     studyLevels: "Diploma, Bachelor's, Master's",
     type: "Medical University",
     to: "https://cyberjaya.edu.my/",
   },
   {
     image: "/src/assets/inti-university.webp",
-    alt: "INTI International University",
+    name: "INTI International University",
     heading: "INTI International University & Colleges",
     country: "Malaysia",
     city: "Nilai",
@@ -47,18 +47,18 @@ const universities = [
   },
   {
     image: "/src/assets/lincoln-university.webp",
-    alt: "Lincoln University College",
+    name: "Lincoln University College",
     heading: "Lincoln University College",
     country: "Malaysia",
     city: "Petaling Jaya",
-    description: "Established institution with focus on health sciences, engineering, and business programs.",
+    description: "Established institution with focus on henameh sciences, engineering, and business programs.",
     studyLevels: "Diploma, Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://www.lincoln.edu.my/",
   },
   {
     image: "/src/assets/nilai-university.webp",
-    alt: "Nilai University",
+    name: "Nilai University",
     heading: "Nilai University",
     country: "Malaysia",
     city: "Nilai",
@@ -69,7 +69,7 @@ const universities = [
   },
   {
     image: "/src/assets/segi-university.webp",
-    alt: "SEGi University",
+    name: "SEGi University",
     heading: "SEGi University & Colleges",
     country: "Malaysia",
     city: "Kota Damansara",
@@ -80,7 +80,7 @@ const universities = [
   },
   {
     image: "/src/assets/Taylors-University.webp",
-    alt: "Taylor's University",
+    name: "Taylor's University",
     heading: "Taylor's University",
     country: "Malaysia",
     city: "Subang Jaya",
@@ -91,7 +91,7 @@ const universities = [
   },
   {
     image: "/src/assets/unirazak-university.webp",
-    alt: "UNIRAZAK",
+    name: "UNIRAZAK",
     heading: "Universiti Tun Abdul Razak (UNIRAZAK)",
     country: "Malaysia",
     city: "Kuala Lumpur",
@@ -102,7 +102,7 @@ const universities = [
   },
   {
     image: "/src/assets/wollongong-university.webp",
-    alt: "University of Wollongong Malaysia",
+    name: "University of Wollongong Malaysia",
     heading: "University of Wollongong Malaysia",
     country: "Malaysia",
     city: "Kota Damansara",
@@ -115,7 +115,7 @@ const universities = [
 
 const OurPartnersU = () => {
   return (
-    <section className="relative py-15 md:py-20 lg:py-24 bg-tertiary/30">
+    <section className="relative py-15 md:py-20 lg:py-18">
       <Container>
         <div className="text-center mb-12 md:mb-16">
           <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">

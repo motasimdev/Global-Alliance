@@ -26,9 +26,14 @@ const IntroducingOurselves = () => {
             </div>
             {/* ============================================================ */}
             <div className="relative lg:flex">
-              <div className="relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:p-24 rounded-full text-center overflow-hidden">
+              {/* ================= 1st round  =======-=-=-= */}
+              <div className="relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute top-28 right-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute top-60 right-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute bottom-60 right-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute bottom-28 right-0"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-70">
-                  <p className="absolute -left-30 lg:-left-41 top-1/2 -translate-y-1/2 text-[40px] md:text-[50px] lg:text-[55px] text-white font-extrabold -rotate-90">
+                  <p className="absolute -left-30 md:-left-47 lg:-left-70 top-1/2 -translate-y-1/2 text-[40px] md:text-[64px] lg:text-[94px] text-white font-extrabold -rotate-90">
                     WHO WE ARE
                   </p>
                 </div>
@@ -51,9 +56,13 @@ const IntroducingOurselves = () => {
                 </p>
               </div>
               {/* ================= 2nd round =======-=-=-= */}
-              <div className="relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:p-24 rounded-full text-center overflow-hidden">
+              <div className="relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute top-28 left-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute top-60 left-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute bottom-60 left-0"></div>
+                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute bottom-28 left-0"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-70">
-                  <p className="absolute -right-30 lg:-right-40 top-1/2 -translate-y-1/2 text-[40px] md:text-[50px] lg:text-[55px] text-white font-extrabold rotate-90">
+                  <p className="absolute -right-30 md:-right-47 lg:-right-69 top-1/2 -translate-y-1/2 text-[40px] md:text-[64px] lg:text-[94px] text-white font-extrabold rotate-90">
                     WHAT WE DO
                   </p>
                 </div>

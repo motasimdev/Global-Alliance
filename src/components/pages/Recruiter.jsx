@@ -5,6 +5,7 @@ import RecruiterBanner from "../layouts/recruiter/RecruiterBanner";
 import Recruiter_WhyPartner from "../layouts/recruiter/Recruiter_WhyPartner";
 import Recruiter_OurOffer from "../layouts/recruiter/Recruiter_OurOffer";
 import Recruiter_HowItWork from "../layouts/recruiter/Recruiter_HowItWork";
+import BecomeAPartnerSection from "../layouts/home/BecomeAPartnerSection";
 
 const Recruiter = () => {
   return (
@@ -13,6 +14,7 @@ const Recruiter = () => {
       <Recruiter_WhyPartner/>
       <Recruiter_OurOffer/>
       <Recruiter_HowItWork/>
+      <BecomeAPartnerSection/>
     </>
   );
 };

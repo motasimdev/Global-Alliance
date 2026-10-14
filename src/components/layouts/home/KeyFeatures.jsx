@@ -53,7 +53,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-[#434389] pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-green-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <GrMicrofocus className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -64,7 +64,7 @@ const KeyFeatures = () => {
                   }
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-red-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <MdAttractions className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -73,11 +73,11 @@ const KeyFeatures = () => {
                   para={
                     "Our high range of agent commission based on performance makes us stand out in the market."
                   }
-                  headingClassname={"text-secondary!"}
-                  paraClassname={"text-secondary!"}
+                  headingClassname={"text-white!"}
+                  paraClassname={"text-white!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-[#434389] pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-blue-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <MdOutlineQuickreply className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -88,7 +88,7 @@ const KeyFeatures = () => {
                   }
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-yellow-500 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <FaTimeline className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />

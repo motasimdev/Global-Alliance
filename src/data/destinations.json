@@ -1,0 +1,520 @@
+[
+  {
+    "id": 1,
+    "slug": "spain",
+    "name": "Spain",
+    "region": "Europe",
+    "flag": "/images/flags/spain.png",
+    "image": "/images/destinations/spain.jpg",
+    "banner": "/images/destinations/spain-banner.jpg",
+    "shortDescription": "Explore study opportunities in Spain.",
+    "overview": "Spain combines low public tuition, a growing catalogue of English-taught master’s programmes, and a 2024 reform that introduced a two-year post-study job-search visa for graduates — a major improvement over the old arrangement. With strong programmes in business, hospitality, renewable energy and sports management, and a vibrant lifestyle appeal, Spain is gaining Indian students seeking an affordable EU destination.",
+    "featured": true,
+
+    "tuitionFees": {
+      "public": {
+        "low": 1000,
+        "typical": 2500,
+        "high": 4000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Actual fees depend on the university, region, degree and student status."
+      },
+      "private": {
+        "low": 8000,
+        "typical": 10000,
+        "high": 18000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Verify fees for each institution and program."
+      }
+    },
+
+    "whyStudy": [
+      "Access to a range of universities and academic programs.",
+      "Experience Spanish culture and lifestyle.",
+      "Explore opportunities to learn Spanish.",
+      "Study in a European country with diverse cities and student communities.",
+      "Spain combines low public tuition, a growing catalogue of English-taught master’s programmes, and a 2024 reform that introduced a two-year post-study job-search visa for graduates — a major improvement over the old arrangement. With strong programmes in business, hospitality, renewable energy and sports management, and a vibrant lifestyle appeal, Spain is gaining Indian students seeking an affordable EU destination."
+    ],
+
+    "costOfLivingBreakdown": [
+      {
+        "costItem": "Tuition (public master)",
+        "low": 1500,
+        "typical": 3000,
+        "high": 22000,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "at top private schools"
+      },
+      {
+        "costItem": "Rent (shared)",
+        "low": 300,
+        "typical": 480,
+        "high": 800,
+        "currency": "EUR",
+        "period": "month",
+        "notes": " in Barcelona or Madrid"
+      },
+      {
+        "costItem": "Food and groceries",
+        "low": 200,
+        "typical": 270,
+        "high": 360,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Transport",
+        "low": 20,
+        "typical": 40,
+        "high": 60,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values; local transport plans vary."
+      },
+      {
+        "costItem": "Health insurance",
+        "low": 40,
+        "typical": 60,
+        "high": 90,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Monthly total (excl. tuition)",
+        "low": 560,
+        "typical": 850,
+        "high": 1310,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      }
+    ],
+
+    "workRightsDuringAndAfterStudy": {
+      "duringStudy": {
+        "headline": "Work Rights During Study",
+        "opportunity": "30 hours/week part-time during studies.",
+        "summary": "Eligible international students may be able to work while studying, subject to current immigration rules and applicable conditions.",
+        "rules": [
+          "Confirm the conditions attached to the student's residence authorization.",
+          "Check applicable working-hour limits and compatibility with study."
+        ]
+      },
+      "afterStudy": {
+        "headline": "Work Rights After Study",
+        "opportunity": "New 2-year post-study job-search visa (estancia por búsqueda de empleo) for graduates.",
+        "summary": "Graduates may have options to remain in Spain under eligible post-study or work-related residence routes.",
+        "rules": [
+          "Check current eligibility and application requirements.",
+          "Do not assume graduation automatically grants work or permanent residence rights."
+        ]
+      }
+    },
+
+    "intakesAndDeadlines": [
+      {
+        "intake": "Autumn (Primary)",
+        "starts": "September / October",
+        "applicationWindow": "jan-jun",
+        "notes": "Actual deadlines vary by university, program and applicant category."
+      },
+      {
+        "intake": "Spring (limited)",
+        "starts": "January / February",
+        "applicationWindow": "sep-nov",
+        "notes": "Not all universities or programs offer a spring intake."
+      }
+    ],
+
+    "admissionRequirementsAndEligibility": {
+      "academic": [
+        "Relevant previous academic qualification.",
+        "Academic transcripts and certificates.",
+        "Meet the selected program's entry requirements."
+      ],
+      "language": [
+        "Spanish proficiency for programs taught in Spanish, where required.",
+        "English proficiency for English-taught programs, where required."
+      ],
+      "financial": [
+        "Provide financial evidence if required for the relevant application or visa."
+      ],
+      "other": [
+        "Valid passport.",
+        "Additional documents specified by the university or relevant authority."
+      ],
+      "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
+    },
+
+    "applicationProcessStepByStep": [
+      {
+        "step": 1,
+        "title": "Choose a Program",
+        "description": "Research universities and select a suitable program."
+      },
+      {
+        "step": 2,
+        "title": "Check Eligibility",
+        "description": "Review academic, language and program-specific entry requirements."
+      },
+      {
+        "step": 3,
+        "title": "Prepare Documents",
+        "description": "Collect transcripts, certificates, identification and required supporting documents."
+      },
+      {
+        "step": 4,
+        "title": "Submit Application",
+        "description": "Apply through the university's official application process."
+      },
+      {
+        "step": 5,
+        "title": "Receive Admission Decision",
+        "description": "Follow the university's instructions regarding the offer and enrollment."
+      }
+    ],
+
+    "popularCourses": [
+      "Business and Management",
+      "Computer Science and Information Technology",
+      "Engineering",
+      "Tourism and Hospitality",
+      "Arts and Humanities",
+      "Health and Life Sciences"
+    ],
+
+    "scholarshipsAndFunding": {
+      "overview": "Funding may be available through universities, public programs and other eligible organizations. Availability and eligibility must be checked individually.",
+      "fundingOptions": [
+        "University scholarships",
+        "Merit-based funding",
+        "Need-based financial assistance, where available",
+        "External grants and mobility funding"
+      ]
+    },
+
+    "postStudyWorkAndPRPathway": {
+      "summary": "Eligible graduates may explore applicable job-search, employment or other residence pathways. Eligibility and procedures depend on current Spanish immigration law.",
+      "pathways": [
+        {
+          "name": "Post-study residence option",
+          "description": "Dummy placeholder for a qualifying graduate pathway.",
+          "eligibility": "Must be verified against current official requirements."
+        },
+        {
+          "name": "Employment-based residence",
+          "description": "A potential route for eligible graduates who meet the relevant employment and immigration conditions.",
+          "eligibility": "Depends on the specific permit and applicant circumstances."
+        }
+      ],
+      "prNotes": "Permanent residence is not automatic after graduation. Confirm qualifying residence periods and all current legal requirements."
+    },
+
+    "challengesAndHowWeHelp": [
+      {
+        "challenge": "Choosing the right university",
+        "howWeHelp": "Help compare programs, entry requirements and study options."
+      },
+      {
+        "challenge": "Preparing application documents",
+        "howWeHelp": "Provide document checklists and application coordination."
+      },
+      {
+        "challenge": "Understanding visa requirements",
+        "howWeHelp": "Share current official guidance and help organize the required documents."
+      },
+      {
+        "challenge": "Planning the budget",
+        "howWeHelp": "Help students estimate tuition and living costs using institution-specific information."
+      }
+    ],
+
+    "whoThisDestinationSuitsBest": [
+      "Students looking for European higher education options.",
+      "Students interested in Spanish language and culture.",
+      "Students seeking programs in business, technology, tourism or other available fields.",
+      "Students whose academic background and budget match the selected program."
+    ],
+
+    "currentTrendsAndB2BOpportunities": {
+      "trends": [
+        "Interest in international study options across different degree levels.",
+        "Demand for clear guidance on tuition, admission and visa processes."
+      ],
+      "b2bOpportunities": [
+        "Develop relationships with eligible education institutions.",
+        "Provide accurate program information to recruitment partners.",
+        "Improve application coordination and student support."
+      ],
+      "notes": "These are illustrative ideas, not verified market-trend findings."
+    },
+
+    "faqs": [
+      {
+        "question": "Can international students study in Spain?",
+        "answer": "Yes, subject to meeting the selected institution's admission requirements and any applicable immigration requirements."
+      },
+      {
+        "question": "How much does studying in Spain cost?",
+        "answer": "Costs depend on the institution, program, location and lifestyle. Check current tuition schedules and living-cost estimates."
+      },
+      {
+        "question": "Can students work while studying?",
+        "answer": "Work rights depend on the student's authorization and current rules. Confirm the applicable conditions before accepting employment."
+      },
+      {
+        "question": "Are scholarships available?",
+        "answer": "Some universities and organizations offer funding. Eligibility, coverage and deadlines vary."
+      }
+    ],
+
+    "completeSpainBrief": "Spain is a potential study destination for international students considering European higher education. Applicants should compare programs, verify tuition and living costs, review admission criteria and confirm current visa and work regulations before making a decision.",
+
+    "fullCostBreakdown": [
+      {
+        "costItem": "Tuition fee",
+        "low": 1000,
+        "typical": 5000,
+        "high": 20000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Illustrative only; varies substantially between public and private institutions."
+      },
+      {
+        "costItem": "Accommodation",
+        "low": 300,
+        "typical": 600,
+        "high": 1000,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Illustrative only."
+      },
+      {
+        "costItem": "Food and groceries",
+        "low": 150,
+        "typical": 250,
+        "high": 350,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Illustrative only."
+      },
+      {
+        "costItem": "Transport",
+        "low": 20,
+        "typical": 40,
+        "high": 70,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Illustrative only."
+      },
+      {
+        "costItem": "Visa and application-related costs",
+        "low": null,
+        "typical": null,
+        "high": null,
+        "currency": "EUR",
+        "period": "one-time",
+        "notes": "Insert current official fees applicable to the applicant."
+      }
+    ],
+
+    "prosAndCons": {
+      "advantages": [
+        "Wide variety of academic disciplines.",
+        "Opportunities to experience Spanish culture and language.",
+        "Different city and lifestyle options."
+      ],
+      "tradeOffsToDisclose": [
+        "Tuition and living costs vary by city and institution.",
+        "Some programs require Spanish-language proficiency.",
+        "Admission, visa and employment outcomes are not guaranteed."
+      ]
+    },
+
+    "applicationAndVisaProcess": [
+      {
+        "step": 1,
+        "title": "Secure Admission",
+        "description": "Complete the university's admission requirements and follow its enrollment instructions.",
+        "documentsRequired": [
+          "Academic certificates",
+          "Academic transcripts",
+          "Passport",
+          "Language evidence, if required"
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Review Visa Requirements",
+        "description": "Check the current requirements published by the relevant Spanish consulate or official authority.",
+        "documentsRequired": [
+          "Valid passport",
+          "Admission or enrollment evidence",
+          "Financial evidence, if required",
+          "Insurance and other documents, as applicable"
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Submit the Visa Application",
+        "description": "Follow the applicable appointment, submission and document procedures.",
+        "documentsRequired": [
+          "Completed application forms",
+          "Required supporting documents"
+        ]
+      },
+      {
+        "step": 4,
+        "title": "Prepare for Departure",
+        "description": "Arrange accommodation, travel and any required post-arrival formalities.",
+        "documentsRequired": [
+          "Admission documents",
+          "Travel documents",
+          "Copies of relevant official paperwork"
+        ]
+      }
+    ],
+
+    "documentChecklist": [
+      {
+        "category": "Academic",
+        "documents": [
+          "Academic certificates",
+          "Academic transcripts",
+          "Certified translations or legalization, if required"
+        ]
+      },
+      {
+        "category": "Identity",
+        "documents": [
+          "Valid passport",
+          "Passport-size photographs, if required"
+        ]
+      },
+      {
+        "category": "Language",
+        "documents": ["Accepted language test result, if required"]
+      },
+      {
+        "category": "Visa",
+        "documents": [
+          "Admission evidence",
+          "Financial evidence",
+          "Insurance and medical or background documents, if required by current rules"
+        ]
+      }
+    ],
+
+    "partnerOperatingNotes": [
+      "Verify the institution's current admission requirements before advising applicants.",
+      "Confirm intake availability and deadlines for each program.",
+      "Use official tuition schedules when preparing quotations.",
+      "Never promise admission, scholarships, employment or permanent residence."
+    ],
+
+    "practicalTips": [
+      "Compare cities and total living costs before choosing a university.",
+      "Check whether the program is taught in English or Spanish.",
+      "Start document preparation well before the published deadline.",
+      "Verify current immigration instructions through official sources."
+    ],
+
+    "namedScholarshipsAndFunding": [
+      {
+        "name": "Scholarship name to be researched",
+        "provider": "Official provider to be confirmed",
+        "fundingType": "Merit-based / need-based / other",
+        "eligibility": "To be verified",
+        "coverage": "To be verified",
+        "deadline": "To be verified",
+        "officialWebsite": ""
+      }
+    ],
+
+    "accommodation": {
+      "types": [
+        "University residence",
+        "Shared apartment",
+        "Private rental",
+        "Homestay"
+      ],
+      "costs": [
+        {
+          "type": "Shared apartment",
+          "low": 300,
+          "typical": 600,
+          "high": 900,
+          "currency": "EUR",
+          "period": "month",
+          "notes": "Illustrative values; location and included bills affect the cost."
+        }
+      ],
+      "howToFind": [
+        "Check university accommodation services.",
+        "Compare reputable rental platforms.",
+        "Confirm contract terms and additional charges before paying."
+      ]
+    },
+
+    "partTimeWorkRulesOpportunitiesAndEarnings": {
+      "rules": [
+        "Check the current work conditions applicable to the student's immigration status.",
+        "Confirm any working-hour restrictions before employment."
+      ],
+      "opportunities": [
+        "Hospitality",
+        "Retail",
+        "Tutoring or language-related work, where qualified"
+      ],
+      "earnings": {
+        "currency": "EUR",
+        "low": null,
+        "typical": null,
+        "high": null,
+        "period": "hour",
+        "notes": "Research current local wage data before publishing estimates."
+      }
+    },
+
+    "careerOpportunitiesAndSalaryRanges": [
+      {
+        "field": "Information Technology",
+        "typicalStartingSalary": {
+          "low": null,
+          "high": null,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "To be researched",
+        "notes": "Salary varies by city, role, experience and language skills."
+      },
+      {
+        "field": "Business and Management",
+        "typicalStartingSalary": {
+          "low": null,
+          "high": null,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "To be researched",
+        "notes": "Use current salary sources and distinguish gross from net pay."
+      },
+      {
+        "field": "Tourism and Hospitality",
+        "typicalStartingSalary": {
+          "low": null,
+          "high": null,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "To be researched",
+        "notes": "Employment can be seasonal and location-dependent."
+      }
+    ]
+  }
+]

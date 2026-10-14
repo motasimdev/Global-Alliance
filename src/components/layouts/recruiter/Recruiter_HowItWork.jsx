@@ -32,7 +32,7 @@ const Recruiter_HowItWork = () => {
   ];
 
   return (
-    <section className="relative py-15 md:py-20 lg:py-24 bg-tertiary/30">
+    <section className="relative py-15 md:py-20 lg:py-24 bg-tertiary/30 mb-10 lg:mb-16">
       <Container>
         <div className="text-center mb-12 md:mb-16">
           <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">

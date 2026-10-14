@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
+import PBase from "./PBase";
 
 const UniversityCard = ({
   image,
   alt,
-  heading,
+  logo,
+  name,
   country,
   city,
   description,
@@ -16,28 +18,40 @@ const UniversityCard = ({
 }) => {
   return (
     <div
-      className={`group relative bg-white rounded-2xl overflow-hidden border border-secondary/10 shadow-sm hover:shadow-xl transition-all duration-300 ${className}`}
+      className={`group relative bg-white rounded-2xl overflow-hidden border border-secondary/10 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col ${className}`}
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-tertiary/50">
+      <div className="relative aspect-[4/3]">
         <img
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           src={image}
-          alt={alt}
+          alt={alt || name}
           loading="lazy"
           decoding="async"
         />
         {country && (
           <div className="absolute top-3 left-3 z-10">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-primary/90 backdrop-blur-sm rounded-full shadow-md">
+            <span className="inline-block px-3 py-1.5 text-xs font-semibold text-white bg-primary/90 backdrop-blur-sm rounded-full shadow-md">
               {country}
             </span>
           </div>
         )}
       </div>
 
-      <div className="p-5 md:p-6">
-        <h4 className="text-lg md:text-xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors duration-200">
-          {heading}
+      <div className="p-5 md:p-6 flex flex-col flex-1">
+        {logo && (
+          <div className="mb-3 flex items-center justify-start">
+            <img
+              src={logo}
+              alt={`${name} logo`}
+              className="h-8 md:h-10 w-auto object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        )}
+
+        <h4 className="text-lg md:text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-200 line-clamp-1">
+          {name || "Study in"}
         </h4>
 
         {city && (
@@ -51,9 +65,10 @@ const UniversityCard = ({
         )}
 
         {description && (
-          <p className="text-sm text-secondary/60 leading-relaxed mb-4 line-clamp-2">
-            {description}
-          </p>
+          <PBase
+            text={description}
+            className="text-secondary/60 text-sm leading-relaxed line-clamp-3 mb-4 flex-1"
+          />
         )}
 
         <div className="flex flex-wrap gap-2 mb-4">
@@ -70,12 +85,12 @@ const UniversityCard = ({
         </div>
 
         <Link
-          to={to}
+          to={to || "#"}
           target={target}
-          className="inline-flex items-center gap-2 w-full sm:w-auto px-4 py-2.5 text-sm font-semibold text-white bg-secondary rounded-xl hover:bg-primary transition-colors duration-200 shadow-sm hover:shadow-md"
+          className="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-secondary rounded-xl hover:bg-primary transition-all duration-200 shadow-sm hover:shadow-md"
         >
           View University
-          <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </Link>

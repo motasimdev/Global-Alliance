@@ -24,11 +24,11 @@ const StepsOfPartership = () => {
             {/* ============================================================= */}
 
             {/* -==-====-=== step 1 -===-====- */}
-            <div className="mt-8 md:mt-15 lg:mt-25 flex flex-col gap-y-8 lg:gap-y-0">
-              <div className="relative bg-white rounded-lg w-full lg:w-120 pt-26 lg:pt-30 pb-14 lg:pb-18 px-5 text-center">
-                <div className="hidden lg:block absolute top-1/2 -right-118 py-1 w-118 bg-white"></div>
+            <div className="mt-8 md:mt-15 lg:mt-25 flex flex-col gap-y-8 lg:gap-y-0 lg:px-30">
+              <div className="relative bg-white rounded-lg w-full lg:w-96 pt-26 lg:pt-12 pb-14 lg:pb-8 px-5 text-center">
+                <div className="hidden lg:block absolute top-1/2 -right-94 py-1 w-94 bg-white"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-13 lg:-left-3 text-[114px] lg:text-[140px] text-secondary/12 font-extrabold">
+                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-10 lg:-left-3 text-[114px] lg:text-[114px] text-secondary/12 font-extrabold">
                     STEP 1
                   </p>
                 </div>
@@ -43,11 +43,11 @@ const StepsOfPartership = () => {
 
               {/* -==-====-=== step 2 -===-====- */}
 
-              <div className="relative bg-white rounded-lg w-full lg:w-120 pt-26 lg:pt-30 pb-14 lg:pb-18 px-5 text-center ml-auto">
-                <div className="hidden lg:block absolute left-1/2 -top-38.5 px-1 h-39 bg-white"></div>
-                <div className="hidden lg:block absolute top-1/2 -left-115 py-1 w-115 bg-white"></div>
+              <div className="relative bg-white rounded-lg w-full lg:w-96 pt-26 lg:pt-12 pb-14 lg:pb-8 px-5 text-center ml-auto">
+                <div className="hidden lg:block absolute left-1/2 -top-28 px-1 h-28 bg-white"></div>
+                <div className="hidden lg:block absolute top-1/2 -left-92 py-1 w-92 bg-white"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-13 lg:-left-3 text-[112px] lg:text-[140px] text-secondary/12 font-extrabold">
+                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-10 lg:-left-3 text-[112px] lg:text-[114px] text-secondary/12 font-extrabold">
                     STEP 2
                   </p>
                 </div>
@@ -61,11 +61,11 @@ const StepsOfPartership = () => {
 
               {/* -==-====-=== step 3 -===-====- */}
 
-              <div className="relative bg-white rounded-lg w-full lg:w-120 pt-26 lg:pt-30 pb-14 lg:pb-18 px-5 text-center">
-                <div className="hidden lg:block absolute left-1/2 -top-38.5 px-1 h-39 bg-white"></div>
-                <div className="hidden lg:block absolute top-1/2 -right-118 py-1 w-118 bg-white"></div>
+              <div className="relative bg-white rounded-lg w-full lg:w-96 pt-26 lg:pt-12 pb-14 lg:pb-8 px-5 text-center">
+                <div className="hidden lg:block absolute left-1/2 -top-28 px-1 h-28 bg-white"></div>
+                <div className="hidden lg:block absolute top-1/2 -right-94 py-1 w-94 bg-white"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-13 lg:-left-3 text-[112px] lg:text-[140px] text-secondary/12 font-extrabold">
+                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-10 lg:-left-3 text-[112px] lg:text-[114px] text-secondary/12 font-extrabold">
                     STEP 3
                   </p>
                 </div>
@@ -80,11 +80,11 @@ const StepsOfPartership = () => {
               
               {/* -==-====-=== step 4 -===-====- */}
 
-              <div className="relative bg-white rounded-lg w-full lg:w-120 pt-26 lg:pt-30 pb-14 lg:pb-18 px-5 text-center ml-auto">
-                <div className="hidden lg:block absolute left-1/2 -top-38.5 px-1 h-39 bg-white"></div>
-                <div className="hidden lg:block absolute top-1/2 -left-115 py-1 w-115 bg-white"></div>
+              <div className="relative bg-white rounded-lg w-full lg:w-96 pt-26 lg:pt-12 pb-14 lg:pb-8 px-5 text-center ml-auto">
+                <div className="hidden lg:block absolute left-1/2 -top-28 px-1 h-28 bg-white"></div>
+                <div className="hidden lg:block absolute top-1/2 -left-92 py-1 w-92 bg-white"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-13 lg:-left-3 text-[112px] lg:text-[140px] text-secondary/12 font-extrabold">
+                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-10 lg:-left-3 text-[112px] lg:text-[114px] text-secondary/12 font-extrabold">
                     STEP 4
                   </p>
                 </div>
@@ -98,11 +98,11 @@ const StepsOfPartership = () => {
 
               {/* -==-====-=== step 5 -===-====- */}
 
-              <div className="relative bg-white rounded-lg w-full lg:w-120 pt-26 lg:pt-30 pb-14 lg:pb-18 px-5 text-center">
-                <div className="hidden lg:block absolute left-1/2 -top-38.5 px-1 h-39 bg-white"></div>
+              <div className="relative bg-white rounded-lg w-full lg:w-96 pt-26 lg:pt-12 pb-14 lg:pb-8 px-5 text-center">
+                <div className="hidden lg:block absolute left-1/2 -top-24.5 px-1 h-24.5 bg-white"></div>
                 {/* <div className="hidden lg:block absolute top-1/2 -right-118 py-1 w-118 bg-white"></div> */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-13 lg:-left-3 text-[112px] lg:text-[140px] text-secondary/12 font-extrabold">
+                  <p className="absolute -top-10 -left-3 md:translate-x-1/2 lg:translate-0 lg:-top-10 lg:-left-3 text-[112px] lg:text-[114px] text-secondary/12 font-extrabold">
                     STEP 5
                   </p>
                 </div>
