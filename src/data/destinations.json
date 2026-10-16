@@ -4,10 +4,13 @@
     "slug": "spain",
     "name": "Spain",
     "region": "Europe",
-    "flag": "/images/flags/spain.png",
-    "image": "/images/destinations/spain.jpg",
-    "banner": "/images/destinations/spain-banner.jpg",
-    "shortDescription": "Explore study opportunities in Spain.",
+    "flag": "/src/assets/destination/flags/spain.jpg",
+    "image": "/src/assets/destination/countries/spain.jpg",
+    "banner": "/src/assets/destination/details/spain.jpg",
+    "shortDescription": "English-taught masters, low public tuition and a new graduate job-search visa.",
+    "intakeOverview": "September (primary) and select February intakes",
+    "tuitionFeesOverview": "€1,000–4,000 / year at public universities (EU-rate in some regions); €8,000–18,000 at private and business schools.",
+    "workRightOverview": "30 hours/week part-time during studies. New 2-year post-study job-search visa (estancia por búsqueda de empleo) for graduates.",
     "overview": "Spain combines low public tuition, a growing catalogue of English-taught master’s programmes, and a 2024 reform that introduced a two-year post-study job-search visa for graduates — a major improvement over the old arrangement. With strong programmes in business, hospitality, renewable energy and sports management, and a vibrant lifestyle appeal, Spain is gaining Bangladeshi students seeking an affordable EU destination.",
     "featured": true,
 
@@ -29,14 +32,6 @@
         "notes": "Dummy estimates. Verify fees for each institution and program."
       }
     },
-
-    "whyStudy": [
-      "Access to a range of universities and academic programs.",
-      "Experience Spanish culture and lifestyle.",
-      "Explore opportunities to learn Spanish.",
-      "Study in a European country with diverse cities and student communities."
-    ],
-
     "costOfLivingBreakdown": {
       "description": "€600–1,000 / month; Madrid and Barcelona highest, Valencia and Granada affordable.",
       "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
@@ -54,7 +49,7 @@
       },
       "afterStudy": {
         "headline": "Post-Study Job-Search Residence",
-        "opportunity": "Eligible graduates may apply for a non-extendable, 24-month residence authorization to seek suitable employment or develop a business project.",
+        "opportunity": "Eligible graduates may apply for a non-extendable, 12-month residence authorization to seek suitable employment or develop a business project.",
         "summary": "This authorization allows eligible graduates to remain in Spain while seeking a suitable job or developing a business project. It does not itself authorize employment.",
         "rules": [
           "Applicants must meet the applicable qualification and residence requirements.",
@@ -211,22 +206,22 @@
         {
           "name": "Job-Search Residence (24 Months)",
           "description": "A 2-year graduate job-search visa introduced under the 2024 reform, applied for from inside Spain before the student permit expires.",
-          "eligibility": "Must be applied while holding a valid student permit/residency in Spain."
+          "eligibility": ""
         },
         {
           "name": "Work and Residence Permit / EU Blue Card",
           "description": "Transition to a standard work and residency permit upon securing qualifying employment, or an EU Blue Card for qualifying highly-paid roles.",
-          "eligibility": "Securing a valid job offer that meets employment and salary thresholds."
+          "eligibility": ""
         },
         {
           "name": "Permanent Residence (Larga Duración)",
           "description": "Eligibility for permanent residency after completing 5 years of continuous legal residence in Spain.",
-          "eligibility": "5 years of continuous legal stay."
+          "eligibility": ""
         },
         {
           "name": "Spanish Citizenship",
           "description": "Standard route requires 10 years of legal residence (Note: The 2-year exception applies only to Ibero-American nationals).",
-          "eligibility": "10 years of continuous legal residence"
+          "eligibility": ""
         }
       ],
       "prNotes": "Permanent residence is not automatic after graduation and requires 5 years of continuous legal stay. Citizenship requires 10 years (as the 2-year fast-track is restricted to Ibero-American countries)."
@@ -584,65 +579,62 @@
   },
   {
     "id": 2,
-    "slug": "spain",
-    "name": "Spain",
+    "slug": "france",
+    "name": "france",
     "region": "Europe",
-    "flag": "/images/flags/spain.png",
-    "image": "/images/destinations/spain.jpg",
-    "banner": "/images/destinations/spain-banner.jpg",
-    "shortDescription": "Explore study opportunities in Spain.",
-    "overview": "Spain combines low public tuition, a growing catalogue of English-taught master’s programmes, and a 2024 reform that introduced a two-year post-study job-search visa for graduates — a major improvement over the old arrangement. With strong programmes in business, hospitality, renewable energy and sports management, and a vibrant lifestyle appeal, Spain is gaining Bangladeshi students seeking an affordable EU destination.",
+    "flag": "/src/assets/destination/flags/france.jpg",
+    "image": "/src/assets/destination/countries/france.jpg",
+    "banner": "/src/assets/destination/details/france.jpg",
+    "shortDescription": "Grandes écoles, English-taught masters and a €170 public tuition floor.",
+    "intakeOverview": "September (primary) and January (limited)",
+    "tuitionFeesOverview": "€2,902–3,950 public; €9,000–24,000 private and business schools.",
+    "workRightOverview": "964 hours/year part-time during studies. APS 12-month job-search permit for master’s graduates; Talent Passport pathway.",
+    "overview": "France keeps public tuition among the lowest in Europe (€2,902/year at licence, €3,950 at master, €398/year at PhD) while expanding English-taught programmes and the Talent Passport for graduates. The Campus France procedure is well-established, and post-study APS rights give 12 months to find work. A strong choice for business, luxury management and aerospace, with the India-France education roadmap driving growth.",
     "featured": true,
 
     "tuitionFees": {
       "public": {
-        "low": 1000,
-        "typical": 2500,
-        "high": 4000,
+        "low": 2902,
+        "typical": 3426,
+        "high": 3950,
         "currency": "EUR",
         "period": "year",
         "notes": "Dummy estimates. Actual fees depend on the university, region, degree and student status."
       },
       "private": {
-        "low": 8000,
-        "typical": 10000,
-        "high": 22000,
+        "low": 9000,
+        "typical": 15000,
+        "high": 24000,
         "currency": "EUR",
         "period": "year",
         "notes": "Dummy estimates. Verify fees for each institution and program."
       }
     },
 
-    "whyStudy": [
-      "Access to a range of universities and academic programs.",
-      "Experience Spanish culture and lifestyle.",
-      "Explore opportunities to learn Spanish.",
-      "Study in a European country with diverse cities and student communities."
-    ],
-
     "costOfLivingBreakdown": {
-      "description": "€600–1,000 / month; Madrid and Barcelona highest, Valencia and Granada affordable.",
+      "description": "€700–1,200 / month (Paris higher), CAF housing aid available.",
       "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
     },
 
     "workRightsDuringAndAfterStudy": {
       "duringStudy": {
         "headline": "Work Rights During Study",
-        "opportunity": "30 hours/week part-time during studies.",
-        "summary": "Eligible international students may be able to work while studying, subject to current immigration rules and applicable conditions.",
+        "opportunity": "Up to 60% of annual working time (~18–20 hours/week or 964 hours/year).",
+        "summary": "International students in France are legally authorized to work part-time up to 964 hours per year under a valid student residence permit.",
         "rules": [
-          "Confirm the conditions attached to the student's residence authorization.",
-          "Check applicable working-hour limits and compatibility with study."
+          "Work hours are capped at 964 hours per year (60% of the standard French annual work limit).",
+          "No separate work authorization (APT) is required for standard student visa holders.",
+          "Employment must remain compatible with your academic schedule and study progress."
         ]
       },
       "afterStudy": {
-        "headline": "Post-Study Job-Search Residence",
-        "opportunity": "Eligible graduates may apply for a non-extendable, 24-month residence authorization to seek suitable employment or develop a business project.",
-        "summary": "This authorization allows eligible graduates to remain in Spain while seeking a suitable job or developing a business project. It does not itself authorize employment.",
+        "headline": "Post-Study Job-Search Residence (RECE / APS)",
+        "opportunity": "12-month post-study job-search residence permit (Recherche d'emploi / Création d'entreprise).",
+        "summary": "Eligible graduates can obtain a RECE (formerly APS) job-search permit to look for qualifying employment or launch a business project in France.",
         "rules": [
-          "Applicants must meet the applicable qualification and residence requirements.",
-          "The authorization is not a work permit.",
-          "After securing a suitable opportunity, applicants must apply for the appropriate residence and work authorization."
+          "Must hold a recognized Master's degree, Licence Professionnelle, or equivalent Grande École diploma.",
+          "The application must be submitted online via ANEF before the student residence permit expires.",
+          "Allows full-time work while job searching; once a qualifying job offer is secured, it converts directly into a standard Work Permit or Talent Passport (Passeport Talent)."
         ]
       }
     },
@@ -650,38 +642,38 @@
     "intakesAndDeadlines": [
       {
         "intake": "Autumn (Primary)",
-        "starts": "September / October",
-        "applicationWindow": "January–June",
-        "notes": "Actual deadlines vary by university, program and applicant category."
+        "starts": "September",
+        "applicationWindow": "October–March (varies)",
+        "notes": "Full programme catalogue"
       },
       {
         "intake": "Spring (limited)",
         "starts": "January / February",
         "applicationWindow": "September-November",
-        "notes": "Not all universities or programs offer a spring intake."
+        "notes": "Fewer programmes; check availability"
       }
     ],
 
     "admissionRequirementsAndEligibility": {
       "academic": [
         "Relevant previous academic qualification.",
-        "55–60%+ for public universities, 65%+ for top business schools.",
+        "60%+ for public universities, 65%+ for grandes écoles; consistent academic record.",
         "Three-year and four-year bachelor's accepted for master's.",
         "Equivalence/recognition of degree required; formal Homologation may be needed for regulated professions."
       ],
       "language": [
-        "Spanish: DELE B1/B2 for Spanish-taught tracks; recommended even for English tracks.",
-        "English: IELTS 6.5 or TOEFL 90 for English-taught programmes; IE/ESADE often ask higher.",
+        "English: IELTS 6.5 or TOEFL 90 for English-taught programmes.",
+        "French: DELF B1/B2 for French-taught tracks; not required for English tracks but recommended.",
         "Medium of Instruction (MOI) certificate may be accepted by select private institutions."
       ],
       "financial": [
         "Proof of sufficient financial means (e.g., bank statement) to cover tuition fees and living expenses as required for university admission and visa application."
       ],
       "other": [
-        "GMAT: required for top MBA programmes (IE, IESE, ESADE).",
-        "Standard documents: Statement of Purpose (SOP), CV/Resume, Letters of Recommendation (LORs).",
-        "Additional selection steps: Video essay, online interview, or portfolio (for creative fields) where applicable.",
-        "Valid passport and university-specific additional documents."
+        "GMAT/GRE: required for top business schools (HEC, ESSEC) and some engineering grandes écoles.",
+        "SOP, CV, LORs and a Campus France motivation interview.",
+        "Three-year bachelor's is generally accepted for master's admission (unlike Germany).",
+        "Work experience: 0–2 years for most master's; 3+ for MBA programmes."
       ],
       "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
     },
@@ -689,127 +681,109 @@
     "applicationProcessStepByStep": [
       {
         "step": 1,
-        "title": "Submit Application to University",
-        "description": "Apply directly to the university (Jan–Jun for September)."
+        "title": "Create Études en France Account",
+        "description": "Create the Études en France account and complete the dossier (8–9 months before intake)."
       },
       {
         "step": 2,
-        "title": "Submit Required Documents",
-        "description": "Submit transcripts, IELTS, SOP, CV and LORs; GMAT for MBA."
+        "title": "Submit University Applications",
+        "description": "Submit applications to public universities (Études en France) or grandes écoles directly."
       },
       {
         "step": 3,
-        "title": "Receive Admission & Pay Fee",
-        "description": "Receive offer; pay the enrolment fee."
+        "title": "Campus France Interview",
+        "description": "Attend the Campus France motivation interview (a genuine gate)."
       },
       {
         "step": 4,
-        "title": "Build Visa File",
-        "description": "Build the visa file: proof of funds, no-co-payment insurance, medical certificate, apostilled police clearance."
+        "title": "Receive Admission & Campus France NOC",
+        "description": "Receive admission and the Campus France no-objection certificate (NOC)."
       },
       {
         "step": 5,
-        "title": "Submit Visa Application",
-        "description": "Submit the student visa at the Spanish consulate."
+        "title": "Apply for VLS-TS Student Visa",
+        "description": "Apply for the VLS-TS long-stay student visa at VFS with proof of funds and insurance."
       },
       {
         "step": 6,
-        "title": "Arrival & TIE Application",
-        "description": "For stays requiring a TIE, apply for the card within the applicable deadline after arrival in Spain."
-      },
-      {
-        "step": 7,
-        "title": "Post-Study Job-Search Residence",
-        "description": "Before the student permit expires, apply for the 24-month job-search residence."
+        "title": "Online Visa Validation & Local Registration",
+        "description": " Validate the visa online within three months of arrival; apply for CAF and social security."
       }
     ],
 
     "popularCourses": [
-      "MBA & International Business",
-      "MBA and MSc Business Analytics",
+      "MSc Data Science, AI and Machine Learning",
+      "MSc Aerospace and Aeronautical Engineering ",
+      "MSc Luxury and Fashion Management ",
+      "MSc Finance and International Business ",
+      "MSc Mathematics and Physics",
       "MSc Renewable Energy and Sustainability",
-      "MSc Tourism and Hospitality Management",
-      "MSc Computer Science and Telecommunications",
-      "MSc Architecture and Design",
-      "MSc Finance and International Business",
-      "MSc Biotech and Biomedicine",
-      "Sports Management",
-      "Data Science & Artificial Intelligence",
-      "Health and Life Sciences"
+      "MSc Computer Science and Software Engineering"
     ],
 
     "scholarshipsAndFunding": {
       "title": "Scholarships & Funding",
       "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
-      "overview": "MECD/MAEC-AECID scholarships, university merit awards, EU Erasmus+, regional grants.",
+      "overview": "Eiffel Excellence, Charpak, Île-de-France merit, school-level 10–50% tuition waivers.",
       "fundingOptions": [
         {
           "icon": "university",
-          "title": "MAEC-AECID Scholarships",
-          "subtitle": "Tuition + stipend + travel",
-          "description": "International students via Spanish cooperation; varies by country and programme.",
+          "title": "Eiffel Excellence Scholarship",
+          "subtitle": "€1,181/month + travel + insurance",
+          "description": "Master's/PhD in engineering, economics, law, political science; under 25 (master's); January deadline via institution.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
           "icon": "university",
-          "title": "University merit awards",
+          "title": "Emile Boutmy Scholarship",
+          "subtitle": "€5,000–18,000/year tuition reduction",
+          "description": "Non-EU students at Sciences Po; merit and need based.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "icon": "university",
+          "title": "Grande école merit waivers",
           "subtitle": "10–50% tuition reduction",
-          "description": "Top applicants; varies by institution, often automatic.",
+          "description": "Top applicants at HEC, ESSEC, ESCP, EDHEC; ask at the offer stage.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
           "icon": "university",
-          "title": "IE / ESADE / IESE fellowships",
-          "subtitle": "Tuition + stipend + travel",
-          "description": "International students via Spanish cooperation; varies by country and programme.",
-          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
-        },
-        {
-          "icon": "university",
-          "title": "Erasmus+ mobility",
-          "subtitle": "400–520/month for exchange",
-          "description": "Exchange students within the Erasmus programme.",
-          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
-        },
-        {
-          "icon": "university",
-          "title": "Regional government grants",
-          "subtitle": "Variable",
-          "description": "Some autonomous communities offer grants to international students.",
-          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
-        },
-        {
-          "icon": "university",
-          "title": "La Caixa Foundation fellowships",
-          "subtitle": "Full tuition + living",
-          "description": "Postgraduate STEM and social science; highly competitive.",
+          "title": "CROUS need-based aid",
+          "subtitle": "Variable grant on social criteria",
+          "description": "Enrolled students with low family income; apply via CROUS.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         }
       ]
     },
 
     "postStudyWorkAndPRPathway": {
-      "summary": "The 2024 reform grants graduates a 24-month job-search residence (estancia por búsqueda de empleo) to apply from inside Spain before the student permit expires. Securing qualifying employment transitions the graduate to a work permit or EU Blue Card, leading toward permanent residence after 5 years and citizenship after 10 years.",
+      "summary": "Master's graduates receive a 12-month APS (Autorisation Provisoire de Séjour) to seek qualified employment. On securing a job at 1.5× the SMIC (about €2,800/month gross), the graduate transitions to a salaried employee residence permit. Permanent residence (carte de résident) is available after five years of continuous legal residence, reducible in some cases.",
       "pathways": [
         {
-          "name": "Job-Search Residence (24 Months)",
-          "description": "A 2-year graduate job-search visa introduced under the 2024 reform, applied for from inside Spain before the student permit expires.",
-          "eligibility": "Must be applied while holding a valid student permit/residency in Spain."
+          "name": "APS job-search permit",
+          "description": "12 months for master's graduates.",
+          "eligibility": ""
         },
         {
-          "name": "Work and Residence Permit / EU Blue Card",
-          "description": "Transition to a standard work and residency permit upon securing qualifying employment, or an EU Blue Card for qualifying highly-paid roles.",
-          "eligibility": "Securing a valid job offer that meets employment and salary thresholds."
+          "name": "Employee residence permit",
+          "description": "requires a job at 1.5× SMIC (~€2,800/month gross).",
+          "eligibility": ""
         },
         {
-          "name": "Permanent Residence (Larga Duración)",
-          "description": "Eligibility for permanent residency after completing 5 years of continuous legal residence in Spain.",
-          "eligibility": "5 years of continuous legal stay."
+          "name": "Passeport Talent",
+          "description": "fast-track 4-year permit for highly skilled graduates and researchers.",
+          "eligibility": ""
         },
         {
-          "name": "Spanish Citizenship",
-          "description": "Standard route requires 10 years of legal residence (Note: The 2-year exception applies only to Ibero-American nationals).",
-          "eligibility": "10 years of continuous legal residence"
+          "name": "Permanent residence",
+          "description": "5 years continuous residence; citizenship after 5 years with B1 French.",
+          "eligibility": ""
+        },
+        {
+          "name": "EU Blue Card",
+          "description": " available from €53,836/year (2025) for qualifying roles.",
+          "eligibility": ""
         }
       ],
       "prNotes": "Permanent residence is not automatic after graduation and requires 5 years of continuous legal stay. Citizenship requires 10 years (as the 2-year fast-track is restricted to Ibero-American countries)."
@@ -835,11 +809,11 @@
     ],
 
     "whoThisDestinationSuitsBest": [
-      "Spain suits students seeking low public tuition, Mediterranean lifestyle and the new 2-year graduate job-search visa — especially for business, hospitality, renewable energy and sports management — provided they can navigate regional tuition variation and some bureaucracy."
+      "France suits budget-conscious families who want a prestigious EU degree at public-tuition rates, especially for business, luxury management, aerospace and data science — provided the student can present a coherent study plan through Campus France and is open to learning French."
     ],
 
     "currentTrendsAndB2BOpportunities": {
-      "description": "The 2024 two-year graduate job-search visa is a game-changer for post-study planning. Spain’s renewable energy, hospitality and tech sectors are hiring. Bangladeshi student numbers are rising with Spain’s push into South Asian markets.",
+      "description": "France is investing in AI and semiconductor programmes. The Talent Passport eases post-study transitions for master’s graduates. Indian student numbers are rising with the India-France education roadmap and the target of 30,000 Indian students by 2030.",
       "trends": [
         "Interest in international study options across different degree levels.",
         "Demand for clear guidance on tuition, admission and visa processes."
@@ -854,106 +828,124 @@
 
     "faqs": [
       {
-        "question": "How does Spain’s new post-study visa work?",
-        "answer": "Under Spain’s current regulations, eligible international graduates can apply for a **24-month, non-renewable residence authorization** to seek suitable employment related to their completed studies or to develop a business project. Applicants must meet the eligibility requirements and submit their application within the applicable deadline. This authorization does not itself permit employment. Once a qualifying job or business opportunity is secured, the graduate must apply for the appropriate residence and work authorization."
+        "question": "Is French language mandatory to study in France?",
+        "answer": "Many master’s programmes are English-taught, but French B2 is required for French-taught tracks and strongly improves internships and employment. We recommend starting French alongside the application."
       },
       {
-        "question": "Is public tuition the same for Bangladeshi students in Spain?",
-        "answer": "It varies by region — some charge non-EU students the EU rate, others charge more. We verify the regional rules for each chosen university before application."
+        "question": "How much does it really cost to study in France?",
+        "answer": "Public-route students pay €170–3,770/year tuition plus €700–1,200/month living, with CAF housing aid available in Paris. Private business schools charge €9,000–46,000, so route choice drives the budget."
       },
       {
-        "question": "Does Spain offer post-study work rights?",
-        "answer": "Yes — the 2024 reform grants a 24-month job-search residence (estancia por búsqueda de empleo), among the most generous in the EU, applied for from inside Spain before the student permit expires."
+        "question": "What is Campus France and why does it matter?",
+        "answer": "Campus France runs the mandatory pre-consular interview for Bangladeshi students. A coherent, well-rehearsed study plan is decisive — we prepare every candidate for this interview."
       },
       {
-        "question": "Is Spain affordable for Bangladeshi students?",
-        "answer": "Yes — public master's tuition is €1,500–4,000/year with €560–850/month living outside Madrid and Barcelona. It is one of the best value propositions in the EU with a generous post-study runway."
+        "question": "Is France affordable compared to the UK?",
+        "answer": "On the public route, yes — master's tuition is €2,902–3,950/year versus £14,000–32,000 in the UK. CAF housing aid further reduces rent by €100–250/month. Private grandes écoles are comparable to UK pricing, so route choice is decisive."
       },
       {
-        "question": "Do I need to speak Spanish to work in Spain?",
-        "answer": "For most local employment outside multinationals and tourism, yes — B1–B2 is effectively required. Start Spanish before departure; it decides whether the 24-month window produces a job."
+        "question": "Do I need to speak French to study in France?",
+        "answer": "Not for English-taught programmes (over 1,700 exist). But French at B1–B2 is effectively required for internships, most local hiring and permanent residence. Begin French before departure."
       },
       {
-        "question": "What causes Spanish visa refusals?",
-        "answer": "Insurance and apostille errors more than academic weakness. Choose insurance that explicitly states no co-payment, and apostille the police clearance and academic documents early"
+        "question": "What is CAF and am I eligible?",
+        "answer": "CAF (Caisse d'Allocations Familiales) is a housing allowance reducing rent by €100–250/month for eligible students. Apply within the first month of arrival; VISALE provides a free state guarantor for under-30s."
       },
       {
-        "question": "What is the cita previa and why does it matter?",
-        "answer": "The appointment system for the TIE (foreigner identity card) and other procedures. Appointments fill in hours, so book the moment they open — delays affect enrolment and bank account opening."
+        "question": "Can I stay and work after graduation?",
+        "answer": "Yes — master's graduates get a 12-month APS job-search residence. On securing a job at ≥1.5× SMIC, you transition to an employee residence permit. Permanent residence is available after 5 years."
       },
       {
-        "question": "Can I get permanent residency in Spain?",
-        "answer": "Yes — permanent residence (larga duración) is available after five years of continuous legal residence. Citizenship takes 10 years for (2 years for Ibero-Americans, not applicable)."
+        "question": "What is the Campus France interview?",
+        "answer": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality — prepare for it as rigorously as for a visa interview."
       }
     ],
 
     "completeBrief": [
-      "Spain became a serious post-study destination in 2024, when the new job-search residence gave graduates 24 months to find qualifying employment — matching the UK at a fraction of the tuition. Public universities charge €1,500–4,000 per year, private business schools such as IE and ESADE compete globally, and living costs outside Madrid and Barcelona are moderate.",
-      "Spanish at B1–B2 is the practical requirement for local employment outside multinationals and tourism. Students who plan for this from the first semester convert the 24-month window into a job; those who do not often leave when it expires.",
-      "Spain's strengths are renewable energy, tourism management, biotech, design and business. The country is a European leader in solar and wind, and the tourism and hospitality management programmes are among the world's best. The 2024 reform also simplified the transition from student to employee status.",
-      "For partners, Spain is a value destination with a generous post-study runway, but insurance and apostille errors cause more refusals than academic weakness. Present the 2024 job-search residence explicitly — many families still assume Spain has no post-study route."
+      "France offers the second-lowest public tuition in Western Europe — €243 per year for a master's at a public university — alongside a research base in mathematics, physics, aerospace and luxury management that few countries match. The English-taught catalogue has grown quickly, and Campus France gives Indian applicants a structured, predictable route into the system.",
+      "The critical decision is public versus private. A public-route student may complete a master's for under €25,000 in total; a grande école or business school route can cost €25,000–46,000 in tuition alone. Both are legitimate, but they serve different families and different career outcomes, and conflating them in a shortlist damages trust.",
+      "France's 12-month APS (Autorisation Provisoire de Séjour) job-search residence for master's graduates, combined with CAF housing aid that reduces rent by €100–250 per month, makes the public route one of the best net-cost propositions in Europe. The 2024 reforms also simplified the transition from student to employee status for graduates who secure a qualifying offer.",
+      "For partners, France rewards disciplined route selection. Separate the public-university pipeline from the grande école/business-school pipeline at the first counselling session, because the budgets, deadlines, interview preparation and family conversations are entirely different. Mixing them is the most common cause of mid-cycle walk-aways."
     ],
 
     "fullCostBreakdown": [
       {
         "costItem": "Tuition (public master)",
-        "low": 1500,
-        "typical": 2500,
-        "high": 4000,
+        "low": 2902,
+        "typical": 3426,
+        "high": 3950,
         "currency": "EUR",
         "period": "year",
         "notes": "public"
       },
       {
         "costItem": "Tuition (private)",
-        "low": 8000,
+        "low": 9000,
         "typical": 18000,
-        "high": 22000,
+        "high": 24000,
         "currency": "EUR",
         "period": "year",
         "notes": "at top private schools"
       },
       {
-        "costItem": "Rent (shared)",
-        "low": 300,
-        "typical": 480,
-        "high": 800,
+        "costItem": "CVEC student fee",
+        "low": 105,
+        "typical": 105,
+        "high": 105,
         "currency": "EUR",
-        "period": "month",
-        "notes": "in Barcelona or Madrid"
+        "period": "year",
+        "notes": ""
       },
       {
-        "costItem": "Food and groceries",
-        "low": 200,
-        "typical": 270,
-        "high": 360,
+        "costItem": "Rent (studio / CROUS)",
+        "low": 400,
+        "typical": 650,
+        "high": 1000,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "in central Paris"
+      },
+      {
+        "costItem": "CAF housing aid (offset)",
+        "low": 100,
+        "typical": 150,
+        "high": 250,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
       },
       {
-        "costItem": "Transport",
-        "low": 20,
+        "costItem": "Food and groceries",
+        "low": 200,
+        "typical": 260,
+        "high": 350,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Transport (student pass)",
+        "low": 25,
         "typical": 40,
-        "high": 60,
+        "high": 90,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values; local transport plans vary."
       },
       {
         "costItem": "Health insurance",
-        "low": 40,
-        "typical": 60,
-        "high": 90,
+        "low": 0,
+        "typical": 20,
+        "high": 60,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
       },
       {
         "costItem": "Monthly total (excl. tuition)",
-        "low": 560,
-        "typical": 850,
-        "high": 1310,
+        "low": 620,
+        "typical": 880,
+        "high": 1300,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
@@ -962,108 +954,115 @@
 
     "prosAndCons": {
       "advantages": [
-        "24-month post-study job-search residence, among the most generous in the EU.",
-        "Low public tuition with globally ranked private business schools as an alternative.",
-        "Moderate living costs outside the two largest cities.",
-        "Strong sectors: renewable energy, tourism management, biotech and business.",
-        "Schengen mobility and a clear five-year permanent-residence pathway.",
-        "High quality of life and a warm climate."
+        "Public tuition of €2,902–3,950 per year with the same degree recognition as private routes.",
+        "CAF housing allowance reduces rent by €100–250 per month for eligible students.",
+        "12-month post-study job-search residence (APS) for master's graduates.",
+        "World-class research in mathematics, physics, aerospace, AI and luxury management.",
+        "English-taught master's catalogue expanding rapidly across public universities.",
+        "Schengen mobility and a clear five-year permanent-residence pathway."
       ],
       "tradeOffsToDisclose": [
-        "Spanish is required for most local employment.",
-        "Graduate salaries are lower than in Northern Europe.",
-        "Homologation of foreign degrees can be slow for regulated professions.",
-        "Administrative appointments (cita previa) are a recurring bottleneck.",
-        "Insurance and apostille errors are the common refusal causes."
+        "French at B1–B2 is effectively required for internships and most local hiring.",
+        "Paris accommodation is expensive and competitive; guarantors are often demanded.",
+        "Campus France interviews and dossier requirements add process steps.",
+        "Grande école tuition can be as high as the UK, so route choice must be explicit.",
+        "Administrative paperwork (carte de séjour) can be slow for first-time residents. "
       ]
     },
 
     "applicationAndVisaProcess": [
       {
         "step": 1,
-        "title": "Application and admission",
-        "description": "Apply directly to the university; most master's programmes admit between January and June for September."
+        "title": "Campus France registration",
+        "description": "Create the Études en France account, complete the dossier and pay the fee. Start 8–9 months before September."
       },
       {
         "step": 2,
-        "title": "Tuition and enrolment",
-        "description": "Pay the enrolment fee and obtain the official acceptance document."
+        "title": "University applications",
+        "description": "Apply to public universities or grandes écoles through the platform; many programmes close between January and March."
       },
       {
         "step": 3,
-        "title": "Student visa application",
-        "description": "Submit at the Spanish consulate with proof of funds (about €600/month), insurance, medical certificate and police clearance."
+        "title": "Campus France interview",
+        "description": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality."
       },
       {
         "step": 4,
-        "title": "TIE card",
-        "description": "After arrival, check the applicable deadline and book an appointment to apply for the TIE card, if required."
+        "title": "Admission and NOC",
+        "description": "Accept the offer and obtain the Campus France no-objection certificate that unlocks the visa appointment."
       },
       {
         "step": 5,
-        "title": "Job-search residence",
-        "description": "Before the student permit expires, apply for the 24-month job-search residence from inside Spain."
+        "title": "VFS visa appointment",
+        "description": "Submit the long-stay VLS-TS student visa with proof of funds (about €615/month), accommodation and insurance."
+      },
+      {
+        "step": 6,
+        "title": "Arrival validation",
+        "description": "Validate the VLS-TS online within three months, apply for CAF housing aid and register with social security."
       }
     ],
 
     "documentChecklist": [
-      "University acceptance letter and enrolment proof",
-      "Proof of financial means (IPREM-based, about €7,200/year)",
-      "Private health insurance with full coverage and no co-payment",
-      "Medical certificate confirming no public-health risk",
-      "Police clearance certificate, apostilled",
-      "Academic documents with sworn translations where required"
+      "Campus France Études en France dossier and NOC",
+      "Admission letter from the French institution",
+      "Proof of funds of approximately €7,380 per year",
+      "Accommodation proof or attestation d'hébergement",
+      "Academic transcripts, degree certificate and translations where required",
+      "IELTS/TOEFL or DELF/DALF certificate",
+      "Passport, photographs and VFS appointment confirmation",
+      "Travel insurance for the entry period"
     ],
 
     "partnerOperatingNotes": [
-      "Insurance and apostille errors cause more Spanish refusals than academic weakness.",
-      "Present the 2024 job-search residence explicitly — many families still assume Spain has no post-study route.",
-      "Position Spain on value, lifestyle and the generous post-study runway.",
-      "Coach Spanish language planning from the first counselling session."
+      "Separate public and private pipelines; the counselling script and budget are entirely different.",
+      "Prepare students for the Campus France interview as rigorously as for a visa interview.",
+      "Track programme-specific deadlines: many close in January, far ahead of German ones.",
+      "Map CAF eligibility into the net-cost calculation before the family commits."
     ],
 
     "practicalTips": [
-      "Book the consulate and cita previa appointments the moment they open; they fill in hours.",
-      "Choose insurance that explicitly states no co-payment — the common cause of consulate rejection.",
-      "Start Spanish before departure; it decides whether the 24-month window produces a job.",
-      "Choose Valencia, Seville, Malaga or Bilbao over Madrid and Barcelona for 25–35% lower living costs.",
-      "Open a Spanish bank account early; required for the TIE and salary.",
-      "Apply for the job-search residence before the student permit expires — the transition is domestic."
+      "Apply to CROUS residences early; they are the cheapest reliable housing.",
+      "Claim CAF within the first month of arrival — it is retroactive only in limited cases.",
+      "Take French to A2 before departure; internships (stages) are where most careers start.",
+      "Ask every grande école about merit waivers — 10–50% reductions are common and rarely advertised.",
+      "Open a French bank account within the first weeks; required for CAF and salary deposits.",
+      "Validate the VLS-TS visa online within three months of arrival or your legal status lapses."
     ],
 
     "accommodation": {
       "options": [
         {
-          "type": "University residence",
+          "type": "CROUS residence",
           "costRange": {
-            "low": 300,
-            "high": 600,
+            "low": 200,
+            "high": 450,
             "currency": "EUR",
             "period": "month"
           },
-          "details": "Limited places available; early application is recommended.",
-          "bestFor": "Students wanting on-campus convenience and community life."
+          "details": " the cheapest option; apply via the CROUS portal the moment you accept the offer.",
+          "bestFor": "Students wanting cheapest option."
         },
         {
           "type": "Shared apartment",
           "costRange": {
-            "low": 300,
-            "high": 600,
+            "low": 400,
+            "high": 700,
             "currency": "EUR",
             "period": "month"
           },
-          "details": "Popular choice found via platforms like Idealista, Fotocasa, and student Facebook groups.",
+          "details": "found on SeLoger, PAP and Facebook groups.",
           "bestFor": "Budget-conscious students looking to share living expenses."
         },
         {
           "type": "Private studio",
           "costRange": {
-            "low": 600,
-            "high": 1000,
+            "low": 500,
+            "high": 900,
             "currency": "EUR",
             "period": "month"
           },
-          "details": "Independent living units, mostly available in major cities like Madrid and Barcelona.",
+          "details": "€500–900/month in Paris, €350–600 elsewhere..",
           "bestFor": "Students preferring complete privacy."
         },
         {
@@ -1074,94 +1073,103 @@
             "currency": "EUR",
             "period": "month"
           },
-          "details": "Living with a local host family, often including meal plans.",
+          "details": "good for French immersion in the first months.",
           "bestFor": "Great for language learning and cultural immersion."
+        },
+        {
+          "type": "CAF housing aid",
+          "costRange": {
+            "low": 100,
+            "high": 250,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "reduction for eligible students — apply within the first month.",
+          "bestFor": ""
         }
       ],
       "generalTips": [
-        "Check the applicable address-registration requirements and required supporting documents with the relevant local authorities before applying.",
-        "Madrid and Barcelona are the most expensive cities; living in Valencia, Seville, or Bilbao is approximately 25–35% cheaper.",
-        "Always beware of rental scams; never send money upfront without verifying the property or signing an official contract."
+        "Guarantor: VISALE is a free state-backed guarantor for under-30s; use it to bypass private guarantor demands."
       ]
     },
 
     "partTimeWorkRulesOpportunitiesAndEarnings": {
-      "description": "Students may work 30 hours/week during term with a work authorisation. Wages run €7–12/hour, with hospitality, retail, tutoring and tech internships the common roles. Local language is usually required for customer-facing work; English-only roles exist in tech and multinationals.",
+      "description": "Students may work 964 hours per year (roughly 20 hours/week during term). The French minimum wage (SMIC) is €12.31/hour gross, so part-time earnings of €600–900/month are realistic. On-campus jobs, tutoring, hospitality and retail are the common roles; internships (stages) are the more important career pipeline and are often mandatory in the curriculum.",
       "rules": [
-        "Allowance: 30 hours/week with work authorisation.",
-        "Wages: €7–12/hour; €600–1,000/month typical.",
-        "Hospitality and retail: common, often Spanish-required.",
-        "Tech and multinational internships: English-only, better paid.",
-        "NIE (foreigner number) required before starting any paid work."
+        "Annual allowance: 964 hours/year (~20 hrs/week term-time).",
+        "Minimum wage: €12.31/hour gross; €600–900/month typical.",
+        "Stage (internship): 2–6 months, often paid €600–1,500/month; the main career entry route.",
+        "Alternance (work-study): tuition funded by employer plus a salary — the best route if eligible.",
+        "French at B1 dramatically expands the available roles."
       ]
     },
 
     "careerOpportunitiesAndSalaryRanges": [
       {
-        "field": "Renewable Energy",
+        "field": "Engineering / Aerospace",
         "typicalStartingSalary": {
-          "low": 30000,
-          "high": 42000,
-          "currency": "EUR",
-          "period": "year"
-        },
-        "demandLevel": "high",
-        "notes": "Spain leads EU solar and wind"
-      },
-      {
-        "field": "Software / Data",
-        "typicalStartingSalary": {
-          "low": 28000,
-          "high": 40000,
-          "currency": "EUR",
-          "period": "year"
-        },
-        "demandLevel": "Medium-high",
-        "notes": "Barcelona and Madrid tech hubs"
-      },
-      {
-        "field": "Tourism and Hospitality",
-        "typicalStartingSalary": {
-          "low": 26000,
-          "high": 36000,
+          "low": 38000,
+          "high": 48000,
           "currency": "EUR",
           "period": "year"
         },
         "demandLevel": "High",
-        "notes": "World-leading sector"
+        "notes": "French B1 preferred"
       },
       {
-        "field": "Business / Finance",
+        "field": "Software / Data / AI",
         "typicalStartingSalary": {
-          "low": 30000,
-          "high": 45000,
+          "low": 40000,
+          "high": 52000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "high",
+        "notes": "English often sufficient"
+      },
+      {
+        "field": "Finance / Consulting",
+        "typicalStartingSalary": {
+          "low": 45000,
+          "high": 58000,
           "currency": "EUR",
           "period": "year"
         },
         "demandLevel": "Medium-high",
-        "notes": "IE/ESADE networks"
+        "notes": "French B2 preferred"
       },
       {
-        "field": "Engineering",
+        "field": "Luxury / Fashion Mgmt",
         "typicalStartingSalary": {
-          "low": 28000,
-          "high": 38000,
+          "low": 38000,
+          "high": 50000,
           "currency": "EUR",
           "period": "year"
         },
         "demandLevel": "Medium",
-        "notes": "Industrial and telecom"
+        "notes": "French B2 preferred"
       },
       {
-        "field": "Biotech",
+        "field": "Energy / Sustainability",
         "typicalStartingSalary": {
-          "low": 28000,
-          "high": 38000,
+          "low": 38000,
+          "high": 46000,
           "currency": "EUR",
           "period": "year"
         },
         "demandLevel": "Growing",
-        "notes": "Barcelona science cluster"
+        "notes": "French B1 preferred"
+      },
+      {
+        "field": "Research / Academia",
+        "typicalStartingSalary": {
+          "low": 34000,
+          "high": 44000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Niche",
+        "notes": "French often required"
       }
     ]
   }

@@ -82,6 +82,20 @@ const Navbar = () => {
 
               <li>
                 <NavLink
+                  to="/destination"
+                  className={({ isActive }) =>
+                    `px-3 py-2 font-bold text-base uppercase border-b-2 ${
+                      isActive
+                        ? " text-primary border-b-2 border-primary shadow-lg  "
+                        : "text-secondary hover:text-primary border-transparent "
+                    }`
+                  }
+                >
+                  Destination
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/university"
                   className={({ isActive }) =>
                     `px-3 py-2 font-bold text-base uppercase border-b-2 ${
