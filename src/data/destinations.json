@@ -11,6 +11,7 @@
     "intakeOverview": "September (primary) and select February intakes",
     "tuitionFeesOverview": "€1,000–4,000 / year at public universities (EU-rate in some regions); €8,000–18,000 at private and business schools.",
     "workRightOverview": "30 hours/week part-time during studies. New 2-year post-study job-search visa (estancia por búsqueda de empleo) for graduates.",
+    "postStudyOverview": "2-year graduate job-search visa (2024 reform); work permit and residency thereafter with qualifying employment.",
     "overview": "Spain combines low public tuition, a growing catalogue of English-taught master’s programmes, and a 2024 reform that introduced a two-year post-study job-search visa for graduates — a major improvement over the old arrangement. With strong programmes in business, hospitality, renewable energy and sports management, and a vibrant lifestyle appeal, Spain is gaining Bangladeshi students seeking an affordable EU destination.",
     "featured": true,
 
@@ -589,6 +590,7 @@
     "intakeOverview": "September (primary) and January (limited)",
     "tuitionFeesOverview": "€2,902–3,950 public; €9,000–24,000 private and business schools.",
     "workRightOverview": "964 hours/year part-time during studies. APS 12-month job-search permit for master’s graduates; Talent Passport pathway.",
+    "postStudyOverview": "APS 12-month job-search permit for master’s graduates; Talent Passport pathway.",
     "overview": "France keeps public tuition among the lowest in Europe (€2,902/year at licence, €3,950 at master, €398/year at PhD) while expanding English-taught programmes and the Talent Passport for graduates. The Campus France procedure is well-established, and post-study APS rights give 12 months to find work. A strong choice for business, luxury management and aerospace, with the India-France education roadmap driving growth.",
     "featured": true,
 
@@ -1182,25 +1184,26 @@
     "image": "/src/assets/destination/countries/ireland.jpg",
     "banner": "/src/assets/destination/details/ireland.jpg",
     "shortDescription": "English-speaking EU hub with tech-giant employment and a clean Third Level Graduate scheme.",
-    "intakeOverview": "September (primary) and January (limited)",
-    "tuitionFeesOverview": "€2,902–3,950 public; €9,000–24,000 private and business schools.",
-    "workRightOverview": "964 hours/year part-time during studies. APS 12-month job-search permit for master’s graduates; Talent Passport pathway.",
-    "overview": "France keeps public tuition among the lowest in Europe (€2,902/year at licence, €3,950 at master, €398/year at PhD) while expanding English-taught programmes and the Talent Passport for graduates. The Campus France procedure is well-established, and post-study APS rights give 12 months to find work. A strong choice for business, luxury management and aerospace, with the India-France education roadmap driving growth.",
+    "intakeOverview": "September (primary); select January intakes",
+    "tuitionFeesOverview": "€10,000–25,000 / year for non-EU students.",
+    "workRightOverview": "20 hours/week during term, 40 hours/week during holidays. Third Level Graduate Scheme: 1–2 years post-study work depending on qualification.",
+    "postStudyOverview": "Third Level Graduate Scheme: generally 12 months for eligible Level 8 graduates and up to 24 months for eligible Level 9 or higher graduates, subject to scheme conditions.",
+    "overview": "Ireland is the European home of Google, Meta, Apple, Microsoft and dozens of pharma and fintech giants, making it a magnet for tech and data graduates. Eligible graduates may qualify for 12 months of post-study permission at Level 8 or up to 24 months at Level 9 or higher, subject to the scheme's conditions. With a clear path to the Critical Skills Employment Permit. No blocked account — just proof of funds.",
     "featured": true,
 
     "tuitionFees": {
       "public": {
-        "low": 2902,
-        "typical": 3426,
-        "high": 3950,
+        "low": 10000,
+        "typical": 14000,
+        "high": 18000,
         "currency": "EUR",
         "period": "year",
         "notes": "Dummy estimates. Actual fees depend on the university, region, degree and student status."
       },
       "private": {
-        "low": 9000,
-        "typical": 15000,
-        "high": 24000,
+        "low": 18000,
+        "typical": 22000,
+        "high": 25000,
         "currency": "EUR",
         "period": "year",
         "notes": "Dummy estimates. Verify fees for each institution and program."
@@ -1208,29 +1211,31 @@
     },
 
     "costOfLivingBreakdown": {
-      "description": "€700–1,200 / month (Paris higher), CAF housing aid available.",
+      "description": "€1,000–1,500 / month; Dublin highest, Galway and Limerick more affordable.",
       "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
     },
 
     "workRightsDuringAndAfterStudy": {
       "duringStudy": {
-        "headline": "Work Rights During Study",
-        "opportunity": "Up to 60% of annual working time (~18–20 hours/week or 964 hours/year).",
-        "summary": "International students in France are legally authorized to work part-time up to 964 hours per year under a valid student residence permit.",
+        "headline": "Work Rights During Study (Stamp 2)",
+        "opportunity": "20 hours/week during term time; 40 hours/week during designated holidays.",
+        "summary": "International students on Stamp 2 are legally authorized to work part-time during academic terms and full-time during official holiday periods.",
         "rules": [
-          "Work hours are capped at 964 hours per year (60% of the standard French annual work limit).",
-          "No separate work authorization (APT) is required for standard student visa holders.",
-          "Employment must remain compatible with your academic schedule and study progress."
+          "Limited to 20 hours/week during academic terms and 40 hours/week during summer and winter breaks.",
+          "National Minimum Wage is €14.15/hour (2026), making monthly part-time earnings of €1,000–€1,300 realistic.",
+          "On-campus roles and graduate teaching assistantships typically pay €14–€18/hour.",
+          "Tech internships offer €2,000–€3,500/month and frequently transition into full-time graduate roles.",
+          "A Personal Public Service (PPS) number must be obtained upon arrival before starting any paid employment."
         ]
       },
       "afterStudy": {
-        "headline": "Post-Study Job-Search Residence (RECE / APS)",
-        "opportunity": "12-month post-study job-search residence permit (Recherche d'emploi / Création d'entreprise).",
-        "summary": "Eligible graduates can obtain a RECE (formerly APS) job-search permit to look for qualifying employment or launch a business project in France.",
+        "headline": "Post-Study Work Visa (Stamp 1G / Third Level Graduate Scheme)",
+        "opportunity": "12-month (Bachelor's Level 8) or 24-month (Master's Level 9 / PhD Level 10) post-study work authorization.",
+        "summary": "Eligible non-EU graduates can obtain Stamp 1G permission to work full-time (up to 40 hours/week) while seeking skilled employment in Ireland.",
         "rules": [
-          "Must hold a recognized Master's degree, Licence Professionnelle, or equivalent Grande École diploma.",
-          "The application must be submitted online via ANEF before the student residence permit expires.",
-          "Allows full-time work while job searching; once a qualifying job offer is secured, it converts directly into a standard Work Permit or Talent Passport (Passeport Talent)."
+          "Must graduate from an eligible program listed on the Interim List of Eligible Programmes (ILEP).",
+          "Stamp 1G allows full-time job search and employment without requiring employer sponsorship initially.",
+          "Graduates can transition from Stamp 1G to a Critical Skills Employment Permit (CSEP) or General Employment Permit (GEP) upon securing a qualifying job offer."
         ]
       }
     },
@@ -1239,37 +1244,36 @@
       {
         "intake": "Autumn (Primary)",
         "starts": "September",
-        "applicationWindow": "October–March (varies)",
+        "applicationWindow": "October–May (rolling)",
         "notes": "Full programme catalogue"
       },
       {
-        "intake": "Spring (limited)",
-        "starts": "January / February",
-        "applicationWindow": "September-November",
-        "notes": "Fewer programmes; check availability"
+        "intake": "Spring (secondary)",
+        "starts": "January",
+        "applicationWindow": "August-October",
+        "notes": "Limited programmes; genuine second chance"
       }
     ],
 
     "admissionRequirementsAndEligibility": {
       "academic": [
         "Relevant previous academic qualification.",
-        "60%+ for public universities, 65%+ for grandes écoles; consistent academic record.",
+        "60%+ for most universities, 65%+ for Trinity and UCD; backlogs assessed case by case.",
         "Three-year and four-year bachelor's accepted for master's.",
         "Equivalence/recognition of degree required; formal Homologation may be needed for regulated professions."
       ],
       "language": [
-        "English: IELTS 6.5 or TOEFL 90 for English-taught programmes.",
-        "French: DELF B1/B2 for French-taught tracks; not required for English tracks but recommended.",
+        "English: IELTS 6.5 (no band below 6.0) or TOEFL 88–90; some programmes ask for 7.0.",
         "Medium of Instruction (MOI) certificate may be accepted by select private institutions."
       ],
       "financial": [
         "Proof of sufficient financial means (e.g., bank statement) to cover tuition fees and living expenses as required for university admission and visa application."
       ],
       "other": [
-        "GMAT/GRE: required for top business schools (HEC, ESSEC) and some engineering grandes écoles.",
-        "SOP, CV, LORs and a Campus France motivation interview.",
-        "Three-year bachelor's is generally accepted for master's admission (unlike Germany).",
-        "Work experience: 0–2 years for most master's; 3+ for MBA programmes."
+        "GMAT: required for some MBA and finance programmes; GRE rarely required.",
+        "SOP, CV, two LORs and proof of funds.",
+        "Work experience: 0–2 years for most master's; 3+ for MBA.",
+        "RCSI medicine: separate entrance requirements and higher English threshold."
       ],
       "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
     },
@@ -1277,112 +1281,129 @@
     "applicationProcessStepByStep": [
       {
         "step": 1,
-        "title": "Create Études en France Account",
-        "description": "Create the Études en France account and complete the dossier (8–9 months before intake)."
+        "title": "Program Shortlisting",
+        "description": "Shortlist 5–8 programmes across reach, match and safe categories."
       },
       {
         "step": 2,
-        "title": "Submit University Applications",
-        "description": "Submit applications to public universities (Études en France) or grandes écoles directly."
+        "title": "Direct Application Submission",
+        "description": "Apply directly on each university's portal (no centralised system)."
       },
       {
         "step": 3,
-        "title": "Campus France Interview",
-        "description": "Attend the Campus France motivation interview (a genuine gate)."
+        "title": "Document Submission & Fee Payment",
+        "description": "Submit transcripts, IELTS, SOP, CV and LORs; pay application fee where applicable."
       },
       {
         "step": 4,
-        "title": "Receive Admission & Campus France NOC",
-        "description": "Receive admission and the Campus France no-objection certificate (NOC)."
+        "title": "Receive Admission Decision",
+        "description": "Receive offer (conditional or unconditional) within 2–6 weeks."
       },
       {
         "step": 5,
-        "title": "Apply for VLS-TS Student Visa",
-        "description": "Apply for the VLS-TS long-stay student visa at VFS with proof of funds and insurance."
+        "title": "Offer Acceptance & Deposit",
+        "description": "Accept and pay the tuition deposit to secure the place."
       },
       {
         "step": 6,
-        "title": "Online Visa Validation & Local Registration",
-        "description": " Validate the visa online within three months of arrival; apply for CAF and social security."
+        "title": "Prepare Visa Documentation",
+        "description": "Build the visa file: AVATS application, €10,000 proof of funds, insurance."
+      },
+      {
+        "step": 7,
+        "title": "Biometrics & Visa Processing",
+        "description": "Biometrics at VFS; decision in 4–8 weeks."
+      },
+      {
+        "step": 8,
+        "title": "IRP Registration on Arrival",
+        "description": "IRP registration within 90 days of arrival."
       }
     ],
 
     "popularCourses": [
-      "MSc Data Science, AI and Machine Learning",
-      "MSc Aerospace and Aeronautical Engineering ",
-      "MSc Luxury and Fashion Management ",
-      "MSc Finance and International Business ",
-      "MSc Mathematics and Physics",
-      "MSc Renewable Energy and Sustainability",
-      "MSc Computer Science and Software Engineering"
+      "MSc Computer Science and AI",
+      "MSc Data Science and Analytics ",
+      "MSc Business Analytics and Finance ",
+      "MSc Pharmaceutical and Biotech",
+      "MSc Mechanical and Electronic Engineering",
+      "MSc Cybersecurity",
+      "MSc Cloud Computing and Software Development"
     ],
 
     "scholarshipsAndFunding": {
       "title": "Scholarships & Funding",
       "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
-      "overview": "Eiffel Excellence, Charpak, Île-de-France merit, school-level 10–50% tuition waivers.",
+      "overview": "Government of Ireland International Education Scholarships (€10,000), university merit awards, HEA-funded programmes.",
       "fundingOptions": [
         {
           "icon": "university",
-          "title": "Eiffel Excellence Scholarship",
-          "subtitle": "€1,181/month + travel + insurance",
-          "description": "Master's/PhD in engineering, economics, law, political science; under 25 (master's); January deadline via institution.",
+          "title": "UCD Ad Astra / merit awards",
+          "subtitle": "€2,000–6,000",
+          "description": "Top-ranked applicants; varies by programme.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
           "icon": "university",
-          "title": "Emile Boutmy Scholarship",
-          "subtitle": "€5,000–18,000/year tuition reduction",
-          "description": "Non-EU students at Sciences Po; merit and need based.",
+          "title": "Maynooth University / UL awards",
+          "subtitle": "€1,000–3,000",
+          "description": "Programme-specific merit awards for international students.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
           "icon": "university",
-          "title": "Grande école merit waivers",
-          "subtitle": "10–50% tuition reduction",
-          "description": "Top applicants at HEC, ESSEC, ESCP, EDHEC; ask at the offer stage.",
+          "title": "Trinity College Global Excellence",
+          "subtitle": "€2,000–5,000",
+          "description": "Postgraduate applicants with strong academics; automatic consideration.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
           "icon": "university",
-          "title": "CROUS need-based aid",
-          "subtitle": "Variable grant on social criteria",
-          "description": "Enrolled students with low family income; apply via CROUS.",
+          "title": "University of Galway merit scholarships",
+          "subtitle": "€1,500–4,000",
+          "description": "Bangladesh and international postgraduate applicants.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "icon": "university",
+          "title": "Research Ireland funding",
+          "subtitle": "Full stipend + fees",
+          "description": "Research master's/PhD in SFI-funded centres; via supervisor.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         }
       ]
     },
 
     "postStudyWorkAndPRPathway": {
-      "summary": "Master's graduates receive a 12-month APS (Autorisation Provisoire de Séjour) to seek qualified employment. On securing a job at 1.5× the SMIC (about €2,800/month gross), the graduate transitions to a salaried employee residence permit. Permanent residence (carte de résident) is available after five years of continuous legal residence, reducible in some cases.",
+      "summary": "Eligible graduates may receive post-study permission under the Third Level Graduate Scheme. With a qualifying job offer, they may be eligible for a Critical Skills Employment Permit or General Employment Permit, subject to current salary thresholds and permit conditions. Critical Skills permit holders may become eligible for Stamp 4 permission after 21 months of qualifying employment. Long-term residence and citizenship have separate eligibility and reckonable-residence requirements.",
       "pathways": [
         {
-          "name": "APS job-search permit",
-          "description": "12 months for master's graduates.",
+          "name": "Third Level Graduate Scheme",
+          "description": " 24 months stay-back (Stamp 1G) for master's graduates.",
           "eligibility": ""
         },
         {
-          "name": "Employee residence permit",
-          "description": "requires a job at 1.5× SMIC (~€2,800/month gross).",
+          "name": "Critical Skills Permit",
+          "description": "shortage occupations, €40,900–68,900 salary; no labour-market test.",
           "eligibility": ""
         },
         {
-          "name": "Passeport Talent",
-          "description": "fast-track 4-year permit for highly skilled graduates and researchers.",
+          "name": "General Employment Permit",
+          "description": "Requires a qualifying job offer and compliance with the applicable salary threshold, occupation rules and labour-market test requirements, where applicable.",
           "eligibility": ""
         },
         {
-          "name": "Permanent residence",
-          "description": "5 years continuous residence; citizenship after 5 years with B1 French.",
+          "name": "Long-term residence",
+          "description": "Generally requires five years of qualifying residence based on eligible employment-permit conditions; student and graduate permissions do not automatically count.",
           "eligibility": ""
         },
         {
-          "name": "EU Blue Card",
-          "description": " available from €53,836/year (2025) for qualifying roles.",
+          "name": "Citizenship",
+          "description": "Generally requires five years of reckonable residence, subject to immigration-status and other eligibility requirements.",
           "eligibility": ""
         }
       ],
-      "prNotes": "Permanent residence is not automatic after graduation and requires 5 years of continuous legal stay. Citizenship requires 10 years (as the 2-year fast-track is restricted to Ibero-American countries)."
+      "prNotes": ""
     },
 
     "challengesAndHowWeHelp": [
@@ -1405,11 +1426,11 @@
     ],
 
     "whoThisDestinationSuitsBest": [
-      "France suits budget-conscious families who want a prestigious EU degree at public-tuition rates, especially for business, luxury management, aerospace and data science — provided the student can present a coherent study plan through Campus France and is open to learning French."
+      "Ireland suits English-speaking, tech- and pharma-focused students who want to study in an English-speaking EU country and a clean post-study work route — especially CS, data, cybersecurity and pharma graduates who can manage Dublin’s tighter accommodation market."
     ],
 
     "currentTrendsAndB2BOpportunities": {
-      "description": "France is investing in AI and semiconductor programmes. The Talent Passport eases post-study transitions for master’s graduates. Indian student numbers are rising with the India-France education roadmap and the target of 30,000 Indian students by 2030.",
+      "description": "Ireland’s tech and pharma sectors continue hiring international graduates. The Critical Skills Employment Permit list expands for STEM and healthcare. English-taught, EU-based, and PR-achievable — a strong UK alternative.",
       "trends": [
         "Interest in international study options across different degree levels.",
         "Demand for clear guidance on tuition, admission and visa processes."
@@ -1424,124 +1445,106 @@
 
     "faqs": [
       {
-        "question": "Is French language mandatory to study in France?",
-        "answer": "Many master’s programmes are English-taught, but French B2 is required for French-taught tracks and strongly improves internships and employment. We recommend starting French alongside the application."
+        "question": "Is there a blocked account for Ireland?",
+        "answer": "No. Ireland requires proof of funds rather than a blocked account, plus private medical insurance. This makes the financial setup simpler than Germany’s."
       },
       {
-        "question": "How much does it really cost to study in France?",
-        "answer": "Public-route students pay €170–3,770/year tuition plus €700–1,200/month living, with CAF housing aid available in Paris. Private business schools charge €9,000–46,000, so route choice drives the budget."
+        "question": "Is accommodation really that hard in Dublin?",
+        "answer": "Dublin student housing is scarce and expensive — we set realistic expectations early and help arrange confirmed accommodation before travel where possible."
       },
       {
-        "question": "What is Campus France and why does it matter?",
-        "answer": "Campus France runs the mandatory pre-consular interview for Bangladeshi students. A coherent, well-rehearsed study plan is decisive — we prepare every candidate for this interview."
+        "question": "How long can I work after graduating in Ireland?",
+        "answer": "Eligible graduates may qualify for 12 months of post-study permission at Level 8 or up to 24 months at Level 9 or higher, subject to the Third Level Graduate Scheme conditions."
       },
       {
-        "question": "Is France affordable compared to the UK?",
-        "answer": "On the public route, yes — master's tuition is €2,902–3,950/year versus £14,000–32,000 in the UK. CAF housing aid further reduces rent by €100–250/month. Private grandes écoles are comparable to UK pricing, so route choice is decisive."
+        "question": "Is Ireland cheaper than the UK?",
+        "answer": "Tuition is comparable (€10,000–25,000 vs £14,000–32,000),but costs vary by city and programme. Ireland is an EU member but is not part of the Schengen Area, and student dependants are generally not permitted under the standard student permission. Dublin living costs rival London, so consider Cork, Galway or Limerick for better value."
       },
       {
-        "question": "Do I need to speak French to study in France?",
-        "answer": "Not for English-taught programmes (over 1,700 exist). But French at B1–B2 is effectively required for internships, most local hiring and permanent residence. Begin French before departure."
+        "question": "What is the Critical Skills Employment Permit?",
+        "answer": "The Critical Skills Employment Permit is available for eligible occupations and qualifying job offers that meet the applicable salary and permit conditions. It does not require a labour-market needs test. Eligible permit holders may qualify for Stamp 4 permission after 21 months of qualifying employment."
       },
       {
-        "question": "What is CAF and am I eligible?",
-        "answer": "CAF (Caisse d'Allocations Familiales) is a housing allowance reducing rent by €100–250/month for eligible students. Apply within the first month of arrival; VISALE provides a free state guarantor for under-30s."
+        "question": "Do I need to show proof of funds for the visa?",
+        "answer": "Yes — €10,000 per year of study plus tuition, held in accessible funds. The source of funds is scrutinised, so keep a clean 3–6 month trail before applying."
       },
       {
-        "question": "Can I stay and work after graduation?",
-        "answer": "Yes — master's graduates get a 12-month APS job-search residence. On securing a job at ≥1.5× SMIC, you transition to an employee residence permit. Permanent residence is available after 5 years."
+        "question": "Can my spouse join me in Ireland?",
+        "answer": "Yes — Critical Skills permit holders can bring dependants with work rights. On the student visa, dependants are generally not permitted, so plan the family timeline around the post-study permit."
       },
       {
-        "question": "What is the Campus France interview?",
-        "answer": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality — prepare for it as rigorously as for a visa interview."
+        "question": "Are there January intakes in Ireland?",
+        "answer": "Yes — many universities offer a January intake with a limited programme set. It is a genuine second chance for students who miss the September deadlines."
       }
     ],
 
     "completeBrief": [
-      "France offers the second-lowest public tuition in Western Europe — €243 per year for a master's at a public university — alongside a research base in mathematics, physics, aerospace and luxury management that few countries match. The English-taught catalogue has grown quickly, and Campus France gives Indian applicants a structured, predictable route into the system.",
-      "The critical decision is public versus private. A public-route student may complete a master's for under €25,000 in total; a grande école or business school route can cost €25,000–46,000 in tuition alone. Both are legitimate, but they serve different families and different career outcomes, and conflating them in a shortlist damages trust.",
-      "France's 12-month APS (Autorisation Provisoire de Séjour) job-search residence for master's graduates, combined with CAF housing aid that reduces rent by €100–250 per month, makes the public route one of the best net-cost propositions in Europe. The 2024 reforms also simplified the transition from student to employee status for graduates who secure a qualifying offer.",
-      "For partners, France rewards disciplined route selection. Separate the public-university pipeline from the grande école/business-school pipeline at the first counselling session, because the budgets, deadlines, interview preparation and family conversations are entirely different. Mixing them is the most common cause of mid-cycle walk-aways."
+      "Ireland is the clearest English-language alternative inside the European Union. It hosts the European headquarters of Google, Meta, Apple, Intel, Pfizer and a dense pharmaceutical cluster, and its Third Level Graduate Scheme gives master's graduates 24 months to find work without sponsorship. For students who want a UK-style education while staying inside the EU, Ireland is usually the strongest fit.",
+      "The constraint is cost, particularly housing. Dublin rents are among the highest in Europe and supply is genuinely tight, so accommodation must be secured before departure rather than on arrival. Universities outside Dublin — Cork, Galway, Limerick — offer materially better value with comparable programme quality and strong regional employer links.",
+      "Ireland's Critical Skills Employment Permit is the fastest work-permit route for graduates in shortage occupations (IT, engineering, healthcare, finance), and it does not require a labour-market test. Eligible Critical Skills Employment Permit holders may qualify for Stamp 4 permission after 21 months of qualifying employment. Long-term residence and citizenship follow separate eligibility rules.",
+      "For partners, Ireland converts best when financial documentation is impeccable and accommodation is treated as a pipeline stage rather than an afterthought. Refusals here trace to funds-source questions more often than academic weakness, so verify the source of funds before the visa file is built."
     ],
 
     "fullCostBreakdown": [
       {
-        "costItem": "Tuition (public master)",
-        "low": 2902,
-        "typical": 3426,
-        "high": 3950,
+        "costItem": "Tuition (master)",
+        "low": 10000,
+        "typical": 18000,
+        "high": 25000,
         "currency": "EUR",
         "period": "year",
         "notes": "public"
       },
       {
-        "costItem": "Tuition (private)",
-        "low": 9000,
-        "typical": 18000,
-        "high": 24000,
-        "currency": "EUR",
-        "period": "year",
-        "notes": "at top private schools"
-      },
-      {
-        "costItem": "CVEC student fee",
-        "low": 105,
-        "typical": 105,
-        "high": 105,
-        "currency": "EUR",
-        "period": "year",
-        "notes": ""
-      },
-      {
-        "costItem": "Rent (studio / CROUS)",
-        "low": 400,
-        "typical": 650,
-        "high": 1000,
+        "costItem": "Rent (shared, outside Dublin)",
+        "low": 500,
+        "typical": 750,
+        "high": 1300,
         "currency": "EUR",
         "period": "month",
-        "notes": "in central Paris"
+        "notes": "in Dublin"
       },
       {
-        "costItem": "CAF housing aid (offset)",
+        "costItem": "Phone, internet, leisure",
         "low": 100,
         "typical": 150,
-        "high": 250,
+        "high": 220,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
       },
       {
         "costItem": "Food and groceries",
-        "low": 200,
-        "typical": 260,
-        "high": 350,
+        "low": 250,
+        "typical": 320,
+        "high": 420,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
       },
       {
         "costItem": "Transport (student pass)",
-        "low": 25,
-        "typical": 40,
-        "high": 90,
+        "low": 40,
+        "typical": 65,
+        "high": 100,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values; local transport plans vary."
       },
       {
         "costItem": "Health insurance",
-        "low": 0,
-        "typical": 20,
-        "high": 60,
+        "low": 40,
+        "typical": 60,
+        "high": 80,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
       },
       {
         "costItem": "Monthly total (excl. tuition)",
-        "low": 620,
-        "typical": 880,
-        "high": 1300,
+        "low": 930,
+        "typical": 1345,
+        "high": 2120,
         "currency": "EUR",
         "period": "month",
         "notes": "Dummy values."
@@ -1550,159 +1553,182 @@
 
     "prosAndCons": {
       "advantages": [
-        "Public tuition of €2,902–3,950 per year with the same degree recognition as private routes.",
-        "CAF housing allowance reduces rent by €100–250 per month for eligible students.",
-        "12-month post-study job-search residence (APS) for master's graduates.",
-        "World-class research in mathematics, physics, aerospace, AI and luxury management.",
-        "English-taught master's catalogue expanding rapidly across public universities.",
-        "Schengen mobility and a clear five-year permanent-residence pathway."
+        "Fully English-taught with EU membership.",
+        "24-month post-study stay-back under the Third Level Graduate Scheme.",
+        "Critical Skills Employment Permit provides a fast route to long-term residence.",
+        "Dense employer base in technology, pharmaceuticals, medtech and financial services.",
+        "Two intakes (September and January) give a genuine second chance.",
+        "Spouse reunion available for Critical Skills permit holders."
       ],
       "tradeOffsToDisclose": [
-        "French at B1–B2 is effectively required for internships and most local hiring.",
-        "Paris accommodation is expensive and competitive; guarantors are often demanded.",
-        "Campus France interviews and dossier requirements add process steps.",
-        "Grande école tuition can be as high as the UK, so route choice must be explicit.",
-        "Administrative paperwork (carte de séjour) can be slow for first-time residents. "
+        "Tuition of €10,000–25,000 plus high living costs makes it a mid-to-premium option.",
+        "Dublin housing shortage is severe; late applicants struggle.",
+        "Proof of funds of €10,000 per year must be demonstrated before the visa decision.",
+        "Competition for graduate roles is high in Dublin's concentrated market.",
+        "Stamp 2 work limit of 20 hours/week term-time is strictly enforced."
       ]
     },
 
     "applicationAndVisaProcess": [
       {
         "step": 1,
-        "title": "Campus France registration",
-        "description": "Create the Études en France account, complete the dossier and pay the fee. Start 8–9 months before September."
+        "title": "Application and offer",
+        "description": "Apply directly to the university, typically between October and May for a September start."
       },
       {
         "step": 2,
-        "title": "University applications",
-        "description": "Apply to public universities or grandes écoles through the platform; many programmes close between January and March."
+        "title": "Deposit payment",
+        "description": "Pay the tuition deposit or full fee; the receipt is required for the visa application."
       },
       {
         "step": 3,
-        "title": "Campus France interview",
-        "description": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality."
+        "title": "Accommodation",
+        "description": "Secure housing before applying for the visa where possible — Dublin supply disappears by July."
       },
       {
         "step": 4,
-        "title": "Admission and NOC",
-        "description": "Accept the offer and obtain the Campus France no-objection certificate that unlocks the visa appointment."
+        "title": "AVATS online application",
+        "description": "Complete the D-study visa application, upload financials showing €10,000 available, insurance and academic records."
       },
       {
         "step": 5,
-        "title": "VFS visa appointment",
-        "description": "Submit the long-stay VLS-TS student visa with proof of funds (about €615/month), accommodation and insurance."
+        "title": "Biometrics and submission",
+        "description": "Submit at VFS with the summary form, passport and supporting documents. Processing runs 4–8 weeks."
       },
       {
         "step": 6,
-        "title": "Arrival validation",
-        "description": "Validate the VLS-TS online within three months, apply for CAF housing aid and register with social security."
+        "title": "IRP registration",
+        "description": "Register with immigration within 90 days of arrival and receive the Irish Residence Permit."
       }
     ],
 
     "documentChecklist": [
-      "Campus France Études en France dossier and NOC",
-      "Admission letter from the French institution",
-      "Proof of funds of approximately €7,380 per year",
-      "Accommodation proof or attestation d'hébergement",
-      "Academic transcripts, degree certificate and translations where required",
-      "IELTS/TOEFL or DELF/DALF certificate",
-      "Passport, photographs and VFS appointment confirmation",
-      "Travel insurance for the entry period"
+      "Unconditional offer letter from an Irish institution",
+      "Tuition payment or deposit receipt",
+      "Evidence of €10,000 in accessible funds (plus tuition)",
+      "Private medical insurance covering the study period",
+      "Academic transcripts and English proficiency certificate",
+      "Statement of purpose explaining study and career plan",
+      "Passport and AVATS application summary",
+      "Accommodation confirmation where available"
     ],
 
     "partnerOperatingNotes": [
-      "Separate public and private pipelines; the counselling script and budget are entirely different.",
-      "Prepare students for the Campus France interview as rigorously as for a visa interview.",
-      "Track programme-specific deadlines: many close in January, far ahead of German ones.",
-      "Map CAF eligibility into the net-cost calculation before the family commits."
+      "Financial documentation quality drives refusals here more than academics — verify the source of funds.",
+      "Book accommodation as a pipeline stage, not an afterthought; it affects arrival and enrolment.",
+      "January intakes are a genuine second chance for students who miss September.",
+      "Position Ireland as the English-speaking EU alternative to the UK without the dependant restrictions."
     ],
 
     "practicalTips": [
-      "Apply to CROUS residences early; they are the cheapest reliable housing.",
-      "Claim CAF within the first month of arrival — it is retroactive only in limited cases.",
-      "Take French to A2 before departure; internships (stages) are where most careers start.",
-      "Ask every grande école about merit waivers — 10–50% reductions are common and rarely advertised.",
-      "Open a French bank account within the first weeks; required for CAF and salary deposits.",
-      "Validate the VLS-TS visa online within three months of arrival or your legal status lapses."
+      "Look beyond Dublin: Cork, Galway and Limerick cut living costs by 30% with strong employers nearby.",
+      "Apply for on-campus accommodation the day you accept the offer.",
+      "Use the 20-hour term-time work allowance from the first month; hourly rates are among the EU's highest.",
+      "Target Critical Skills list occupations to shorten the route to long-term residence.",
+      "Hold the €10,000 proof-of-funds in a single account for 3–6 months before applying.",
+      "Register for the IRP within 90 days of arrival or your legal status lapses."
     ],
 
     "accommodation": {
       "options": [
         {
-          "type": "CROUS residence",
-          "costRange": {
-            "low": 200,
-            "high": 450,
-            "currency": "EUR",
-            "period": "month"
-          },
-          "details": " the cheapest option; apply via the CROUS portal the moment you accept the offer.",
-          "bestFor": "Students wanting cheapest option."
-        },
-        {
-          "type": "Shared apartment",
-          "costRange": {
-            "low": 400,
-            "high": 700,
-            "currency": "EUR",
-            "period": "month"
-          },
-          "details": "found on SeLoger, PAP and Facebook groups.",
-          "bestFor": "Budget-conscious students looking to share living expenses."
-        },
-        {
-          "type": "Private studio",
+          "type": "On-campus residence",
           "costRange": {
             "low": 500,
             "high": 900,
             "currency": "EUR",
             "period": "month"
           },
-          "details": "€500–900/month in Paris, €350–600 elsewhere..",
+          "details": "Apply the day you accept the offer — waitlists are long.",
+          "bestFor": "Students wanting cheapest option."
+        },
+        {
+          "type": "Shared apartment",
+          "costRange": {
+            "low": 600,
+            "high": 1100,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "In Dublin, €450–750 elsewhere.",
+          "bestFor": "Budget-conscious students looking to share living expenses."
+        },
+        {
+          "type": "Private studio",
+          "costRange": {
+            "low": 900,
+            "high": 1500,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "In Dublin; scarce.",
           "bestFor": "Students preferring complete privacy."
         },
         {
           "type": "Homestay",
           "costRange": {
-            "low": 400,
-            "high": 600,
+            "low": 600,
+            "high": 800,
             "currency": "EUR",
             "period": "month"
           },
-          "details": "good for French immersion in the first months.",
+          "details": "Good for the first semester.",
           "bestFor": "Great for language learning and cultural immersion."
-        },
-        {
-          "type": "CAF housing aid",
-          "costRange": {
-            "low": 100,
-            "high": 250,
-            "currency": "EUR",
-            "period": "month"
-          },
-          "details": "reduction for eligible students — apply within the first month.",
-          "bestFor": ""
         }
       ],
       "generalTips": [
-        "Guarantor: VISALE is a free state-backed guarantor for under-30s; use it to bypass private guarantor demands."
+        "Dublin is the tightest market in Europe — secure housing before the visa appointment where possible.",
+        "Cork, Galway, Limerick offer 30% lower rents with comparable employer access."
       ]
     },
 
     "partTimeWorkRulesOpportunitiesAndEarnings": {
-      "description": "Students may work 964 hours per year (roughly 20 hours/week during term). The French minimum wage (SMIC) is €12.31/hour gross, so part-time earnings of €600–900/month are realistic. On-campus jobs, tutoring, hospitality and retail are the common roles; internships (stages) are the more important career pipeline and are often mandatory in the curriculum.",
+      "description": "Eligible international students with Stamp 2 permission may generally work up to 20 hours per week during term time and up to 40 hours during designated holiday periods, subject to current immigration conditions.. Ireland's minimum wage is €14.15/hour (2026), among the EU's highest, so part-time earnings of €1,000–1,300/month are realistic. On-campus roles, retail, hospitality and tech internships are the common options.",
       "rules": [
-        "Annual allowance: 964 hours/year (~20 hrs/week term-time).",
-        "Minimum wage: €12.31/hour gross; €600–900/month typical.",
-        "Stage (internship): 2–6 months, often paid €600–1,500/month; the main career entry route.",
-        "Alternance (work-study): tuition funded by employer plus a salary — the best route if eligible.",
-        "French at B1 dramatically expands the available roles."
+        "Term-time: generally up to 20 hours/week; designated holiday periods: up to 40 hours/week, subject to Stamp 2 conditions.",
+        "Minimum wage: €14.15/hour (2026); €1,000–1,300/month typical.",
+        "On-campus and graduate teaching assistant roles pay €14–18/hour.",
+        "Tech internships: €2,000–3,500/month, often converting to graduate offers.",
+        "PPS number required before starting any paid work — apply on arrival."
       ]
     },
 
     "careerOpportunitiesAndSalaryRanges": [
       {
-        "field": "Engineering / Aerospace",
+        "field": "Software / Cloud / DevOps",
+        "typicalStartingSalary": {
+          "low": 42000,
+          "high": 58000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Very high",
+        "notes": "Dublin tech cluster; English-only roles"
+      },
+      {
+        "field": "Data / AI / Analytics",
+        "typicalStartingSalary": {
+          "low": 40000,
+          "high": 55000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Very high",
+        "notes": "Pharma, finance and tech employers"
+      },
+      {
+        "field": "Pharma / Biotech",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 50000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "High",
+        "notes": "Dublin and Galway clusters"
+      },
+      {
+        "field": "Medtech / Engineering",
         "typicalStartingSalary": {
           "low": 38000,
           "high": 48000,
@@ -1710,62 +1736,29 @@
           "period": "year"
         },
         "demandLevel": "High",
-        "notes": "French B1 preferred"
+        "notes": "Galway medtech hub"
       },
       {
-        "field": "Software / Data / AI",
+        "field": "Finance / Accounting",
         "typicalStartingSalary": {
           "low": 40000,
           "high": 52000,
           "currency": "EUR",
           "period": "year"
         },
-        "demandLevel": "high",
-        "notes": "English often sufficient"
+        "demandLevel": "Medium-high",
+        "notes": "IFSC and global funds"
       },
       {
-        "field": "Finance / Consulting",
+        "field": "Cybersecurity",
         "typicalStartingSalary": {
           "low": 45000,
-          "high": 58000,
+          "high": 60000,
           "currency": "EUR",
           "period": "year"
         },
-        "demandLevel": "Medium-high",
-        "notes": "French B2 preferred"
-      },
-      {
-        "field": "Luxury / Fashion Mgmt",
-        "typicalStartingSalary": {
-          "low": 38000,
-          "high": 50000,
-          "currency": "EUR",
-          "period": "year"
-        },
-        "demandLevel": "Medium",
-        "notes": "French B2 preferred"
-      },
-      {
-        "field": "Energy / Sustainability",
-        "typicalStartingSalary": {
-          "low": 38000,
-          "high": 46000,
-          "currency": "EUR",
-          "period": "year"
-        },
-        "demandLevel": "Growing",
-        "notes": "French B1 preferred"
-      },
-      {
-        "field": "Research / Academia",
-        "typicalStartingSalary": {
-          "low": 34000,
-          "high": 44000,
-          "currency": "EUR",
-          "period": "year"
-        },
-        "demandLevel": "Niche",
-        "notes": "French often required"
+        "demandLevel": "High",
+        "notes": "Growing across all sectors"
       }
     ]
   }
