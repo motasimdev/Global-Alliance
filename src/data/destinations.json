@@ -1172,5 +1172,601 @@
         "notes": "French often required"
       }
     ]
+  },
+  {
+    "id": 3,
+    "slug": "ireland",
+    "name": "Ireland",
+    "region": "Europe",
+    "flag": "/src/assets/destination/flags/ireland.jpg",
+    "image": "/src/assets/destination/countries/ireland.jpg",
+    "banner": "/src/assets/destination/details/ireland.jpg",
+    "shortDescription": "English-speaking EU hub with tech-giant employment and a clean Third Level Graduate scheme.",
+    "intakeOverview": "September (primary) and January (limited)",
+    "tuitionFeesOverview": "€2,902–3,950 public; €9,000–24,000 private and business schools.",
+    "workRightOverview": "964 hours/year part-time during studies. APS 12-month job-search permit for master’s graduates; Talent Passport pathway.",
+    "overview": "France keeps public tuition among the lowest in Europe (€2,902/year at licence, €3,950 at master, €398/year at PhD) while expanding English-taught programmes and the Talent Passport for graduates. The Campus France procedure is well-established, and post-study APS rights give 12 months to find work. A strong choice for business, luxury management and aerospace, with the India-France education roadmap driving growth.",
+    "featured": true,
+
+    "tuitionFees": {
+      "public": {
+        "low": 2902,
+        "typical": 3426,
+        "high": 3950,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Actual fees depend on the university, region, degree and student status."
+      },
+      "private": {
+        "low": 9000,
+        "typical": 15000,
+        "high": 24000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Verify fees for each institution and program."
+      }
+    },
+
+    "costOfLivingBreakdown": {
+      "description": "€700–1,200 / month (Paris higher), CAF housing aid available.",
+      "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
+    },
+
+    "workRightsDuringAndAfterStudy": {
+      "duringStudy": {
+        "headline": "Work Rights During Study",
+        "opportunity": "Up to 60% of annual working time (~18–20 hours/week or 964 hours/year).",
+        "summary": "International students in France are legally authorized to work part-time up to 964 hours per year under a valid student residence permit.",
+        "rules": [
+          "Work hours are capped at 964 hours per year (60% of the standard French annual work limit).",
+          "No separate work authorization (APT) is required for standard student visa holders.",
+          "Employment must remain compatible with your academic schedule and study progress."
+        ]
+      },
+      "afterStudy": {
+        "headline": "Post-Study Job-Search Residence (RECE / APS)",
+        "opportunity": "12-month post-study job-search residence permit (Recherche d'emploi / Création d'entreprise).",
+        "summary": "Eligible graduates can obtain a RECE (formerly APS) job-search permit to look for qualifying employment or launch a business project in France.",
+        "rules": [
+          "Must hold a recognized Master's degree, Licence Professionnelle, or equivalent Grande École diploma.",
+          "The application must be submitted online via ANEF before the student residence permit expires.",
+          "Allows full-time work while job searching; once a qualifying job offer is secured, it converts directly into a standard Work Permit or Talent Passport (Passeport Talent)."
+        ]
+      }
+    },
+
+    "intakesAndDeadlines": [
+      {
+        "intake": "Autumn (Primary)",
+        "starts": "September",
+        "applicationWindow": "October–March (varies)",
+        "notes": "Full programme catalogue"
+      },
+      {
+        "intake": "Spring (limited)",
+        "starts": "January / February",
+        "applicationWindow": "September-November",
+        "notes": "Fewer programmes; check availability"
+      }
+    ],
+
+    "admissionRequirementsAndEligibility": {
+      "academic": [
+        "Relevant previous academic qualification.",
+        "60%+ for public universities, 65%+ for grandes écoles; consistent academic record.",
+        "Three-year and four-year bachelor's accepted for master's.",
+        "Equivalence/recognition of degree required; formal Homologation may be needed for regulated professions."
+      ],
+      "language": [
+        "English: IELTS 6.5 or TOEFL 90 for English-taught programmes.",
+        "French: DELF B1/B2 for French-taught tracks; not required for English tracks but recommended.",
+        "Medium of Instruction (MOI) certificate may be accepted by select private institutions."
+      ],
+      "financial": [
+        "Proof of sufficient financial means (e.g., bank statement) to cover tuition fees and living expenses as required for university admission and visa application."
+      ],
+      "other": [
+        "GMAT/GRE: required for top business schools (HEC, ESSEC) and some engineering grandes écoles.",
+        "SOP, CV, LORs and a Campus France motivation interview.",
+        "Three-year bachelor's is generally accepted for master's admission (unlike Germany).",
+        "Work experience: 0–2 years for most master's; 3+ for MBA programmes."
+      ],
+      "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
+    },
+
+    "applicationProcessStepByStep": [
+      {
+        "step": 1,
+        "title": "Create Études en France Account",
+        "description": "Create the Études en France account and complete the dossier (8–9 months before intake)."
+      },
+      {
+        "step": 2,
+        "title": "Submit University Applications",
+        "description": "Submit applications to public universities (Études en France) or grandes écoles directly."
+      },
+      {
+        "step": 3,
+        "title": "Campus France Interview",
+        "description": "Attend the Campus France motivation interview (a genuine gate)."
+      },
+      {
+        "step": 4,
+        "title": "Receive Admission & Campus France NOC",
+        "description": "Receive admission and the Campus France no-objection certificate (NOC)."
+      },
+      {
+        "step": 5,
+        "title": "Apply for VLS-TS Student Visa",
+        "description": "Apply for the VLS-TS long-stay student visa at VFS with proof of funds and insurance."
+      },
+      {
+        "step": 6,
+        "title": "Online Visa Validation & Local Registration",
+        "description": " Validate the visa online within three months of arrival; apply for CAF and social security."
+      }
+    ],
+
+    "popularCourses": [
+      "MSc Data Science, AI and Machine Learning",
+      "MSc Aerospace and Aeronautical Engineering ",
+      "MSc Luxury and Fashion Management ",
+      "MSc Finance and International Business ",
+      "MSc Mathematics and Physics",
+      "MSc Renewable Energy and Sustainability",
+      "MSc Computer Science and Software Engineering"
+    ],
+
+    "scholarshipsAndFunding": {
+      "title": "Scholarships & Funding",
+      "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
+      "overview": "Eiffel Excellence, Charpak, Île-de-France merit, school-level 10–50% tuition waivers.",
+      "fundingOptions": [
+        {
+          "icon": "university",
+          "title": "Eiffel Excellence Scholarship",
+          "subtitle": "€1,181/month + travel + insurance",
+          "description": "Master's/PhD in engineering, economics, law, political science; under 25 (master's); January deadline via institution.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "icon": "university",
+          "title": "Emile Boutmy Scholarship",
+          "subtitle": "€5,000–18,000/year tuition reduction",
+          "description": "Non-EU students at Sciences Po; merit and need based.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "icon": "university",
+          "title": "Grande école merit waivers",
+          "subtitle": "10–50% tuition reduction",
+          "description": "Top applicants at HEC, ESSEC, ESCP, EDHEC; ask at the offer stage.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "icon": "university",
+          "title": "CROUS need-based aid",
+          "subtitle": "Variable grant on social criteria",
+          "description": "Enrolled students with low family income; apply via CROUS.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        }
+      ]
+    },
+
+    "postStudyWorkAndPRPathway": {
+      "summary": "Master's graduates receive a 12-month APS (Autorisation Provisoire de Séjour) to seek qualified employment. On securing a job at 1.5× the SMIC (about €2,800/month gross), the graduate transitions to a salaried employee residence permit. Permanent residence (carte de résident) is available after five years of continuous legal residence, reducible in some cases.",
+      "pathways": [
+        {
+          "name": "APS job-search permit",
+          "description": "12 months for master's graduates.",
+          "eligibility": ""
+        },
+        {
+          "name": "Employee residence permit",
+          "description": "requires a job at 1.5× SMIC (~€2,800/month gross).",
+          "eligibility": ""
+        },
+        {
+          "name": "Passeport Talent",
+          "description": "fast-track 4-year permit for highly skilled graduates and researchers.",
+          "eligibility": ""
+        },
+        {
+          "name": "Permanent residence",
+          "description": "5 years continuous residence; citizenship after 5 years with B1 French.",
+          "eligibility": ""
+        },
+        {
+          "name": "EU Blue Card",
+          "description": " available from €53,836/year (2025) for qualifying roles.",
+          "eligibility": ""
+        }
+      ],
+      "prNotes": "Permanent residence is not automatic after graduation and requires 5 years of continuous legal stay. Citizenship requires 10 years (as the 2-year fast-track is restricted to Ibero-American countries)."
+    },
+
+    "challengesAndHowWeHelp": [
+      {
+        "challenge": "Choosing the right university",
+        "howWeHelp": "Help compare programs, entry requirements and study options."
+      },
+      {
+        "challenge": "Preparing application documents",
+        "howWeHelp": "Provide document checklists and application coordination."
+      },
+      {
+        "challenge": "Understanding visa requirements",
+        "howWeHelp": "Share current official guidance and help organize the required documents."
+      },
+      {
+        "challenge": "Planning the budget",
+        "howWeHelp": "Help students estimate tuition and living costs using institution-specific information."
+      }
+    ],
+
+    "whoThisDestinationSuitsBest": [
+      "France suits budget-conscious families who want a prestigious EU degree at public-tuition rates, especially for business, luxury management, aerospace and data science — provided the student can present a coherent study plan through Campus France and is open to learning French."
+    ],
+
+    "currentTrendsAndB2BOpportunities": {
+      "description": "France is investing in AI and semiconductor programmes. The Talent Passport eases post-study transitions for master’s graduates. Indian student numbers are rising with the India-France education roadmap and the target of 30,000 Indian students by 2030.",
+      "trends": [
+        "Interest in international study options across different degree levels.",
+        "Demand for clear guidance on tuition, admission and visa processes."
+      ],
+      "b2bOpportunities": [
+        "Develop relationships with eligible education institutions.",
+        "Provide accurate program information to recruitment partners.",
+        "Improve application coordination and student support."
+      ],
+      "notes": "These are illustrative ideas, not verified market-trend findings."
+    },
+
+    "faqs": [
+      {
+        "question": "Is French language mandatory to study in France?",
+        "answer": "Many master’s programmes are English-taught, but French B2 is required for French-taught tracks and strongly improves internships and employment. We recommend starting French alongside the application."
+      },
+      {
+        "question": "How much does it really cost to study in France?",
+        "answer": "Public-route students pay €170–3,770/year tuition plus €700–1,200/month living, with CAF housing aid available in Paris. Private business schools charge €9,000–46,000, so route choice drives the budget."
+      },
+      {
+        "question": "What is Campus France and why does it matter?",
+        "answer": "Campus France runs the mandatory pre-consular interview for Bangladeshi students. A coherent, well-rehearsed study plan is decisive — we prepare every candidate for this interview."
+      },
+      {
+        "question": "Is France affordable compared to the UK?",
+        "answer": "On the public route, yes — master's tuition is €2,902–3,950/year versus £14,000–32,000 in the UK. CAF housing aid further reduces rent by €100–250/month. Private grandes écoles are comparable to UK pricing, so route choice is decisive."
+      },
+      {
+        "question": "Do I need to speak French to study in France?",
+        "answer": "Not for English-taught programmes (over 1,700 exist). But French at B1–B2 is effectively required for internships, most local hiring and permanent residence. Begin French before departure."
+      },
+      {
+        "question": "What is CAF and am I eligible?",
+        "answer": "CAF (Caisse d'Allocations Familiales) is a housing allowance reducing rent by €100–250/month for eligible students. Apply within the first month of arrival; VISALE provides a free state guarantor for under-30s."
+      },
+      {
+        "question": "Can I stay and work after graduation?",
+        "answer": "Yes — master's graduates get a 12-month APS job-search residence. On securing a job at ≥1.5× SMIC, you transition to an employee residence permit. Permanent residence is available after 5 years."
+      },
+      {
+        "question": "What is the Campus France interview?",
+        "answer": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality — prepare for it as rigorously as for a visa interview."
+      }
+    ],
+
+    "completeBrief": [
+      "France offers the second-lowest public tuition in Western Europe — €243 per year for a master's at a public university — alongside a research base in mathematics, physics, aerospace and luxury management that few countries match. The English-taught catalogue has grown quickly, and Campus France gives Indian applicants a structured, predictable route into the system.",
+      "The critical decision is public versus private. A public-route student may complete a master's for under €25,000 in total; a grande école or business school route can cost €25,000–46,000 in tuition alone. Both are legitimate, but they serve different families and different career outcomes, and conflating them in a shortlist damages trust.",
+      "France's 12-month APS (Autorisation Provisoire de Séjour) job-search residence for master's graduates, combined with CAF housing aid that reduces rent by €100–250 per month, makes the public route one of the best net-cost propositions in Europe. The 2024 reforms also simplified the transition from student to employee status for graduates who secure a qualifying offer.",
+      "For partners, France rewards disciplined route selection. Separate the public-university pipeline from the grande école/business-school pipeline at the first counselling session, because the budgets, deadlines, interview preparation and family conversations are entirely different. Mixing them is the most common cause of mid-cycle walk-aways."
+    ],
+
+    "fullCostBreakdown": [
+      {
+        "costItem": "Tuition (public master)",
+        "low": 2902,
+        "typical": 3426,
+        "high": 3950,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "public"
+      },
+      {
+        "costItem": "Tuition (private)",
+        "low": 9000,
+        "typical": 18000,
+        "high": 24000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "at top private schools"
+      },
+      {
+        "costItem": "CVEC student fee",
+        "low": 105,
+        "typical": 105,
+        "high": 105,
+        "currency": "EUR",
+        "period": "year",
+        "notes": ""
+      },
+      {
+        "costItem": "Rent (studio / CROUS)",
+        "low": 400,
+        "typical": 650,
+        "high": 1000,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "in central Paris"
+      },
+      {
+        "costItem": "CAF housing aid (offset)",
+        "low": 100,
+        "typical": 150,
+        "high": 250,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Food and groceries",
+        "low": 200,
+        "typical": 260,
+        "high": 350,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Transport (student pass)",
+        "low": 25,
+        "typical": 40,
+        "high": 90,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values; local transport plans vary."
+      },
+      {
+        "costItem": "Health insurance",
+        "low": 0,
+        "typical": 20,
+        "high": 60,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      },
+      {
+        "costItem": "Monthly total (excl. tuition)",
+        "low": 620,
+        "typical": 880,
+        "high": 1300,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "Dummy values."
+      }
+    ],
+
+    "prosAndCons": {
+      "advantages": [
+        "Public tuition of €2,902–3,950 per year with the same degree recognition as private routes.",
+        "CAF housing allowance reduces rent by €100–250 per month for eligible students.",
+        "12-month post-study job-search residence (APS) for master's graduates.",
+        "World-class research in mathematics, physics, aerospace, AI and luxury management.",
+        "English-taught master's catalogue expanding rapidly across public universities.",
+        "Schengen mobility and a clear five-year permanent-residence pathway."
+      ],
+      "tradeOffsToDisclose": [
+        "French at B1–B2 is effectively required for internships and most local hiring.",
+        "Paris accommodation is expensive and competitive; guarantors are often demanded.",
+        "Campus France interviews and dossier requirements add process steps.",
+        "Grande école tuition can be as high as the UK, so route choice must be explicit.",
+        "Administrative paperwork (carte de séjour) can be slow for first-time residents. "
+      ]
+    },
+
+    "applicationAndVisaProcess": [
+      {
+        "step": 1,
+        "title": "Campus France registration",
+        "description": "Create the Études en France account, complete the dossier and pay the fee. Start 8–9 months before September."
+      },
+      {
+        "step": 2,
+        "title": "University applications",
+        "description": "Apply to public universities or grandes écoles through the platform; many programmes close between January and March."
+      },
+      {
+        "step": 3,
+        "title": "Campus France interview",
+        "description": "A motivation interview covering programme fit, funding and career plan. It is a genuine gate, not a formality."
+      },
+      {
+        "step": 4,
+        "title": "Admission and NOC",
+        "description": "Accept the offer and obtain the Campus France no-objection certificate that unlocks the visa appointment."
+      },
+      {
+        "step": 5,
+        "title": "VFS visa appointment",
+        "description": "Submit the long-stay VLS-TS student visa with proof of funds (about €615/month), accommodation and insurance."
+      },
+      {
+        "step": 6,
+        "title": "Arrival validation",
+        "description": "Validate the VLS-TS online within three months, apply for CAF housing aid and register with social security."
+      }
+    ],
+
+    "documentChecklist": [
+      "Campus France Études en France dossier and NOC",
+      "Admission letter from the French institution",
+      "Proof of funds of approximately €7,380 per year",
+      "Accommodation proof or attestation d'hébergement",
+      "Academic transcripts, degree certificate and translations where required",
+      "IELTS/TOEFL or DELF/DALF certificate",
+      "Passport, photographs and VFS appointment confirmation",
+      "Travel insurance for the entry period"
+    ],
+
+    "partnerOperatingNotes": [
+      "Separate public and private pipelines; the counselling script and budget are entirely different.",
+      "Prepare students for the Campus France interview as rigorously as for a visa interview.",
+      "Track programme-specific deadlines: many close in January, far ahead of German ones.",
+      "Map CAF eligibility into the net-cost calculation before the family commits."
+    ],
+
+    "practicalTips": [
+      "Apply to CROUS residences early; they are the cheapest reliable housing.",
+      "Claim CAF within the first month of arrival — it is retroactive only in limited cases.",
+      "Take French to A2 before departure; internships (stages) are where most careers start.",
+      "Ask every grande école about merit waivers — 10–50% reductions are common and rarely advertised.",
+      "Open a French bank account within the first weeks; required for CAF and salary deposits.",
+      "Validate the VLS-TS visa online within three months of arrival or your legal status lapses."
+    ],
+
+    "accommodation": {
+      "options": [
+        {
+          "type": "CROUS residence",
+          "costRange": {
+            "low": 200,
+            "high": 450,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": " the cheapest option; apply via the CROUS portal the moment you accept the offer.",
+          "bestFor": "Students wanting cheapest option."
+        },
+        {
+          "type": "Shared apartment",
+          "costRange": {
+            "low": 400,
+            "high": 700,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "found on SeLoger, PAP and Facebook groups.",
+          "bestFor": "Budget-conscious students looking to share living expenses."
+        },
+        {
+          "type": "Private studio",
+          "costRange": {
+            "low": 500,
+            "high": 900,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "€500–900/month in Paris, €350–600 elsewhere..",
+          "bestFor": "Students preferring complete privacy."
+        },
+        {
+          "type": "Homestay",
+          "costRange": {
+            "low": 400,
+            "high": 600,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "good for French immersion in the first months.",
+          "bestFor": "Great for language learning and cultural immersion."
+        },
+        {
+          "type": "CAF housing aid",
+          "costRange": {
+            "low": 100,
+            "high": 250,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "reduction for eligible students — apply within the first month.",
+          "bestFor": ""
+        }
+      ],
+      "generalTips": [
+        "Guarantor: VISALE is a free state-backed guarantor for under-30s; use it to bypass private guarantor demands."
+      ]
+    },
+
+    "partTimeWorkRulesOpportunitiesAndEarnings": {
+      "description": "Students may work 964 hours per year (roughly 20 hours/week during term). The French minimum wage (SMIC) is €12.31/hour gross, so part-time earnings of €600–900/month are realistic. On-campus jobs, tutoring, hospitality and retail are the common roles; internships (stages) are the more important career pipeline and are often mandatory in the curriculum.",
+      "rules": [
+        "Annual allowance: 964 hours/year (~20 hrs/week term-time).",
+        "Minimum wage: €12.31/hour gross; €600–900/month typical.",
+        "Stage (internship): 2–6 months, often paid €600–1,500/month; the main career entry route.",
+        "Alternance (work-study): tuition funded by employer plus a salary — the best route if eligible.",
+        "French at B1 dramatically expands the available roles."
+      ]
+    },
+
+    "careerOpportunitiesAndSalaryRanges": [
+      {
+        "field": "Engineering / Aerospace",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 48000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "High",
+        "notes": "French B1 preferred"
+      },
+      {
+        "field": "Software / Data / AI",
+        "typicalStartingSalary": {
+          "low": 40000,
+          "high": 52000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "high",
+        "notes": "English often sufficient"
+      },
+      {
+        "field": "Finance / Consulting",
+        "typicalStartingSalary": {
+          "low": 45000,
+          "high": 58000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Medium-high",
+        "notes": "French B2 preferred"
+      },
+      {
+        "field": "Luxury / Fashion Mgmt",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 50000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Medium",
+        "notes": "French B2 preferred"
+      },
+      {
+        "field": "Energy / Sustainability",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 46000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Growing",
+        "notes": "French B1 preferred"
+      },
+      {
+        "field": "Research / Academia",
+        "typicalStartingSalary": {
+          "low": 34000,
+          "high": 44000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Niche",
+        "notes": "French often required"
+      }
+    ]
   }
 ]

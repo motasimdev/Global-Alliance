@@ -10,7 +10,7 @@ const Destination_CardGrid = ({ destinations = [] }) => {
   );
 
   return (
-    <section className="py-15 md:py-20 lg:py-24 bg-tertiary/30">
+    <section className="py-15 md:pb-20 md:pt-12 lg:py-18 bg-tertiary/30">
       <Container>
         <div className="max-w-md mx-auto mb-10 md:mb-12">
           <div className="relative">
