@@ -14,6 +14,7 @@ import Signup from "../components/pages/Signup";
 import Error from "../components/pages/Error";
 import Recruiter from "../components/pages/Recruiter";
 import Destination from "../components/pages/Destination";
+import Destination_Details from "../components/pages/Destination_Details";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const AppRoutes = createBrowserRouter([
       {
         path: "destination",
         Component: Destination,
+      },
+      {
+        path: "destination/:slug",
+        Component: Destination_Details,
       },
       // {
       //   path: "our-services",
