@@ -21,7 +21,7 @@ Section 03 — Our University Network
 নিচে Explore All Universities button থাকবে।
 গুরুত্বপূর্ণ: কেবল বাস্তবে partner বা অনুমোদিত institution হলে সেই পরিচয় ব্যবহার করবে। অন্য university-র তথ্য দেখালে সেটিকে partner university বলে উপস্থাপন করবে না। Network-এর আকার ছোট হলে অল্প কয়েকটি card দেখিয়ে directory-তে link দেওয়াই ভালো।
 
-
+==form==
 আমার মতে, প্রথম version-এ এই field-গুলো রাখা যায়:
 Field	Type
 Full Name	Text
@@ -34,3 +34,101 @@ Preferred Destinations	Multi-select বা checkbox
 Message	Textarea
 Organisation Type-এর উদাহরণ: Education Agency, Independent Recruiter, Institutional Partner, Other।
 Submit button-এর text হতে পারে Submit Partnership Enquiry।
+
+destination details
+1	Hero Banner	আবশ্যক
+2	Destination Overview + Why Study	আবশ্যক
+3	Quick Facts / Key Information	আবশ্যক
+4	Tuition Fees + Cost of Living	আবশ্যক
+5	Popular Courses	আবশ্যক
+6	Admission Requirements + Intakes	আবশ্যক
+7	Scholarships & Funding	গুরুত্বপূর্ণ
+8	Application & Visa Process + Checklist	আবশ্যক
+9	Accommodation + Student Work Rights	গুরুত্বপূর্ণ
+10	Post-Study Work + Career Opportunities	আবশ্যক
+11	Challenges & How We Help	আবশ্যক
+12	FAQ + Final CTA
+
+1. Destination Hero Banner
+Data: name, banner, flag, region, shortDescription, intakeOverview, tuitionFeesOverview, workRightOverview
+দেশের বড় banner image, country name, flag, সংক্ষিপ্ত পরিচিতি এবং গুরুত্বপূর্ণ তথ্য।
+
+2. Destination Overview
+Data: overview, completeBrief
+দেশটিতে পড়াশোনার সুবিধা, প্রধান বৈশিষ্ট্য, সম্ভাবনা ও গুরুত্বপূর্ণ বিবরণ।
+
+3. Why Study in This Country?
+Data: whyStudy, prosAndCons.advantages, prosAndCons.tradeOffsToDisclose
+কেন দেশটি বেছে নেবে, কী সুবিধা পাবে এবং কোন বিষয়গুলো আগে থেকে জানা প্রয়োজন।
+
+B. Admission ও financial planning
+
+4. Tuition Fees
+Data: tuitionFees, tuitionFeesOverview
+Public ও private institution-এর fee range, typical cost এবং প্রয়োজনীয় notes।
+
+5. Cost of Living
+Data: costOfLivingBreakdown, fullCostBreakdown
+বাসাভাড়া, খাবার, transport, insurance এবং মাসিক আনুমানিক খরচ।
+
+6. Admission Requirements
+Data: admissionRequirementsAndEligibility
+Academic qualification, English proficiency, financial documents এবং অন্যান্য eligibility।
+
+7. Intakes & Application Deadlines
+Data: intakesAndDeadlines
+September ও January intake, application window এবং intake-specific notes।
+
+8. Scholarships & Funding
+Data: scholarshipsAndFunding
+Scholarship options, award amount, eligibility এবং funding overview।
+
+C. Courses ও application process
+
+9. Popular Courses
+Data: popularCourses
+জনপ্রিয় subject-গুলোর list, সুন্দর course cards বা tags আকারে।
+
+10. Application & Visa Process
+Data: applicationProcessStepByStep, applicationAndVisaProcess, documentChecklist
+ধাপে ধাপে application, offer acceptance, deposit, visa preparation, biometrics এবং arrival-এর পর করণীয়। Document checklist একই section-এর মধ্যে রাখা যায়।
+
+D. Student life ও future opportunities
+
+11. Accommodation & Housing
+Data: accommodation
+On-campus residence, shared apartment, private studio ও homestay-এর খরচ এবং সুবিধা।
+
+12. Work Rights During Study
+Data: workRightsDuringAndAfterStudy.duringStudy, partTimeWorkRulesOpportunitiesAndEarnings
+পড়াশোনার সময় কাজের নিয়ম, অনুমোদিত work hours এবং সম্ভাব্য earnings।
+
+13. Post-Study Work & Immigration Pathways
+Data: postStudyOverview, workRightsDuringAndAfterStudy.afterStudy, postStudyWorkAndPRPathway
+Graduation-এর পর work permission, employment permit এবং দীর্ঘমেয়াদি residence-এর সম্ভাব্য পথ।
+
+14. Career Opportunities & Salary
+Data: careerOpportunitiesAndSalaryRanges
+বিভিন্ন career field, starting salary range এবং demand level।
+
+E. Conversion, support ও অতিরিক্ত তথ্য
+
+15. Who Should Choose This Destination?
+Data: whoThisDestinationSuitsBest
+কোন ধরনের student-এর জন্য দেশটি উপযুক্ত, তার সংক্ষিপ্ত পরিচিতি।
+
+16. Challenges & How We Help
+Data: challengesAndHowWeHelp
+Student-এর সাধারণ সমস্যা এবং তোমাদের consultancy কীভাবে সহায়তা করবে।
+
+17. Partner & B2B Opportunities
+Data: currentTrendsAndB2BOpportunities, partnerOperatingNotes
+Recruitment partner, institution collaboration এবং partner-দের জন্য প্রয়োজনীয় operating notes। এটি B2B audience-এর জন্য ঐচ্ছিক section।
+
+18. Frequently Asked Questions (FAQ)
+Data: faqs
+Visa, tuition, intake, accommodation ও post-study work সম্পর্কিত প্রশ্নোত্তর
+
+19. Final CTA — Start Your Application
+এটি একটি design recommendation; JSON-এ আলাদা CTA data নেই।
+“Talk to Our Counsellor”, “Explore Universities” বা “Start Your Application”-এর মতো action।

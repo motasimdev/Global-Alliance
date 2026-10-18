@@ -7,10 +7,10 @@ const Destination_Banner = () => {
   return (
     <>
       <section className="relative shadow-xl">
-        <div className="absolute inset-0 block bg-[url(/src/assets/destination/flags.jfif)] bg-no-repeat bg-center bg-cover blur-xs md:blur-[2px]"></div>
+        <div className="absolute inset-0 block bg-[url(/src/assets/destination/flags.jfif)] bg-no-repeat bg-center bg-cover"></div>
         <Container>
           <div className="relative md:flex z-10">
-            <div className="md:w-2/3 lg:w-1/2 m-auto text-center py-8 md:pt-10 md:pb-20 lg:pt-12">
+            <div className="md:w-2/3 lg:w-1/2 m-auto text-center py-8 md:pt-10 md:pb-20 lg:pt-12 lg:pb-48">
               <h4 className="text-3xl md:text-4xl lg:text-[40px] font-bold lg:pr-15 text-secondary">
                 Comprehensive{" "}
                 <span className="text-primary">Destination Guides</span> for
