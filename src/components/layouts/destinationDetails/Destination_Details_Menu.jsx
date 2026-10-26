@@ -1,199 +1,282 @@
-import { useEffect, useRef, useState } from "react";
-import { FaChevronDown } from "react-icons/fa6";
+import React, { useState, useEffect, useRef } from "react";
+import { FaChevronDown } from "react-icons/fa";
 import Container from "../../Container";
 
-const destinationMenuItems = [
-  { label: "Overview", targetId: "destination-overview", children: [
-    { label: "Destination Overview", targetId: "destination-overview" },
-    { label: "Why Study Here", targetId: "overview-why-study-here" },
-    { label: "Pros & Cons", targetId: "overview-pros-cons" },
-    { label: "Who It Suits", targetId: "overview-who-it-suits" },
-  ] },
-  { label: "Fees & Costs", targetId: "destination-fees-costs", children: [
-    { label: "Tuition Fees", targetId: "fees-tuition" },
-    { label: "Cost of Living", targetId: "fees-living" },
-    { label: "Full Cost Breakdown", targetId: "fees-breakdown" },
-    { label: "Accommodation", targetId: "fees-accommodation" },
-  ] },
-  { label: "Courses & Careers", targetId: "destination-courses-careers", children: [
-    { label: "Popular Courses", targetId: "courses-popular" },
-    { label: "Career Opportunities", targetId: "courses-careers" },
-    { label: "Salary Ranges", targetId: "courses-salaries" },
-  ] },
-  { label: "Admission", targetId: "destination-admission", children: [
-    { label: "Admission Requirements", targetId: "admission-requirements" },
-    { label: "Eligibility", targetId: "admission-eligibility" },
-    { label: "Intakes & Deadlines", targetId: "admission-intakes" },
-  ] },
-  { label: "Scholarships", targetId: "destination-scholarships", children: [
-    { label: "Scholarships & Funding", targetId: "scholarships-funding" },
-  ] },
-  { label: "Application & Visa", targetId: "destination-application-visa", children: [
-    { label: "Application Process", targetId: "visa-application" },
-    { label: "Visa Process", targetId: "visa-process" },
-    { label: "Document Checklist", targetId: "visa-documents" },
-  ] },
-  { label: "Work & Future", targetId: "destination-work-future", children: [
-    { label: "Part-Time Work", targetId: "work-part-time" },
-    { label: "Work Rights", targetId: "work-rights" },
-    { label: "Post-Study Options", targetId: "work-post-study" },
-    { label: "PR Pathway", targetId: "work-pr" },
-  ] },
-  { label: "FAQs", targetId: "destination-faqs", children: [] },
+const menuData = [
+  {
+    label: "Overview",
+    targetId: "destination-overview",
+    submenu: [
+      {
+        label: "Destination Overview",
+        targetId: "destination-overview-description",
+      },
+      { label: "Why Study Here", targetId: "why-study-here" },
+      { label: "Pros & Cons", targetId: "pros-cons" },
+      { label: "Who This Destination Suits Best", targetId: "who-this-suits" },
+    ],
+  },
+  {
+    label: "Fees & Costs",
+    targetId: "tuition-fees",
+    submenu: [
+      { label: "Tuition Fees", targetId: "tuition-fees" },
+      { label: "Cost of Living", targetId: "cost-of-living" },
+      { label: "Full Cost Breakdown", targetId: "full-cost-breakdown" },
+      { label: "Accommodation", targetId: "accommodation" },
+    ],
+  },
+  {
+    label: "Courses & Careers",
+    targetId: "popular-courses",
+    submenu: [
+      { label: "Popular Courses", targetId: "popular-courses" },
+      { label: "Career Opportunities", targetId: "career-opportunities" },
+      { label: "Salary Ranges", targetId: "salary-ranges" },
+    ],
+  },
+  {
+    label: "Admission",
+    targetId: "admission-requirements",
+    submenu: [
+      { label: "Admission Requirements", targetId: "admission-requirements" },
+      { label: "Eligibility", targetId: "eligibility" },
+      { label: "Intakes & Deadlines", targetId: "intakes-deadlines" },
+    ],
+  },
+  {
+    label: "Scholarships",
+    targetId: "scholarships-funding",
+    submenu: [
+      { label: "Scholarships & Funding", targetId: "scholarships-funding" },
+    ],
+  },
+  {
+    label: "Application & Visa",
+    targetId: "application-process",
+    submenu: [
+      { label: "Application Process", targetId: "application-process" },
+      { label: "Visa Process", targetId: "visa-process" },
+      { label: "Document Checklist", targetId: "document-checklist" },
+    ],
+  },
+  {
+    label: "Work & Future",
+    targetId: "part-time-work",
+    submenu: [
+      { label: "Part-Time Work", targetId: "part-time-work" },
+      { label: "Work Rights During and After Study", targetId: "work-rights" },
+      { label: "Post-Study Options", targetId: "post-study-options" },
+      { label: "PR Pathway", targetId: "pr-pathway" },
+    ],
+  },
+  {
+    label: "FAQs",
+    targetId: "faqs",
+  },
 ];
 
-const sectionTargets = destinationMenuItems.flatMap((item) => [
-  { label: item.label, targetId: item.targetId },
-  ...item.children.map((child) => ({ label: item.label, targetId: child.targetId })),
-]);
+const SCROLL_OFFSET = 90;
 
 const Destination_Details_Menu = () => {
-  const [activeItem, setActiveItem] = useState("Overview");
-  const [hoveredMenu, setHoveredMenu] = useState("");
-  const [submenuLeft, setSubmenuLeft] = useState(0);
-  const navRef = useRef(null);
-  const closeTimer = useRef(null);
-  const hoveredItem = destinationMenuItems.find(({ label }) => label === hoveredMenu);
+  const [activeId, setActiveId] = useState("");
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const observerRef = useRef(null);
+
+  // Deduplicate target IDs so shared parent/submenu IDs are observed only once
+  const allTargetIds = [
+    ...new Set(
+      menuData.flatMap((item) => [
+        item.targetId,
+        ...(item.submenu || []).map((s) => s.targetId),
+      ]),
+    ),
+  ];
+
+  const isMenuItemActive = (item) => {
+    if (activeId === item.targetId) return true;
+    if (item.submenu) {
+      return item.submenu.some((s) => s.targetId === activeId);
+    }
+    return false;
+  };
+
+  const isSubmenuActive = (sub) => {
+    return activeId === sub.targetId;
+  };
+
+  const scrollToTarget = (targetId) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const bodyRect = document.body.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
+      const elementPosition = elementRect.top - bodyRect.top;
+      window.scrollTo({
+        top: elementPosition - SCROLL_OFFSET,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    scrollToTarget(targetId);
+    if (window.innerWidth < 1024) {
+      setOpenSubmenu(null);
+    }
+  };
+
+  const handleMainClick = (e, item) => {
+    if (item.submenu && window.innerWidth < 1024) {
+      e.preventDefault();
+      setOpenSubmenu(openSubmenu === item.label ? null : item.label);
+    } else {
+      handleNavClick(e, item.targetId);
+    }
+  };
+
+  const handleMouseEnter = (item) => {
+    if (window.innerWidth >= 1024) {
+      if (item.submenu) {
+        setOpenSubmenu(item.label);
+      } else {
+        setOpenSubmenu(null);
+      }
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth >= 1024) {
+      setOpenSubmenu(null);
+    }
+  };
 
   useEffect(() => {
-    const updateActiveItem = () => {
-      const scrollMarker = (navRef.current?.getBoundingClientRect().bottom || 160) + 24;
-      const activeTarget = sectionTargets
-        .map((item) => ({ ...item, element: document.getElementById(item.targetId) }))
-        .filter(({ element }) => element)
-        .filter(({ element }) => element.getBoundingClientRect().top <= scrollMarker)
-        .at(-1);
-
-      if (activeTarget) {
-        setActiveItem((currentItem) =>
-          currentItem === activeTarget.label ? currentItem : activeTarget.label,
-        );
+    const handleClickOutside = (e) => {
+      if (!e.target.closest(".destination-menu")) {
+        setOpenSubmenu(null);
       }
     };
-
-    const animationFrame = requestAnimationFrame(updateActiveItem);
-    window.addEventListener("scroll", updateActiveItem, { passive: true });
-    window.addEventListener("resize", updateActiveItem);
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-      window.removeEventListener("scroll", updateActiveItem);
-      window.removeEventListener("resize", updateActiveItem);
-      if (closeTimer.current) clearTimeout(closeTimer.current);
-    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
-  const scrollToSection = (targetId, label) => {
-    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    setActiveItem(label);
-  };
+  useEffect(() => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
 
-  const openSubmenu = (item, event) => {
-    if (!item.children.length) return;
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        // Pick the entry closest to the top of the viewport
+        const visibleEntries = entries.filter((e) => e.isIntersecting);
+        if (visibleEntries.length === 0) return;
 
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    const { left } = event.currentTarget.getBoundingClientRect();
-    setSubmenuLeft(left);
-    setHoveredMenu(item.label);
-  };
+        let best = visibleEntries[0];
+        for (let i = 1; i < visibleEntries.length; i++) {
+          if (
+            visibleEntries[i].boundingClientRect.top <
+            best.boundingClientRect.top
+          ) {
+            best = visibleEntries[i];
+          }
+        }
+        setActiveId(best.target.id);
+      },
+      {
+        rootMargin: "-120px 0px -50% 0px",
+        threshold: 0,
+      },
+    );
 
-  const scheduleSubmenuClose = () => {
-    closeTimer.current = setTimeout(() => setHoveredMenu(""), 120);
-  };
+    allTargetIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observerRef.current.observe(element);
+      }
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, []); // Empty dependency: run once on mount, cleanup on unmount
 
   return (
     <nav
-      aria-label="Destination sections"
-      ref={navRef}
-      onMouseLeave={scheduleSubmenuClose}
-      className="relative sticky top-15 z-50 w-full border-y border-secondary/10 bg-white/95 shadow-sm backdrop-blur md:top-16 lg:top-18"
+      className="destination-menu sticky z-999 bg-white border-b border-secondary/10 shadow-sm"
+      style={{ top: "74px" }}
+      onMouseLeave={handleMouseLeave}
     >
-      <Container className="relative min-w-0">
-        <div className="w-full min-w-0 overflow-x-auto py-2.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex w-max min-w-full items-center gap-1.5 md:gap-2">
-            <span className="hidden shrink-0 text-xs font-bold tracking-[0.14em] text-secondary/45 uppercase 2xl:block">Explore</span>
-            <div className="hidden h-5 w-px shrink-0 bg-secondary/15 2xl:block" />
-            {destinationMenuItems.map((item) => {
-              const isActive = activeItem === item.label;
-              const hasChildren = item.children.length > 0;
-
-              return (
-                <button
-                  key={item.label}
-                  type="button"
-                  onMouseEnter={(event) => openSubmenu(item, event)}
-                  onFocus={(event) => openSubmenu(item, event)}
-                  onClick={() => scrollToSection(item.targetId, item.label)}
-                  className={`flex shrink-0 items-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-bold whitespace-nowrap transition-colors duration-200 md:px-3.5 ${
-                    isActive
-                      ? "border-primary bg-primary text-white shadow-sm"
-                      : "border-transparent text-secondary hover:border-secondary/10 hover:bg-tertiary/35 hover:text-primary"
-                  }`}
-                >
-                  {item.label}
-                  {hasChildren && <FaChevronDown className="text-[10px]" aria-hidden="true" />}
-                </button>
-              );
-            })}
-          </div>
+      <Container>
+        <div className="flex items-center">
+          <ul
+            className="flex items-center space-x-1 lg:space-x-2 py-2 whitespace-nowrap"
+            onMouseLeave={handleMouseLeave}
+          >
+            {menuData.map((item) => (
+              <li
+                key={item.targetId}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(item)}
+              >
+                {item.submenu ? (
+                  <>
+                    <button
+                      onClick={(e) => handleMainClick(e, item)}
+                      className={`px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center gap-1 ${
+                        isMenuItemActive(item)
+                          ? "text-primary border-b-2 border-primary"
+                          : "text-secondary hover:text-primary"
+                      }`}
+                    >
+                      {item.label}
+                      <FaChevronDown
+                        className={`text-xs transition-transform duration-200 ${
+                          openSubmenu === item.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openSubmenu === item.label && (
+                      <div className="absolute top-full left-0 z-1000 min-w-[240px] bg-white border border-secondary/10 shadow-lg rounded-lg py-2">
+                        {item.submenu.map((sub) => (
+                          <a
+                            key={sub.targetId}
+                            href={`#${sub.targetId}`}
+                            onClick={(e) => handleNavClick(e, sub.targetId)}
+                            className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                              isSubmenuActive(sub)
+                                ? "text-primary bg-tertiary/30 font-semibold"
+                                : "text-secondary hover:text-primary hover:bg-tertiary/20"
+                            }`}
+                          >
+                            {sub.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <a
+                    href={`#${item.targetId}`}
+                    onClick={(e) => handleNavClick(e, item.targetId)}
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 block ${
+                      isMenuItemActive(item)
+                        ? "text-primary border-b-2 border-primary"
+                        : "text-secondary hover:text-primary"
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
-
       </Container>
-
-      {hoveredItem && (
-        <div
-          className="absolute top-full z-60 w-52 rounded-b-lg border border-t-0 border-secondary/10 bg-white p-1.5 shadow-lg"
-          style={{ left: submenuLeft }}
-          onMouseEnter={() => closeTimer.current && clearTimeout(closeTimer.current)}
-          onMouseLeave={scheduleSubmenuClose}
-        >
-            <div className="flex flex-col">
-              {hoveredItem.children.map((child) => (
-                <button
-                  key={child.targetId}
-                  type="button"
-                  onClick={() => {
-                    scrollToSection(child.targetId, hoveredItem.label);
-                    setHoveredMenu("");
-                  }}
-                  className="rounded-md px-2.5 py-2 text-left text-sm font-semibold text-secondary transition-colors hover:bg-tertiary/35 hover:text-primary"
-                >
-                  {child.label}
-                </button>
-              ))}
-            </div>
-        </div>
-      )}
     </nav>
   );
 };
-
-export const Destination_Details_Menu_Preview = () => (
-  <section className="bg-white py-14 md:py-18">
-    <Container>
-      <div className="mb-8 rounded-2xl border border-primary/15 bg-primary/5 p-5 md:p-6">
-        <p className="text-sm font-bold text-primary">Menu preview</p>
-        <p className="mt-1 text-sm text-secondary/70">Temporary section targets for menu testing.</p>
-      </div>
-      <div className="space-y-8">
-        {destinationMenuItems.map((item) => (
-          <section key={item.label} id={item.targetId === "destination-overview" ? undefined : item.targetId} className="scroll-mt-44 rounded-2xl border border-secondary/10 bg-[#f7f7ff] p-5 md:p-7">
-            <h2 className="text-2xl font-bold text-secondary">{item.label}</h2>
-            {item.children.length > 0 ? (
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {item.children.filter((child) => child.targetId !== item.targetId).map((child) => (
-                  <article key={child.targetId} id={child.targetId} className="scroll-mt-44 rounded-xl border border-secondary/10 bg-white p-4">
-                    <h3 className="font-bold text-secondary">{child.label}</h3>
-                    <p className="mt-1 text-sm text-secondary/60">Temporary section target for menu testing.</p>
-                  </article>
-                ))}
-              </div>
-            ) : <p className="mt-2 text-sm text-secondary/60">Temporary section target for menu testing.</p>}
-          </section>
-        ))}
-      </div>
-    </Container>
-  </section>
-);
 
 export default Destination_Details_Menu;

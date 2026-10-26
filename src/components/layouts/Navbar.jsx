@@ -120,7 +120,7 @@ const Navbar = () => {
                     }`
                   }
                 >
-                 Recruiter
+                  Recruiter
                 </NavLink>
               </li>
 
@@ -194,7 +194,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             ></div>
             <div className="relative pb-4 border-t border-gray-200 z-50">
-              <ul className="flex flex-col pt-2 text-center">
+              <ul className="flex flex-col pt-2 text-center uppercase">
                 <li>
                   <NavLink
                     to="/"
@@ -223,6 +223,21 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/destination"
+                    className={({ isActive }) =>
+                      `block px-4 py-3 font-medium${
+                        isActive
+                          ? " text-primary border-b-2 border-primary shadow-lg"
+                          : "text-secondary hover:text-primary  "
+                      }`
+                    }
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Destination
                   </NavLink>
                 </li>
                 <li>

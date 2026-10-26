@@ -29,7 +29,7 @@ const Destinaion_Details_Banner = ({ destination }) => {
       />
 
       <div
-        className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/90 to-secondary/45"
+        className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/75 to-secondary/5"
         aria-hidden="true"
       />
 

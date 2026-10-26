@@ -6,11 +6,8 @@ import Breadcrumb from "../layouts/Breadcrumb";
 import destinations from "../../data/destinations.json";
 import Destinaion_Details_Banner from "../layouts/destinationDetails/Destinaion_Details_Banner";
 import Destination_Details_AtAGlance from "../layouts/destinationDetails/Destination_Details_AtAGlance";
-import Destination_Details_Menu, {
-  Destination_Details_Menu_Preview,
-} from "../layouts/destinationDetails/Destination_Details_Menu";
-
-
+import Destination_Details_Menu from "../layouts/destinationDetails/Destination_Details_Menu";
+import Destination_Details_WhyStudy from "../layouts/destinationDetails/Destination_Details_WhyStudy";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -44,12 +41,10 @@ const Destination_Details = () => {
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
-      <div id="destination-overview" className="scroll-mt-36 lg:scroll-mt-40">
-        <Destinaion_Details_Banner destination={destination}/>
-      </div>
+      <Destinaion_Details_Banner destination={destination} />
       <Destination_Details_Menu />
       <Destination_Details_AtAGlance destination={destination} />
-      <Destination_Details_Menu_Preview />
+      <Destination_Details_WhyStudy destination={destination} />
     </>
   );
 };

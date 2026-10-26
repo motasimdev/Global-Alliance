@@ -72,13 +72,19 @@ const Destination_Details_AtAGlance = ({ destination }) => {
       />
       <Container className="relative">
         <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="mb-2 text-xs font-bold tracking-[0.18em] text-primary uppercase">
+          <div className="relative lg:pl-46">
+            <div className="absolute top-3 left-0 hidden lg:block bg-secondary w-42 h-0.5"></div>
+            <div className="absolute top-2.5 left-41 hidden lg:block rounded-full bg-secondary w-2 h-2"></div>
+            <div className="absolute top-15 left-0 hidden lg:block bg-primary w-42 h-0.5"></div>
+            <div className="absolute top-14.5 left-41 hidden lg:block rounded-full bg-primary w-2 h-2"></div>
+
+            {/* =================== */}
+            <p className="mb-2 text-base md:text-lg lg:text-[20px] font-semibold text-primary uppercase">
               Destination snapshot
             </p>
-            <h2 className="text-3xl font-bold tracking-tight text-secondary md:text-4xl">
+            <h3 className="text-3xl md:text-4xl lg:text-[40px] font-bold tracking-tight text-secondary">
               At a glance
-            </h2>
+            </h3>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-secondary/60 md:text-right md:text-base">
             Key information to help you compare study options with confidence.
