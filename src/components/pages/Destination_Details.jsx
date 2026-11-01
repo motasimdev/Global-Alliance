@@ -8,6 +8,7 @@ import Destinaion_Details_Banner from "../layouts/destinationDetails/Destinaion_
 import Destination_Details_AtAGlance from "../layouts/destinationDetails/Destination_Details_AtAGlance";
 import Destination_Details_Menu from "../layouts/destinationDetails/Destination_Details_Menu";
 import Destination_Details_WhyStudy from "../layouts/destinationDetails/Destination_Details_WhyStudy";
+import Destination_Details_ProsCons from "../layouts/destinationDetails/Destination_Details_ProsCons";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -45,6 +46,7 @@ const Destination_Details = () => {
       <Destination_Details_Menu />
       <Destination_Details_AtAGlance destination={destination} />
       <Destination_Details_WhyStudy destination={destination} />
+      <Destination_Details_ProsCons destination={destination} />
     </>
   );
 };
