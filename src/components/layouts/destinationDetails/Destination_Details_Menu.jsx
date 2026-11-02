@@ -11,7 +11,7 @@ const menuData = [
         label: "Destination Overview",
         targetId: "destination-overview-description",
       },
-      { label: "Why Study Here", targetId: "why-study-here" },
+      // { label: "Why Study Here", targetId: "why-study-here" },
       { label: "Pros & Cons", targetId: "pros-cons" },
       { label: "Who This Destination Suits Best", targetId: "who-this-suits" },
     ],

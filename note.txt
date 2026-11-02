@@ -132,3 +132,14 @@ Visa, tuition, intake, accommodation ও post-study work সম্পর্ক�
 19. Final CTA — Start Your Application
 এটি একটি design recommendation; JSON-এ আলাদা CTA data নেই।
 “Talk to Our Counsellor”, “Explore Universities” বা “Start Your Application”-এর মতো action।
+
+
+overview
+shortDescription	
+prosAndCons.advantages	
+popularCourses
+whoThisDestinationSuitsBest	
+tuitionFees.public
+costOfLivingBreakdown.description	
+workRightsDuringAndAfterStudy.duringStudy	
+postStudyWorkAndPRPathway

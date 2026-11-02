@@ -9,7 +9,7 @@ const Destination_Details_ProsCons = ({ destination = {} }) => {
   const tradeOffs = prosAndCons.tradeOffsToDisclose || [];
 
   return (
-    <section className="py-12 md:py-25 lg:py-20" id="pros-cons">
+    <section className="py-12 md:pt-25 md:pb-18 lg:py-20" id="pros-cons">
       <Container>
         <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-6 lg:gap-x-62">
           <div className="relative z-10 bg-white rounded-2xl border border-secondary/10 shadow-sm p-6 md:p-8 ">
