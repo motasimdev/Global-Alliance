@@ -29,11 +29,11 @@ const menuData = [
   },
   {
     label: "Courses & Careers",
-    targetId: "popular-courses",
+    targetId: "career-opportunities",
     submenu: [
+      { label: "Career Opportunities & Salary Ranges", targetId: "career-opportunities" },
+      // { label: "Salary Ranges", targetId: "salary-ranges" },
       { label: "Popular Courses", targetId: "popular-courses" },
-      { label: "Career Opportunities", targetId: "career-opportunities" },
-      { label: "Salary Ranges", targetId: "salary-ranges" },
     ],
   },
   {
@@ -113,18 +113,21 @@ const Destination_Details_Menu = () => {
     return activeId === sub.targetId;
   };
 
-  const scrollToTarget = (targetId) => {
-    const element = document.getElementById(targetId);
-    if (element) {
-      const bodyRect = document.body.getBoundingClientRect();
-      const elementRect = element.getBoundingClientRect();
-      const elementPosition = elementRect.top - bodyRect.top;
-      window.scrollTo({
-        top: elementPosition - SCROLL_OFFSET,
-        behavior: "smooth",
-      });
-    }
-  };
+ const scrollToTarget = (targetId) => {
+  const element = document.getElementById(targetId);
+
+  if (element) {
+    const offset = targetId === "tuition-fees" ? 170 : SCROLL_OFFSET;
+
+    const elementPosition =
+      element.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: "smooth",
+    });
+  }
+};
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
