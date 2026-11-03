@@ -8,7 +8,10 @@ import { PiPaperclipHorizontalFill } from "react-icons/pi";
 const Destination_Details_WhyStudy = ({ destination }) => {
   return (
     <>
-      <section id="destination-overview" className="bg-[#f4f4f4] py-14 md:py-18 lg:py-18">
+      <section
+        id="destination-overview"
+        className="bg-[#f4f4f4] py-14 md:py-18 lg:py-18"
+      >
         <Container>
           <div className="mb-10 relative md:pl-35 lg:pl-46">
             <div className="absolute top-3 left-0 hidden md:block bg-secondary md:w-32 lg:w-42 h-0.5"></div>
@@ -31,7 +34,7 @@ const Destination_Details_WhyStudy = ({ destination }) => {
           </div>
 
           {/* ======================== */}
-          
+
           <section id="destination-overview-description">
             <div className="relative pb-9 pt-28 pl-8 pr-6 bg-white shadow-lg">
               <GiNestedEclipses className="absolute -top-4 -left-4 text-gray-100 text-[90px] -rotate-45" />
@@ -40,7 +43,7 @@ const Destination_Details_WhyStudy = ({ destination }) => {
               <P18
                 text={`${destination.overview}`}
                 className={"relative z-10"}
-              /> 
+              />
             </div>
           </section>
         </Container>

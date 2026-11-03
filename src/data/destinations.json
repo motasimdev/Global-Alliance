@@ -342,7 +342,7 @@
         "high": 360,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Transport",
@@ -351,7 +351,7 @@
         "high": 60,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values; local transport plans vary."
+        "notes": "local transport plans vary."
       },
       {
         "costItem": "Health insurance",
@@ -360,7 +360,7 @@
         "high": 90,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Monthly total (excl. tuition)",
@@ -369,7 +369,7 @@
         "high": 1310,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       }
     ],
 
@@ -914,7 +914,7 @@
         "high": 250,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Food and groceries",
@@ -923,7 +923,7 @@
         "high": 350,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Transport (student pass)",
@@ -932,7 +932,7 @@
         "high": 90,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values; local transport plans vary."
+        "notes": "local transport plans vary."
       },
       {
         "costItem": "Health insurance",
@@ -941,7 +941,7 @@
         "high": 60,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Monthly total (excl. tuition)",
@@ -950,7 +950,7 @@
         "high": 1300,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       }
     ],
 
@@ -1511,7 +1511,7 @@
         "high": 220,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Food and groceries",
@@ -1520,7 +1520,7 @@
         "high": 420,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Transport (student pass)",
@@ -1529,7 +1529,7 @@
         "high": 100,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values; local transport plans vary."
+        "notes": "local transport plans vary."
       },
       {
         "costItem": "Health insurance",
@@ -1538,7 +1538,7 @@
         "high": 80,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       },
       {
         "costItem": "Monthly total (excl. tuition)",
@@ -1547,7 +1547,7 @@
         "high": 2120,
         "currency": "EUR",
         "period": "month",
-        "notes": "Dummy values."
+        "notes": ""
       }
     ],
 

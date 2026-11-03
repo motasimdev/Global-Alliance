@@ -18,10 +18,10 @@ const menuData = [
   },
   {
     label: "Fees & Costs",
-    targetId: "tuition-fees",
+    targetId: "fees-costs",
     submenu: [
       { label: "Tuition Fees", targetId: "tuition-fees" },
-      { label: "Cost of Living", targetId: "cost-of-living" },
+      // { label: "Cost of Living", targetId: "cost-of-living" },
       { label: "Full Cost Breakdown", targetId: "full-cost-breakdown" },
       { label: "Accommodation", targetId: "accommodation" },
     ],
