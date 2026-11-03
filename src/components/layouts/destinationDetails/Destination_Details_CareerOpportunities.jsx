@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
+import { PiFlower } from "react-icons/pi";
+
 
 const currencySymbols = {
   EUR: "€",
@@ -79,6 +81,12 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
             />
           </div>
 
+          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-3/5 rounded-2xl px-8 py-2 overflow-hidden">
+          <PiFlower className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15"/>
+            <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
+              Career Opportunities & Salary Ranges
+            </h4>
+          </div>
           <div className="bg-white rounded-2xl border border-secondary/10 shadow-sm overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-sm md:text-base min-w-[600px]">
@@ -133,7 +141,9 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
                         </td>
                         <td className="text-right px-4 md:px-6 py-4">
                           <span className="text-base md:text-lg font-bold text-primary">
-                            {currencySymbol}{low} – {currencySymbol}{high}
+                            {currencySymbol}
+                            {low} – {currencySymbol}
+                            {high}
                           </span>
                         </td>
                       </tr>

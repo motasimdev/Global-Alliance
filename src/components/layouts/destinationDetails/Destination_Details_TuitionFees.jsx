@@ -115,7 +115,7 @@ const Destination_Details_TuitionFees = ({ destination }) => {
             </div>
 
             <section id="tuition-fees">
-              <div className="mt-26 mb-8 bg-tertiary lg:w-1/3 rounded-2xl px-8 py-2">
+              <div className="mt-14 md:mt-26 mb-8 bg-tertiary lg:w-1/3 rounded-2xl px-8 py-2">
                 <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
                   Tuition Fees
                 </h4>
