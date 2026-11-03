@@ -12,7 +12,7 @@ const Destination_Details_SuitsBest = ({ destination }) => {
       >
         <Container>
           <div className="relative">
-            <div className="absolute -top-20 md:-top-12 lg:-top-16 left-1/2 -translate-x-1/2 w-full text-center">
+            <div className="absolute -top-14 md:-top-12 lg:-top-16 left-1/2 -translate-x-1/2 w-full text-center">
               <p className="text-[36px] md:text-[46px] lg:text-[70px] font-extrabold drop-shadow-xl leading-7 md:leading-normal text-white [-webkit-text-stroke:1px_#222262]">
                 Who this destination suits best
               </p>

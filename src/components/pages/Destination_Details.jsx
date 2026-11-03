@@ -12,6 +12,7 @@ import Destination_Details_ProsCons from "../layouts/destinationDetails/Destinat
 import Destination_Details_SuitsBest from "../layouts/destinationDetails/Destination_Details_SuitsBest";
 import Destination_Details_TuitionFees from "../layouts/destinationDetails/Destination_Details_TuitionFees";
 import Destination_Details_FullCostBreak from "../layouts/destinationDetails/Destination_Details_FullCostBreak";
+import Destination_Details_Accommodation from "../layouts/destinationDetails/Destination_Details_Accommodation";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -53,6 +54,7 @@ const Destination_Details = () => {
       <Destination_Details_SuitsBest destination={destination} />
       <Destination_Details_TuitionFees destination={destination} />
       <Destination_Details_FullCostBreak destination={destination} />
+      <Destination_Details_Accommodation destination={destination} />
     </>
   );
 };

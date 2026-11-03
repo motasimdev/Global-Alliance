@@ -205,14 +205,13 @@ const Destination_Details_Menu = () => {
 
   return (
     <nav
-      className="destination-menu sticky z-999 bg-white border-b border-secondary/10 shadow-sm"
-      style={{ top: "74px" }}
+      className="destination-menu sticky top-[58px] lg:top-[74px] z-800 bg-white border-b border-secondary/10 shadow-sm"
       onMouseLeave={handleMouseLeave}
     >
       <Container>
-        <div className="flex items-center">
+        <div className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide lg:overflow-visible">
           <ul
-            className="flex items-center space-x-1 lg:space-x-2 py-2 whitespace-nowrap"
+            className="flex w-max min-w-full items-center space-x-1 lg:space-x-2 py-2 whitespace-nowrap"
             onMouseLeave={handleMouseLeave}
           >
             {menuData.map((item) => (
