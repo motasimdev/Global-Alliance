@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { FaChevronDown } from "react-icons/fa";
 import Container from "../../Container";
 
@@ -81,7 +82,14 @@ const SCROLL_OFFSET = 90;
 const Destination_Details_Menu = () => {
   const [activeId, setActiveId] = useState("");
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [submenuPos, setSubmenuPos] = useState({ left: 0, top: 0 });
   const observerRef = useRef(null);
+  const buttonRefs = useRef({});
+
+  const closeSubmenu = () => {
+    setOpenSubmenu(null);
+    setSubmenuPos({ left: 0, top: 0 });
+  };
 
   // Deduplicate target IDs so shared parent/submenu IDs are observed only once
   const allTargetIds = [
@@ -121,15 +129,25 @@ const Destination_Details_Menu = () => {
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
     scrollToTarget(targetId);
-    if (window.innerWidth < 1024) {
-      setOpenSubmenu(null);
-    }
+    closeSubmenu();
   };
 
   const handleMainClick = (e, item) => {
     if (item.submenu && window.innerWidth < 1024) {
       e.preventDefault();
-      setOpenSubmenu(openSubmenu === item.label ? null : item.label);
+      if (openSubmenu === item.label) {
+        closeSubmenu();
+        return;
+      }
+      const btn = buttonRefs.current[item.label];
+      if (btn) {
+        const rect = btn.getBoundingClientRect();
+        setSubmenuPos({
+          left: rect.left,
+          top: rect.bottom,
+        });
+      }
+      setOpenSubmenu(item.label);
     } else {
       handleNavClick(e, item.targetId);
     }
@@ -223,6 +241,7 @@ const Destination_Details_Menu = () => {
                 {item.submenu ? (
                   <>
                     <button
+                      ref={(el) => (buttonRefs.current[item.label] = el)}
                       onClick={(e) => handleMainClick(e, item)}
                       className={`px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center gap-1 ${
                         isMenuItemActive(item)
@@ -237,24 +256,26 @@ const Destination_Details_Menu = () => {
                         }`}
                       />
                     </button>
-                    {openSubmenu === item.label && (
-                      <div className="absolute top-full left-0 z-1000 min-w-[240px] bg-white border border-secondary/10 shadow-lg rounded-lg py-2">
-                        {item.submenu.map((sub) => (
-                          <a
-                            key={sub.targetId}
-                            href={`#${sub.targetId}`}
-                            onClick={(e) => handleNavClick(e, sub.targetId)}
-                            className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                              isSubmenuActive(sub)
-                                ? "text-primary bg-tertiary/30 font-semibold"
-                                : "text-secondary hover:text-primary hover:bg-tertiary/20"
-                            }`}
-                          >
-                            {sub.label}
-                          </a>
-                        ))}
-                      </div>
-                    )}
+                    {/* Desktop submenu — rendered inline on desktop, portaled on mobile */}
+                    {openSubmenu === item.label &&
+                      window.innerWidth >= 1024 && (
+                        <div className="absolute top-full left-0 z-1000 min-w-[240px] bg-white border border-secondary/10 shadow-lg rounded-lg py-2">
+                          {item.submenu.map((sub) => (
+                            <a
+                              key={sub.targetId}
+                              href={`#${sub.targetId}`}
+                              onClick={(e) => handleNavClick(e, sub.targetId)}
+                              className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                                isSubmenuActive(sub)
+                                  ? "text-primary bg-tertiary/30 font-semibold"
+                                  : "text-secondary hover:text-primary hover:bg-tertiary/20"
+                              }`}
+                            >
+                              {sub.label}
+                            </a>
+                          ))}
+                        </div>
+                      )}
                   </>
                 ) : (
                   <a
@@ -274,6 +295,38 @@ const Destination_Details_Menu = () => {
           </ul>
         </div>
       </Container>
+
+      {/* Mobile/Tablet submenu — portaled to body to avoid overflow clipping */}
+      {openSubmenu &&
+        window.innerWidth < 1024 &&
+        createPortal(
+          <div
+            className="destination-menu-portal fixed z-1000 bg-white border border-secondary/10 shadow-lg rounded-lg py-2"
+            style={{
+              left: submenuPos.left,
+              top: submenuPos.top,
+              minWidth: 240,
+            }}
+          >
+            {menuData
+              .find((m) => m.label === openSubmenu && m.submenu)
+              ?.submenu.map((sub) => (
+                <a
+                  key={sub.targetId}
+                  href={`#${sub.targetId}`}
+                  onClick={(e) => handleNavClick(e, sub.targetId)}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isSubmenuActive(sub)
+                      ? "text-primary bg-tertiary/30 font-semibold"
+                      : "text-secondary hover:text-primary hover:bg-tertiary/20"
+                  }`}
+                >
+                  {sub.label}
+                </a>
+              ))}
+          </div>,
+          document.body,
+        )}
     </nav>
   );
 };
