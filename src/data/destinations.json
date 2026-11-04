@@ -152,50 +152,43 @@
     ],
 
     "scholarshipsAndFunding": {
-      "title": "Scholarships & Funding",
       "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
       "overview": "MECD/MAEC-AECID scholarships, university merit awards, EU Erasmus+, regional grants.",
       "fundingOptions": [
         {
-          "icon": "university",
-          "title": "MAEC-AECID Scholarships",
-          "subtitle": "Tuition + stipend + travel",
-          "description": "International students via Spanish cooperation; varies by country and programme.",
+          "name": "MAEC-AECID Scholarships",
+          "fundingAmount": "Tuition + stipend + travel",
+          "details": "International students via Spanish cooperation; varies by country and programme.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "University merit awards",
-          "subtitle": "10–50% tuition reduction",
-          "description": "Top applicants; varies by institution, often automatic.",
+          "name": "University merit awards",
+          "fundingAmount": "10–50% tuition reduction",
+          "details": "Top applicants; varies by institution, often automatic.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "IE / ESADE / IESE fellowships",
-          "subtitle": "Tuition + stipend + travel",
-          "description": "International students via Spanish cooperation; varies by country and programme.",
+          "name": "IE / ESADE / IESE fellowships",
+          "fundingAmount": "Tuition + stipend + travel",
+          "details": "International students via Spanish cooperation; varies by country and programme.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Erasmus+ mobility",
-          "subtitle": "400–520/month for exchange",
-          "description": "Exchange students within the Erasmus programme.",
+          "name": "Erasmus+ mobility",
+          "fundingAmount": "400–520/month for exchange",
+          "details": "Exchange students within the Erasmus programme.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Regional government grants",
-          "subtitle": "Variable",
-          "description": "Some autonomous communities offer grants to international students.",
+          "name": "Regional government grants",
+          "fundingAmount": "Variable",
+          "details": "Some autonomous communities offer grants to international students.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "La Caixa Foundation fellowships",
-          "subtitle": "Full tuition + living",
-          "description": "Postgraduate STEM and social science; highly competitive.",
+          "name": "La Caixa Foundation fellowships",
+          "fundingAmount": "Full tuition + living",
+          "details": "Postgraduate STEM and social science; highly competitive.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         }
       ]
@@ -724,36 +717,31 @@
     ],
 
     "scholarshipsAndFunding": {
-      "title": "Scholarships & Funding",
       "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
       "overview": "Eiffel Excellence, Charpak, Île-de-France merit, school-level 10–50% tuition waivers.",
       "fundingOptions": [
         {
-          "icon": "university",
-          "title": "Eiffel Excellence Scholarship",
-          "subtitle": "€1,181/month + travel + insurance",
-          "description": "Master's/PhD in engineering, economics, law, political science; under 25 (master's); January deadline via institution.",
+          "name": "Eiffel Excellence Scholarship",
+          "fundingAmount": "€1,181/month + travel + insurance",
+          "details": "Master's/PhD in engineering, economics, law, political science; under 25 (master's); January deadline via institution.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Emile Boutmy Scholarship",
-          "subtitle": "€5,000–18,000/year tuition reduction",
-          "description": "Non-EU students at Sciences Po; merit and need based.",
+          "name": "Emile Boutmy Scholarship",
+          "fundingAmount": "€5,000–18,000/year tuition reduction",
+          "details": "Non-EU students at Sciences Po; merit and need based.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Grande école merit waivers",
-          "subtitle": "10–50% tuition reduction",
-          "description": "Top applicants at HEC, ESSEC, ESCP, EDHEC; ask at the offer stage.",
+          "name": "Grande école merit waivers",
+          "fundingAmount": "10–50% tuition reduction",
+          "details": "Top applicants at HEC, ESSEC, ESCP, EDHEC; ask at the offer stage.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "CROUS need-based aid",
-          "subtitle": "Variable grant on social criteria",
-          "description": "Enrolled students with low family income; apply via CROUS.",
+          "name": "CROUS need-based aid",
+          "fundingAmount": "Variable grant on social criteria",
+          "details": "Enrolled students with low family income; apply via CROUS.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         }
       ]
@@ -1332,43 +1320,37 @@
     ],
 
     "scholarshipsAndFunding": {
-      "title": "Scholarships & Funding",
       "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
       "overview": "Government of Ireland International Education Scholarships (€10,000), university merit awards, HEA-funded programmes.",
       "fundingOptions": [
         {
-          "icon": "university",
-          "title": "UCD Ad Astra / merit awards",
-          "subtitle": "€2,000–6,000",
-          "description": "Top-ranked applicants; varies by programme.",
+          "name": "UCD Ad Astra / merit awards",
+          "fundingAmount": "€2,000–6,000",
+          "details": "Top-ranked applicants; varies by programme.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Maynooth University / UL awards",
-          "subtitle": "€1,000–3,000",
-          "description": "Programme-specific merit awards for international students.",
+          "name": "Maynooth University / UL awards",
+          "fundingAmount": "€1,000–3,000",
+          "details": "Programme-specific merit awards for international students.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Trinity College Global Excellence",
-          "subtitle": "€2,000–5,000",
-          "description": "Postgraduate applicants with strong academics; automatic consideration.",
+          "name": "Trinity College Global Excellence",
+          "fundingAmount": "€2,000–5,000",
+          "details": "Postgraduate applicants with strong academics; automatic consideration.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "University of Galway merit scholarships",
-          "subtitle": "€1,500–4,000",
-          "description": "Bangladesh and international postgraduate applicants.",
+          "name": "University of Galway merit scholarships",
+          "fundingAmount": "€1,500–4,000",
+          "details": "Bangladesh and international postgraduate applicants.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         },
         {
-          "icon": "university",
-          "title": "Research Ireland funding",
-          "subtitle": "Full stipend + fees",
-          "description": "Research master's/PhD in SFI-funded centres; via supervisor.",
+          "name": "Research Ireland funding",
+          "fundingAmount": "Full stipend + fees",
+          "details": "Research master's/PhD in SFI-funded centres; via supervisor.",
           "eligibility": "Depends on the university, programme, academic results and scholarship rules."
         }
       ]

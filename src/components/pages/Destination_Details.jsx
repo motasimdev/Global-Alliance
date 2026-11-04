@@ -16,6 +16,7 @@ import Destination_Details_Accommodation from "../layouts/destinationDetails/Des
 import Destination_Details_CareerOpportunities from "../layouts/destinationDetails/Destination_Details_CareerOpportunities";
 import Destination_Details_PopularCourses from "../layouts/destinationDetails/Destination_Details_PopularCourses";
 import Destination_Details_AdmissionReqEligibility from "../layouts/destinationDetails/Destination_Details_AdmissionReqEligibility";
+import Destination_Details_IntakesAndDeadlines from "../layouts/destinationDetails/Destination_Details_IntakesAndDeadlines";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -61,6 +62,7 @@ const Destination_Details = () => {
       <Destination_Details_CareerOpportunities destination={destination} />
       <Destination_Details_PopularCourses destination={destination} />
       <Destination_Details_AdmissionReqEligibility destination={destination} />
+      <Destination_Details_IntakesAndDeadlines destination={destination}/>
     </>
   );
 };
