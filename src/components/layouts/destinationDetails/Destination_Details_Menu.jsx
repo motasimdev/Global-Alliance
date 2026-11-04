@@ -40,8 +40,8 @@ const menuData = [
     label: "Admission",
     targetId: "admission-requirements",
     submenu: [
-      { label: "Admission Requirements", targetId: "admission-requirements" },
-      { label: "Eligibility", targetId: "eligibility" },
+      { label: "Admission Requirements and Eligibility", targetId: "admission-requirements" },
+      // { label: "Eligibility", targetId: "eligibility" },
       { label: "Intakes & Deadlines", targetId: "intakes-deadlines" },
     ],
   },
