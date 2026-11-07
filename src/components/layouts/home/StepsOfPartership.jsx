@@ -232,12 +232,12 @@ const StepsOfPartership = () => {
 
               {/* -==-====-=== step 5 -===-====- */}
               <div className="mt-8 md:mt-15 lg:mt-25 flex items-center px-20">
-                <div className="relative flex justify-between items-center gap-x-10 bg-[#41547c] rounded-full w-full lg:w-3/4 pt-26 lg:pt-5 lg:pl-16 lg:pr-8 pb-14 lg:pb-8 px-5 shadow-lg shadow-gray-600">
+                <div className="relative flex justify-between items-center gap-x-10 bg-[#5d387a] rounded-full w-full lg:w-3/4 pt-26 lg:pt-5 lg:pl-16 lg:pr-8 pb-14 lg:pb-8 px-5 shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
-                  <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-8 h-8 bg-[#41547c] clipped"></div>
+                  <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-8 h-8 bg-[#5d387a] clipped"></div>
 
                   <div className="absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
-                    <div className=" relative rounded-full h-6 w-6 bg-[#41547c]">
+                    <div className=" relative rounded-full h-6 w-6 bg-[#5d387a]">
                       <div className="absolute -top-38 -left-38 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-36 -left-26 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-32 -left-16 bg-secondary/80 p-1 rounded-full"></div>
@@ -273,7 +273,7 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-lg md:text-2xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-[#41547c]">05</span>
+                    Step <span className="text-[80px] text-[#5d387a]">05</span>
                   </p>
                 </div>
               </div>
