@@ -17,7 +17,7 @@ const Destination_Details_AtAGlance = ({ destination }) => {
       title: "Intakes",
       description: destination.intakeOverview,
       icon: FaCalendarDays,
-      className: "bg-secondary text-white xl:col-span-2",
+      className: "bg-secondary text-white lg:col-span-2",
       iconClassName: "bg-white/10 text-white",
       descriptionClassName: "text-white/75",
     },
@@ -49,7 +49,7 @@ const Destination_Details_AtAGlance = ({ destination }) => {
       title: "Post-Study Options",
       description: destination.postStudyOverview,
       icon: FaRoute,
-      className: "bg-secondary/5 text-secondary xl:col-span-2",
+      className: "bg-secondary/5 text-secondary lg:col-span-2",
       iconClassName: "bg-secondary/7 text-primary",
       descriptionClassName: "text-secondary/70",
     },
@@ -91,7 +91,7 @@ const Destination_Details_AtAGlance = ({ destination }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5 lg:grid-cols-4">
           {glanceItems.map(
             ({
               title,

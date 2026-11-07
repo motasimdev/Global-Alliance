@@ -53,7 +53,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-green-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <GrMicrofocus className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -62,9 +62,11 @@ const KeyFeatures = () => {
                   para={
                     "Global Alliance allow you to access our partner institutions, making the process much easier."
                   }
+                  headingClassname={"text-secondary!"}
+                  paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-red-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <MdAttractions className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -73,11 +75,11 @@ const KeyFeatures = () => {
                   para={
                     "Our high range of agent commission based on performance makes us stand out in the market."
                   }
-                  headingClassname={"text-white!"}
-                  paraClassname={"text-white!"}
+                  headingClassname={"text-secondary!"}
+                  paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-blue-600 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <MdOutlineQuickreply className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -86,9 +88,11 @@ const KeyFeatures = () => {
                   para={
                     "We provide support to all our precious users promptly, anytime they need."
                   }
+                  headingClassname={"text-secondary!"}
+                  paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-yellow-500 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-secondary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-500 hover:shadow-xl transition duration-300">
                 <KeyFeatureCard
                   keyIcon={
                     <FaTimeline className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -97,8 +101,6 @@ const KeyFeatures = () => {
                   para={
                     "The user will get to track the condition and ongoing status of the application without having to contact any person."
                   }
-                  headingClassname={"text-secondary!"}
-                  paraClassname={"text-secondary!"}
                 />
               </div>
             </div>

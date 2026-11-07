@@ -34,3 +34,7 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.clipped {
+  clip-path: polygon(68% 48%, 0% 21%, 0% 81%);
+}
