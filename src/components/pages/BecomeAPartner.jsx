@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Flip, toast } from "react-toastify";
 import PBase from "../PBase";
 import Heading from "../Heading";
-import partnerImage from "/src/assets/become-partner.svg";
+import partnerImage from "/src/assets/become-a-partner/become-partner.svg";
 import axios from "axios";
 
 const BecomeAPartner = () => {

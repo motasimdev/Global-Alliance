@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, Outlet, ScrollRestoration } from "react-router";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import whatsapp from "/src/assets/whatsapp.svg";
+import whatsapp from "/src/assets/home/whatsapp.svg";
 import { FaChevronCircleUp } from "react-icons/fa";
 const Root = () => {
   const [show, setShow] = useState(false);
@@ -10,7 +10,7 @@ const Root = () => {
   useEffect(() => {
     let throttleTimeout = null;
 
-    // ২০২৬ পারফরম্যান্স স্ট্যান্ডার্ড: Throttled Scroll Function
+    // Throttled Scroll Function
     const handleScroll = () => {
       if (!throttleTimeout) {
         throttleTimeout = setTimeout(() => {

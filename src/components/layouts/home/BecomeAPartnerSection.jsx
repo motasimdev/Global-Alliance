@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../Container.jsx";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import round from "/src/assets/roundblur.svg";
+import round from "/src/assets/become-a-partner/roundblur.svg";
 import { Link } from "react-router";
 import Handshake from "../../../assets/icons/Handshake.jsx";
 

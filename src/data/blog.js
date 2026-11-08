@@ -1,8 +1,8 @@
-import asiaPacific from '/src/assets/asia-pacific-university.webp'
+import asiaPacific from '/src/assets/university-images/asia-pacific-university.webp'
 import asiaPacificLogo from '/src/assets/university-logos/APU-logo.webp'
-import inti from '/src/assets/inti-university.webp'
+import inti from '/src/assets/university-images/inti-university.webp'
 import intilogo from '/src/assets/university-logos/INTI-40.webp'
-import segi from '/src/assets/segi-university.webp'
+import segi from '/src/assets/university-images/segi-university.webp'
 import segiLogo from '/src/assets/university-logos/SEGi-University.webp'
 
 const blogs = [

@@ -1,5 +1,5 @@
 import React from "react";
-import error from "/src/assets/404 error.svg";
+import error from "/src/assets/error/404 error.svg";
 import Container from "../Container";
 
 const Error = () => {

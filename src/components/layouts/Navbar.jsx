@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import { NavLink } from "react-router";
-import logo from "/src/assets/logo.svg";
+import logo from "/src/assets/logo/logo.svg";
 import {
   FaRegCircleUser,
   FaUserGraduate,

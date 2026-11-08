@@ -4,7 +4,7 @@ import Container from "../../Container";
 import Select from "react-select";
 import { PiGraduationCapFill } from "react-icons/pi";
 import PBase from "../../PBase";
-import map from "/src/assets/map.png";
+import map from "/src/assets/home/map.png";
 import APU from "/src/assets/university-logos/APU-logo.webp";
 import INTI from "/src/assets/university-logos/INTI-40.webp";
 import NILAI from "/src/assets/university-logos/nilai.webp";
@@ -149,7 +149,7 @@ const Banner = () => {
 
                 {/* ================================ */}
                 <div className="md:w-[40%] flex flex-col gap-y-4">
-                  <div className="bg-[url(/src/assets/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end">
+                  <div className="bg-[url(/src/assets/home/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end">
                     <div className="w-full rounded-b-xl px-2 py-3 md:py-0 lg:py-3 bg-[#00000081]">
                       {/* <Psm text={""} className={"text-white"}/> */}
                     <p className="text-base md:text-xs lg:text-sm text-white">The University of al-Qarawiyyin in Fez, Morocco, founded in 859 CE, The oldest university in the world.</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
-import logo from "/src/assets/logo.svg";
+import logo from "/src/assets/logo/logo.svg";
 import Container from "../Container";
 import PBase from "../PBase";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa6";

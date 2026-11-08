@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Container from "../Container";
-import service1 from "/src/assets/service1.svg";
-import service2 from "/src/assets/service2.svg";
-import service3 from "/src/assets/service3.svg";
-import service4 from "/src/assets/service4.svg";
-import service5 from "/src/assets/service5.svg";
-import service6 from "/src/assets/service6.svg";
+import service1 from "/src/assets/our-services/service1.svg";
+import service2 from "/src/assets/our-services/service2.svg";
+import service3 from "/src/assets/our-services/service3.svg";
+import service4 from "/src/assets/our-services/service4.svg";
+import service5 from "/src/assets/our-services/service5.svg";
+import service6 from "/src/assets/our-services/service6.svg";
 
 const OurServices = () => {
   const services = [
