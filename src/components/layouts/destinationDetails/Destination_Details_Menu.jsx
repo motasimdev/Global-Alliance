@@ -70,6 +70,13 @@ const menuData = [
       { label: "Post-Study Options", targetId: "post-study-options" },
       { label: "PR Pathway", targetId: "pr-pathway" },
     ],
+//     03. Career Opportunities & Salary Ranges
+
+// careerOpportunitiesAndSalaryRanges
+
+// 04. Post-study Work & PR Pathway
+
+// postStudyWorkAndPRPathway
   },
   {
     label: "FAQs",
