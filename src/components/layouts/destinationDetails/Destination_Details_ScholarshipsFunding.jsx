@@ -36,7 +36,7 @@ const Destination_Details_ScholarshipsFunding = ({ destination = {} }) => {
           <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-2/5 rounded-2xl px-8 py-2 overflow-hidden">
             <GiSandsOfTime className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
-              Intakes and Deadlines
+             Scholarships & Funding
             </h4>
           </div>
 

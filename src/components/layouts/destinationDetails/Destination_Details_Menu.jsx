@@ -57,7 +57,7 @@ const menuData = [
     targetId: "application-process",
     submenu: [
       { label: "Application Process", targetId: "application-process" },
-      { label: "Visa Process", targetId: "visa-process" },
+      // { label: "Visa Process", targetId: "visa-process" },
       { label: "Document Checklist", targetId: "document-checklist" },
     ],
   },
