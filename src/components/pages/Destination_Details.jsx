@@ -19,6 +19,7 @@ import Destination_Details_AdmissionReqEligibility from "../layouts/destinationD
 import Destination_Details_IntakesAndDeadlines from "../layouts/destinationDetails/Destination_Details_IntakesAndDeadlines";
 import Destination_Details_ScholarshipsFunding from "../layouts/destinationDetails/Destination_Details_ScholarshipsFunding";
 import Destination_Details_ApplicationProcess from "../layouts/destinationDetails/Destination_Details_ApplicationProcess";
+import Destination_Details_DocumentChecklist from "../layouts/destinationDetails/Destination_Details_DocumentChecklist";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -67,6 +68,7 @@ const Destination_Details = () => {
       <Destination_Details_IntakesAndDeadlines destination={destination}/>
       <Destination_Details_ScholarshipsFunding destination={destination}/>
       <Destination_Details_ApplicationProcess destination={destination}/>
+      <Destination_Details_DocumentChecklist destination={destination}/>
     </>
   );
 };
