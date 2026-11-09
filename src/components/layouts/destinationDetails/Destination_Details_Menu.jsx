@@ -67,16 +67,9 @@ const menuData = [
     submenu: [
       { label: "Part-Time Work", targetId: "part-time-work" },
       { label: "Work Rights During and After Study", targetId: "work-rights" },
-      { label: "Post-Study Options", targetId: "post-study-options" },
-      { label: "PR Pathway", targetId: "pr-pathway" },
+      { label: "Post-Study Options and PR Pathway", targetId: "post-study-options-pr" },
+      { label: "Career Opportunities & Salary Ranges", targetId: "career-salary" },
     ],
-//     03. Career Opportunities & Salary Ranges
-
-// careerOpportunitiesAndSalaryRanges
-
-// 04. Post-study Work & PR Pathway
-
-// postStudyWorkAndPRPathway
   },
   {
     label: "FAQs",

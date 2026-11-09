@@ -46,8 +46,8 @@ const Destination_Details_WorkRightsDuringAfter = ({ destination }) => {
   return (
     <>
       <section
-        className="py-12 md:pt-10 md:pb-18 lg:pt-10 lg:pb-20 bg-[#f4f4f4]"
-        id="work-rights"
+          className="py-12 md:pt-10 md:pb-18 lg:pt-10 lg:pb-20 bg-[#f4f4f4]"
+          id="work-rights"
       >
         <Container>
           <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/4 rounded-2xl px-8 py-2 overflow-hidden">

@@ -22,6 +22,7 @@ import Destination_Details_ApplicationProcess from "../layouts/destinationDetail
 import Destination_Details_DocumentChecklist from "../layouts/destinationDetails/Destination_Details_DocumentChecklist";
 import Destination_Details_PartTimeWork from "../layouts/destinationDetails/Destination_Details_PartTimeWork";
 import Destination_Details_WorkRightsDuringAfter from "../layouts/destinationDetails/Destination_Details_WorkRightsDuringAfter";
+import Destination_Details_WorkRightsPostStudyWorkPr from "../layouts/destinationDetails/Destination_Details_WorkRightsPostStudyWorkPr";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -73,6 +74,7 @@ const Destination_Details = () => {
       <Destination_Details_DocumentChecklist destination={destination}/>
       <Destination_Details_PartTimeWork destination={destination}/>
       <Destination_Details_WorkRightsDuringAfter destination={destination}/>
+      <Destination_Details_WorkRightsPostStudyWorkPr destination={destination}/>
     </>
   );
 };
