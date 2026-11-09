@@ -2,7 +2,11 @@ import React from 'react'
 
 const Destination_Details_WorkRightsPostStudyWorkPr = () => {
   return (
-    <div>Destination_Details_WorkRightsPostStudyWorkPr</div>
+    <>
+    <section>
+        
+    </section>
+    </>
   )
 }
 
