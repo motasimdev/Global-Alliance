@@ -47,7 +47,7 @@ const Destination_Details_Faq = ({ destination }) => {
               <div key={index} className="border-t border-secondary/10 first:border-t-0">
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full flex items-center justify-between px-5 py-4 md:px-6 md:py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary/20 focus:ring-offset-2"
+                  className="w-full flex items-center justify-between px-5 py-4 md:px-6 md:py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary/20 focus:ring-offset-2 cursor-pointer hover:bg-secondary/10 transition duration-200"
                   aria-expanded={openIndex === index}
                 >
                   <span className="text-base md:text-lg font-medium text-secondary pr-4">

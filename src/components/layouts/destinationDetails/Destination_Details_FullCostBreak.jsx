@@ -1,5 +1,8 @@
 import React from "react";
 import Container from "../../Container";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+
+
 
 const currencySymbols = {
   EUR: "€",
@@ -29,11 +32,12 @@ const Destination_Details_FullCostBreak = ({ destination = {} }) => {
   return (
     <>
       <section
-        className="py-12 md:py-16 lg:py-20 bg-white"
+        className="py-12 md:py-16 lg:pt-10 lg:pb-20 bg-white"
         id="full-cost-breakdown"
       >
         <Container>
-          <div className=" mb-8 bg-tertiary lg:w-2/5 rounded-2xl px-8 py-2">
+          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-2/5 rounded-2xl px-8 py-2 overflow-hidden">
+            <FaFileInvoiceDollar className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
               Full Cost Breakdown
             </h4>

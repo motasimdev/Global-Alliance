@@ -2,6 +2,8 @@ import React from "react";
 import { FaUniversity, FaBuilding } from "react-icons/fa";
 import Container from "../../Container";
 import Heading from "../../Heading";
+import { FaSackDollar } from "react-icons/fa6";
+
 
 const Destination_Details_TuitionFees = ({ destination }) => {
   const tuition = destination.tuitionFees || {};
@@ -115,11 +117,12 @@ const Destination_Details_TuitionFees = ({ destination }) => {
             </div>
 
             <section id="tuition-fees">
-              <div className="mt-14 md:mt-26 mb-8 bg-tertiary lg:w-1/3 rounded-2xl px-8 py-2">
-                <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
-                  Tuition Fees
-                </h4>
-              </div>
+              <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/4 rounded-2xl px-8 py-2 overflow-hidden">
+            <FaSackDollar className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
+            <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
+              Tuition Fees
+            </h4>
+          </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                 {renderCard(

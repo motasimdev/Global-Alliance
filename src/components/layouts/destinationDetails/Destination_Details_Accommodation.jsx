@@ -2,6 +2,7 @@ import React from "react";
 import { FaHome, FaUsers, FaBed, FaUser, FaCheckCircle } from "react-icons/fa";
 import Container from "../../Container";
 
+
 const currencySymbols = {
   EUR: "€",
   USD: "$",
@@ -90,11 +91,12 @@ const Destination_Details_Accommodation = ({ destination = {} }) => {
 
   return (
     <>
-      <section className="py-12 md:py-16 lg:py-20 bg-tertiary/30" id="accommodation">
+      <section className="py-12 md:py-16 lg:pt-10 lg:pb-20 bg-tertiary/30" id="accommodation">
         <Container>
-          <div className="mb-8 bg-tertiary lg:w-2/5 rounded-2xl px-8 py-2">
+          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/3 rounded-2xl px-8 py-2 overflow-hidden">
+            <FaHome className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
-              Accommodation
+               Accommodation
             </h4>
           </div>
 
