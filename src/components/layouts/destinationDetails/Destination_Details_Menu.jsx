@@ -12,7 +12,6 @@ const menuData = [
         label: "Destination Overview",
         targetId: "destination-overview-description",
       },
-      // { label: "Why Study Here", targetId: "why-study-here" },
       { label: "Pros & Cons", targetId: "pros-cons" },
       { label: "Who This Destination Suits Best", targetId: "who-this-suits" },
     ],
@@ -22,7 +21,6 @@ const menuData = [
     targetId: "fees-costs",
     submenu: [
       { label: "Tuition Fees", targetId: "tuition-fees" },
-      // { label: "Cost of Living", targetId: "cost-of-living" },
       { label: "Full Cost Breakdown", targetId: "full-cost-breakdown" },
       { label: "Accommodation", targetId: "accommodation" },
     ],
@@ -32,7 +30,6 @@ const menuData = [
     targetId: "career-opportunities",
     submenu: [
       { label: "Career Opportunities & Salary Ranges", targetId: "career-opportunities" },
-      // { label: "Salary Ranges", targetId: "salary-ranges" },
       { label: "Popular Courses", targetId: "popular-courses" },
     ],
   },
@@ -41,7 +38,6 @@ const menuData = [
     targetId: "admission-requirements",
     submenu: [
       { label: "Admission Requirements and Eligibility", targetId: "admission-requirements" },
-      // { label: "Eligibility", targetId: "eligibility" },
       { label: "Intakes & Deadlines", targetId: "intakes-deadlines" },
     ],
   },
@@ -57,7 +53,6 @@ const menuData = [
     targetId: "application-process",
     submenu: [
       { label: "Application Process", targetId: "application-process" },
-      // { label: "Visa Process", targetId: "visa-process" },
       { label: "Document Checklist", targetId: "document-checklist" },
     ],
   },
@@ -68,6 +63,16 @@ const menuData = [
       { label: "Part-Time Work", targetId: "part-time-work" },
       { label: "Work Rights During and After Study", targetId: "work-rights" },
       { label: "Post-Study Options and PR Pathway", targetId: "post-study-options-pr" },
+    ],
+  },
+  {
+    label: "Partner Insights",
+    targetId: "b2b-opportunities",
+    submenu: [
+      { label: "Market Trends & B2B Opportunities", targetId: "b2b-opportunities" },
+      { label: "Partner Operating Guide", targetId: "partner-operating-guide" },
+      { label: "How We Help Our Partners", targetId: "how-we-help-partners" },
+      { label: "Practical Tips", targetId: "practical-tips" },
     ],
   },
   {

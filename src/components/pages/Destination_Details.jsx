@@ -24,6 +24,8 @@ import Destination_Details_PartTimeWork from "../layouts/destinationDetails/Dest
 import Destination_Details_WorkRightsDuringAfter from "../layouts/destinationDetails/Destination_Details_WorkRightsDuringAfter";
 import Destination_Details_WorkRightsPostStudyWorkPr from "../layouts/destinationDetails/Destination_Details_WorkRightsPostStudyWorkPr";
 import Destination_Details_Faq from "../layouts/destinationDetails/Destination_Details_Faq";
+import Destination_Details_B2bOpportunities from "../layouts/destinationDetails/Destination_Details_B2bOpportunities";
+import Destination_Details_PartnerOperatingGuide from "../layouts/destinationDetails/Destination_Details_PartnerOperatingGuide";
 
 const Destination_Details = () => {
   const { slug } = useParams();
@@ -76,6 +78,8 @@ const Destination_Details = () => {
       <Destination_Details_PartTimeWork destination={destination}/>
       <Destination_Details_WorkRightsDuringAfter destination={destination}/>
       <Destination_Details_WorkRightsPostStudyWorkPr destination={destination}/>
+      <Destination_Details_B2bOpportunities destination={destination}/>
+      <Destination_Details_PartnerOperatingGuide destination={destination}/>
       <Destination_Details_Faq destination={destination}/>
     </>
   );
