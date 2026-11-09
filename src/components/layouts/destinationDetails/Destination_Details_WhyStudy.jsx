@@ -42,7 +42,7 @@ const Destination_Details_WhyStudy = ({ destination }) => {
               <div className="absolute right-5 -top-5 bg-gray-200 w-4 h-20"></div>
               <div className="relative mx-auto mb-8 bg-white shadow-sm lg:w-1/5 rounded-2xl px-8 py-2 overflow-hidden">
                 <PiNotebookFill className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
-                <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
+                <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold text-center">
                   Overview
                 </h4>
               </div>
