@@ -6,9 +6,9 @@ export function useInView(options = {}) {
   const [isInView, setIsInView] = useState(false);
 
   // ১. অবজেক্ট ট্র্যাপ এড়াতে শুরুতেই ভ্যালুগুলো আলাদা করে প্রিমিটিভ (Primitive) বানিয়ে নিন
-  const once = options.once || false;
-  const threshold = options.threshold || 0.1;
-  const rootMargin = options.rootMargin || '0px';
+  const once = options.once ?? false;
+ const threshold = options.threshold ?? 0.1;
+   const rootMargin = options.rootMargin ?? "0px";
 
   useEffect(() => {
     // ২. সেফ ক্লিন-আপের জন্য রেফ-এর ভ্যালু লোকাল ভেরিয়েবলে রাখুন
