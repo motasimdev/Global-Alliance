@@ -56,24 +56,24 @@ const Recruiter_HowItWork = () => {
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative flex flex-col items-center text-center">
+              <div key={index} className="relative flex flex-col items-center text-center group">
                 <div className="relative z-10 mb-6">
-                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border-4 border-secondary/10 flex items-center justify-center shadow-lg relative">
-                    <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-secondary">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border-4 border-secondary/10 flex items-center justify-center shadow-lg relative transition-all duration-500 group-hover:border-primary/50 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.3)]">
+                    <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-secondary transition-all duration-500 group-hover:text-primary group-hover:scale-110">
                       {step.number}
                     </span>
-                    <div className="absolute -bottom-3 -right-3 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-primary border-3 border-white flex items-center justify-center">
-                      <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-white" />
+                    <div className="absolute -bottom-3 -right-3 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-primary border-3 border-white flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 group-hover:shadow-[0_0_20px_rgba(221,21,25,0.5)]">
+                      <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-white transition-all duration-500 group-hover:scale-150 group-hover:bg-primary" />
                     </div>
                   </div>
                 </div>
 
-                <h4 className="text-lg md:text-xl font-bold text-secondary mb-3">
+                <h4 className="text-lg md:text-xl font-bold text-secondary mb-3 transition-colors duration-300 group-hover:text-primary">
                   {step.title}
                 </h4>
                 <PBase
                   text={step.description}
-                  className="text-secondary/70 leading-relaxed px-2"
+                  className="text-secondary/70 leading-relaxed px-2 transition-colors duration-300 group-hover:text-secondary/90"
                 />
               </div>
             ))}

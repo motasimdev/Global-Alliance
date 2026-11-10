@@ -15,7 +15,7 @@ const KeyFeatures = () => {
         <Container>
           <div className="">
             <div className="text-center">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
+              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase">
                 Grow your business with Global Alliance
               </h4>
               <Heading
@@ -29,7 +29,7 @@ const KeyFeatures = () => {
             </div>
             {/* ==================================================================== */}
             <div className="grid grid-cols-3 gap-x-10 gap-y-10 justify-center lg:justify-between md:px-20 lg:px-0 mt-8 md:mt-10 lg:mt-15">
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-[#434389] pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-[#434389] pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <BsLayerForward className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -40,7 +40,7 @@ const KeyFeatures = () => {
                   }
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <MdAdsClick className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -53,7 +53,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <GrMicrofocus className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -66,7 +66,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-gray-200 pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-400 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <MdAttractions className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -79,7 +79,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-tertiary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl shadow-gray-400 hover:shadow-gray-500 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <MdOutlineQuickreply className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />
@@ -92,7 +92,7 @@ const KeyFeatures = () => {
                   paraClassname={"text-secondary!"}
                 />
               </div>
-              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-secondary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-500 hover:shadow-xl transition duration-300">
+              <div className="group col-span-3 md:col-span-3 lg:col-span-1 text-center bg-secondary pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl hover:shadow-gray-500 hover:shadow-xl transition duration-300 hover:-translate-y-1">
                 <KeyFeatureCard
                   keyIcon={
                     <FaTimeline className="text-secondary text-2xl md:text-3xl mx-auto group-hover:text-primary transition duration-300" />

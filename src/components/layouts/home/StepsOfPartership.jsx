@@ -16,7 +16,7 @@ const StepsOfPartership = () => {
         <Container>
           <div className="">
             <div className="text-center">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
+              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase">
                 How partnership works
               </h4>
               <Heading
@@ -32,12 +32,12 @@ const StepsOfPartership = () => {
 
             <div className="flex flex-col gap-y-3 md:gap-y-0 lg:gap-y-6">
               {/* -==-====-=== step 1 -===-====- */}
-              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20">
+              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20 group">
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row justify-between items-center gap-x-10 bg-secondary rounded-full w-full   lg:w-3/4 px-15  pt-10 pb-14 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 lg:pb-8 shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
                   <div className="absolute -top-7 right-1/2 translate-x-1/2 md:translate-x-0 md:-right-7 md:top-1/2 md:-translate-y-1/2 w-8 h-8 bg-secondary -rotate-90 md:rotate-0 clipped"></div>
 
-                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
+                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1     ">
                     <div className=" relative rounded-full h-6 w-6 bg-secondary">
                       <div className="absolute -top-38 -left-38 bg-secondary/80 p-2 rounded-full"></div>
                       <div className="absolute -top-36 -left-26 bg-secondary/80 p-1 rounded-full"></div>
@@ -56,17 +56,17 @@ const StepsOfPartership = () => {
                   </div>
                   {/* ==== === design === ==== */}
                   <div className="">
-                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10">
+                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/90">
                       Apply
                     </h4>
-                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10">
+                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/80">
                       Submit the partner application with your agency profile
                       and target destinations.
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="rounded-full bg-white shadow-inner shadow-gray-900">
-                      <IoIosPaperPlane className="text-[110px] text-gray-400" />
+                    <div className="rounded-full bg-white shadow-inner shadow-gray-900 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.4)]">
+                      <IoIosPaperPlane className="text-[110px] text-gray-400 transition-all duration-300 group-hover:scale-110 group-hover:text-primary group-hover:rotate-12" />
                     </div>
                   </div>
                 </div>
@@ -75,19 +75,19 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-3xl md:text-4xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-secondary">01</span>
+                    Step <span className="text-[80px] text-secondary transition-colors duration-300 group-hover:text-primary">01</span>
                   </p>
                 </div>
               </div>
               {/* -==-====-=== step 1 -===-====- */}
 
               {/* -==-====-=== step 2 -===-====- */}
-              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row-reverse items-center px-10 md:px-20">
+              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row-reverse items-center px-10 md:px-20 group">
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row-reverse justify-between items-center gap-x-10 bg-[#382f60] rounded-full w-full lg:w-3/4 pt-10 px-15 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 pb-14 lg:pb-8 shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
                   <div className="absolute -top-7 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-7 md:top-1/2 md:-translate-y-1/2 w-8 h-8 -rotate-90 md:rotate-180 bg-[#382f60] clipped"></div>
 
-                  <div className="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
+                  <div className="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1     ">
                     <div className=" relative rounded-full h-6 w-6 bg-[#382f60]">
                       <div className="absolute -top-38 -right-38 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-36 -right-26 bg-secondary/80 p-1 rounded-full"></div>
@@ -106,17 +106,17 @@ const StepsOfPartership = () => {
                   </div>
                   {/* ==== === design === ==== */}
                   <div className="">
-                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10">
+                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/90">
                       Onboard
                     </h4>
-                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10">
+                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/80">
                       Counsellor training, tracker access, collateral and a
                       named relationship manager.
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900">
-                      <TiKey className="text-[110px] text-gray-400" />
+                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.4)]">
+                      <TiKey className="text-[110px] text-gray-400 transition-all duration-300 group-hover:scale-110 group-hover:text-primary group-hover:rotate-12" />
                     </div>
                   </div>
                 </div>
@@ -125,19 +125,19 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-3xl md:text-4xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-[#382f60]">02</span>
+                    Step <span className="text-[80px] text-[#382f60] transition-colors duration-300 group-hover:text-primary">02</span>
                   </p>
                 </div>
               </div>
               {/* -==-====-=== step 2 -===-====- */}
 
               {/* -==-====-=== step 3 -===-====- */}
-              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20">
+              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20 group">
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row justify-between items-center gap-x-10 bg-[#41547c] rounded-full w-full   lg:w-3/4 px-15  pt-10 pb-14 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 lg:pb-8 shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
                   <div className="absolute -top-7 right-1/2 translate-x-1/2 md:translate-x-0 md:-right-7 md:top-1/2 md:-translate-y-1/2 w-8 h-8 bg-[#41547c] -rotate-90 md:rotate-0 clipped"></div>
 
-                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
+                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1     ">
                     <div className=" relative rounded-full h-6 w-6 bg-[#41547c]">
                       <div className="absolute -top-38 -left-38 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-36 -left-26 bg-secondary/80 p-1 rounded-full"></div>
@@ -156,17 +156,17 @@ const StepsOfPartership = () => {
                   </div>
                   {/* ==== === design === ==== */}
                   <div className="">
-                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center lg:pr-10 pt-3">
+                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center lg:pr-10 pt-3 transition-colors duration-300 group-hover:text-primary/90">
                       Review
                     </h4>
-                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10">
+                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/80">
                       Discovery call within one working day, with written
                       commission terms per destination.
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900">
-                      <BsChatQuote className="text-[110px] text-gray-400" />
+                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.4)]">
+                      <BsChatQuote className="text-[110px] text-gray-400 transition-all duration-300 group-hover:scale-110 group-hover:text-primary group-hover:rotate-12" />
                     </div>
                   </div>
                 </div>
@@ -175,19 +175,19 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-3xl md:text-4xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-[#41547c]">03</span>
+                    Step <span className="text-[80px] text-[#41547c] transition-colors duration-300 group-hover:text-primary">03</span>
                   </p>
                 </div>
               </div>
               {/* -==-====-=== step 3 -===-====- */}
 
               {/* -==-====-=== step 4 -===-====- */}
-              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row-reverse items-center px-10 md:px-20">
+              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row-reverse items-center px-10 md:px-20 group">
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row-reverse justify-between items-center gap-x-10 bg-[#453b73] rounded-full w-full lg:w-3/4 pt-10 px-15 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 pb-14 lg:pb-8  shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
                   <div className="absolute -top-7 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-7 md:top-1/2 md:-translate-y-1/2 w-8 h-8 -rotate-90 md:rotate-180 bg-[#453b73] clipped"></div>
 
-                  <div className="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
+                  <div className="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1     ">
                     <div className=" relative rounded-full h-6 w-6 bg-[#453b73]">
                       <div className="absolute -top-38 -right-38 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-36 -right-26 bg-secondary/80 p-1 rounded-full"></div>
@@ -206,16 +206,16 @@ const StepsOfPartership = () => {
                   </div>
                   {/* ==== === design === ==== */}
                   <div className="">
-                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10">
+                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/90">
                       Submit
                     </h4>
-                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10">
+                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/80">
                       Send your first student profile today. Evaluation returns within 48 working hours guaranteed.
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900">
-                      <GiCheckMark className="text-[110px] text-gray-400" />
+                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.4)]">
+                      <GiCheckMark className="text-[110px] text-gray-400 transition-all duration-300 group-hover:scale-110 group-hover:text-primary group-hover:rotate-12" />
                     </div>
                   </div>
                 </div>
@@ -224,19 +224,19 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-3xl md:text-4xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-[#453b73]">04</span>
+                    Step <span className="text-[80px] text-[#453b73] transition-colors duration-300 group-hover:text-primary">04</span>
                   </p>
                 </div>
               </div> 
               {/* -==-====-=== step 4 -===-====- */}
 
               {/* -==-====-=== step 5 -===-====- */}
-              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20">
+              <div className="mt-8 md:mt-5 lg:mt-25 flex flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row items-center px-10 md:px-20 group">
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row justify-between items-center gap-x-10 bg-[#5d387a] rounded-full w-full   lg:w-3/4 px-15  pt-10 pb-14 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 lg:pb-8 shadow-lg shadow-gray-600">
                   {/* ==== === design === ==== */}
                   <div className="absolute -top-7 right-1/2 translate-x-1/2 md:translate-x-0 md:-right-7 md:top-1/2 md:-translate-y-1/2 w-8 h-8 bg-[#5d387a] -rotate-90 md:rotate-0 clipped"></div>
 
-                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1">
+                  <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 border-2 border-secondary rounded-full p-1     ">
                     <div className=" relative rounded-full h-6 w-6 bg-[#5d387a]">
                       <div className="absolute -top-38 -left-38 bg-secondary/80 p-1 rounded-full"></div>
                       <div className="absolute -top-36 -left-26 bg-secondary/80 p-1 rounded-full"></div>
@@ -255,16 +255,16 @@ const StepsOfPartership = () => {
                   </div>
                   {/* ==== === design === ==== */}
                   <div className="">
-                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center lg:pr-10 pt-3">
+                    <h4 className="text-3xl md:text-4xl text-white font-bold text-center lg:pr-10 pt-3 transition-colors duration-300 group-hover:text-primary/90">
                       Scale
                     </h4>
-                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10">
+                    <p className="text-lg md:text-lg text-white! font-bold pt-3 lg:pr-10 transition-colors duration-300 group-hover:text-primary/80">
                     Build flexible intake calendars across seasons and grow your placement volume exponentially.
                     </p>
                   </div>
                   <div className="text-center">
-                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900"> 
-                      <DiScala className="text-[110px] text-gray-400" />
+                    <div className="rounded-full bg-white  shadow-inner shadow-gray-900 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.4)]"> 
+                      <DiScala className="text-[110px] text-gray-400 transition-all duration-300 group-hover:scale-110 group-hover:text-primary group-hover:rotate-12" />
                     </div>
                   </div>
                 </div>
@@ -273,7 +273,7 @@ const StepsOfPartership = () => {
 
                 <div className="w-1/2">
                   <p className="flex flex-col text-center leading-18 text-3xl md:text-4xl lg:text-[40px] text-gray-500 font-bold">
-                    Step <span className="text-[80px] text-[#5d387a]">05</span>
+                    Step <span className="text-[80px] text-[#5d387a] transition-colors duration-300 group-hover:text-primary">05</span>
                   </p>
                 </div>
               </div>

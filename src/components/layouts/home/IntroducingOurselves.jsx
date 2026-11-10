@@ -12,7 +12,7 @@ const IntroducingOurselves = () => {
         <Container>
           <div className="">
             <div className="text-center mb-10">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
+              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase">
                 About Our Work
               </h4>
               <Heading
@@ -27,17 +27,17 @@ const IntroducingOurselves = () => {
             {/* ============================================================ */}
             <div className="relative lg:flex">
               {/* ================= 1st round  =======-=-=-= */}
-              <div className="relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
-                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute top-28 right-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute top-60 right-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute bottom-60 right-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-[#434389] absolute bottom-28 right-0"></div>
+              <div className="group relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+                <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute top-28 right-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute top-60 right-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute bottom-60 right-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute bottom-28 right-0"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-70">
                   <p className="absolute -left-30 md:-left-47 lg:-left-70 top-1/2 -translate-y-1/2 text-[40px] md:text-[64px] lg:text-[94px] text-white font-extrabold -rotate-90">
                     WHO WE ARE
                   </p>
                 </div>
-                <LuCircleArrowOutUpRight className="text-4xl lg:text-[50px] text-secondary mx-auto mb-3" />
+                <LuCircleArrowOutUpRight className="text-4xl lg:text-[50px] text-secondary mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
                 <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary text-center">
                   Who We Are
                 </h4>
@@ -56,17 +56,17 @@ const IntroducingOurselves = () => {
                 </p>
               </div>
               {/* ================= 2nd round =======-=-=-= */}
-              <div className="relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
-                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute top-28 left-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute top-60 left-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute bottom-60 left-0"></div>
-                <div className="hidden lg:block px-5 py-2 bg-tertiary absolute bottom-28 left-0"></div>
+              <div className="group relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+                <div className="hidden lg:block px-3 py-2 bg-tertiary absolute top-28 left-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-tertiary absolute top-60 left-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-tertiary absolute bottom-60 left-0"></div>
+                <div className="hidden lg:block px-3 py-2 bg-tertiary absolute bottom-28 left-0"></div>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-70">
                   <p className="absolute -right-30 md:-right-47 lg:-right-69 top-1/2 -translate-y-1/2 text-[40px] md:text-[64px] lg:text-[94px] text-white font-extrabold rotate-90">
                     WHAT WE DO
                   </p>
                 </div>
-                <IoCheckmarkDoneCircleOutline className="text-4xl lg:text-[50px] text-white mx-auto mb-3" />
+                <IoCheckmarkDoneCircleOutline className="text-4xl lg:text-[50px] text-white mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
                 <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
                   What We Do
                 </h4>

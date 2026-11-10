@@ -57,11 +57,11 @@ const Recruiter_OurOffer = () => {
           />
         </div>
         <div className="grid lg:grid-cols-2 gap-10 md:gap-14 lg:gap-16 items-center">
-          <div className="relative aspect-[7/5] lg:aspect-[5/4] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl">
+          <div className="relative aspect-[7/5] lg:aspect-[5/4] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl group">
             <img
               src={offerImage}
               alt="University recruitment partnership"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]"
               loading="lazy"
               decoding="async"
             />
@@ -72,21 +72,20 @@ const Recruiter_OurOffer = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 p-5 md:p-6 bg-tertiary/30 rounded-xl border border-secondary/10 hover:border-secondary/20 transition-colors duration-300"
+                  className="flex gap-4 p-5 md:p-6 bg-tertiary/30 rounded-xl border border-secondary/10 hover:border-primary/30 hover:shadow-xl hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)] transition-all duration-300 group"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white border border-secondary/10 flex items-center justify-center shadow-sm">
+                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white border border-secondary/10 flex items-center justify-center shadow-sm transition-all duration-300 group-hover:border-primary/30 group-hover:scale-105 group-hover:shadow-[0_10px_30px_rgba(221,21,25,0.2)]">
                     <service.icon
-                      className="text-2xl md:text-3xl text-primary"
-                      strokeWidth={1.5}
+                      className="text-2xl md:text-3xl text-primary strokeWidth={1.5} transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary/90"
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-bold text-secondary mb-2">
+                    <h4 className="text-lg md:text-xl font-bold text-secondary mb-2 transition-colors duration-300 group-hover:text-primary">
                       {service.title}
                     </h4>
                     <PBase
                       text={service.description}
-                      className="text-secondary/70 leading-relaxed"
+                      className="text-secondary/70 leading-relaxed transition-colors duration-300 group-hover:text-secondary/80"
                     />
                   </div>
                 </div>

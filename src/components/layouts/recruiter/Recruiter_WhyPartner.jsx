@@ -84,7 +84,7 @@ const BenefitCard = ({ benefit }) => {
   const Icon = benefit.icon;
 
   return (
-    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 md:p-8">
+    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8">
       <div className="mb-4">
         <Icon className="text-3xl md:text-4xl text-primary" strokeWidth={1.5} />
       </div>
