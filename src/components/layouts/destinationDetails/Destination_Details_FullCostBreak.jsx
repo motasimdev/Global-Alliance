@@ -76,11 +76,11 @@ const Destination_Details_FullCostBreak = ({ destination = {} }) => {
                         key={index}
                         className={`border-t border-secondary/10 ${
                           index % 2 === 0 ? "bg-white" : "bg-tertiary/10"
-                        }`}
+                        } transition-all duration-200 hover:bg-tertiary/20 group`}
                       >
                         <td className="px-4 md:px-6 py-4">
                           <div className="flex flex-col">
-                            <span className="font-medium text-secondary">
+                            <span className="font-medium text-secondary transition-colors duration-200 group-hover:text-primary">
                               {item.costItem}
                             </span>
                             {period && (
@@ -90,13 +90,13 @@ const Destination_Details_FullCostBreak = ({ destination = {} }) => {
                             )}
                           </div>
                         </td>
-                        <td className="text-right px-4 md:px-6 py-4 text-secondary/70">
+                        <td className="text-right px-4 md:px-6 py-4 text-secondary/70 transition-colors duration-200 group-hover:text-primary">
                           {currencySymbol} {low}
                         </td>
-                        <td className="text-right px-4 md:px-6 py-4 font-bold text-primary">
+                        <td className="text-right px-4 md:px-6 py-4 font-bold text-primary transition-colors duration-200 group-hover:text-secondary">
                           {currencySymbol} {typical}
                         </td>
-                        <td className="text-right px-4 md:px-6 py-4 text-secondary/70">
+                        <td className="text-right px-4 md:px-6 py-4 text-secondary/70 transition-colors duration-200 group-hover:text-primary">
                           {currencySymbol} {high} <br />
                           {notes && (
                             <span className="mt-1 text-xs text-secondary/50">

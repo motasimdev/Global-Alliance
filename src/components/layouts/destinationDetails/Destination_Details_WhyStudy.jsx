@@ -28,25 +28,20 @@ const Destination_Details_WhyStudy = ({ destination }) => {
               text={`Why Study in ${destination.name}`}
               className={"text-secondary tracking-tight"}
             />
-            {/* <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
-                These are our core strengths that make us stand out in the
-                market and worthy of your attention
-              </p> */}
           </div>
 
           {/* ======================== */}
 
           <section id="destination-overview-description">
-            <div className="relative pb-9 pt-20 pl-8 pr-6 bg-white shadow-lg">
+            <div className="group relative pb-9 pt-20 pl-8 pr-6 bg-white shadow-lg hover:shadow-2xl transition duration-300">
               <GiNestedEclipses className="absolute -top-4 -left-4 text-gray-100 text-[90px] -rotate-45" />
               <div className="absolute right-5 -top-5 bg-gray-200 w-4 h-20"></div>
-              <div className="relative mx-auto mb-8 bg-white shadow-sm lg:w-1/5 rounded-2xl px-8 py-2 overflow-hidden">
+              <div className="relative mx-auto mb-8 bg-white shadow-sm lg:w-1/5 rounded-2xl px-8 py-2 overflow-hidden group-hover:shadow-2xl transition duration-300">
                 <PiNotebookFill className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
                 <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold text-center">
                   Overview
                 </h4>
               </div>
-              {/* <PiPaperclipHorizontalFill className="absolute right-1/2 top-10 translate-x-1/2 flex justify-center text-[50px] -rotate-45 rounded-full shadow-lg shadow-gray-300" /> */}
               <P18
                 text={`${destination.overview}`}
                 className={"relative z-10"}

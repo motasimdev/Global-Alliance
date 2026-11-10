@@ -10,18 +10,18 @@ const Card = ({ icon, data }) => {
   return (
     <div className="bg-white rounded-2xl border border-secondary/10 shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary/30 group">
       <div className="flex flex-col items-center gap-2 mb-3">
-        <div className="text-primary/90 text-5xl">{icon}</div>
-        <h5 className="text-lg md:text-xl font-semibold text-secondary">
+        <div className="text-primary/90 text-5xl transition-transform duration-300 group-hover:scale-110">{icon}</div>
+        <h5 className="text-lg md:text-xl font-semibold text-secondary transition-colors duration-300 group-hover:text-primary">
           {d.headline}
         </h5>
       </div>
       {d.opportunity && (
-        <p className="text-base md:text-lg font-semibold text-primary mb-2 border pl-2 py-1 bg-red-100 rounded-md">
+        <p className="text-base md:text-lg font-semibold text-primary mb-2 border pl-2 py-1 bg-red-100 rounded-md transition-all duration-300 group-hover:bg-primary/10 group-hover:border-primary">
           {d.opportunity}
         </p>
       )}
       {d.summary && (
-        <p className="text-sm md:text-base text-secondary/70 leading-relaxed mb-3">
+        <p className="text-sm md:text-base text-secondary/70 leading-relaxed mb-3 transition-colors duration-300 group-hover:text-secondary/90">
           {d.summary}
         </p>
       )}
@@ -29,10 +29,10 @@ const Card = ({ icon, data }) => {
         {(d.rules || []).map((rule, idx) => (
           <li
             key={idx}
-            className="flex items-start gap-2 text-sm md:text-base text-secondary/80"
+            className="flex items-start gap-2 lg:pr-1 text-sm md:text-base text-secondary/80 transition-all duration-200 hover:pl-1 group"
           >
-            <FaCheckCircle className="text-primary shrink-0 mt-0.5 text-sm" />
-            <span>{rule}</span>
+            <FaCheckCircle className="text-primary shrink-0 mt-0.5 text-sm transition-transform duration-200 group-hover:scale-125" />
+            <span className="transition-colors duration-200 group-hover:text-primary">{rule}</span>
           </li>
         ))}
       </ul>

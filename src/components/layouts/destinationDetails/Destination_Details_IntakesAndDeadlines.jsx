@@ -32,15 +32,15 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-xl border border-secondary/10 shadow-sm p-5 md:p-6"
+                  className="bg-white rounded-xl border border-secondary/10 shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:-translate-y-1 group"
                 >
                   <div className="flex items-center gap-2.5 mb-4">
                     <FaCircle
                       className={`text-xs ${
                         isPrimary ? "text-green-500" : "text-amber-500"
-                      }`}
+                      } transition-transform duration-300 group-hover:scale-125`}
                     />
-                    <h5 className="text-base md:text-lg font-bold text-secondary">
+                    <h5 className="text-base md:text-lg font-bold text-secondary transition-colors duration-300 group-hover:text-primary">
                       {intake.intake}
                     </h5>
                     {isPrimary && (
@@ -57,9 +57,9 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
 
                   <div className="space-y-2.5">
                     {intake.starts && (
-                      <div className="flex items-center gap-2.5 text-sm md:text-base text-secondary/80">
-                        <FaCalendarAlt className="text-primary flex-shrink-0" />
-                        <span>
+                      <div className="flex items-center gap-2.5 text-sm md:text-base text-secondary/80 transition-all duration-200 hover:pl-1 group">
+                        <FaCalendarAlt className="text-primary flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                        <span className="transition-colors duration-200 group-hover:text-primary">
                           <span className="font-medium text-secondary">
                             Starts:{" "}
                           </span>
@@ -69,9 +69,9 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
                     )}
 
                     {intake.applicationWindow && (
-                      <div className="flex items-center gap-2.5 text-sm md:text-base text-secondary/80">
-                        <FaClock className="text-primary flex-shrink-0" />
-                        <span>
+                      <div className="flex items-center gap-2.5 text-sm md:text-base text-secondary/80 transition-all duration-200 hover:pl-1 group">
+                        <FaClock className="text-primary flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                        <span className="transition-colors duration-200 group-hover:text-primary">
                           <span className="font-medium text-secondary">
                             Application Window:{" "}
                           </span>
@@ -81,7 +81,7 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
                     )}
 
                     {intake.notes && (
-                      <p className="text-xs md:text-sm text-secondary/50 mt-2 pt-2 border-t border-secondary/5">
+                      <p className="text-xs md:text-sm text-secondary/50 mt-2 pt-2 border-t border-secondary/5 transition-colors duration-200 group-hover:text-secondary/70">
                         {intake.notes}
                       </p>
                     )}

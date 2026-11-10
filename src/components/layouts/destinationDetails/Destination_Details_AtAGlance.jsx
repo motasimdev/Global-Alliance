@@ -103,18 +103,20 @@ const Destination_Details_AtAGlance = ({ destination }) => {
             }) => (
               <article
                 key={title}
-                className={`group relative min-h-52 overflow-hidden rounded-2xl border border-secondary/8 p-5 shadow-sm transition-shadow duration-300 hover:shadow-lg md:p-6 ${className}`}
+                className={`group relative min-h-52 overflow-hidden rounded-2xl border border-secondary/8 p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 md:p-6 ${className}`}
               >
                 <div
                   className="absolute -right-8 -top-8 h-28 w-28 rounded-full border border-current opacity-[0.08]"
                   aria-hidden="true"
                 />
                 <div
-                  className={`relative mb-7 flex h-11 w-11 items-center justify-center rounded-xl text-lg ${iconClassName}`}
+                  className={`relative mb-7 flex h-11 w-11 items-center justify-center rounded-xl text-lg ${iconClassName} transition-all duration-300 group-hover:scale-110`}
                 >
                   {React.createElement(Icon, { "aria-hidden": true })}
                 </div>
-                <h3 className="relative text-lg font-bold">{title}</h3>
+                <h3 className="relative text-lg font-bold ">
+                  {title}
+                </h3>
                 <p
                   className={`relative mt-2 text-sm leading-relaxed md:text-base ${descriptionClassName}`}
                 >

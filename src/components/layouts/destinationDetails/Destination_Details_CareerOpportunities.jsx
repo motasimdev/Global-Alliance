@@ -117,11 +117,11 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
                         key={index}
                         className={`border-t border-secondary/10 ${
                           index % 2 === 0 ? "bg-white" : "bg-tertiary/10"
-                        }`}
+                        } transition-all duration-200 hover:bg-tertiary/20 group`}
                       >
                         <td className="px-4 md:px-6 py-4">
                           <div className="flex flex-col">
-                            <span className="font-medium text-secondary">
+                            <span className="font-medium text-secondary transition-colors duration-200 group-hover:text-primary">
                               {career.field}
                             </span>
                             {period && (
@@ -130,7 +130,7 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
                               </span>
                             )}
                             {notes && (
-                              <span className="mt-1 text-xs text-secondary/50">
+                              <span className="mt-1 text-xs text-secondary/50 transition-colors duration-200 group-hover:text-primary">
                                 {notes}
                               </span>
                             )}
@@ -140,7 +140,7 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
                           {demandBadge(career.demandLevel)}
                         </td>
                         <td className="text-right px-4 md:px-6 py-4">
-                          <span className="text-base md:text-lg font-bold text-primary">
+                          <span className="text-base md:text-lg font-bold text-primary transition-colors duration-200 group-hover:text-secondary">
                             {currencySymbol}
                             {low} – {currencySymbol}
                             {high}

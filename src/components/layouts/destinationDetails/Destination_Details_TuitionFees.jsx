@@ -36,7 +36,7 @@ const Destination_Details_TuitionFees = ({ destination }) => {
     const period = data.period || "";
 
     return (
-      <div className="group bg-white rounded-2xl border border-secondary/10 shadow-sm hover:shadow-lg hover:border-secondary/20 transition-all duration-300 p-6 md:p-8 flex flex-col">
+      <div className="group bg-white rounded-2xl border border-secondary/10 shadow-sm hover:shadow-lg hover:border-secondary/40 hover:-translate-y-1 transition-all duration-300 p-6 md:p-8 flex flex-col">
         <div className="flex items-center gap-3 mb-6">
           <div
             className={`w-12 h-12 rounded-xl flex items-center justify-center ${accentColor}`}
@@ -62,19 +62,19 @@ const Destination_Details_TuitionFees = ({ destination }) => {
         </div>
 
         <div className="grid grid-cols-3 gap-3 mb-4">
-          <div className="bg-tertiary/30 rounded-lg p-3 text-center">
+          <div className="bg-tertiary/30 rounded-lg p-3 text-center hover:shadow-md transition duration-200">
             <p className="text-xs text-secondary/60 mb-1">Low</p>
             <p className="text-sm md:text-base font-bold text-secondary">
               {currencySymbol} {low}
             </p>
           </div>
-          <div className="bg-tertiary/30 rounded-lg p-3 text-center border border-secondary/20">
+          <div className="bg-tertiary/30 rounded-lg p-3 text-center border border-secondary/20 hover:shadow-md transition duration-200">
             <p className="text-xs text-secondary/60 mb-1">Typical</p>
             <p className="text-sm md:text-base font-bold text-primary">
               {currencySymbol} {typical}
             </p>
           </div>
-          <div className="bg-tertiary/30 rounded-lg p-3 text-center">
+          <div className="bg-tertiary/30 rounded-lg p-3 text-center hover:shadow-md transition duration-200">
             <p className="text-xs text-secondary/60 mb-1">High</p>
             <p className="text-sm md:text-base font-bold text-secondary">
               {currencySymbol} {high}

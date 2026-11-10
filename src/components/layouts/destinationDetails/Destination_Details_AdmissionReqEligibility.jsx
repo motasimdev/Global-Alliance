@@ -65,10 +65,10 @@ const Destination_Details_AdmissionReqEligibility = ({ destination = {} }) => {
               const Icon = meta.icon;
 
               return (
-                <div key={key} className="px-5 md:px-6 py-5">
+                <div key={key} className="px-5 md:px-6 py-5 transition-all duration-200 hover:bg-tertiary/20 group">
                   <div className="flex items-center gap-2.5 mb-3">
-                    <Icon className="text-primary text-lg" />
-                    <h5 className="text-base md:text-lg font-bold text-secondary">
+                    <Icon className="text-primary text-lg transition-transform duration-300 group-hover:scale-110" />
+                    <h5 className="text-base md:text-lg font-bold text-secondary transition-colors duration-300 group-hover:text-primary">
                       {meta.label}
                     </h5>
                   </div>
@@ -76,12 +76,12 @@ const Destination_Details_AdmissionReqEligibility = ({ destination = {} }) => {
                     {items.map((item, i) => (
                       <li
                         key={i}
-                        className="text-sm md:text-base text-secondary/80 flex items-start gap-2"
+                        className="text-sm md:text-base text-secondary/80 flex items-start gap-2 transition-all duration-200 hover:pl-1 group"
                       >
-                        <span className="text-primary mt-1.5 flex-shrink-0">
+                        <span className="text-primary mt-1.5 flex-shrink-0 transition-transform duration-200 group-hover:scale-125">
                           •
                         </span>
-                        <span>{item}</span>
+                        <span className="transition-colors duration-200 group-hover:text-primary">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -90,8 +90,8 @@ const Destination_Details_AdmissionReqEligibility = ({ destination = {} }) => {
             })}
 
             {notes && (
-              <div className="px-5 md:px-6 py-4 bg-tertiary/20">
-                <p className="text-sm text-secondary/70">
+              <div className="px-5 md:px-6 py-4 bg-tertiary/20 transition-all duration-200 hover:bg-tertiary/30">
+                <p className="text-sm text-secondary/70 transition-colors duration-200 hover:text-secondary/90">
                   <span className="font-semibold text-secondary">Note: </span>
                   {notes}
                 </p>

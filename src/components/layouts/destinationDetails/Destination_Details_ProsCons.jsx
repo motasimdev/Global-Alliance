@@ -12,7 +12,7 @@ const Destination_Details_ProsCons = ({ destination = {} }) => {
     <section className="py-12 md:pt-25 md:pb-18 lg:py-20" id="pros-cons">
       <Container>
         <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-6 lg:gap-x-62">
-          <div className="relative z-10 bg-white rounded-2xl border border-secondary/10 shadow-sm p-6 md:p-8 ">
+          <div className="relative z-10 bg-white rounded-2xl border border-secondary/10 shadow-sm p-6 md:p-8  hover:shadow-xl hover:border-0.5 hover:border-secondary/50 transition duration-200">
             <div className="bg-green-200  md:absolute md:-top-14 lg:-right-19 lg:top-1/2 lg:-translate-y-1/2 mb-5 lg:mb-0 pl-5 md:px-[105px] lg:px-0 lg:py-40 rounded-t-2xl md:rounded-t-2xl lg:rounded-t-none lg:rounded-r-2xl shadow-md lg:shadow-gray-400">
               <P18
                 text={"Pros"}
@@ -41,7 +41,7 @@ const Destination_Details_ProsCons = ({ destination = {} }) => {
             )}
           </div>
 
-          <div className="relative z-10 bg-white rounded-2xl border border-secondary/10 shadow-sm p-6 md:p-8">
+          <div className="relative z-10 bg-white rounded-2xl border border-secondary/10 shadow-sm p-6 md:p-8 hover:shadow-xl hover:border-primary/50 transition duration-200">
             <div className="bg-red-200  md:absolute md:-top-14 lg:-left-21 lg:top-1/2 lg:-translate-y-1/2 mb-5 lg:mb-0 pl-5 md:px-[90px] lg:px-0 lg:py-40 rounded-t-2xl md:rounded-t-2xl lg:rounded-t-none lg:rounded-l-2xl shadow-md lg:shadow-gray-400">
               <P18
                 text={"Cons"}

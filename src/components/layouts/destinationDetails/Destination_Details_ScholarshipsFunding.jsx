@@ -62,7 +62,7 @@ const Destination_Details_ScholarshipsFunding = ({ destination = {} }) => {
               return (
                 <div
                   key={index}
-                  className="group bg-white rounded-xl border border-secondary/10 shadow-sm hover:shadow-md hover:border-secondary/20 transition-all duration-200 p-5 md:p-6 flex flex-col"
+                  className="group bg-white rounded-xl border border-secondary/10 shadow-sm hover:shadow-md hover:border-secondary/20 hover:-translate-y-1 transition-all duration-200 p-5 md:p-6 flex flex-col"
                 >
                   <div className=" relative flex items-center gap-2.5 mb-3">
                     <span className="text-sm font-bold text-primary/60">
