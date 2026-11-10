@@ -4,7 +4,7 @@ import Heading from "../../Heading";
 import { MdOutlineHandshake } from "react-icons/md";
 import { FaExclamationTriangle, FaHandshake } from "react-icons/fa";
 
-const Destination_Details_HowWeHelpPartners = ({ destination }) => {
+const Destination_Details_HowWeHelpStudents = ({ destination }) => {
   const items = destination?.challengesAndHowWeHelp || [];
 
   if (items.length === 0) return null;
@@ -13,13 +13,13 @@ const Destination_Details_HowWeHelpPartners = ({ destination }) => {
     <>
       <section
         className="py-12 md:pt-15 md:pb-18 lg:pt-10 lg:pb-20 bg-[#f4f4f4]"
-        id="how-we-help-partners"
+        id="how-we-help-students"
       >
         <Container>
           <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/2 rounded-2xl px-8 py-2 overflow-hidden">
             <MdOutlineHandshake className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
-              How We Help Our Partners
+              How We Help Our Students
             </h4>
           </div>
 
@@ -60,4 +60,4 @@ const Destination_Details_HowWeHelpPartners = ({ destination }) => {
   );
 };
 
-export default Destination_Details_HowWeHelpPartners;
+export default Destination_Details_HowWeHelpStudents;

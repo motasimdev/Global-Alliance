@@ -29,7 +29,10 @@ const menuData = [
     label: "Courses & Careers",
     targetId: "career-opportunities",
     submenu: [
-      { label: "Career Opportunities & Salary Ranges", targetId: "career-opportunities" },
+      {
+        label: "Career Opportunities & Salary Ranges",
+        targetId: "career-opportunities",
+      },
       { label: "Popular Courses", targetId: "popular-courses" },
     ],
   },
@@ -37,7 +40,10 @@ const menuData = [
     label: "Admission",
     targetId: "admission-requirements",
     submenu: [
-      { label: "Admission Requirements and Eligibility", targetId: "admission-requirements" },
+      {
+        label: "Admission Requirements and Eligibility",
+        targetId: "admission-requirements",
+      },
       { label: "Intakes & Deadlines", targetId: "intakes-deadlines" },
     ],
   },
@@ -54,6 +60,8 @@ const menuData = [
     submenu: [
       { label: "Application Process", targetId: "application-process" },
       { label: "Document Checklist", targetId: "document-checklist" },
+      { label: "How We Help Our Students", targetId: "how-we-help-students" },
+      { label: "Practical Tips", targetId: "practical-tips" },
     ],
   },
   {
@@ -62,17 +70,21 @@ const menuData = [
     submenu: [
       { label: "Part-Time Work", targetId: "part-time-work" },
       { label: "Work Rights During and After Study", targetId: "work-rights" },
-      { label: "Post-Study Options and PR Pathway", targetId: "post-study-options-pr" },
+      {
+        label: "Post-Study Options and PR Pathway",
+        targetId: "post-study-options-pr",
+      },
     ],
   },
   {
     label: "Partner Insights",
     targetId: "b2b-opportunities",
     submenu: [
-      { label: "Market Trends & B2B Opportunities", targetId: "b2b-opportunities" },
+      {
+        label: "Market Trends & B2B Opportunities",
+        targetId: "b2b-opportunities",
+      },
       { label: "Partner Operating Guide", targetId: "partner-operating-guide" },
-      { label: "How We Help Our Partners", targetId: "how-we-help-partners" },
-      { label: "Practical Tips", targetId: "practical-tips" },
     ],
   },
   {
@@ -117,21 +129,21 @@ const Destination_Details_Menu = () => {
     return activeId === sub.targetId;
   };
 
- const scrollToTarget = (targetId) => {
-  const element = document.getElementById(targetId);
+  const scrollToTarget = (targetId) => {
+    const element = document.getElementById(targetId);
 
-  if (element) {
-    const offset = targetId === "tuition-fees" ? 170 : SCROLL_OFFSET;
+    if (element) {
+      const offset = targetId === "tuition-fees" ? 170 : SCROLL_OFFSET;
 
-    const elementPosition =
-      element.getBoundingClientRect().top + window.scrollY;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: "smooth",
-    });
-  }
-};
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
