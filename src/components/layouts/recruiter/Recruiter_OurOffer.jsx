@@ -8,7 +8,6 @@ import {
   FiBriefcase,
   FiMessageSquare,
 } from "react-icons/fi";
-import offerImage from "/src/assets/recruiter/our_offer.jpg";
 
 const Recruiter_OurOffer = () => {
   const services = [
@@ -59,7 +58,7 @@ const Recruiter_OurOffer = () => {
         <div className="grid lg:grid-cols-2 gap-10 md:gap-14 lg:gap-16 items-center">
           <div className="relative aspect-[7/5] lg:aspect-[5/4] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl group">
             <img
-              src={offerImage}
+              src={'https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto/v1794124635/our_offer.jpg'}
               alt="University recruitment partnership"
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]"
               loading="lazy"

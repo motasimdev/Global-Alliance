@@ -75,7 +75,7 @@ const FeatureCard = ({ feature, index }) => {
   const Icon = feature.icon;
 
   return (
-    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 md:p-8 overflow-hidden">
+    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <p className="absolute bottom-0 right-0 text-[120px] md:text-[160px] font-extrabold text-secondary -rotate-12 translate-x-1/4 translate-y-1/2">
           {feature.number}

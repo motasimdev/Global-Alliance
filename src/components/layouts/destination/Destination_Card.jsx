@@ -17,7 +17,7 @@ const Destination_Card = ({ destination = {} }) => {
 
   return (
     <Link to={`/destination/${slug}`} className="block no-underline">
-      <div className="group relative h-full bg-white rounded-2xl overflow-hidden border border-secondary/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+      <div className="group relative h-full bg-white rounded-2xl overflow-hidden border border-secondary/20 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-secondary/80 transition-all duration-300 flex flex-col">
         <div className="relative h-70 md:h-80 lg:h-90 bg-gray-200 flex items-center justify-center">
           {image ? (
             <img

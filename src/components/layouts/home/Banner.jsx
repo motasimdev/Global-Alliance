@@ -4,7 +4,6 @@ import Container from "../../Container";
 import Select from "react-select";
 import { PiGraduationCapFill } from "react-icons/pi";
 import PBase from "../../PBase";
-import map from "/src/assets/home/map.png";
 import APU from "/src/assets/university-logos/APU-logo.webp";
 import INTI from "/src/assets/university-logos/INTI-40.webp";
 import NILAI from "/src/assets/university-logos/nilai.webp";
@@ -116,8 +115,8 @@ const Banner = () => {
                   <div className="bg-[#b5b5f8] pt-2 md:pt-2.5 px-2 md:px-3 lg:px-4 pb-3 md:pb-5 rounded-xl flex flex-col gap-y-2 shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                     <div className="w-full h-54 md:h-30 lg:h-40">
                       <img
-                        src={map}
-                        alt="group study"
+                        src={'https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794330223/map.png'}
+                        alt="map"
                         className="w-full h-full rounded-xl"
                         loading="eager"
                         decoding="async"

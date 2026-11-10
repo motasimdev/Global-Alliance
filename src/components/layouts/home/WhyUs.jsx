@@ -2,7 +2,6 @@ import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
 import { BsCheck2Square } from "react-icons/bs";
-import whyUs from "/src/assets/images/why-us.png";
 
 const WhyUs = () => {
   return (
@@ -29,7 +28,16 @@ const WhyUs = () => {
             <div className="md:flex justify-between md:gap-x-4 lg:gap-x-0">
               <div className="mb-10 md:w-1/2 flex items-center group">
                 <div className="mx-auto border-2 border-gray-400 transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)] group-hover:border-primary/30">
-                  <img src={whyUs} alt="" className="w-125 shadow-lg md:shadow-2xl shadow-gray-500 transition-all duration-700 group-hover:scale-105" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794330839/why-us-section.png"
+                    }
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    alt="Why you choose us"
+                    className="w-125 shadow-lg md:shadow-2xl shadow-gray-500 transition-all duration-700 group-hover:scale-105"
+                  />
                 </div>
               </div>
 

@@ -1,13 +1,6 @@
 import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
-import Button from "../../Button";
-import PBase from "../../PBase";
-import { Link } from "react-router";
-import aboutOne from "/src/assets/about-us/aboutOne.svg";
-import aboutTwo from "/src/assets/about-us/aboutTwosvg.svg";
-import aboutThree from "/src/assets/about-us/aboutThree.svg";
-import aboutFour from "/src/assets/about-us/aboutFour.svg";
 import P18 from "../../P18";
 
 const AboutHeader = () => {
@@ -27,50 +20,7 @@ const AboutHeader = () => {
                 }
                 className={"py-5 lg:px-20 text-justify md:text-center text-secondary"}
               />
-              {/* <Link to={""}>
-              <Button>Learn More</Button>
-            </Link> */}
             </div>
-
-            {/* ===================================== */}
-            {/* <div className="flex justify-between items-baseline mt-5 md:mt-9 lg:mt-0">
-            <div className="w-[25%] h-27 md:h-auto rounded-2xl bg-[#ffffff]">
-              <img
-                src={aboutThree}
-                alt=""
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div className="w-[23%] rounded-2xl md:h-43 lg:h-50 bg-[#ffffff]">
-              <img
-                src={aboutOne}
-                alt=""
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div className="w-[23%] rounded-2xl h-23 md:h-52 lg:h-60 bg-[#ffffff]">
-              <img
-                src={aboutFour}
-                alt=""
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div className="w-[25%] h-27 md:h-auto rounded-2xl bg-[#ffffff]">
-              <img
-                src={aboutTwo}
-                alt=""
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div> */}
           </Container>
         </div>
       </section>
