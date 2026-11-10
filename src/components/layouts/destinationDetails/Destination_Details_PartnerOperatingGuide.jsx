@@ -9,7 +9,7 @@ const Destination_Details_PartnerOperatingGuide = ({ destination }) => {
   return (
     <>
       <section
-        className="py-12 md:pt-25 md:pb-18 lg:pt-10 lg:pb-20 bg-white"
+        className="py-12 md:pt-15 md:pb-18 lg:pt-10 lg:pb-20 bg-white"
         id="partner-operating-guide"
       >
         <Container>

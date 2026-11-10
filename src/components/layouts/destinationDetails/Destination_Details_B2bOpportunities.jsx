@@ -25,7 +25,7 @@ const ListItem = ({ icon, text }) => (
   return (
     <>
       <section
-        className="py-12 md:pt-25 md:pb-18 lg:py-20 bg-tertiary/25"
+        className="py-12 md:pt-20 md:pb-18 lg:py-20 bg-tertiary/25"
         id="b2b-opportunities"
       >
         <Container>
