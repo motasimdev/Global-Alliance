@@ -3,7 +3,6 @@ import unversitiesandcourses from "../../../data/universitiesandcourses.json";
 import PBase from "../../PBase";
 import { FaAngleRight, FaLocationDot } from "react-icons/fa6";
 import intiLogo from "/src/assets/university-logos/INTI-40.webp";
-import intiImage from "/src/assets/university-images/inti-university.webp";
 import Container from "../../Container";
 import Heading from "../../Heading";
 import P18 from "../../P18";

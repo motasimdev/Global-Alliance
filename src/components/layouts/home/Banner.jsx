@@ -9,7 +9,7 @@ import INTI from "/src/assets/university-logos/INTI-40.webp";
 import NILAI from "/src/assets/university-logos/nilai.webp";
 import LINCOLN from "/src/assets/university-logos/lincoln.webp";
 import UNIRAZAK from "/src/assets/university-logos/Official-UNIRAZAK-Logo.webp";
-import SEGI from "/src/assets/university-logos/SEGi-University.webp";
+import SEGI from "/src/assets/university-logos/SEGi-University-logo.webp";
 import UOW from "/src/assets/university-logos/UOW-logoo.webp";
 import Psm from "../../Psm";
 import P18 from "../../P18";
