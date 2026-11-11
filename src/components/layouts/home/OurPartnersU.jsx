@@ -10,103 +10,124 @@ import "swiper/css/navigation";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import UniversityCard from "../../UniversityCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
+import { useInView } from "/src/hooks/useInView";
 
 const universities = [
   {
-    image: "/src/assets/asia-pacific-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124634/asia-pacific-university.webp",
     name: "Asia Pacific University",
     heading: "Asia Pacific University of Technology & Innovation",
     country: "Malaysia",
     city: "Kuala Lumpur",
-    description: "A leading university in technology, innovation, and creative industries with strong industry partnerships and global recognition.",
+    description:
+      "A leading university in technology, innovation, and creative industries with strong industry partnerships and global recognition.",
     studyLevels: "Foundation, Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://www.apu.edu.my/",
   },
   {
-    image: "/src/assets/cyberjaya-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/cyberjaya-university.webp",
     name: "Cyberjaya University",
     heading: "Cyberjaya University College of Medical Sciences",
     country: "Malaysia",
     city: "Cyberjaya",
-    description: "Specialized in medical sciences and henamehcare education with modern facilities and clinical partnerships.",
+    description:
+      "Specialized in medical sciences and henamehcare education with modern facilities and clinical partnerships.",
     studyLevels: "Diploma, Bachelor's, Master's",
     type: "Medical University",
     to: "https://cyberjaya.edu.my/",
   },
   {
-    image: "/src/assets/inti-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/inti-university.webp",
     name: "INTI International University",
     heading: "INTI International University & Colleges",
     country: "Malaysia",
     city: "Nilai",
-    description: "Part of the Laureate International Universities network, offering diverse programs with global pathways.",
+    description:
+      "Part of the Laureate International Universities network, offering diverse programs with global pathways.",
     studyLevels: "Foundation, Bachelor's, Master's",
     type: "Private University",
     to: "https://newinti.edu.my/",
   },
   {
-    image: "/src/assets/lincoln-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124635/lincoln-university.webp",
     name: "Lincoln University College",
     heading: "Lincoln University College",
     country: "Malaysia",
     city: "Petaling Jaya",
-    description: "Established institution with focus on henameh sciences, engineering, and business programs.",
+    description:
+      "Established institution with focus on henameh sciences, engineering, and business programs.",
     studyLevels: "Diploma, Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://www.lincoln.edu.my/",
   },
   {
-    image: "/src/assets/nilai-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/nilai-university.webp",
     name: "Nilai University",
     heading: "Nilai University",
     country: "Malaysia",
     city: "Nilai",
-    description: "Offers industry-relevant programs with emphasis on hospitality, business, and engineering fields.",
+    description:
+      "Offers industry-relevant programs with emphasis on hospitality, business, and engineering fields.",
     studyLevels: "Diploma, Bachelor's, Master's",
     type: "Private University",
     to: "https://www.nilai.edu.my/",
   },
   {
-    image: "/src/assets/segi-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794337308/segi-university.webp",
     name: "SEGi University",
     heading: "SEGi University & Colleges",
     country: "Malaysia",
     city: "Kota Damansara",
-    description: "One of Malaysia's largest private higher education groups with diverse program offerings.",
+    description:
+      "One of Malaysia's largest private higher education groups with diverse program offerings.",
     studyLevels: "Foundation, Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://www.segi.edu.my/",
   },
   {
-    image: "/src/assets/Taylors-University.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124637/Taylors-University.webp",
     name: "Taylor's University",
     heading: "Taylor's University",
     country: "Malaysia",
     city: "Subang Jaya",
-    description: "Renowned for hospitality, business, and communication programs with strong global rankings.",
+    description:
+      "Renowned for hospitality, business, and communication programs with strong global rankings.",
     studyLevels: "Foundation, Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://university.taylors.edu.my/",
   },
   {
-    image: "/src/assets/unirazak-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124638/unirazak-university.webp",
     name: "UNIRAZAK",
     heading: "Universiti Tun Abdul Razak (UNIRAZAK)",
     country: "Malaysia",
     city: "Kuala Lumpur",
-    description: "Specialized in business, governance, and leadership education with flexible learning options.",
+    description:
+      "Specialized in business, governance, and leadership education with flexible learning options.",
     studyLevels: "Bachelor's, Master's, PhD",
     type: "Private University",
     to: "https://unirazak.edu.my/",
   },
   {
-    image: "/src/assets/wollongong-university.webp",
+    image:
+      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124638/wollongong-university.webp",
     name: "University of Wollongong Malaysia",
     heading: "University of Wollongong Malaysia",
     country: "Malaysia",
     city: "Kota Damansara",
-    description: "Australian university branch campus delivering globally recognized degrees in Malaysia.",
+    description:
+      "Australian university branch campus delivering globally recognized degrees in Malaysia.",
     studyLevels: "Foundation, Bachelor's, Master's",
     type: "International Branch Campus",
     to: "https://www.uow.edu.my/",
@@ -114,20 +135,38 @@ const universities = [
 ];
 
 const OurPartnersU = () => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
   return (
     <section className="relative py-15 md:py-20 lg:py-18">
       <Container>
         <div className="text-center mb-12 md:mb-16">
-          <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">
-            OUR PARTNERS
-          </h4>
+          <Kicker style={{ transitionDelay: "0ms" }} text={"Our Partners"} />
           <Heading
+            style={{ transitionDelay: "120ms" }}
             text={"Our University Network"}
             className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
           />
+          <SubHeading
+            style={{ transitionDelay: "240ms" }}
+            text={
+              "Connecting recruitment partners with verified universities across major study abroad destinations worldwide."
+            }
+          />
         </div>
 
-        <div className="relative">
+        <div
+          ref={ref}
+          style={{
+            opacity: 0,
+            animation: inView ? "reveal 700ms ease-out 300ms both" : "none",
+          }}
+          className="relative"
+        >
           <Swiper
             modules={[Pagination, Autoplay, Navigation]}
             slidesPerView={1}
@@ -177,18 +216,53 @@ const OurPartnersU = () => {
           </button>
         </div>
 
-        <div className="text-center mt-12 md:mt-16">
+        <div
+          style={{
+            opacity: 0,
+            animation: inView ? "reveal 700ms ease-out 300ms both" : "none",
+          }}
+          className="text-center mt-12 md:mt-16"
+        >
           <Link
             to="/university"
             className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-secondary rounded-xl hover:bg-primary transition-colors duration-200 shadow-sm hover:shadow-md"
           >
             View All Universities
-            <svg className="w-5 h-5 transition-transform hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-5 h-5 transition-transform hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>
       </Container>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

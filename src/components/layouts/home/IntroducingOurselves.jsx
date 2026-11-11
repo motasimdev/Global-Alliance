@@ -4,28 +4,43 @@ import Heading from "../../Heading";
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { MdOutlineDoneAll } from "react-icons/md";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
+import { useInView } from "/src/hooks/useInView";
 
 const IntroducingOurselves = () => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+
   return (
     <>
       <section className="pt-15 md:pt-20 pb-18 md:pb-20 lg:py-10">
         <Container>
           <div className="">
             <div className="text-center mb-10">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase">
-                About Our Work
-              </h4>
+              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase"></h4>
+              <Kicker
+                text={"About Our Work"}
+                style={{ transitionDelay: "0ms" }}
+              />
               <Heading
                 text={"Introducing Ourselves"}
                 className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
+                style={{ transitionDelay: "120ms" }}
               />
-              {/* <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
-                These are our core strengths that make us stand out in the
-                market and worthy of your attention
-              </p> */}
+              <SubHeading
+                text={
+                  "Connecting education agencies with top global universities to drive seamless international student recruitment."
+                }
+                style={{ transitionDelay: "240ms" }}
+              />
             </div>
             {/* ============================================================ */}
-            <div className="relative lg:flex">
+            <div ref={ref} className="relative lg:flex">
               {/* ================= 1st round  =======-=-=-= */}
               <div className="group relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
                 <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute top-28 right-0"></div>
@@ -37,18 +52,58 @@ const IntroducingOurselves = () => {
                     WHO WE ARE
                   </p>
                 </div>
-                <LuCircleArrowOutUpRight className="text-4xl lg:text-[50px] text-secondary mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
-                <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary text-center">
+                <LuCircleArrowOutUpRight
+                  style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 300ms both"
+                      : "none",
+                  }}
+                  className="text-4xl lg:text-[50px] text-secondary mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary"
+                />
+                <h4
+                  style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 500ms both"
+                      : "none",
+                  }}
+                  className="text-base md:text-lg lg:text-[22px] font-semibold text-primary text-center"
+                >
                   Who We Are
                 </h4>
-                <h4 className="text-2xl md:text-3xl text-secondary font-bold text-center pt-3">
+                <h4
+                  style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 700ms both"
+                      : "none",
+                  }}
+                  className="text-2xl md:text-3xl text-secondary font-bold text-center pt-3"
+                >
                   Your Direct Gateway to Global Student Recruitment
                 </h4>
-                <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary py-3 lg:py-7">
+                <p
+                  style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 900ms both"
+                      : "none",
+                  }}
+                  className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary py-3 lg:py-7"
+                >
                   Global Alliance is a global B2B recruitment platform
                   purpose-built for universities and licensed education agents.
                 </p>
-                <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
+                <p
+                  style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 1100ms both"
+                      : "none",
+                  }}
+                  className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary"
+                >
                   We simplify and strengthen international student recruitment
                   by connecting institutions with a vetted network of global
                   recruitment partners. No middle layers, no distractions just
@@ -66,27 +121,57 @@ const IntroducingOurselves = () => {
                     WHAT WE DO
                   </p>
                 </div>
-                <IoCheckmarkDoneCircleOutline className="text-4xl lg:text-[50px] text-white mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
-                <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
+                <IoCheckmarkDoneCircleOutline style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 300ms both"
+                      : "none",
+                  }} className="text-4xl lg:text-[50px] text-white mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
+                <h4 style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 500ms both"
+                      : "none",
+                  }} className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
                   What We Do
                 </h4>
                 <div className="text-left">
-                  <h4 className="text-2xl md:text-3xl text-white font-bold pt-3">
+                  <h4 style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 700ms both"
+                      : "none",
+                  }} className="text-2xl md:text-3xl text-white font-bold pt-3">
                     For Universities
                   </h4>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 800ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Discover & onboard verified recruitment agents
                     </p>
                   </div>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 800ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Expand global reach without operational overload
                     </p>
                   </div>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 800ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Monitor performance, compliance, and pipeline in real-time
@@ -94,22 +179,42 @@ const IntroducingOurselves = () => {
                   </div>
                 </div>
                 <div className="text-left mt-3">
-                  <h4 className="text-2xl md:text-3xl text-white font-bold">
+                  <h4 style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 1000ms both"
+                      : "none",
+                  }} className="text-2xl md:text-3xl text-white font-bold">
                     For Education Agents
                   </h4>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 1100ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white ">
                       Get connected to top institutions worldwide
                     </p>
                   </div>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 1100ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Access a streamlined application and reporting system
                     </p>
                   </div>
-                  <div className="flex items-start gap-x-1">
+                  <div style={{
+                    opacity:0,
+                    animation: inView
+                      ? "reveal 700ms ease-out 1100ms both"
+                      : "none",
+                  }} className="flex items-start gap-x-1">
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Strengthen credibility through verification and
@@ -121,6 +226,25 @@ const IntroducingOurselves = () => {
             </div>
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   );
