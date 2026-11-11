@@ -3,9 +3,9 @@ import { useInView } from "/src/hooks/useInView";
 
 const SubHeading = ({ className = "", text, style }) => {
     const [ref, isInView] = useInView({
-        once: false,
+        once: true,
         threshold: 0.1,
-        rootMargin: "0px 0px -80px 0px",
+        rootMargin: "0px 0px -60px 0px",
       });
   return (
      <p

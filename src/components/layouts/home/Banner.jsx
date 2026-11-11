@@ -23,7 +23,13 @@ import { GiTiedScroll } from "react-icons/gi";
 import { SiOrganicmaps } from "react-icons/si";
 
 const Banner = () => {
-  const [ref, isInView] = useInView({ once: true });
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const [ref, isInView] = useInView(observerOptions);
   //counter up
   const onComplete = () => {
     console.log("Completed");
@@ -65,20 +71,47 @@ const Banner = () => {
       <section className="relative bg-linear-to-b from-white to-[#e6e6ec] pt-10 pb-5 md:pb-20 lg:pt-15 lg:pb-30">
         <Container>
           <div className="relative md:flex justify-between items-center md:gap-x-8 lg:gap-x-0">
-            <div className="md:w-[50%] ">
-              <h1 className=" lg:pr-23 text-[40px] lg:text-[58px] leading-11 md:leading-13 lg:leading-16 text-secondary font-extrabold animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <div ref={ref} className="md:w-[50%] ">
+              <h1
+                className=" lg:pr-23 text-[40px] lg:text-[58px] leading-11 md:leading-13 lg:leading-16 text-secondary font-extrabold"
+                style={{
+                  animation: isInView
+                    ? "reveal 700ms ease-out 0ms both"
+                    : "none",
+                  opacity: 0,
+                  transform: "translateY(3.5rem)",
+                }}
+              >
                 Gateway to <span className="text-primary">Global Student </span>
                 Recruitment
               </h1>
-              <p className="text-[22px] text-secondary lg:pr-26 pt-5 pb-3 lg:text-justify animate-in fade-in slide-in-from-bottom-8 duration-700">
+              <p
+                className="text-[22px] text-secondary lg:pr-26 pt-5 pb-3 lg:text-justify"
+                style={{
+                  animation: isInView
+                    ? "reveal 700ms ease-out 200ms both"
+                    : "none",
+                  opacity: 0,
+                  transform: "translateY(3.5rem)",
+                }}
+              >
                 We simplify everything, from selecting the perfect university to
                 obtaining your student visa.
               </p>
               <Link to={"/become-a-partner"}>
-                {/* <Button className="animate-in fade-in slide-in-from-bottom-8 duration-800">
-                  Become a Partner
-                </Button> */}
-                <button className="py-2 lg:py-3 px-4 lg:px-4 mt-4 lg:mt-8 text-[14px] md:text-lg font-medium lg:font-bold rounded-xl bg-secondary text-white border border-white flex items-center gap-x-4 cursor-pointer  hover:bg-primary transition duration-300 shadow-xl shadow-gray-400">Become a Partner <FaArrowRight className="animate-bounce mt-1 "/> </button>
+                <button
+                  style={{
+                    animation: isInView
+                      ? "reveal 700ms ease-out 300ms both"
+                      : "none",
+                    opacity: 0,
+                    transform: "translateY(3.5rem)",
+                  }}
+                  className="py-2 lg:py-3 px-4 lg:px-4 mt-4 lg:mt-8 text-[14px] md:text-lg font-medium lg:font-bold rounded-xl bg-secondary text-white border border-white flex items-center gap-x-4 cursor-pointer  hover:bg-primary transition duration-300 shadow-xl shadow-gray-400"
+                >
+                  Become a Partner{" "}
+                  <FaArrowRight className="animate-bounce mt-1 " />{" "}
+                </button>
               </Link>
             </div>
 
@@ -115,7 +148,9 @@ const Banner = () => {
                   <div className="bg-[#b5b5f8] pt-2 md:pt-2.5 px-2 md:px-3 lg:px-4 pb-3 md:pb-5 rounded-xl flex flex-col gap-y-2 shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                     <div className="w-full h-54 md:h-30 lg:h-40">
                       <img
-                        src={'https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794330223/map.png'}
+                        src={
+                          "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794330223/map.png"
+                        }
                         alt="map"
                         className="w-full h-full rounded-xl"
                         loading="eager"
@@ -125,7 +160,7 @@ const Banner = () => {
                     </div>
                     <div className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center lg:text-left bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
                       <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0 mx-auto">
-                        < SiOrganicmaps className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
+                        <SiOrganicmaps className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                       </div>
                       <div className="lg:ml-5 mt-3 lg:mt-0">
                         <P18
@@ -151,7 +186,10 @@ const Banner = () => {
                   <div className="bg-[url(/src/assets/home/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end">
                     <div className="w-full rounded-b-xl px-2 py-3 md:py-0 lg:py-3 bg-[#00000081]">
                       {/* <Psm text={""} className={"text-white"}/> */}
-                    <p className="text-base md:text-xs lg:text-sm text-white">The University of al-Qarawiyyin in Fez, Morocco, founded in 859 CE, The oldest university in the world.</p>
+                      <p className="text-base md:text-xs lg:text-sm text-white">
+                        The University of al-Qarawiyyin in Fez, Morocco, founded
+                        in 859 CE, The oldest university in the world.
+                      </p>
                     </div>
                     {/* <img
                       src={university}
@@ -190,6 +228,25 @@ const Banner = () => {
             </div>
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
       <div className="bg-[#e6e6ece0] py-2 lg:py-6">
         <Marquee speed={80} gradient={false} pauseOnHover={true}>

@@ -41,7 +41,7 @@ const StepsOfPartership = () => {
               />
               <SubHeading
                 text={
-                  "These are our core strengths that make us stand out in the market and worthy of your attention"
+                  "Explore our clear onboarding roadmap—from initial verification to scaling your recruitment volume effortlessly."
                 }
                 style={{ transitionDelay: "240ms" }}
               />
@@ -60,6 +60,7 @@ const StepsOfPartership = () => {
                     : "none",
                   opacity: 0,
                   transform: "translateY(3.5rem)",
+                  animationDelay:"300ms",
                 }}
               >
                 <div className="relative flex flex-col-reverse gap-y-5 md:gap-y-0 lg:flex-row justify-between items-center gap-x-10 bg-secondary rounded-full w-full   lg:w-3/4 px-15  pt-10 pb-14 md:px-20 lg:pt-5 lg:pl-16 lg:pr-8 lg:pb-8 shadow-lg shadow-gray-600">
@@ -375,7 +376,7 @@ const StepsOfPartership = () => {
           @keyframes reveal {
             from {
               opacity: 0;
-              transform: translateY(2rem);
+              transform: translateY(3.5rem);
             }
             to {
               opacity: 1;
