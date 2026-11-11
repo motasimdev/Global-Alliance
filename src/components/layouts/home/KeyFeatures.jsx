@@ -9,19 +9,25 @@ import { MdAttractions } from "react-icons/md";
 import { MdOutlineQuickreply } from "react-icons/md";
 import { FaTimeline } from "react-icons/fa6";
 import { useInView } from "/src/hooks/useInView";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
 
 const KeyFeatures = () => {
   const [ref, isInView] = useInView({ once: true });
 
   const features = [
     {
-      keyIcon: <BsLayerForward className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <BsLayerForward className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "Same Day Application Submission",
       para: "We submit the applications on the same day if the docs are altogether.",
       headingClassname: "text-primary!",
     },
     {
-      keyIcon: <MdAdsClick className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <MdAdsClick className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "One-Click Apply",
       para: "Times wasted on lengthy communication are saved by this resulting in higher efficiency.",
       headingClassname: "text-primary!",
@@ -29,7 +35,9 @@ const KeyFeatures = () => {
       bg: "bg-tertiary",
     },
     {
-      keyIcon: <GrMicrofocus className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <GrMicrofocus className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "Access to Global Universities",
       para: "Global Alliance allow you to access our partner institutions, making the process much easier.",
       headingClassname: "text-primary!",
@@ -37,7 +45,9 @@ const KeyFeatures = () => {
       bg: "bg-gray-200",
     },
     {
-      keyIcon: <MdAttractions className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <MdAttractions className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "Attractive Commission",
       para: "Our high range of agent commission based on performance makes us stand out in the market.",
       headingClassname: "text-primary!",
@@ -45,7 +55,9 @@ const KeyFeatures = () => {
       bg: "bg-gray-200",
     },
     {
-      keyIcon: <MdOutlineQuickreply className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <MdOutlineQuickreply className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "Quick Support and Response",
       para: "We provide support to all our precious users promptly, anytime they need.",
       headingClassname: "text-primary!",
@@ -53,7 +65,9 @@ const KeyFeatures = () => {
       bg: "bg-tertiary",
     },
     {
-      keyIcon: <FaTimeline className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />,
+      keyIcon: (
+        <FaTimeline className="text-secondary text-2xl md:text-3xl mx-auto transition-all duration-300 group-hover:text-primary" />
+      ),
       heading: "Real Time Application Tracking",
       para: "The user will get to track the condition and ongoing status of the application without having to contact any person.",
       headingClassname: "text-primary!",
@@ -67,17 +81,21 @@ const KeyFeatures = () => {
         <Container>
           <div className="">
             <div className="text-center">
-              <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary uppercase">
-                Grow your business with Global Alliance
-              </h4>
+              <Kicker
+                text={"Grow your business with Global Alliance"}
+                style={{ transitionDelay: "0ms" }}
+              />
               <Heading
                 text={"Key features of Global Alliance"}
                 className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
+                style={{ transitionDelay: "120ms" }}
               />
-              <p className="text-sm md:text-base lg:text-[18px] font-semibold text-secondary">
-                These are our core strengths that make us stand out in the
-                market and worthy of your attention
-              </p>
+              <SubHeading
+                text={
+                  "These are our core strengths that make us stand out in the  market and worthy of your attention"
+                }
+                style={{ transitionDelay: "240ms" }}
+              />
             </div>
             {/* ==================================================================== */}
             <div
@@ -88,21 +106,31 @@ const KeyFeatures = () => {
                 <div
                   key={index}
                   className={`group col-span-3 md:col-span-3 lg:col-span-1 text-center ${feature.bg || "bg-[#434389]"} pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl ${
-                    feature.bg === "bg-gray-200" ? "hover:shadow-gray-400" : feature.bg === "bg-tertiary" ? "shadow-gray-400 hover:shadow-gray-500" : "hover:shadow-gray-500"
+                    feature.bg === "bg-gray-200"
+                      ? "hover:shadow-gray-400"
+                      : feature.bg === "bg-tertiary"
+                        ? "shadow-gray-400 hover:shadow-gray-500"
+                        : "hover:shadow-gray-500"
                   } hover:shadow-xl transition duration-300 hover:-translate-y-1
                     ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                  style={isInView ? {
-                    animation: `reveal 700ms ease-out forwards`,
-                    animationDelay: `${index * 150}ms`,
-                    opacity: 0,
-                    transform: 'translateY(2rem)',
-                  } : undefined}
+                  style={
+                    isInView
+                      ? {
+                          animation: `reveal 700ms ease-out forwards`,
+                          animationDelay: `${index * 290}ms`,
+                          opacity: 0,
+                          transform: "translateY(3.5rem)",
+                        }
+                      : undefined
+                  }
                 >
                   <KeyFeatureCard
                     keyIcon={
                       <span className="inline-block ">
                         {React.cloneElement(feature.keyIcon, {
-                          className: feature.keyIcon.props.className + " transition-all duration-300",
+                          className:
+                            feature.keyIcon.props.className +
+                            " transition-all duration-500",
                         })}
                       </span>
                     }
@@ -120,7 +148,7 @@ const KeyFeatures = () => {
           @keyframes reveal {
             from {
               opacity: 0;
-              transform: translateY(2rem);
+              transform: translateY(3.5rem);
             }
             to {
               opacity: 1;
