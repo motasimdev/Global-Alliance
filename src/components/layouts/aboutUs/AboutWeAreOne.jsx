@@ -9,6 +9,9 @@ import {
   FiHelpCircle,
   FiArrowRight,
 } from "react-icons/fi";
+import { useInView } from "/src/hooks/useInView";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
 
 const AboutWeAreOne = () => {
   const features = [
@@ -46,18 +49,17 @@ const AboutWeAreOne = () => {
     <section className="relative py-15 md:py-20 lg:py-24 bg-secondary/3">
       <Container>
         <div className="text-center mb-12 md:mb-16">
-          <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">
-            WHY CHOOSE US
-          </h4>
+          <Kicker style={{ transitionDelay: "0ms" }} text={"Why Choose Us"} />
           <Heading
             text={"What Makes Us a Number One Consultancy?"}
             className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
+            style={{ transitionDelay: "120ms" }}
           />
-          <PBase
+          <SubHeading
             text={
               "We’ve simplified the process of finding and applying to universities abroad. Get started in just a few simple steps."
             }
-            className={"text-secondary max-w-3xl mx-auto"}
+            style={{ transitionDelay: "240ms" }}
           />
         </div>
 
@@ -72,10 +74,23 @@ const AboutWeAreOne = () => {
 };
 
 const FeatureCard = ({ feature, index }) => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
   const Icon = feature.icon;
 
   return (
-    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8 overflow-hidden">
+    <div
+      ref={ref}
+      style={{
+        opacity: 0,
+        animation: inView ? `reveal 700ms ease-out ${index * 200}ms both` : "none",
+      }}
+      className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8 overflow-hidden"
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
         <p className="absolute bottom-0 right-0 text-[120px] md:text-[160px] font-extrabold text-secondary -rotate-12 translate-x-1/4 translate-y-1/2">
           {feature.number}
@@ -126,6 +141,25 @@ const FeatureCard = ({ feature, index }) => {
         <div className="absolute top-4 left-4 w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-secondary/20" />
         <div className="absolute bottom-8 right-8 w-16 h-16 md:w-20 md:h-20 rounded-full border border-secondary/20" />
       </div>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -2,8 +2,16 @@ import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
 import PBase from "../../PBase";
+import { useInView } from "/src/hooks/useInView";
 
 const AboutMission = () => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  const [ref2, inView2] = useInView(observerOptions);
   return (
     <section className="relative py-15 md:py-20 lg:py-28 bg-white">
       <Container>
@@ -15,10 +23,19 @@ const AboutMission = () => {
           </div>
 
           <div className="relative z-10 space-y-12 md:space-y-16 lg:space-y-0 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-44">
-            <div className="lg:col-span-5 lg:col-start-2 lg:row-span-2 lg:row-start-1 group">
+            <div
+              ref={ref}
+              style={{
+                opacity: 0,
+                animation: inView ? "reveal 700ms ease-out 0ms both" : "none",
+              }}
+              className="lg:col-span-5 lg:col-start-2 lg:row-span-2 lg:row-start-1 group"
+            >
               <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-[2/2] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
                 <img
-                  src={'https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124584/handshake.jpg'}
+                  src={
+                    "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124584/handshake.jpg"
+                  }
                   alt="Global partnership and collaboration"
                   className="w-full h-full object-cover transition-all  duration-400 group-hover:scale-105"
                   loading="lazy"
@@ -28,13 +45,21 @@ const AboutMission = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-5 lg:col-start-7 lg:row-start-1 lg:self-center group">
+            <div
+              ref={ref}
+              style={{
+                opacity: 0,
+                animation: inView ? "reveal 700ms ease-out 0ms both" : "none",
+              }}
+              className="lg:col-span-5 lg:col-start-7 lg:row-start-1 lg:self-center group"
+            >
               <div className="max-w-lg mx-auto lg:mx-0 px-4 md:px-0 transition-all duration-300 group-hover:translate-x-2">
                 <span className="inline-block text-xs md:text-sm font-semibold text-primary tracking-wider mb-4 transition-colors duration-300 group-hover:text-primary/80">
                   OUR MISSION
                 </span>
                 <h3 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-secondary mb-5 leading-tight transition-colors duration-300 group-hover:text-primary">
-                  Connecting Universities and Agents Through Trusted Partnerships
+                  Connecting Universities and Agents Through Trusted
+                  Partnerships
                 </h3>
                 <PBase
                   text={
@@ -45,10 +70,19 @@ const AboutMission = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-5 lg:col-start-7 lg:row-start-2 lg:row-span-2 group">
+            <div
+              ref={ref2}
+              style={{
+                opacity: 0,
+                animation: inView2 ? "reveal 700ms ease-out 0ms both" : "none",
+              }}
+              className="lg:col-span-5 lg:col-start-7 lg:row-start-2 lg:row-span-2 group"
+            >
               <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-[2/2] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
                 <img
-                  src={'https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124585/world-wide.jpg'}
+                  src={
+                    "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124585/world-wide.jpg"
+                  }
                   alt="Global education connectivity map"
                   className="w-full h-full object-cover transition-all  duration-400 group-hover:scale-105"
                   loading="lazy"
@@ -57,7 +91,14 @@ const AboutMission = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
-            <div className="lg:col-span-5 lg:col-start-2 lg:row-start-2 lg:self-center group">
+            <div
+              ref={ref2}
+              style={{
+                opacity: 0,
+                animation: inView2 ? "reveal 700ms ease-out 0ms both" : "none",
+              }}
+              className="lg:col-span-5 lg:col-start-2 lg:row-start-2 lg:self-center group"
+            >
               <div className="max-w-lg mx-auto lg:mx-0 lg:ml-auto px-4 md:px-0 transition-all duration-300 group-hover:translate-x-2">
                 <span className="inline-block text-xs md:text-sm font-semibold text-primary tracking-wider mb-4 transition-colors duration-300 group-hover:text-primary/80">
                   OUR VISION
@@ -73,7 +114,6 @@ const AboutMission = () => {
                 />
               </div>
             </div>
-
           </div>
 
           <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">

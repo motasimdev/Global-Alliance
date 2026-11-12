@@ -1,9 +1,18 @@
 import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
+import { useInView } from "/src/hooks/useInView";
 import PBase from "../../PBase";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
 
 const Recruiter_HowItWork = () => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
   const steps = [
     {
       number: "01",
@@ -35,19 +44,13 @@ const Recruiter_HowItWork = () => {
     <section className="relative py-15 md:py-20 lg:py-24 bg-tertiary/30 mb-10 lg:mb-16">
       <Container>
         <div className="text-center mb-12 md:mb-16">
-          <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">
-            HOW IT WORKS
-          </h4>
+          <Kicker style={{ transitionDelay: "0ms" }} text={"HOW IT WORKS"}/> 
           <Heading
+          style={{ transitionDelay: "120ms" }}
             text={"How It Works"}
             className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
           />
-          <PBase
-            text={
-              "Becoming a recruitment partner involves a simple, structured process. We guide you through each step to ensure a smooth and successful collaboration."
-            }
-            className={"text-secondary/80 max-w-3xl mx-auto"}
-          />
+          <SubHeading style={{ transitionDelay: "240ms" }} text={"Becoming a recruitment partner involves a simple, structured process. We guide you through each step to ensure a smooth and successful collaboration."}/>
         </div>
 
         <div className="relative">
@@ -56,14 +59,24 @@ const Recruiter_HowItWork = () => {
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative flex flex-col items-center text-center group">
+              <div
+                ref={ref}
+                style={{
+                  opacity: 0,
+                  animation: inView
+                    ? `reveal 700ms ease-out ${index * 200}ms both`
+                    : "none",
+                }}
+                key={index}
+                className="relative flex flex-col items-center text-center group"
+              >
                 <div className="relative z-10 mb-6">
-                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border-4 border-secondary/10 flex items-center justify-center shadow-lg relative transition-all duration-500 group-hover:border-primary/50 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.3)]">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border-1 border-secondary/10 flex items-center justify-center shadow-lg relative transition-all duration-500 group-hover:border-primary/50 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.3)]">
                     <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-secondary transition-all duration-500 group-hover:text-primary group-hover:scale-110">
                       {step.number}
                     </span>
-                    <div className="absolute -bottom-3 -right-3 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-primary border-3 border-white flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 group-hover:shadow-[0_0_20px_rgba(221,21,25,0.5)]">
-                      <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-white transition-all duration-500 group-hover:scale-150 group-hover:bg-primary" />
+                    <div className="absolute -bottom-3 -right-3 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-primary border-3 border-white flex items-center justify-center transition-all duration-500 group-hover:scale-105 group-hover:rotate-12 group-hover:shadow-[0_0_20px_rgba(221,21,25,0.5)]">
+                      <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-white transition-all duration-500 group-hover:scale-110 group-hover:bg-primary" />
                     </div>
                   </div>
                 </div>
@@ -80,6 +93,25 @@ const Recruiter_HowItWork = () => {
           </div>
         </div>
       </Container>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

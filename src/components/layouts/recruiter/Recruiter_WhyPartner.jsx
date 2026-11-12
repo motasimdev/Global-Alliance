@@ -10,6 +10,9 @@ import {
   FiHeadphones,
   FiDollarSign,
 } from "react-icons/fi";
+import Kicker from "../../Kicker";
+import SubHeading from "../../SubHeading";
+import { useInView } from "/src/hooks/useInView";
 
 const Recruiter_WhyPartner = () => {
   const benefits = [
@@ -55,24 +58,27 @@ const Recruiter_WhyPartner = () => {
     <section className="relative py-15 md:py-20 lg:py-24 bg-secondary/3">
       <Container>
         <div className="text-center mb-12 md:mb-16">
-          <h4 className="text-base md:text-lg lg:text-[22px] font-semibold text-primary mb-3">
-            WHY PARTNER WITH US
-          </h4>
+          <Kicker
+            style={{ transitionDelay: "0ms" }}
+            text={"Why Partner With Us"}
+          />
           <Heading
+            style={{ transitionDelay: "120ms" }}
             text={"Why Partner With Global Alliance?"}
             className={"text-secondary pt-1 pb-1 md:pb-2 lg:pb-4"}
           />
-          <PBase
+
+          <SubHeading
             text={
               "Join a global network of trusted education agents and unlock new opportunities for your recruitment business. Our platform provides the tools, connections, and support you need to grow."
             }
-            className={"text-secondary px-5 max-w-3xl mx-auto"}
+            style={{ transitionDelay: "240ms" }}
           />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {benefits.map((benefit, index) => (
-            <BenefitCard key={index} benefit={benefit} />
+            <BenefitCard key={index} benefit={benefit} index={index}/>
           ))}
         </div>
       </Container>
@@ -80,11 +86,24 @@ const Recruiter_WhyPartner = () => {
   );
 };
 
-const BenefitCard = ({ benefit }) => {
+const BenefitCard = ({ benefit, index }) => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
   const Icon = benefit.icon;
 
   return (
-    <div className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8">
+    <div
+    ref={ref}
+      style={{
+        opacity: 0,
+        animation: inView ? `reveal 700ms ease-out ${index * 100}ms both` : "none",
+      }}
+      className="relative group bg-white rounded-2xl border border-secondary/10 shadow-lg hover:shadow-2xl transition hover:-translate-y-1 duration-300 p-6 md:p-8"
+    >
       <div className="mb-4">
         <Icon className="text-3xl md:text-4xl text-primary" strokeWidth={1.5} />
       </div>
@@ -97,6 +116,25 @@ const BenefitCard = ({ benefit }) => {
         text={benefit.description}
         className="text-secondary/80 leading-relaxed"
       />
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };

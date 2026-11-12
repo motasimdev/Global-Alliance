@@ -2,8 +2,15 @@ import React from "react";
 import { FaWallet, FaArrowRight } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router";
+import { useInView } from "/src/hooks/useInView";
 
-const Destination_Card = ({ destination = {} }) => {
+const Destination_Card = ({ destination = {}, index }) => {
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
   const {
     name = "Destination",
     image = "",
@@ -17,7 +24,16 @@ const Destination_Card = ({ destination = {} }) => {
 
   return (
     <Link to={`/destination/${slug}`} className="block no-underline">
-      <div className="group relative h-full bg-white rounded-2xl overflow-hidden border border-secondary/20 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-secondary/80 transition-all duration-300 flex flex-col">
+      <div
+        ref={ref}
+        style={{
+          opacity: 0,
+          animation: inView
+            ? `reveal 700ms ease-out ${index * 200}ms both`
+            : "none",
+        }}
+        className="group relative h-full bg-white rounded-2xl overflow-hidden border border-secondary/20 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-secondary/80 transition-all duration-300 flex flex-col"
+      >
         <div className="relative h-70 md:h-80 lg:h-90 bg-gray-200 flex items-center justify-center">
           {image ? (
             <img
@@ -74,16 +90,24 @@ const Destination_Card = ({ destination = {} }) => {
             <div className="flex items-start gap-2.5 p-3 bg-tertiary/20 rounded-lg border border-secondary/5">
               <FaCalendarAlt className="text-primary text-lg flex-shrink-0 mt-0.5" />
               <div>
-                <span className="text-xs font-semibold text-secondary/80 block">Intakes</span>
-                <p className="text-xs text-secondary/60 mt-0.5">{intakeOverview}</p>
+                <span className="text-xs font-semibold text-secondary/80 block">
+                  Intakes
+                </span>
+                <p className="text-xs text-secondary/60 mt-0.5">
+                  {intakeOverview}
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-2.5 p-3 bg-tertiary/20 rounded-lg border border-secondary/5">
               <FaWallet className="text-primary text-lg flex-shrink-0 mt-0.5" />
               <div>
-                <span className="text-xs font-semibold text-secondary/80 block">Tuition Fees</span>
-                <p className="text-xs text-secondary/60 mt-0.5">{tuitionFeesOverview}</p>
+                <span className="text-xs font-semibold text-secondary/80 block">
+                  Tuition Fees
+                </span>
+                <p className="text-xs text-secondary/60 mt-0.5">
+                  {tuitionFeesOverview}
+                </p>
               </div>
             </div>
           </div>
@@ -94,6 +118,25 @@ const Destination_Card = ({ destination = {} }) => {
           </div>
         </div>
       </div>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </Link>
   );
 };
