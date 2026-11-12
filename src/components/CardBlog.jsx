@@ -1,9 +1,26 @@
 import React, { useState } from "react";
 import { FaCalendarAlt, FaShareAlt } from "react-icons/fa";
 import { useNavigate } from "react-router";
-import { MdCopyAll } from "react-icons/md";
+import { useInView } from "/src/hooks/useInView";
 
-const CardBlog = ({ id, slug, src, title, date, description, miniLogo }) => {
+const CardBlog = ({
+  id,
+  slug,
+  src,
+  title,
+  date,
+  description,
+  miniLogo,
+  index,
+}) => {
+  // -------- animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // -------- animation
   const [copied, setCopied] = useState(false);
   const navigate = useNavigate();
 
@@ -20,8 +37,20 @@ const CardBlog = ({ id, slug, src, title, date, description, miniLogo }) => {
     }
   };
   return (
-    <button className="cursor-pointer" onClick={() => navigate(`/blog/${slug}`)}>
-      <div className="group max-w-sm rounded-2xl bg-white shadow-sm transition-all duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hover:scale-[1.20] hover:z-20 hover:shadow-xl border-l-4 border-transparent hover:border-secondary">
+    <button
+      className="cursor-pointer"
+      onClick={() => navigate(`/blog/${slug}`)}
+    >
+      <div
+        ref={ref}
+        style={{
+          opacity: 0,
+          animation: inView
+            ? `reveal 700ms ease-out ${index * 150}ms both`
+            : "none",
+        }}
+        className="group relative max-w-sm rounded-2xl bg-white shadow-sm transition-all duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hover:scale-[1.20] hover:z-50 hover:shadow-xl border-l-4 border-transparent hover:border-secondary"
+      >
         {/* Image Section */}
         <div className="relative h-45 w-full overflow-hidden rounded-t-2xl">
           <img

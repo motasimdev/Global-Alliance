@@ -7,8 +7,18 @@ import Heading from "../../Heading";
 import { useState } from "react";
 import { Flip, toast } from "react-toastify";
 import axios from "axios";
+import { useInView } from "/src/hooks/useInView";
+import SubHeading from "../../SubHeading";
 
 const ContactFormAddress = () => {
+  // ---- animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // ---- animation
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -55,22 +65,21 @@ const ContactFormAddress = () => {
 
     console.log("Form Data", formData);
 
-    
     try {
       setLoading(true);
 
-        // ====dummy backend API=======
+      // ====dummy backend API=======
       await axios.post("https://httpbin.org/post", formData, {
         headers: {
           "Content-Type": "application/json",
         },
       });
 
-    //   if (res.data.success) {
-    //     toast.success(res.data.message || "Successfully Submited!");
-    //   } else {
-    //     toast.error(res.data.message || "Something went wrong!");
-    //   }
+      //   if (res.data.success) {
+      //     toast.success(res.data.message || "Successfully Submited!");
+      //   } else {
+      //     toast.error(res.data.message || "Something went wrong!");
+      //   }
       toast.success("Successfully Submited!", {
         position: "top-center",
         autoClose: 1000,
@@ -113,9 +122,15 @@ const ContactFormAddress = () => {
       <section className="py-5 lg:py-10 ">
         <Container>
           <div className="flex flex-col gap-y-5 md:flex-row justify-between">
-            <div className="md:w-[35%] flex flex-col gap-y-5">
+            <div ref={ref} className="md:w-[35%] flex flex-col gap-y-5">
               {/* ============ location box ========= */}
-              <div className="p-10 bg-tertiary rounded-xl">
+              <div
+                style={{
+                  opacity: 0,
+                  animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+                }}
+                className="p-10 bg-tertiary rounded-xl"
+              >
                 <div className="flex items-center gap-x-6">
                   <div className="py-1.5 px-1.5 bg-white rounded-full">
                     <IoLocationOutline className="text-primary text-[40px]" />
@@ -136,21 +151,40 @@ const ContactFormAddress = () => {
               {/* ============ location box ========= */}
 
               {/* ============ phone box ========= */}
-              <div className="p-10 bg-tertiary rounded-xl">
+              <div
+                style={{
+                  opacity: 0,
+                  animation: inView
+                    ? `reveal 700ms ease-out 120ms both`
+                    : "none",
+                }}
+                className="p-10 bg-tertiary rounded-xl"
+              >
                 <div className="flex items-center gap-x-6">
                   <div className="py-3 px-3 bg-white rounded-full">
                     <FiPhoneCall className="text-primary text-[32px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-secondary">Phone</h5>
-                    <PBase text={"+1 (437) 388-4088"} className={" text-secondary"} />
+                    <PBase
+                      text={"+1 (437) 388-4088"}
+                      className={" text-secondary"}
+                    />
                   </div>
                 </div>
               </div>
               {/* ============ phone box ========= */}
 
               {/* ============ email box ========= */}
-              <div className="p-10 bg-tertiary rounded-xl">
+              <div
+                style={{
+                  opacity: 0,
+                  animation: inView
+                    ? `reveal 700ms ease-out 240ms both`
+                    : "none",
+                }}
+                className="p-10 bg-tertiary rounded-xl"
+              >
                 <div className="flex items-center gap-x-6">
                   <div className="py-2 px-2 bg-white rounded-full">
                     <MdOutlineMailOutline className="text-primary text-[36px]" />
@@ -173,13 +207,19 @@ const ContactFormAddress = () => {
 
             <div className="md:w-[63%]">
               <div className="p-7 bg-secondary rounded-xl">
-                <Heading text={"Send Us Message"} className={"text-white"} />
-                <PBase
+                <Heading
+                  text={"Send Us Message"}
+                  className={"text-white"}
+                  style={{ transitionDelay: "0ms" }}
+                />
+                <SubHeading
+                  style={{ transitionDelay: "120ms" }}
                   text={
                     "Your email address will not be published. Required fields are marked *"
                   }
-                  className={"text-white pt-3"}
+                  className="text-white! pt-3 "
                 />
+                <PBase text={""} className={"text-white pt-3"} />
                 <div className="max-w-4xl mx-auto px-4 mt-8">
                   <form
                     onSubmit={handleSubmit}
@@ -250,6 +290,25 @@ const ContactFormAddress = () => {
             </div>
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   );
