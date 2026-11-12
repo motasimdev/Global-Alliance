@@ -1,4 +1,5 @@
 import Container from "../../Container";
+import { useInView } from "/src/hooks/useInView";
 
 const destinationAssets = {
   ...import.meta.glob("../../assets/destination/details/*", {
@@ -17,6 +18,17 @@ const getDestinationAsset = (assetPath) =>
   destinationAssets[assetPath?.replace("/src/", "../../")] ?? assetPath;
 
 const Destinaion_Details_Banner = ({ destination }) => {
+  // .....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  const [ref2, inView2] = useInView(observerOptions);
+  const [ref3, inView3] = useInView(observerOptions);
+  // .....animation
+
   const bannerImage = getDestinationAsset(destination.banner);
   const flagImage = getDestinationAsset(destination.flag);
 
@@ -51,7 +63,14 @@ const Destinaion_Details_Banner = ({ destination }) => {
       <Container className="relative z-10">
         <div className="flex min-h-80 items-end py-14 md:min-h-100 md:py-18 lg:min-h-125 lg:py-24">
           <div className="max-w-3xl">
-            <div className="mb-5 flex items-center gap-3 md:mb-7">
+            <div
+              ref={ref}
+              style={{
+                opacity: 0,
+                animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+              }}
+              className="mb-5 flex items-center gap-3 md:mb-7"
+            >
               {destination.flag && (
                 <img
                   src={flagImage}
@@ -60,16 +79,40 @@ const Destinaion_Details_Banner = ({ destination }) => {
                 />
               )}
 
-              <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold tracking-[0.16em] text-white uppercase backdrop-blur-sm md:px-4 md:text-sm">
+              <span
+                style={{
+                  opacity: 0,
+                  animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+                }}
+                className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold tracking-[0.16em] text-white uppercase backdrop-blur-sm md:px-4 md:text-sm"
+              >
                 Study in {destination.region}
               </span>
             </div>
 
-            <h1 className="max-w-2xl text-5xl leading-[0.95] font-bold tracking-tight text-white drop-shadow-sm md:text-7xl lg:text-8xl">
+            <h2
+              ref={ref2}
+              style={{
+                opacity: 0,
+                animation: inView2
+                  ? `reveal 700ms ease-out 100ms both`
+                  : "none",
+              }}
+              className="max-w-2xl text-5xl leading-[0.95] font-bold tracking-tight text-white drop-shadow-sm md:text-7xl lg:text-8xl"
+            >
               {destination.name}
-            </h1>
+            </h2>
 
-            <div className="mt-6 flex max-w-2xl gap-4 border-l-2 border-primary pl-4 md:mt-8 md:pl-5">
+            <div
+              ref={ref3}
+              style={{
+                opacity: 0,
+                animation: inView3
+                  ? `reveal 700ms ease-out 200ms both`
+                  : "none",
+              }}
+              className="mt-6 flex max-w-2xl gap-4 border-l-2 border-primary pl-4 md:mt-8 md:pl-5"
+            >
               <p className="text-base leading-relaxed text-white/90 md:text-xl md:leading-8">
                 {destination.shortDescription}
               </p>
@@ -77,6 +120,25 @@ const Destinaion_Details_Banner = ({ destination }) => {
           </div>
         </div>
       </Container>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

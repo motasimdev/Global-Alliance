@@ -8,8 +8,19 @@ import {
   FaWallet,
 } from "react-icons/fa6";
 import Container from "../../Container";
+import { useInView } from "/src/hooks/useInView";
 
 const Destination_Details_AtAGlance = ({ destination }) => {
+  // .....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  const [ref2, inView2] = useInView(observerOptions);
+  // .....animation
+
   if (!destination) return null;
 
   const glanceItems = [
@@ -61,7 +72,6 @@ const Destination_Details_AtAGlance = ({ destination }) => {
       iconClassName: "bg-secondary text-white",
       descriptionClassName: "text-secondary/70",
     },
-    
   ];
 
   return (
@@ -71,7 +81,10 @@ const Destination_Details_AtAGlance = ({ destination }) => {
         aria-hidden="true"
       />
       <Container className="relative">
-        <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">
+        <div
+          ref={ref}
+          className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between"
+        >
           <div className="relative lg:pl-46">
             <div className="absolute top-3 left-0 hidden lg:block bg-secondary w-42 h-0.5"></div>
             <div className="absolute top-2.5 left-41 hidden lg:block rounded-full bg-secondary w-2 h-2"></div>
@@ -79,29 +92,59 @@ const Destination_Details_AtAGlance = ({ destination }) => {
             <div className="absolute top-14.5 left-41 hidden lg:block rounded-full bg-primary w-2 h-2"></div>
 
             {/* =================== */}
-            <p className="mb-2 text-base md:text-lg lg:text-[20px] font-semibold text-primary uppercase">
+            <p
+              style={{
+                opacity: 0,
+                animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+              }}
+              className="mb-2 text-base md:text-lg lg:text-[20px] font-semibold text-primary uppercase"
+            >
               Destination snapshot
             </p>
-            <h3 className="text-3xl md:text-4xl lg:text-[40px] font-bold tracking-tight text-secondary">
+            <h3
+              style={{
+                opacity: 0,
+                animation: inView ? `reveal 700ms ease-out 100ms both` : "none",
+              }}
+              className="text-3xl md:text-4xl lg:text-[40px] font-bold tracking-tight text-secondary"
+            >
               At a glance
             </h3>
           </div>
-          <p className="max-w-md text-sm leading-relaxed text-secondary/60 md:text-right md:text-base">
+          <p
+            style={{
+              opacity: 0,
+              animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+            }}
+            className="max-w-md text-sm leading-relaxed text-secondary/60 md:text-right md:text-base"
+          >
             Key information to help you compare study options with confidence.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5 lg:grid-cols-4">
+        <div
+          ref={ref2}
+          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5 lg:grid-cols-4"
+        >
           {glanceItems.map(
-            ({
-              title,
-              description,
-              icon: Icon,
-              className,
-              iconClassName,
-              descriptionClassName,
-            }) => (
+            (
+              {
+                title,
+                description,
+                icon: Icon,
+                className,
+                iconClassName,
+                descriptionClassName,
+              },
+              index,
+            ) => (
               <article
+                style={{
+                  opacity: 0,
+                  animation: inView2
+                    ? `reveal 700ms ease-out ${index * 100}ms both`
+                    : "none",
+                }}
                 key={title}
                 className={`group relative min-h-52 overflow-hidden rounded-2xl border border-secondary/8 p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 md:p-6 ${className}`}
               >
@@ -114,9 +157,7 @@ const Destination_Details_AtAGlance = ({ destination }) => {
                 >
                   {React.createElement(Icon, { "aria-hidden": true })}
                 </div>
-                <h3 className="relative text-lg font-bold ">
-                  {title}
-                </h3>
+                <h3 className="relative text-lg font-bold ">{title}</h3>
                 <p
                   className={`relative mt-2 text-sm leading-relaxed md:text-base ${descriptionClassName}`}
                 >
@@ -127,6 +168,25 @@ const Destination_Details_AtAGlance = ({ destination }) => {
           )}
         </div>
       </Container>
+      <style jsx global>{`
+        @keyframes reveal {
+          from {
+            opacity: 0;
+            transform: translateY(3.5rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animation-none {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };
