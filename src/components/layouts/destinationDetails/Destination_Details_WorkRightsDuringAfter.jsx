@@ -4,35 +4,70 @@ import Heading from "../../Heading";
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdOutlineBadge } from "react-icons/md";
+import { useInView } from "/src/hooks/useInView";
 
 const Card = ({ icon, data }) => {
+  // ....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // ....animation
   const d = data || {};
   return (
-    <div className="bg-white rounded-2xl border border-secondary/10 shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary/30 group">
+    <div ref={ref} className="bg-white rounded-2xl border border-secondary/10 shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary/30 group">
       <div className="flex flex-col items-center gap-2 mb-3">
-        <div className="text-primary/90 text-5xl transition-transform duration-300 group-hover:scale-110">{icon}</div>
-        <h5 className="text-lg md:text-xl font-semibold text-secondary transition-colors duration-300 group-hover:text-primary">
+        <div className="text-primary/90 text-5xl transition-transform duration-300 group-hover:scale-110">
+          {icon}
+        </div>
+        <h5
+          style={{
+            opacity: 0,
+            animation: inView ? `reveal 700ms ease-out 80ms both` : "none",
+          }}
+          className="text-lg md:text-xl font-semibold text-secondary transition-colors duration-300 group-hover:text-primary"
+        >
           {d.headline}
         </h5>
       </div>
       {d.opportunity && (
-        <p className="text-base md:text-lg font-semibold text-primary mb-2 border pl-2 py-1 bg-red-100 rounded-md transition-all duration-300 group-hover:bg-primary/10 group-hover:border-primary">
+        <p
+          style={{
+            opacity: 0,
+            animation: inView ? `reveal 700ms ease-out 160ms both` : "none",
+          }}
+          className="text-base md:text-lg font-semibold text-primary mb-2 border pl-2 py-1 bg-red-100 rounded-md transition-all duration-300 group-hover:bg-primary/10 group-hover:border-primary"
+        >
           {d.opportunity}
         </p>
       )}
       {d.summary && (
-        <p className="text-sm md:text-base text-secondary/70 leading-relaxed mb-3 transition-colors duration-300 group-hover:text-secondary/90">
+        <p
+          style={{
+            opacity: 0,
+            animation: inView ? `reveal 700ms ease-out 240ms both` : "none",
+          }}
+          className="text-sm md:text-base text-secondary/70 leading-relaxed mb-3 transition-colors duration-300 group-hover:text-secondary/90"
+        >
           {d.summary}
         </p>
       )}
       <ul className="space-y-1.5">
-        {(d.rules || []).map((rule, idx) => (
+        {(d.rules || []).map((rule, index) => (
           <li
-            key={idx}
+            style={{
+              opacity: 0,
+              animation: inView ? `reveal 700ms ease-out 300ms both` : "none",
+            }}
+            key={index}
             className="flex items-start gap-2 lg:pr-1 text-sm md:text-base text-secondary/80 transition-all duration-200 hover:pl-1 group"
           >
             <FaCheckCircle className="text-primary shrink-0 mt-0.5 text-sm transition-transform duration-200 group-hover:scale-125" />
-            <span className="transition-colors duration-200 group-hover:text-primary">{rule}</span>
+            <span className="transition-colors duration-200 group-hover:text-primary">
+              {rule}
+            </span>
           </li>
         ))}
       </ul>
@@ -41,16 +76,31 @@ const Card = ({ icon, data }) => {
 };
 
 const Destination_Details_WorkRightsDuringAfter = ({ destination }) => {
+  // ....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // ....animation
   const data = destination?.workRightsDuringAndAfterStudy || {};
 
   return (
     <>
       <section
-          className="py-12 md:pt-10 md:pb-18 lg:pt-10 lg:pb-20 bg-[#f4f4f4]"
-          id="work-rights"
+        className="py-12 md:pt-10 md:pb-18 lg:pt-10 lg:pb-20 bg-[#f4f4f4]"
+        id="work-rights"
       >
         <Container>
-          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/4 rounded-2xl px-8 py-2 overflow-hidden">
+          <div
+            ref={ref}
+            style={{
+              opacity: 0,
+              animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+            }}
+            className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-1/4 rounded-2xl px-8 py-2 overflow-hidden"
+          >
             <MdOutlineBadge className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
               Work Rights
@@ -61,6 +111,25 @@ const Destination_Details_WorkRightsDuringAfter = ({ destination }) => {
             <Card icon={<FaBriefcase />} data={data.afterStudy} />
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   );

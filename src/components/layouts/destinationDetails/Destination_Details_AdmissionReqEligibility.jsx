@@ -50,12 +50,12 @@ const Destination_Details_AdmissionReqEligibility = ({ destination = {} }) => {
             <div className="absolute md:top-13.5 lg:top-14 md:left-31.5 lg:left-41 hidden md:block rounded-full bg-primary w-2 h-2"></div>
 
             <Kicker
-              style={{ transitionduration: "0ms" }}
+              style={{ transitionDelay: "0ms" }}
               text={"Qualification Checks"}
               className="mb-2"
             />
             <Heading
-              style={{ transitionduration: "120ms" }}
+              style={{ transitionDelay: "120ms" }}
               text={"Eligibility & Admission Standards"}
               className={"text-secondary tracking-tight"}
             />

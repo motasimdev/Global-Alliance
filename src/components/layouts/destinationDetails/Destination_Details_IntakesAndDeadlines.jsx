@@ -3,8 +3,17 @@ import { FaCalendarAlt, FaClock, FaCircle } from "react-icons/fa";
 import Container from "../../Container";
 import { IoMdClock } from "react-icons/io";
 import Heading from "../../Heading";
+import { useInView } from "/src/hooks/useInView";
 
 const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
+  // ....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // ....animation
   const intakes = destination.intakesAndDeadlines || [];
 
   if (intakes.length === 0) return null;
@@ -16,7 +25,14 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
         id="intakes-deadlines"
       >
         <Container>
-          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-2/5 rounded-2xl px-8 py-2 overflow-hidden">
+          <div
+            ref={ref}
+            style={{
+              opacity: 0,
+              animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+            }}
+            className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-2/5 rounded-2xl px-8 py-2 overflow-hidden"
+          >
             <IoMdClock className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
               Intakes and Deadlines
@@ -31,6 +47,12 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
 
               return (
                 <div
+                  style={{
+                    opacity: 0,
+                    animation: inView
+                      ? `reveal 700ms ease-out ${index * 180}ms both`
+                      : "none",
+                  }}
                   key={index}
                   className="bg-white rounded-xl border border-secondary/10 shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:-translate-y-1 group"
                 >
@@ -91,6 +113,25 @@ const Destination_Details_IntakesAndDeadlines = ({ destination = {} }) => {
             })}
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   );
