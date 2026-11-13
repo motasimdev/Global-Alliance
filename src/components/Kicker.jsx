@@ -10,7 +10,7 @@ const Kicker = ({ className = "", text, style }) => {
   return (
     <h4
       ref={ref}
-      className={`text-base md:text-lg lg:text-[22px] font-semibold uppercase text-primary
+      className={`text-base md:text-lg lg:text-[20px] font-semibold uppercase text-primary
         transition-all duration-700 ease-out
         ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         ${className}`}

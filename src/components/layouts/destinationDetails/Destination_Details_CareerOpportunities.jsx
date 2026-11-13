@@ -2,7 +2,8 @@ import React from "react";
 import Container from "../../Container";
 import Heading from "../../Heading";
 import { PiFlower } from "react-icons/pi";
-
+import { useInView } from "/src/hooks/useInView";
+import Kicker from "../../Kicker";
 
 const currencySymbols = {
   EUR: "€",
@@ -55,6 +56,14 @@ const demandBadge = (level) => {
 };
 
 const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
+  // ....animation
+  const observerOptions = {
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+  const [ref, inView] = useInView(observerOptions);
+  // ....animation
   const careers = destination.careerOpportunitiesAndSalaryRanges || [];
 
   if (careers.length === 0) return null;
@@ -72,17 +81,27 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
             <div className="absolute md:top-14 lg:top-14.5 left-0 hidden md:block bg-primary md:w-32 lg:w-42 h-0.5"></div>
             <div className="absolute md:top-13.5 lg:top-14 md:left-31.5 lg:left-41 hidden md:block rounded-full bg-primary w-2 h-2"></div>
 
-            <h4 className="text-base md:text-lg lg:text-[20px] font-semibold text-primary uppercase mb-2">
-              CAREER OPPORTUNITIES
-            </h4>
+            <Kicker
+              style={{ transitionDelay: "0ms" }}
+              text={"Career Opportunities"}
+              className="mb-2"
+            />
             <Heading
+              style={{ transitionDelay: "120ms" }}
               text={"Courses & Future Careers"}
               className={"text-secondary tracking-tight"}
             />
           </div>
 
-          <div className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-3/5 rounded-2xl px-8 py-2 overflow-hidden">
-          <PiFlower className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15"/>
+          <div
+            ref={ref}
+            style={{
+              opacity: 0,
+              animation: inView ? `reveal 700ms ease-out 0ms both` : "none",
+            }}
+            className="relative mt-6 md:mt-9 lg:mt-14 mb-8 bg-white shadow-sm lg:w-3/5 rounded-2xl px-8 py-2 overflow-hidden"
+          >
+            <PiFlower className="text-[50px] absolute -bottom-2.5 -right-2.5 text-secondary/15" />
             <h4 className="text-2xl md:text-3xl lg:text-[34px] font-bold">
               Career Opportunities & Salary Ranges
             </h4>
@@ -114,6 +133,12 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
 
                     return (
                       <tr
+                        style={{
+                          opacity: 0,
+                          animation: inView
+                            ? `reveal 700ms ease-out ${index * 150}ms both`
+                            : "none",
+                        }}
                         key={index}
                         className={`border-t border-secondary/10 ${
                           index % 2 === 0 ? "bg-white" : "bg-tertiary/10"
@@ -154,6 +179,25 @@ const Destination_Details_CareerOpportunities = ({ destination = {} }) => {
             </div>
           </div>
         </Container>
+        <style jsx global>{`
+          @keyframes reveal {
+            from {
+              opacity: 0;
+              transform: translateY(3.5rem);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animation-none {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   );

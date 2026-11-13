@@ -104,7 +104,7 @@ const Destination_Details_AtAGlance = ({ destination }) => {
             <h3
               style={{
                 opacity: 0,
-                animation: inView ? `reveal 700ms ease-out 100ms both` : "none",
+                animation: inView ? `reveal 700ms ease-out 150ms both` : "none",
               }}
               className="text-3xl md:text-4xl lg:text-[40px] font-bold tracking-tight text-secondary"
             >

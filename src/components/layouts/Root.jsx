@@ -1,11 +1,25 @@
-import { useEffect, useState } from "react";
-import { useLocation, Outlet, ScrollRestoration } from "react-router";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { useLocation, Outlet } from "react-router";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import whatsapp from "/src/assets/home/whatsapp.svg";
 import { FaChevronCircleUp } from "react-icons/fa";
 const Root = () => {
   const [show, setShow] = useState(false);
+
+  // =====page navigate to top=====
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    window.history.scrollRestoration = "manual";
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [location.pathname]);
+  // =====page navigate to top=====
 
   useEffect(() => {
     let throttleTimeout = null;
@@ -38,7 +52,6 @@ const Root = () => {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        <ScrollRestoration />
         <Navbar />
         <main>
           <Outlet />
