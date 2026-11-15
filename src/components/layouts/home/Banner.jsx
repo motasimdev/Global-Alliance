@@ -1,9 +1,7 @@
 import { useInView } from "../../../hooks/useInView";
-import { cn } from "../../../utils/cn";
 import Container from "../../Container";
 import Select from "react-select";
 import { PiGraduationCapFill } from "react-icons/pi";
-import PBase from "../../PBase";
 import APU from "/src/assets/university-logos/APU-logo.webp";
 import INTI from "/src/assets/university-logos/INTI-40.webp";
 import NILAI from "/src/assets/university-logos/nilai.webp";
@@ -11,12 +9,10 @@ import LINCOLN from "/src/assets/university-logos/lincoln.webp";
 import UNIRAZAK from "/src/assets/university-logos/Official-UNIRAZAK-Logo.webp";
 import SEGI from "/src/assets/university-logos/SEGi-University-logo.webp";
 import UOW from "/src/assets/university-logos/UOW-logoo.webp";
-import Psm from "../../Psm";
 import P18 from "../../P18";
 
 import Marquee from "react-fast-marquee";
 import CountUp from "react-countup";
-import Button from "../../Button";
 import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa6";
 import { GiTiedScroll } from "react-icons/gi";
@@ -30,6 +26,11 @@ const Banner = () => {
   };
 
   const [ref, isInView] = useInView(observerOptions);
+  const [ref2, inView2] = useInView(observerOptions);
+  const [ref3, inView3] = useInView(observerOptions);
+  const [ref4, inView4] = useInView(observerOptions);
+  const [ref5, inView5] = useInView(observerOptions);
+  const [ref6, inView6] = useInView(observerOptions);
   //counter up
   const onComplete = () => {
     console.log("Completed");
@@ -115,12 +116,21 @@ const Banner = () => {
               </Link>
             </div>
 
-            {/* ======================================= */}
+            {/* ================== right ===================== */}
             <div className=" md:w-[50%] mt-4 md:mt-0">
               <div className="md:flex justify-end md:gap-x-4 lg:gap-x-7">
                 <div className="md:w-[45%] flex flex-col gap-y-3">
                   {/* ==============box one======== */}
-                  <div className="lg:flex justify-center py-4 md:py-5 md:px-8 bg-secondary rounded-xl">
+                  <div
+                    ref={ref2}
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? `reveal 700ms ease-out 0ms both`
+                        : "none",
+                    }}
+                    className="lg:flex justify-center py-4 md:py-5 md:px-8 bg-secondary rounded-xl"
+                  >
                     <div className="size-9 md:size-14 rounded-full bg-white flex items-center justify-center shrink-0 mx-auto">
                       <PiGraduationCapFill className="text-secondary text-2xl md:text-4xl " />
                     </div>
@@ -146,7 +156,16 @@ const Banner = () => {
 
                   {/* ==============box two======== */}
                   <div className="bg-[#b5b5f8] pt-2 md:pt-2.5 px-2 md:px-3 lg:px-4 pb-3 md:pb-5 rounded-xl flex flex-col gap-y-2 shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
-                    <div className="w-full h-54 md:h-30 lg:h-40">
+                    <div
+                      ref={ref3}
+                      style={{
+                        opacity: 0,
+                        animation: inView3
+                          ? `reveal 700ms ease-out 80ms both`
+                          : "none",
+                      }}
+                      className="w-full h-54 md:h-30 lg:h-40"
+                    >
                       <img
                         src={
                           "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794330223/map.png"
@@ -158,7 +177,16 @@ const Banner = () => {
                         fetchPriority="high"
                       />
                     </div>
-                    <div className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center lg:text-left bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
+                    <div
+                      ref={ref4}
+                      style={{
+                        opacity: 0,
+                        animation: inView4
+                          ? `reveal 700ms ease-out 80ms both`
+                          : "none",
+                      }}
+                      className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center lg:text-left bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]"
+                    >
                       <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0 mx-auto">
                         <SiOrganicmaps className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                       </div>
@@ -181,27 +209,36 @@ const Banner = () => {
                   {/* ==============box two======== */}
                 </div>
 
-                {/* ================================ */}
+                {/* ===============box three================= */}
                 <div className="md:w-[40%] flex flex-col gap-y-4">
-                  <div className="bg-[url(/src/assets/home/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end">
+                  <div
+                    ref={ref5}
+                    style={{
+                      opacity: 0,
+                      animation: inView5
+                        ? `reveal 700ms ease-out 0ms both`
+                        : "none",
+                    }}
+                    className="bg-[url(/src/assets/home/oldest-university.jpg)] bg-cover bg-center rounded-xl h-76 md:h-42 lg:h-56 flex flex-col justify-end"
+                  >
                     <div className="w-full rounded-b-xl px-2 py-3 md:py-0 lg:py-3 bg-[#00000081]">
-                      {/* <Psm text={""} className={"text-white"}/> */}
                       <p className="text-base md:text-xs lg:text-sm text-white">
                         The University of al-Qarawiyyin in Fez, Morocco, founded
                         in 859 CE, The oldest university in the world.
                       </p>
                     </div>
-                    {/* <img
-                      src={university}
-                      alt="university"
-                      className="w-full h-full rounded-xl"
-                      loading="eager"
-                      decoding="async"
-                      fetchPriority="high"
-                    /> */}
                   </div>
-                  {/* ============= */}
-                  <div className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]">
+                  {/* ====================== */}
+                  <div
+                    ref={ref6}
+                    style={{
+                      opacity: 0,
+                      animation: inView6
+                        ? `reveal 700ms ease-out 80ms both`
+                        : "none",
+                    }}
+                    className="lg:flex justify-center py-4 md:py-5 md:px-5 lg:px-8 text-center bg-primary rounded-xl shadow-[0px_5px_8px_-2px_rgba(0,0,0,0.3)]"
+                  >
                     <div className="size-9 md:size-11 lg:size-14 rounded-full bg-white grid place-items-center shrink-0 mx-auto">
                       <GiTiedScroll className="text-secondary text-2xl md:text-3xl lg:text-4xl" />
                     </div>

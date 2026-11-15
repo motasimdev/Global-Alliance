@@ -13,8 +13,6 @@ import Kicker from "../../Kicker";
 import SubHeading from "../../SubHeading";
 
 const KeyFeatures = () => {
-  const [ref, isInView] = useInView({ once: true });
-
   const features = [
     {
       keyIcon: (
@@ -22,7 +20,7 @@ const KeyFeatures = () => {
       ),
       heading: "Same Day Application Submission",
       para: "We submit the applications on the same day if the docs are altogether.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-white!",
     },
     {
       keyIcon: (
@@ -30,7 +28,7 @@ const KeyFeatures = () => {
       ),
       heading: "One-Click Apply",
       para: "Times wasted on lengthy communication are saved by this resulting in higher efficiency.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-secondary!",
       paraClassname: "text-secondary!",
       bg: "bg-tertiary",
     },
@@ -40,7 +38,7 @@ const KeyFeatures = () => {
       ),
       heading: "Access to Global Universities",
       para: "Global Alliance allow you to access our partner institutions, making the process much easier.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-secondary!",
       paraClassname: "text-secondary!",
       bg: "bg-gray-200",
     },
@@ -50,7 +48,7 @@ const KeyFeatures = () => {
       ),
       heading: "Attractive Commission",
       para: "Our high range of agent commission based on performance makes us stand out in the market.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-secondary!",
       paraClassname: "text-secondary!",
       bg: "bg-gray-200",
     },
@@ -60,7 +58,7 @@ const KeyFeatures = () => {
       ),
       heading: "Quick Support and Response",
       para: "We provide support to all our precious users promptly, anytime they need.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-secondary!",
       paraClassname: "text-secondary!",
       bg: "bg-tertiary",
     },
@@ -70,7 +68,7 @@ const KeyFeatures = () => {
       ),
       heading: "Real Time Application Tracking",
       para: "The user will get to track the condition and ongoing status of the application without having to contact any person.",
-      headingClassname: "text-primary!",
+      headingClassname: "text-primary! group-hover:text-white!",
       bg: "bg-secondary",
     },
   ];
@@ -98,67 +96,56 @@ const KeyFeatures = () => {
               />
             </div>
             {/* ==================================================================== */}
-            <div
-              ref={ref}
-              className="grid grid-cols-3 gap-x-10 gap-y-10 justify-center lg:justify-between md:px-20 lg:px-0 mt-8 md:mt-10 lg:mt-15"
-            >
+            <div className="grid grid-cols-3 gap-x-10 gap-y-10 justify-center lg:justify-between md:px-20 lg:px-0 mt-8 md:mt-10 lg:mt-15">
               {features.map((feature, index) => (
-                <div
+                <AnimatedFeatureCard
                   key={index}
-                  className={`group col-span-3 md:col-span-3 lg:col-span-1 text-center ${feature.bg || "bg-[#434389]"} pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl ${
-                    feature.bg === "bg-gray-200"
-                      ? "hover:shadow-gray-400"
-                      : feature.bg === "bg-tertiary"
-                        ? "shadow-gray-400 hover:shadow-gray-500"
-                        : "hover:shadow-gray-500"
-                  } hover:shadow-xl transition duration-300 hover:-translate-y-1
-                    ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                  style={
-                    isInView
-                      ? {
-                          animation: `reveal 700ms ease-out forwards`,
-                          animationDelay: `${index * 290}ms`,
-                          opacity: 0,
-                          transform: "translateY(3.5rem)",
-                        }
-                      : undefined
-                  }
-                >
-                  <KeyFeatureCard
-                    keyIcon={
-                      <span className="inline-block ">
-                        {React.cloneElement(feature.keyIcon, {
-                          className:
-                            feature.keyIcon.props.className +
-                            " transition-all duration-500",
-                        })}
-                      </span>
-                    }
-                    heading={feature.heading}
-                    para={feature.para}
-                    headingClassname={feature.headingClassname}
-                    paraClassname={feature.paraClassname}
-                  />
-                </div>
+                  feature={feature}
+                  index={index}
+                />
               ))}
             </div>
           </div>
         </Container>
-        <style jsx global>{`
-          @keyframes reveal {
-            from {
-              opacity: 0;
-              transform: translateY(3.5rem);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `}</style>
       </section>
     </>
   );
 };
 
+const AnimatedFeatureCard = ({ feature, index }) => {
+  const [ref, inView] = useInView({
+    once: true,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  });
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: 0,
+        animation: inView
+          ? `reveal 700ms ease-out ${index * 100}ms both`
+          : "none",
+      }}
+      className={`group col-span-3 md:col-span-3 lg:col-span-1 text-center ${
+        feature.bg || "bg-[#434389]"
+      } pt-10 pb-12 md:pb-15 px-8 rounded-sm shadow-xl ${
+        feature.bg === "bg-gray-200"
+          ? "hover:shadow-gray-400"
+          : feature.bg === "bg-tertiary"
+            ? "shadow-gray-400 hover:shadow-gray-500"
+            : "hover:shadow-gray-500"
+      } hover:shadow-xl transition duration-300 hover:-translate-y-1`}
+    >
+      <KeyFeatureCard
+        keyIcon={feature.keyIcon}
+        heading={feature.heading}
+        para={feature.para}
+        headingClassname={feature.headingClassname}
+        paraClassname={feature.paraClassname}
+      />
+    </div>
+  );
+};
 export default KeyFeatures;
