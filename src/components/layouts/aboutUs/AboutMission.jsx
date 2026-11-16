@@ -12,6 +12,8 @@ const AboutMission = () => {
   };
   const [ref, inView] = useInView(observerOptions);
   const [ref2, inView2] = useInView(observerOptions);
+  const [ref3, inView3] = useInView(observerOptions);
+  const [ref4, inView4] = useInView(observerOptions);
   return (
     <section className="relative py-15 md:py-20 lg:py-28 bg-white">
       <Container>
@@ -46,10 +48,10 @@ const AboutMission = () => {
             </div>
 
             <div
-              ref={ref}
+              ref={ref2}
               style={{
                 opacity: 0,
-                animation: inView ? "reveal 700ms ease-out 0ms both" : "none",
+                animation: inView2 ? "reveal 700ms ease-out 0ms both" : "none",
               }}
               className="lg:col-span-5 lg:col-start-7 lg:row-start-1 lg:self-center group"
             >
@@ -71,10 +73,10 @@ const AboutMission = () => {
             </div>
 
             <div
-              ref={ref2}
+              ref={ref3}
               style={{
                 opacity: 0,
-                animation: inView2 ? "reveal 700ms ease-out 0ms both" : "none",
+                animation: inView3 ? "reveal 700ms ease-out 0ms both" : "none",
               }}
               className="lg:col-span-5 lg:col-start-7 lg:row-start-2 lg:row-span-2 group"
             >
@@ -91,11 +93,12 @@ const AboutMission = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
+            
             <div
-              ref={ref2}
+              ref={ref4}
               style={{
                 opacity: 0,
-                animation: inView2 ? "reveal 700ms ease-out 0ms both" : "none",
+                animation: inView4 ? "reveal 700ms ease-out 0ms both" : "none",
               }}
               className="lg:col-span-5 lg:col-start-2 lg:row-start-2 lg:self-center group"
             >

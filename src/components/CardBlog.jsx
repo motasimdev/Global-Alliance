@@ -72,7 +72,7 @@ const CardBlog = ({
           </div>
 
           {/* Title */}
-          <h3 className="mb-3 text-xl font-semibold text-gray-800 leading-snug group-hover:text-primary transition-colors">
+          <h3 className="mb-3 text-xl font-semibold text-left text-gray-800 leading-snug group-hover:text-primary transition-colors">
             {title}
           </h3>
 
@@ -93,22 +93,13 @@ const CardBlog = ({
             </div>
 
             <div className="relative">
-              {/* <button
-              className="cursor-pointer p-1 hover:text-secondary transition"
-              onClick={() => setShowLink(!showLink)}
-            > */}
-              {/* </button> */}
-
-              {/* {showLink && (
-              <div className="py-px absolute top-6 right-0 bg-gray-400 text-white text-sm rounded-sm shadow-lg   px-2">
-                <span className="md:truncate max-w-xs">{`${window.location.origin}/blog/${slug}`}</span> */}
+             
               <button
                 className=" hover:text-secondary rounded cursor-pointer transition"
                 onClick={handleCopy}
               >
                 <FaShareAlt size={16} />
 
-                {/* <MdCopyAll /> */}
               </button>
               {copied && (
                 <span className="absolute bottom-5 right-0 ml-2 text-xs text-gray-400">
@@ -121,7 +112,7 @@ const CardBlog = ({
           </div>
 
           {/* Description */}
-          <p className="mb-5 text-sm text-gray-600 leading-relaxed line-clamp-4">
+          <p className="mb-5 text-sm text-gray-600 text-left leading-relaxed line-clamp-4">
             {description}
           </p>
 

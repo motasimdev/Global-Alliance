@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Container from "../../Container";
 import CardBlog from "../../CardBlog";
-import blogs from "../../../data/blog";
+import blogs from "/src/data/blog.json";
 
 const BlogCards = () => {
  
