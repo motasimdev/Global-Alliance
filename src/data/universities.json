@@ -1,0 +1,71 @@
+
+{
+  "universities": [
+    {
+      "id": 1,
+      "slug": "university-of-malaya",
+      "name": "University of Malaya",
+      "shortName": "UM",
+
+      "description": "Malaysia's oldest and top-ranked public research university established in 1905.",
+
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "type": "Public University",
+
+      "image": "https://example.com/um-campus.webp",
+      "logo": "https://example.com/um-logo.webp",
+
+      "website": "https://www.um.edu.my/",
+      "featured": true,
+
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+
+      "courses": [
+        {
+          "id": 101,
+          "name": "Medicine",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "MBBS",
+            "MD"
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Engineering",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEng",
+            "MEng"
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Business",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BBA",
+            "MBA"
+          ]
+        }
+      ]
+    }
+  ]
+}

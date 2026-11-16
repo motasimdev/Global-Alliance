@@ -7,6 +7,7 @@
 (done)=> home page e section add hbe (ss ase assets e)
 (done)=> about us e section add hbe. (ss ase assets e`) 
 
+countries -- malaysia, south corea, canada, france, ireland, uk, finland, malta, latvia, spain, hungary, greece
 
 Section 03 — Our University Network
 তুমি Global Alliance homepage-এর জন্য যে university information card বানানোর পরিকল্পনা করছ, সেই existing component-টাই এখানে reuse করা যেতে পারে।
