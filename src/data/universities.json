@@ -1,4 +1,3 @@
-
 {
   "universities": [
     {
@@ -6,37 +5,59 @@
       "slug": "university-of-malaya",
       "name": "University of Malaya",
       "shortName": "UM",
-
-      "description": "Malaysia's oldest and top-ranked public research university established in 1905.",
-
+      "description": "Malaysia's oldest university and consistently its highest-ranked, with roots going back to 1905 (founded in Singapore as the King Edward VII College of Medicine; renamed University of Malaya in 1949 and recognised as a public university in Malaya from 1962). Based in Kuala Lumpur, UM offers a wide range of programmes across multiple faculties. Its International Channel accepts the Higher Secondary Certificate (HSC) for most undergraduate programmes, and recognised bachelor's degrees for postgraduate study.",
       "country": "Malaysia",
       "city": "Kuala Lumpur",
       "type": "Public University",
-
-      "image": "https://example.com/um-campus.webp",
-      "logo": "https://example.com/um-logo.webp",
-
+      "image": "",
+      "logo": "",
       "website": "https://www.um.edu.my/",
       "featured": true,
-
+      "established": 1905,
+      "accreditation": [
+        "MQA",
+        "AACSB",
+        "AMBA"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Completion of 12 years of schooling with a Higher Secondary Certificate (HSC), accepted for most programmes through UM's International Channel. Minimum marks and subjects are set per programme (for example, Engineering: 65% average with at least 60% in Mathematics and Physics; Business Administration: about 70% average). Qualifications graded on a different scale are assessed by UM through a cross-matching process. Medicine does not list the HSC as a direct entry route (accepted routes include A-Level, IB and Foundation/Matriculation). Meeting the requirements makes you eligible to apply; it does not guarantee admission.",
+        "postgraduate": "Recognised Bachelor's degree with a minimum CGPA of 3.00 (or equivalent). Some programmes consider a CGPA of 2.50–2.99 if extra criteria are met (for example an interview, relevant work experience or publications). Degrees from foreign institutions must be recognised in the Malaysian Qualifications Register. Requirements vary by programme and admission is not guaranteed."
+      },
+      "englishRequirements": {
+        "ielts": "5.0 - 7.0 (varies by programme)",
+        "toefl": "46 - 96 iBT (varies by programme)"
+      },
+      "tuitionFees": {
+        "undergraduate": "RM 60,900 – RM 149,200 total programme fee for most programmes (international, 2025/26); Pharmacy RM 280,100, Dentistry RM 655,000, Medicine RM 673,200. UM quotes fees for the whole programme, not per year.",
+        "postgraduate": "Master's coursework mostly RM 25,000 – RM 80,000 total; PhD roughly RM 50,000 – RM 100,000 total (international, 2025/26). UM quotes fees for the whole programme, not per year.",
+        "currency": "MYR"
+      },
+      "intakes": [
+        "October",
+        "March"
+      ],
+      "scholarships": "UM Scholarship Scheme (UMSS) and Graduate Research Assistantship Scheme (GRAS/iGRAS) for Master's and PhD research students (postgraduate only); PTE x Universiti Malaya Scholarship (£3,000 towards tuition for international students). The Malaysia International Scholarship (MIS) is a Malaysian government postgraduate scheme for selected countries, not a UM scholarship; check whether Bangladesh is eligible.",
       "studyLevels": [
         "Bachelor's",
         "Master's",
         "PhD"
       ],
-
       "courses": [
         {
           "id": 101,
           "name": "Medicine",
           "studyLevels": [
-            "Bachelor's",
-            "Master's",
-            "PhD"
+            "Bachelor's"
           ],
           "qualifications": [
-            "MBBS",
-            "MD"
+            "MBBS"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "RM 673,200 total programme fee (international, 2025/26)",
+          "entryRequirements": "UM does not list the HSC as a direct entry route for international applicants. Accepted routes include A-Level (grade A in Biology and Chemistry, and A in Physics or Mathematics), IB (36 points) or Foundation/Matriculation (CGPA 3.80/4.00). An admission test score (MSAT/BMAT/MCAT/GAMSAT) and an interview are required.",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60 (MUET Band 4.0)",
+          "intakes": [
+            "October"
           ]
         },
         {
@@ -49,11 +70,290 @@
           ],
           "qualifications": [
             "BEng",
-            "MEng"
+            "MEng",
+            "PhD"
+          ],
+          "duration": "4 years (BEng), 1–2 years (MEng), 3–5 years (PhD)",
+          "tuitionFee": "Bachelor: RM 132,100 total (international, 2025/26); Master's: about RM 43,200 – RM 55,100 total",
+          "entryRequirements": "HSC with a minimum 65% average and at least 60% in Mathematics and Physics; Electrical and Chemical Engineering applicants must not be colour blind. Master's: recognised Bachelor's degree with CGPA 3.00 or equivalent.",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 46 (MUET Band 4.0)",
+          "intakes": [
+            "October",
+            "March"
           ]
         },
         {
           "id": 103,
+          "name": "Computer Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BCompSc",
+            "MCompSc",
+            "PhD"
+          ],
+          "duration": "3.5 – 4 years (BCompSc), 1.5 – 2 years (MCompSc), 3–5 years (PhD)",
+          "tuitionFee": "Bachelor: RM 89,200 total (international, 2025/26); Master of Computer Science: RM 43,200 total",
+          "entryRequirements": "HSC accepted for direct entry; minimum marks and subject prerequisites are set by the faculty. Master's: recognised Bachelor's degree with CGPA 3.00 or equivalent.",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 104,
+          "name": "Business Administration",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BBA",
+            "MBA",
+            "PhD"
+          ],
+          "duration": "3.5 – 4 years (BBA), 1.5 – 2 years (MBA), 3–5 years (PhD)",
+          "tuitionFee": "BBA: RM 77,100 total (international, 2025/26); MBA: RM 79,100 total",
+          "entryRequirements": "HSC with a minimum 70% average (programme subject requirements apply); recognised Bachelor's degree with CGPA 3.00 or equivalent for MBA.",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 105,
+          "name": "Law",
+          "studyLevels": [
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "LLM",
+            "PhD"
+          ],
+          "duration": "1.5 – 2 years (LLM), 3–5 years (PhD)",
+          "tuitionFee": "LLM: RM 34,100 total; PhD: RM 63,100 total (international, 2025/26)",
+          "entryRequirements": "The Bachelor of Laws (LLB) is currently not open to international students. LLM: Bachelor of Laws (Honours) or Shariah with CGPA 3.00 or above (CGPA 2.50–2.99 may be considered with an interview or special evaluation).",
+          "englishRequirements": "IELTS 6.0 (MUET Band 4.0)",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 106,
+          "name": "Dentistry",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "BDS"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "RM 655,000 total programme fee (international, 2025/26)",
+          "entryRequirements": "HSC in Science with Biology, Chemistry, Physics/Mathematics with high GPA (typically 4.80–5.00/5.00); passing admission interview",
+          "englishRequirements": "IELTS 6.5 or TOEFL iBT 80",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 107,
+          "name": "Pharmacy",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BPharm",
+            "MPharm",
+            "PhD"
+          ],
+          "duration": "4 years (BPharm), 1.5 – 2 years (MPharm), 3–5 years (PhD)",
+          "tuitionFee": "RM 280,100 total programme fee (international, 2025/26)",
+          "entryRequirements": "HSC in Science with Chemistry, Biology, Physics/Mathematics (minimum GPA 4.50/5.00); passing interview",
+          "englishRequirements": "IELTS 6.0 - 6.5 or TOEFL iBT 70",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 108,
+          "name": "Education",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEd",
+            "MEd",
+            "PhD"
+          ],
+          "duration": "4 years (BEd), 1.5 – 2 years (MEd), 3–5 years (PhD)",
+          "tuitionFee": "RM 69,600 – RM 75,100 total, depending on programme (Counselling, Early Childhood Education, Teaching English as a Second Language; international, 2025/26)",
+          "entryRequirements": "HSC in relevant stream (minimum GPA 3.50/5.00); passing faculty interview/aptitude assessment",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "universiti-kebangsaan-malaysia",
+      "name": "Universiti Kebangsaan Malaysia",
+      "shortName": "UKM",
+      "description": "Malaysia's national university, founded on 18 May 1970 (it began in Kuala Lumpur and moved to its main campus in Bangi, Selangor, in 1977). A leading public research university offering programmes across sciences, engineering, medicine, law, and social sciences. Its UKM International (UKMi) route accepts the Bangladeshi Higher Secondary Certificate (HSC) for undergraduate study, and recognised bachelor's degrees for postgraduate study.",
+      "country": "Malaysia",
+      "city": "Bangi",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.ukm.my/",
+      "featured": true,
+      "established": 1970,
+      "accreditation": [
+        "MQA",
+        "AACSB"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Completion of 12 years of schooling with a Higher Secondary Certificate (HSC), applied through UKM International (UKMi). UKM sets a minimum HSC percentage by country: for Bangladesh it is 80% for most programmes (Engineering, IT, Science, Law, Education, Business) and 85% for Medicine and Dentistry. Required subjects vary by faculty (for example Mathematics, Physics and Chemistry/Biology for Engineering and IT; Biology, Chemistry and Mathematics/Physics for Medicine). An interview may be required. UKM does not state a GPA equivalent on its pages, so check how your HSC result converts. Meeting the requirements makes you eligible to apply; it does not guarantee admission.",
+        "postgraduate": "Recognised Bachelor's degree with a good CGPA from an institution recognised by the Malaysian Qualifications Agency (MQA) or accredited by a recognised foreign body; further requirements are set by each faculty or institute. Admission is not guaranteed."
+      },
+      "englishRequirements": {
+        "ielts": "5.0 - 6.5 (varies by faculty)",
+        "toefl": "35 - 93 iBT (varies by faculty; HEET also accepted)"
+      },
+      "tuitionFees": {
+        "undergraduate": "RM 59,920 – RM 90,820 total programme fee for most programmes (UKMi international fee schedule 2024/25); Medicine RM 552,520 total. UKM quotes fees for the whole programme, and a 6% Sales and Service Tax is added for international students.",
+        "postgraduate": "Master's roughly RM 28,000 – RM 40,000 total (for example Master of Laws RM 31,910); PhD about RM 71,820 total (Faculty of Law, minimum 8 semesters). Fees vary by faculty and mode of study.",
+        "currency": "MYR"
+      },
+      "intakes": [
+        "October",
+        "March"
+      ],
+      "scholarships": "Malaysia International Scholarship (MIS) and Malaysian Technical Cooperation Programme (MTCP) are Malaysian government postgraduate schemes that UKM supports (eligibility depends on your country); UKM Graduate Research Assistantship (GRA) and the UKM Zamalah Scheme support Master's and PhD research students, including international students; Dermasiswa financial aid is for students from low and lower-middle-income countries.",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 201,
+          "name": "Medicine",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "MD"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "RM 552,520 total (10 semesters, approx. RM 108,000 per year; UKMi international 2024/25)",
+          "entryRequirements": "HSC with Biology, Chemistry and Mathematics/Physics, with a minimum of 85% (UKM's threshold for Bangladesh); A-Level (AAB) or IB (37 points) are also accepted. Interview if required.",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Engineering",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEng",
+            "MEng",
+            "PhD"
+          ],
+          "duration": "4 years (BEng), 1–2 years (MEng), 3–5 years (PhD)",
+          "tuitionFee": "BEng: RM 90,820 total (8 semesters, approx. RM 22,700 per year; UKMi international 2024/25)",
+          "entryRequirements": "HSC with Mathematics, Physics and Chemistry/Biology, with a minimum of 80% (UKM's threshold for Bangladesh); recognised BEng with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.0 or TOEFL iBT 35",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 203,
+          "name": "Computer Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BCompSc",
+            "MCompSc",
+            "PhD"
+          ],
+          "duration": "3.5 years (BCompSc), 1.5 – 2 years (MCompSc), 3–5 years (PhD)",
+          "tuitionFee": "BCompSc: RM 76,120 total (7 semesters, approx. RM 21,750 per year; UKMi international 2024/25)",
+          "entryRequirements": "HSC with Mathematics, Physics and Chemistry/Biology, with a minimum of 80% (UKM's threshold for Bangladesh); recognised Bachelor's with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 46",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 204,
+          "name": "Law",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "LLB",
+            "LLM",
+            "PhD"
+          ],
+          "duration": "4 years (LLB), 1.5 – 2 years (LLM), 3–5 years (PhD)",
+          "tuitionFee": "LLB: RM 87,520 total (8 semesters, approx. RM 21,900 per year; UKMi international 2024/25); LLM: RM 31,910 total",
+          "entryRequirements": "HSC in any 3 subjects with a minimum of 80% (UKM's threshold for Bangladesh); interview if required; recognised LLB with CGPA 3.0+ for LLM",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 100 (MUET Band 4)",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 205,
+          "name": "Education",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEd",
+            "MEd",
+            "PhD"
+          ],
+          "duration": "4 years (BEd), 1.5 – 2 years (MEd), 3–5 years (PhD)",
+          "tuitionFee": "RM 69,120 – RM 76,120 total, depending on programme (BEd TESL, Physical Education and Health, Special Education; 8 semesters; UKMi international 2024/25)",
+          "entryRequirements": "HSC in any 3 subjects with a minimum of 80% (UKM's threshold for Bangladesh); interview if required",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 46; TESL requires a higher level (HEET Level 7 High)",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 206,
           "name": "Business",
           "studyLevels": [
             "Bachelor's",
@@ -62,7 +362,532 @@
           ],
           "qualifications": [
             "BBA",
-            "MBA"
+            "MBA",
+            "PhD"
+          ],
+          "duration": "3 years (BBA), 1.5 – 2 years (MBA), 3–5 years (PhD)",
+          "tuitionFee": "BBA: RM 59,920 total (6 semesters, approx. RM 20,000 per year; UKMi international 2024/25); MBA approx. RM 35,000 – RM 45,000 total",
+          "entryRequirements": "HSC with Mathematics, one of Economics/Business/Physics/Chemistry/Biology, and one other subject, with a minimum of 80% (UKM's threshold for Bangladesh); recognised Bachelor's with CGPA 3.0+ for MBA",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "universiti-putra-malaysia",
+      "name": "Universiti Putra Malaysia",
+      "shortName": "UPM",
+      "description": "A top-ranked Malaysian public research university in Serdang, Selangor, established in 1931. Renowned for agriculture, veterinary medicine, engineering, and sciences. Accepts Bangladeshi HSC and recognised bachelor's degrees for international admission.",
+      "country": "Malaysia",
+      "city": "Serdang",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.upm.edu.my/",
+      "featured": true,
+      "established": 1931,
+      "accreditation": [
+        "MQA",
+        "AACSB"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Completion of 12 years of formal education with Higher Secondary Certificate (HSC) from Bangladesh with competitive grades (typically 75%–80% or equivalent GPA 3.50–4.00 out of 5.00), meeting faculty prerequisites.",
+        "postgraduate": "Recognised Bachelor's degree (Honours) from a UGC-recognised university in Bangladesh with a minimum CGPA of 3.00 out of 4.00 (or 2.75 with relevant research or working experience)."
+      },
+      "englishRequirements": {
+        "ielts": "5.5 - 6.0",
+        "toefl": "60 iBT"
+      },
+      "tuitionFees": {
+        "undergraduate": "RM 10,000 – RM 25,000 per year (programmes range from RM 40,000 to RM 90,000 total)",
+        "postgraduate": "RM 12,000 – RM 30,000 per year",
+        "currency": "MYR"
+      },
+      "intakes": [
+        "September",
+        "February"
+      ],
+      "scholarships": "Malaysia International Scholarship (MIS), International Graduate Student Scholarship (IGSS), Graduate Research Assistantship (GRA)",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 301,
+          "name": "Engineering",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEng",
+            "MEng",
+            "PhD"
+          ],
+          "duration": "4 years (BEng), 1.5 – 2 years (MEng), 3–5 years (PhD)",
+          "tuitionFee": "RM 15,000 – RM 20,000 per year (BEng approx. RM 60,000 – RM 80,000 total)",
+          "entryRequirements": "HSC in Science with Physics, Mathematics, and Chemistry (minimum GPA 3.75/5.00); recognised BEng with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Computer Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BCompSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "4 years (BCompSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 14,000 – RM 18,000 per year (BCompSc approx. RM 56,000 – RM 72,000 total)",
+          "entryRequirements": "HSC in Science or relevant group with strong grades in Mathematics (minimum GPA 3.50/5.00); recognised Bachelor's with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Agriculture",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BAgSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "4 years (BAgSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 16,000 per year (BAgSc approx. RM 48,000 – RM 64,000 total)",
+          "entryRequirements": "HSC in Science with Biology and Chemistry (minimum GPA 3.50/5.00); recognised Bachelor's in Agriculture/related with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 304,
+          "name": "Veterinary Medicine",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "DVM"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "RM 120,000 – RM 150,000 total (approx. RM 25,000 – RM 30,000 per year)",
+          "entryRequirements": "HSC in Science with high grades in Biology, Chemistry, Physics/Mathematics (minimum GPA 4.50–5.00/5.00); interview and health clearance",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 305,
+          "name": "Business Administration",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BBA",
+            "MBA",
+            "PhD"
+          ],
+          "duration": "4 years (BBA), 1.5 – 2 years (MBA), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 16,000 per year (BBA approx. RM 50,000 – RM 65,000 total; MBA approx. RM 32,000 – RM 42,000 total)",
+          "entryRequirements": "HSC in Business, Science, or Humanities with Mathematics (minimum GPA 3.50/5.00); recognised Bachelor's with CGPA 3.0+ for MBA",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 306,
+          "name": "Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "4 years (BSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 16,000 per year (BSc approx. RM 48,000 – RM 64,000 total)",
+          "entryRequirements": "HSC in Science with relevant science subjects (minimum GPA 3.50/5.00); recognised Bachelor's in Science with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "universiti-sains-malaysia",
+      "name": "Universiti Sains Malaysia",
+      "shortName": "USM",
+      "description": "Malaysia's APEX university, founded in 1969 in Penang. A premier public research university known for medicine, engineering, pharmaceutical sciences, and computer science. Accepts Bangladeshi HSC and recognised bachelor's degrees for international admission.",
+      "country": "Malaysia",
+      "city": "Penang",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.usm.my/",
+      "featured": true,
+      "established": 1969,
+      "accreditation": [
+        "MQA",
+        "AACSB",
+        "ABET"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Completion of 12 years of schooling with Higher Secondary Certificate (HSC) from an education board in Bangladesh with a minimum equivalent GPA of 2.75–3.50 out of 5.00 (substantially higher for Medicine and Pharmacy), with prerequisite subjects passed.",
+        "postgraduate": "Recognised Bachelor's degree (Honours) from a UGC-recognised university in Bangladesh with a minimum CGPA of 3.00 out of 4.00 (or 2.75 with relevant research experience or publications)."
+      },
+      "englishRequirements": {
+        "ielts": "5.0 - 6.0",
+        "toefl": "40 - 60 iBT"
+      },
+      "tuitionFees": {
+        "undergraduate": "RM 12,000 – RM 35,000 per year (Medicine approx. RM 110,000 per year)",
+        "postgraduate": "RM 10,000 – RM 30,000 per year (USD 2,500 – USD 7,500 per year)",
+        "currency": "MYR"
+      },
+      "intakes": [
+        "October",
+        "March"
+      ],
+      "scholarships": "Malaysia International Scholarship (MIS), USMCARE Scholarship, USM Graduate Research Assistantship",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 401,
+          "name": "Medicine",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "MD"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "RM 550,000 total (approx. RM 110,000 per year)",
+          "entryRequirements": "HSC in Science with Biology, Chemistry, Physics/Mathematics (minimum GPA 4.80/5.00); passing multiple mini interview (MMI)",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 402,
+          "name": "Engineering",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEng",
+            "MEng",
+            "PhD"
+          ],
+          "duration": "4 years (BEng), 1.5 – 2 years (MEng), 3–5 years (PhD)",
+          "tuitionFee": "RM 18,000 – RM 24,000 per year (BEng approx. RM 75,000 – RM 95,000 total)",
+          "entryRequirements": "HSC in Science with Mathematics and Physics (minimum GPA 3.75/5.00); recognised BEng with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.0 - 5.5 or TOEFL iBT 40 - 46",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 403,
+          "name": "Pharmacy",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BPharm",
+            "MPharm",
+            "PhD"
+          ],
+          "duration": "4 years (BPharm), 1.5 – 2 years (MPharm), 3–5 years (PhD)",
+          "tuitionFee": "RM 30,000 – RM 38,000 per year (BPharm approx. RM 120,000 – RM 150,000 total)",
+          "entryRequirements": "HSC in Science with Chemistry, Biology, and Physics/Mathematics (minimum GPA 4.50/5.00); panel interview",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 404,
+          "name": "Computer Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BCompSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "3 – 4 years (BCompSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 15,000 – RM 20,000 per year (BCompSc approx. RM 60,000 – RM 80,000 total)",
+          "entryRequirements": "HSC in Science or relevant group with strong grade in Mathematics (minimum GPA 3.50/5.00); recognised Bachelor's with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.0 - 5.5 or TOEFL iBT 40 - 46",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        },
+        {
+          "id": 405,
+          "name": "Education",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEd",
+            "MEd",
+            "PhD"
+          ],
+          "duration": "4 years (BEd), 1.5 – 2 years (MEd), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 16,000 per year (BEd approx. RM 48,000 – RM 64,000 total)",
+          "entryRequirements": "HSC in relevant stream (minimum GPA 3.50/5.00); passing MedSI and interview",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "October"
+          ]
+        },
+        {
+          "id": 406,
+          "name": "Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "3 – 4 years (BSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 18,000 per year (BSc approx. RM 50,000 – RM 70,000 total)",
+          "entryRequirements": "HSC in Science with relevant group subjects (minimum GPA 3.50/5.00); recognised Bachelor's in Science with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.0 - 5.5 or TOEFL iBT 40 - 46",
+          "intakes": [
+            "October",
+            "March"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "universiti-teknologi-malaysia",
+      "name": "Universiti Teknologi Malaysia",
+      "shortName": "UTM",
+      "description": "A leading Malaysian public research university in Johor Bahru, with roots dating to 1904 and full university status since 1975. Specialises in engineering, computing, architecture, and technology. Accepts Bangladeshi HSC and recognised bachelor's degrees for international admission.",
+      "country": "Malaysia",
+      "city": "Johor Bahru",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.utm.my/",
+      "featured": true,
+      "established": 1904,
+      "accreditation": [
+        "MQA",
+        "EAC",
+        "AACSB"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Completion of 12 years of formal education with Higher Secondary Certificate (HSC) or equivalent pre-university qualification from Bangladesh with competitive grades (typically GPA 3.50–4.00 out of 5.00), meeting faculty subject prerequisites.",
+        "postgraduate": "Recognised Bachelor's degree (Honours) from a UGC-recognised university in Bangladesh with a minimum CGPA of 3.00 out of 4.00 (or 2.75 with relevant working experience or research output)."
+      },
+      "englishRequirements": {
+        "ielts": "5.5 - 6.0",
+        "toefl": "46 - 60 iBT"
+      },
+      "tuitionFees": {
+        "undergraduate": "RM 11,000 – RM 20,000 per year (programmes range from RM 45,000 to RM 75,000 total)",
+        "postgraduate": "RM 13,000 – RM 28,000 per year",
+        "currency": "MYR"
+      },
+      "intakes": [
+        "September",
+        "February"
+      ],
+      "scholarships": "Malaysia International Scholarship (MIS), International Doctoral Fellowship (IDF), UTM Graduate Research Assistantship",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 501,
+          "name": "Engineering",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BEng",
+            "MEng",
+            "PhD"
+          ],
+          "duration": "4 years (BEng), 1.5 – 2 years (MEng), 3–5 years (PhD)",
+          "tuitionFee": "RM 18,000 – RM 20,000 per year (BEng approx. RM 75,000 total)",
+          "entryRequirements": "HSC in Science with Mathematics, Physics, and Chemistry (minimum GPA 3.75/5.00); recognised BEng with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 502,
+          "name": "Computer Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BCompSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "4 years (BCompSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 17,000 – RM 19,000 per year (BCompSc approx. RM 71,000 total)",
+          "entryRequirements": "HSC in Science or relevant stream with strong pass in Mathematics (minimum GPA 3.50/5.00); recognised Bachelor's in CS/IT with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 503,
+          "name": "Architecture",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BSc Architecture",
+            "MArch",
+            "PhD"
+          ],
+          "duration": "3 years (BSc Architecture), 2 years (MArch), 3–5 years (PhD)",
+          "tuitionFee": "RM 18,000 – RM 21,000 per year (BSc approx. RM 60,000 total; MArch approx. RM 36,000 total)",
+          "entryRequirements": "HSC in Science or Arts with Mathematics; portfolio submission and interview passing; LAM Part 1 recognised degree for MArch",
+          "englishRequirements": "IELTS 5.5 - 6.0 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 504,
+          "name": "Business Administration",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BBA",
+            "MBA",
+            "PhD"
+          ],
+          "duration": "3.5 – 4 years (BBA), 1.5 – 2 years (MBA), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 16,000 per year (BBA approx. RM 48,000 total; MBA approx. RM 32,154 total)",
+          "entryRequirements": "HSC in Business, Science, or Humanities with Mathematics (minimum GPA 3.50/5.00); recognised Bachelor's with CGPA 3.0+ for MBA",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "September",
+            "February"
+          ]
+        },
+        {
+          "id": 505,
+          "name": "Accounting",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BAcc",
+            "MAcc",
+            "PhD"
+          ],
+          "duration": "4 years (BAcc), 1.5 – 2 years (MAcc), 3–5 years (PhD)",
+          "tuitionFee": "RM 12,000 – RM 15,000 per year (BAcc approx. RM 48,000 – RM 55,000 total)",
+          "entryRequirements": "HSC with Mathematics and Accounting/Economics (minimum GPA 3.50/5.00); recognised Bachelor's with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 6.0 or TOEFL iBT 60",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 506,
+          "name": "Science",
+          "studyLevels": [
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "qualifications": [
+            "BSc",
+            "MSc",
+            "PhD"
+          ],
+          "duration": "4 years (BSc), 1.5 – 2 years (MSc), 3–5 years (PhD)",
+          "tuitionFee": "RM 15,000 – RM 17,000 per year (BSc approx. RM 63,000 total)",
+          "entryRequirements": "HSC in Science with relevant subjects (minimum GPA 3.50/5.00); recognised Bachelor's in Science with CGPA 3.0+ for Master's",
+          "englishRequirements": "IELTS 5.5 or TOEFL iBT 46 - 60",
+          "intakes": [
+            "September",
+            "February"
           ]
         }
       ]
