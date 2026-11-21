@@ -91,7 +91,7 @@ const University = ({ id }) => {
     <>
       <section className="py-5 lg:py-1">
         <Container>
-          <div className="p-6 max-w-6xl mx-auto">
+          <div className="lg:py-4">
             {/* Search & Filter */}
 
             <div className="flex flex-col md:flex-row md:justify-between md:items-center md:space-x-4 space-y-4 md:space-y-0 mb-6 bg-tertiary p-3">

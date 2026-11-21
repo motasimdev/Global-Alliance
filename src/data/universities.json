@@ -521,6 +521,652 @@
           "intakes": ["September", "February"]
         }
       ]
+    },
+     {
+      "id": 6,
+      "slug": "university-of-barcelona",
+      "name": "University of Barcelona",
+      "shortName": "UB",
+      "description": "Catalonia's largest public university, founded in 1450 and based in Barcelona. Most degrees are taught in Spanish or Catalan; a limited set of bachelor's and master's programmes (for example International Business and several master's in Economics, Business and Life Sciences) are taught in English.",
+      "country": "Spain",
+      "city": "Barcelona",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.ub.edu/",
+      "featured": false,
+      "established": 1450,
+      "accreditation": [
+        "Spanish Ministry of Universities (official degrees)",
+        "AQU Catalunya",
+        "ANECA"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Bangladeshi HSC (12 years of schooling) is not in a Spain agreement system, so the usual route is homologation of the HSC to the Spanish Título de Bachiller through the Spanish Ministry of Education (the Ministry publishes an equivalence sheet for Bangladesh); the homologated mark is then used as the access grade in the Catalan university pre-enrolment (the UNEDasiss PCE exams are optional, to raise the grade). Subject prerequisites apply per degree. Bangladesh GPA-to-Spanish grade conversion is not stated here and must be confirmed. UB follows the Catalan pre-enrolment system; confirm the current non-EU procedure with UB. Spanish- or Catalan-taught degrees also require proof of Spanish/Catalan.",
+        "postgraduate": "Recognised 4-year Bachelor's (Honours) degree in a relevant field; non-EU degrees do not need prior homologation to apply, but the diploma and transcripts must be legalised (Apostille or diplomatic route) for enrolment. Each master's sets its own minimum grade and documents (not confirmed here)."
+      },
+      "englishRequirements": {
+        "ielts": "Only for English-taught programmes; level set per programme (B2 is typical, about IELTS 5.5 – 6.5). Not required for Spanish/Catalan-taught degrees.",
+        "toefl": "B2 equivalent (about 72 – 94 iBT) where a certificate is requested"
+      },
+      "tuitionFees": {
+        "undergraduate": "Approx. EUR 1,100 – 1,250 per year (estimate: Catalan public price of EUR 17.69 per credit, about EUR 1,061 for 60 ECTS plus fees; the non-resident non-EU bachelor rate could not be confirmed on UB's official pages)",
+        "postgraduate": "Approx. EUR 4,900 – 6,600 per year for non-EU students in official master's (about EUR 82 per credit; International Business about EUR 110 per credit; 2025/26 figures)",
+        "currency": "EUR"
+      },
+      "intakes": [
+        "September"
+      ],
+      "scholarships": "",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 601,
+          "name": "International Business (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in International Business"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "Approx. EUR 1,100 – 1,250 per year (estimate; see university note)",
+          "entryRequirements": "Homologated HSC (Título de Bachiller equivalent) and Catalan pre-enrolment; subject prerequisites and cut-off marks apply.",
+          "englishRequirements": "Taught entirely in English. UB asks for an English level of about B1 – B2; accepted certificates to be confirmed. IELTS is not confirmed as mandatory.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 602,
+          "name": "Business Administration and Management (English group available; also Spanish/Catalan)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Business Administration and Management"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "Approx. EUR 1,100 – 1,250 per year (estimate; see university note)",
+          "entryRequirements": "Homologated HSC and Catalan pre-enrolment; HSC with relevant subjects (e.g. Business Studies or Mathematics) preferred.",
+          "englishRequirements": "Language of instruction is Spanish/Catalan with an English-taught group; availability and certificate level to be confirmed. Spanish/Catalan proof needed for non-English groups.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 603,
+          "name": "MSc in Economics (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in Economics"
+          ],
+          "duration": "2 years (120 ECTS)",
+          "tuitionFee": "Approx. EUR 4,920 per year for non-EU students (about EUR 82 per credit, 2025/26)",
+          "entryRequirements": "Bachelor's in Economics, Business, Mathematics or a related field; strong quantitative background; admission by UB School of Economics.",
+          "englishRequirements": "Taught in English; B2 or higher certificate expected (exact score to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 604,
+          "name": "MSc in International Business (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in International Business"
+          ],
+          "duration": "1 year (60 ECTS)",
+          "tuitionFee": "Approx. EUR 6,600 per year for non-EU students (about EUR 110 per credit, 2025/26)",
+          "entryRequirements": "Bachelor's degree in Business, Economics or a related field; application and selection by UB Business School.",
+          "englishRequirements": "Taught in English; B2 or higher certificate expected (exact score to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 605,
+          "name": "MSc in Genetics and Genomics (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in Genetics and Genomics"
+          ],
+          "duration": "To be confirmed (1 – 2 years)",
+          "tuitionFee": "Approx. EUR 4,920 per year for non-EU students (estimate based on about EUR 82 per credit)",
+          "entryRequirements": "Bachelor's in Biology, Biotechnology, Biochemistry, Biomedicine or a related life-science field.",
+          "englishRequirements": "Taught in English; B2 level expected (exact score to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "autonomous-university-of-barcelona",
+      "name": "Autonomous University of Barcelona",
+      "shortName": "UAB",
+      "description": "A large public research university on the Bellaterra campus near Barcelona, founded in 1968. Offers around eleven bachelor's degrees and more than 80 graduate programmes in English, alongside Spanish- and Catalan-taught degrees.",
+      "country": "Spain",
+      "city": "Barcelona",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.uab.cat/",
+      "featured": false,
+      "established": 1968,
+      "accreditation": [
+        "Spanish Ministry of Universities (official degrees)",
+        "AQU Catalunya",
+        "ANECA"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "UAB states that non-resident students with a secondary diploma from a non-EU country without a Spain agreement must homologate that diploma (Bachiller equivalence) through the Spanish Ministry of Education before applying. For Bangladeshi HSC (12 years), homologation is the relevant route; the homologated mark is the access grade. Optional UNEDasiss PCE exams can raise the grade. HSC stream/subjects must match the degree. Bangladesh GPA conversion is not stated here and must be confirmed.",
+        "postgraduate": "Recognised 4-year Bachelor's (Honours) degree in a relevant field; non-EU degrees do not need homologation to apply, but the diploma and transcripts must be legalised for enrolment. Each master's sets its own minimum grade and documents (not confirmed here)."
+      },
+      "englishRequirements": {
+        "ielts": "Only for English-taught programmes; usually B2 (about IELTS 5.5 – 6.5). Some programmes may also ask for Spanish/Catalan; confirm per programme.",
+        "toefl": "B2 equivalent (about 72 – 94 iBT) where a certificate is requested"
+      },
+      "tuitionFees": {
+        "undergraduate": "Approx. EUR 1,060 – 1,200 per year (estimate: Catalan public price EUR 17.69 per credit plus fees; UAB's official page says non-EU non-resident fees follow annual Board tariffs, so confirm)",
+        "postgraduate": "Approx. EUR 3,960 – 6,000 per year for non-EU students in official master's (about EUR 66 – 100 per credit, 2025/26); UAB-specific master's cost more (e.g. Business Management EUR 11,900)",
+        "currency": "EUR"
+      },
+      "intakes": [
+        "September"
+      ],
+      "scholarships": "",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 701,
+          "name": "Business Administration and Management (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Business Administration and Management"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "Approx. EUR 1,060 – 1,200 per year (estimate; see university note)",
+          "entryRequirements": "Homologated HSC (Bachiller equivalent) and Catalan pre-enrolment; cut-off marks apply.",
+          "englishRequirements": "English-taught group; B2 English expected (certificate type to be confirmed). IELTS not confirmed as mandatory.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 702,
+          "name": "Economics (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Economics"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "Approx. EUR 1,060 – 1,200 per year (estimate; see university note)",
+          "entryRequirements": "Homologated HSC and Catalan pre-enrolment; Mathematics background recommended.",
+          "englishRequirements": "English-taught group; B2 English expected (certificate type to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 703,
+          "name": "Artificial Intelligence (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Artificial Intelligence"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "Approx. EUR 1,060 – 1,200 per year (estimate; see university note)",
+          "entryRequirements": "Homologated HSC in Science with strong Mathematics; Catalan pre-enrolment; high cut-off marks likely.",
+          "englishRequirements": "English-taught; B2 English expected (certificate type to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 704,
+          "name": "Master in Computer Vision (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Inter-university Master's Degree in Computer Vision"
+          ],
+          "duration": "1 year (60 ECTS)",
+          "tuitionFee": "Approx. EUR 3,960 – 6,000 per year for non-EU students (estimate; official master's range)",
+          "entryRequirements": "Bachelor's in Computer Science, Engineering, Mathematics, Physics or a related field.",
+          "englishRequirements": "Taught in English; a command of English is required (exact certificate to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 705,
+          "name": "Master's Degree in Business Management (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "UAB-specific Master's Degree in Business Management"
+          ],
+          "duration": "1 year (60 ECTS)",
+          "tuitionFee": "EUR 11,900 (programme price listed by UAB)",
+          "entryRequirements": "Bachelor's degree from a recognised university; application and selection by the programme.",
+          "englishRequirements": "Taught exclusively in English; certificate level to be confirmed.",
+          "intakes": [
+            "October"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "carlos-iii-university-of-madrid",
+      "name": "Carlos III University of Madrid",
+      "shortName": "UC3M",
+      "description": "A public university in the Madrid region founded in 1989, known for business, economics, law, social sciences and engineering. Offers many bachelor's degrees fully in English or bilingually, and international students without Spanish residence pay specific non-EU fees.",
+      "country": "Spain",
+      "city": "Madrid",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.uc3m.es/",
+      "featured": false,
+      "established": 1989,
+      "accreditation": [
+        "Spanish Ministry of Universities (official degrees)",
+        "ANECA",
+        "AACSB",
+        "EURACE"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Students from non-EU systems without an agreement must request the Bachillerato modality accreditation from UNED through UNEDasiss, which requires passing UNED PCE exams; the access grade combines 60% school GPA and 40% PCE (formula published by UC3M). Students without accreditation can only try the extraordinary July call for leftover places (UC3M expects few). An early admission procedure exists for strong applicants. Bangladeshi HSC students should follow this route; Bangladesh-specific grade conversion is not stated here and must be confirmed.",
+        "postgraduate": "Recognised Bachelor's degree giving access to graduate studies; non-EHEA degrees are legalised (Apostille or diplomatic route) with transcript after admission. Each master's sets its own admission criteria and may charge a reservation fee."
+      },
+      "englishRequirements": {
+        "ielts": "B2 English required for English-taught bachelor's groups, to be proven during the first year (certificate or UC3M test); master's taught in English use B2 as the minimum. Spanish-taught degrees need B2 Spanish instead.",
+        "toefl": "B2 equivalent (about 72 – 94 iBT) accepted as an official certificate"
+      },
+      "tuitionFees": {
+        "undergraduate": "EUR 6,822.60 – 8,186.40 per 60-credit year for non-EU students in 2026/27 (business, economics and social sciences EUR 6,822.60; engineering EUR 7,714.20; biomedical programmes EUR 8,186.40), plus small administrative fees",
+        "postgraduate": "Approx. EUR 7,200 – 13,500 per 60 ECTS for non-EU students (e.g. Computational Social Science EUR 9,900; Management EUR 13,500; 2025/26 rates pending 2026/27 approval; some programmes are higher)",
+        "currency": "EUR"
+      },
+      "intakes": [
+        "September"
+      ],
+      "scholarships": "UC3M offers tuition grants for new master's students (e.g. grants of EUR 1,500 in some programmes) and bachelor's grants for new students; availability for non-EU students to be confirmed",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 801,
+          "name": "Business Administration (Spanish or English groups)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Business Administration"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,822.60 per year for non-EU students (2026/27)",
+          "entryRequirements": "UNEDasiss accreditation with PCE exams; admission grade up to 14 points with UC3M weighting; cut-off marks apply.",
+          "englishRequirements": "English group: B2 English to be proven in the first year. Spanish group: B2 Spanish required.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 802,
+          "name": "Economics (Spanish or English groups)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Economics"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,822.60 per year for non-EU students (2026/27)",
+          "entryRequirements": "UNEDasiss accreditation with PCE exams (Mathematics-related PCE subjects carry weight); cut-off marks apply.",
+          "englishRequirements": "English group: B2 English to be proven in the first year. Spanish group: B2 Spanish required.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 803,
+          "name": "Data Science and Engineering (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Data Science and Engineering"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 7,714.20 per year for non-EU students (2026/27)",
+          "entryRequirements": "UNEDasiss accreditation with PCE exams including Mathematics; science background; high cut-off marks likely.",
+          "englishRequirements": "Taught in English; B2 English to be proven in the first year.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 804,
+          "name": "International Studies (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in International Studies"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,822.60 per year for non-EU students (2026/27)",
+          "entryRequirements": "UNEDasiss accreditation with PCE exams; cut-off marks apply.",
+          "englishRequirements": "Taught in English; B2 English to be proven in the first year.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 805,
+          "name": "Master in Computational Social Science (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in Computational Social Science"
+          ],
+          "duration": "1 year (60 ECTS)",
+          "tuitionFee": "EUR 9,900 for non-EU students (EUR 165 per ECTS, 2025/26 rate; plus EUR 600 reservation fee deducted from tuition)",
+          "entryRequirements": "Bachelor's in Social/Human Sciences, Economics, Communication, Law, Business, International Studies or a related field; two short formative complements (Basic Statistics, R programming) are compulsory.",
+          "englishRequirements": "Taught in English; B2 is the minimum and a higher level earns extra admission points. IELTS not stated as mandatory.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 806,
+          "name": "Master in Management (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "UC3M Master in Management"
+          ],
+          "duration": "1 year (60 ECTS)",
+          "tuitionFee": "Approx. EUR 13,500 for non-EU students (EUR 225 per ECTS, 2025/26 rate; EUR 1,500 reservation fee counts toward tuition; estimate, confirm for 2026/27)",
+          "entryRequirements": "Bachelor's degree from a recognised university; selection by the programme (details not confirmed here).",
+          "englishRequirements": "Taught in English; B2 minimum, certificate details to be confirmed.",
+          "intakes": [
+            "September"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "pompeu-fabra-university",
+      "name": "Pompeu Fabra University",
+      "shortName": "UPF",
+      "description": "A public university in Barcelona founded in 1990, strong in economics, social sciences, law, communication and ICT. Offers seven bachelor's degrees in English (including Global Studies and International Business Economics) and several English-taught master's programmes. Non-EU students pay much higher fees than EU students.",
+      "country": "Spain",
+      "city": "Barcelona",
+      "type": "Public University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.upf.edu/",
+      "featured": false,
+      "established": 1990,
+      "accreditation": [
+        "Spanish Ministry of Universities (official degrees)",
+        "AQU Catalunya",
+        "ANECA"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "Bangladeshi HSC (12 years of schooling) is not in a Spain agreement system, so the usual route is homologation of the HSC to the Spanish Título de Bachiller through the Spanish Ministry of Education (the Ministry publishes an equivalence sheet for Bangladesh); the homologated mark is then used as the access grade in the Catalan university pre-enrolment (the UNEDasiss PCE exams are optional, to raise the grade). Subject prerequisites apply per degree. Bangladesh GPA-to-Spanish grade conversion is not stated here and must be confirmed. UPF applies the Catalan system; confirm the current non-EU procedure and deadlines with UPF.",
+        "postgraduate": "Recognised 4-year Bachelor's (Honours) degree in a relevant field. UPF states that a non-EU degree not yet homologated carries an extra enrolment fee (EUR 218.15 in 2025/26). Each master's sets its own admission criteria (not confirmed here)."
+      },
+      "englishRequirements": {
+        "ielts": "English-taught programmes: B2 recommended or required (about IELTS 5.5 – 6.5); master's such as Intelligent Interactive Systems list about IELTS 5.5 (third-party figure). Not required for Spanish/Catalan-taught degrees.",
+        "toefl": "B2 equivalent (about 72 – 94 iBT); one master's listing shows about 72"
+      },
+      "tuitionFees": {
+        "undergraduate": "Approx. EUR 6,800 – 7,000 per year for non-EU students (2025/26: EUR 6,800.32 for most degrees; Audiovisual Communication EUR 7,022.30; double degrees from about EUR 11,500). Includes administrative charges and insurance.",
+        "postgraduate": "EUR 5,749.80 per 60 ECTS for non-EU students in most official master's (EUR 93.50 per credit, 2025/26 figures)",
+        "currency": "EUR"
+      },
+      "intakes": [
+        "September"
+      ],
+      "scholarships": "Erasmus Mundus joint master's programmes (such as the Master in Artificial Intelligence) are linked to UPF and may include scholarships; UPF's own scholarships for non-EU students were not confirmed",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 901,
+          "name": "Global Studies (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Global Studies"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,800.32 per year for non-EU students (2025/26)",
+          "entryRequirements": "Homologated HSC (Bachiller equivalent) via Catalan pre-enrolment; admission mark and any entry test per UPF.",
+          "englishRequirements": "Listed by UPF among its English-taught degrees; B2 English expected. Later-year subjects may include other languages (to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 902,
+          "name": "International Business Economics (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in International Business Economics"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,800.32 per year for non-EU students (2025/26)",
+          "entryRequirements": "Homologated HSC via Catalan pre-enrolment; Mathematics background recommended.",
+          "englishRequirements": "Taught entirely in English; recommended level about B2 (First Certificate).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 903,
+          "name": "Computer Engineering (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Computer Engineering"
+          ],
+          "duration": "4 years (240 ECTS)",
+          "tuitionFee": "EUR 6,800.32 per year for non-EU students (2025/26)",
+          "entryRequirements": "Homologated HSC in Science with Mathematics; Catalan pre-enrolment; cut-off marks apply.",
+          "englishRequirements": "Listed by UPF as English-taught; B2 English expected (certificate to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 904,
+          "name": "Master in Intelligent Interactive Systems (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in Intelligent Interactive Systems"
+          ],
+          "duration": "1 year full-time (60 ECTS)",
+          "tuitionFee": "EUR 5,749.80 for non-EU students (2025/26)",
+          "entryRequirements": "Bachelor's in Computer Science, Engineering, Mathematics or a related technical field; strong mathematical and programming background expected.",
+          "englishRequirements": "Taught in English; about IELTS 5.5 / TOEFL iBT 72 listed by a third-party portal (confirm on UPF).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 905,
+          "name": "Master in Cognitive Systems and Interactive Media (taught in English)",
+          "studyLevels": [
+            "Master's"
+          ],
+          "qualifications": [
+            "Official Master's Degree in Cognitive Systems and Interactive Media"
+          ],
+          "duration": "1 year full-time (60 ECTS)",
+          "tuitionFee": "EUR 5,749.80 for non-EU students (2025/26)",
+          "entryRequirements": "Bachelor's in Engineering, Computer Science, Psychology, Cognitive Science, Media or a related field.",
+          "englishRequirements": "Taught in English; certificate level to be confirmed (B2 typical).",
+          "intakes": [
+            "September"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "universitat-internacional-de-catalunya",
+      "name": "Universitat Internacional de Catalunya",
+      "shortName": "UIC Barcelona",
+      "description": "A private non-profit university in Barcelona founded in 1997, with campuses in Barcelona and Sant Cugat del Vallès. Offers 16 bachelor's degrees, with English-taught options such as Business Administration and Bioengineering and part-English programmes in Dentistry and Architecture.",
+      "country": "Spain",
+      "city": "Barcelona",
+      "type": "Private University",
+      "image": "",
+      "logo": "",
+      "website": "https://www.uic.es/",
+      "featured": false,
+      "established": 1997,
+      "accreditation": [
+        "Spanish Ministry of Universities (official degrees)",
+        "ANECA",
+        "AQU Catalunya"
+      ],
+      "admissionRequirements": {
+        "undergraduate": "UIC states that students from outside the EU must have their upper-secondary qualification officially recognised: homologation through the Spanish Ministry of Education, with enrolment possible using the conditional registration receipt issued when the homologation starts. UNEDasiss applies to EU/IB systems, not to non-European systems like Bangladeshi HSC. UIC also runs its own admission process (application, and for some degrees a test and personal interview). Bangladesh GPA conversion is not stated here.",
+        "postgraduate": "Recognised Bachelor's degree in a relevant field; each master's has its own admission process and documents (not confirmed here)."
+      },
+      "englishRequirements": {
+        "ielts": "For English-taught degrees an English level of B1 – B2 is asked (about IELTS 5.5 – 6.5). For Business Administration in English, B2 must be certified to graduate but is not needed to start.",
+        "toefl": "B2 equivalent (about 72 – 94 iBT) accepted where a certificate is requested"
+      },
+      "tuitionFees": {
+        "undergraduate": "Approx. EUR 4,500 – 15,000 per year depending on the degree (UIC's own published range; the same fees apply to EU and non-EU students)",
+        "postgraduate": "Approx. EUR 2,000 – 15,000 per year depending on the programme (UIC's own published range)",
+        "currency": "EUR"
+      },
+      "intakes": [
+        "September"
+      ],
+      "scholarships": "UIC offers an International Excellence Scholarship (BEI) for international students in the Business Administration English programme; other scholarships exist, details to be confirmed",
+      "studyLevels": [
+        "Bachelor's",
+        "Master's",
+        "PhD"
+      ],
+      "courses": [
+        {
+          "id": 1001,
+          "name": "Business Administration and Management (BBA, taught 100% in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Business Administration and Management"
+          ],
+          "duration": "4 years",
+          "tuitionFee": "Approx. EUR 10,000 – 11,700 per year (estimate from related UIC double-degree listings; confirm with UIC)",
+          "entryRequirements": "Homologated HSC (conditional registration receipt accepted at enrolment); UIC application and admission process.",
+          "englishRequirements": "Taught in English. B2 English certificate required to graduate; studies can begin without it. IELTS not mandatory to start.",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 1002,
+          "name": "Bioengineering (taught in English)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Bioengineering"
+          ],
+          "duration": "4 years",
+          "tuitionFee": "Approx. EUR 12,000 per year (listed by third-party portals; confirm with UIC)",
+          "entryRequirements": "Homologated HSC in Science; UIC admission test and personal interview; limited places (about 40).",
+          "englishRequirements": "Taught in English; B1 – B2 English level asked (certificate or UIC assessment to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 1003,
+          "name": "Dentistry (English programme: English for the first 2 years, Spanish for the last 3)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Dentistry"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "Approx. EUR 16,920 per year (listed by a third-party portal; confirm with UIC)",
+          "entryRequirements": "Homologated HSC in Science (Biology and Chemistry); UIC admission process; competitive and clinical degree.",
+          "englishRequirements": "English-taught only in the first 2 years; Spanish is required for the last 3 years (level to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        },
+        {
+          "id": 1004,
+          "name": "Architecture (English for the first 2.5 years, Spanish for the last 2.5)",
+          "studyLevels": [
+            "Bachelor's"
+          ],
+          "qualifications": [
+            "Bachelor's Degree in Architecture"
+          ],
+          "duration": "5 years",
+          "tuitionFee": "",
+          "entryRequirements": "Homologated HSC; UIC admission process (portfolio or test requirements not confirmed).",
+          "englishRequirements": "English-taught only in the first 2.5 years; Spanish is required for the second half (level to be confirmed).",
+          "intakes": [
+            "September"
+          ]
+        }
+      ]
     }
   ]
 }

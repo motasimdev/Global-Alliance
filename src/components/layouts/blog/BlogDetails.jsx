@@ -17,6 +17,7 @@ const BlogDetails = () => {
   const [ref, inView] = useInView(observerOptions);
   const [ref2, inView2] = useInView(observerOptions);
   // .... animation
+  
   const { slug } = useParams();
   const blog = blogs.find((b) => b.slug === slug);
   const relatedBlogs = blogs.filter((b) => b.slug !== slug);
@@ -26,7 +27,7 @@ const BlogDetails = () => {
   const breadcrumbItems = [
     { to: "/", label: "Home" },
     { to: "/blogs", label: "blog" },
-    { to: "", label: blog.slug },
+    { to: "", label: blog.title },
   ];
 
   return (
