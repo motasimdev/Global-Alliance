@@ -35,6 +35,10 @@ const AppRoutes = createBrowserRouter([
         Component: University,
       },
       {
+        path: "university-details/:slug",
+        Component: universityDetails,
+      },
+      {
         path: "destination",
         Component: Destination,
       },
@@ -55,16 +59,12 @@ const AppRoutes = createBrowserRouter([
         Component: Blog,
       },
       {
-        path: "contact",
-        Component: Contact,
-      },
-      {
         path: "blog/:slug",
         Component: BlogDetails,
       },
       {
-        path: "university-details/:id",
-        Component: universityDetails,
+        path: "contact",
+        Component: Contact,
       },
       {
         path: "login",

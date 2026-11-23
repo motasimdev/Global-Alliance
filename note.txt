@@ -144,3 +144,161 @@ tuitionFees.public
 costOfLivingBreakdown.description	
 workRightsDuringAndAfterStudy.duringStudy	
 postStudyWorkAndPRPathway
+
+
+// university details 
+University Details Page – Design Structure
+1. University Hero Section
+প্রথম section
+
+JSON fields:
+- name
+- shortName
+- logo
+- image
+- country
+- city
+- type
+Design:
+- বাম পাশে university logo, name ও short description।
+- নিচে location এবং university type।
+- ডান পাশে university image অথবা background banner।
+
+2. University Overview / At a Glance
+
+calendariodecolombia.com
+JSON fields:
+- established
+- accreditation
+- studyLevels
+- country
+- city
+Design:
+ছোট ছোট information blocks বা icon-based horizontal layout।
+
+যেমন:
+- Established
+- Location
+- Study Levels
+- Accreditation
+
+
+3. About the University
+JSON field:
+
+- description
+
+Design:
+- University সম্পর্কে বিস্তারিত description।
+- পাশে campus image বা university-related visual।
+- খুব বেশি card ব্যবহার না করে clean editorial layout।
+
+
+4. Available Study Levels
+JSON field:
+
+- studyLevels
+
+Design:
+- Undergraduate
+- Postgraduate
+- Doctoral
+যেগুলো JSON-এ থাকবে শুধু সেগুলোই দেখাবে। চাইলে icon-based horizontal cards করা যায়।
+
+
+5. Admission Requirements
+JSON fields:
+- admissionRequirements.undergraduate
+- admissionRequirements.postgraduate
+Design:
+দুইটি পাশাপাশি section/card:
+Undergraduate
+
+HSC / Equivalent qualification
+Entry Requirements
+
+
+Postgraduate
+
+Bachelor's degree / Equivalent
+Entry Requirements
+
+
+
+6. English Language Requirements
+JSON fields:
+- englishRequirements.ielts
+- englishRequirements.toefl
+Design:
+দুটি পাশাপাশি comparison block বা একটি ছোট table।
+Test	Requirement
+IELTS	JSON-এর value
+TOEFL	JSON-এর value
+
+7. Tuition Fees
+JSON fields:
+- tuitionFees.undergraduate
+- tuitionFees.postgraduate
+- tuitionFees.currency
+Design:
+- Undergraduate tuition
+- Postgraduate tuition
+- Currency
+- Fee period (যদি data-তে থাকে)
+এখানে fee-গুলো পরিষ্কারভাবে দেখানো জরুরি—প্রতি বছর নাকি পুরো programme-এর জন্য।
+
+
+8. Intakes
+JSON field:
+
+- intakes
+
+Design:
+- Intake month অনুযায়ী horizontal timeline বা compact cards।
+- যেমন September, February ইত্যাদি।
+- JSON-এ intake-এর বিস্তারিত থাকলে সেগুলোও দেখাবে।
+
+
+9. Scholarships
+JSON field:
+
+- scholarships
+
+Design:
+- Scholarship-এর নাম।
+- Eligibility বা description (যদি JSON-এ থাকে)।
+- Horizontal option cards।
+
+
+10. Available Courses
+গুরুত্বপূর্ণ section
+JSON field:
+
+- courses
+
+Course object-এর fields:
+- id
+- name
+- studyLevels
+- qualifications
+- duration
+- tuitionFee
+- entryRequirements
+- englishRequirements
+- intakes
+Design:
+- Search/filter option।
+- Course name ও study level।
+- Duration এবং tuition fee।
+- View Details / Expand Details interaction।
+
+
+University Banner
+About the University
+Accreditation & Recognition
+Admission Requirements
+English Language Requirements
+Tuition Fees
+Intakes
+Scholarships
+Available Courses

@@ -1,11 +1,14 @@
 import { useParams, Link } from "react-router";
 import universitiedData from "../../../data/universities.json";
-import PBase from "../../PBase";
-import { FaAngleRight, FaLocationDot } from "react-icons/fa6";
-import intiLogo from "/src/assets/university-logos/INTI-40.webp";
-import Container from "../../Container";
-import Heading from "../../Heading";
-import P18 from "../../P18";
+import Breadcrumb from "../Breadcrumb";
+import UniversityDetails_Banner from "./UniversityDetails_Banner";
+import UniversityDetails_About from "./UniversityDetails_About";
+import UniversityDetails_Accreditation from "./UniversityDetails_Accreditation";
+import UniversityDetails_Admission from "./UniversityDetails_Admission";
+import UniversityDetails_TuitionFees from "./UniversityDetails_TuitionFees";
+import UniversityDetails_Intakes from "./UniversityDetails_Intakes";
+import UniversityDetails_Scholarships from "./UniversityDetails_Scholarships";
+import UniversityDetails_Courses from "./UniversityDetails_Courses";
 
 const UniversityDetails = () => {
   const { slug } = useParams();
@@ -15,17 +18,21 @@ const UniversityDetails = () => {
 
   const breadcrumbItems = [
     { to: "/", label: "Home" },
-    { to: "/university-details", label: "university" },
-    { to: "", label: universitiedData.slug },
+    { to: "/university", label: "university" },
+    { to: "", label: universities.name },
   ];
 
   return (
     <>
       <Breadcrumb items={breadcrumbItems} />
-      <section className="container mx-auto px-4 lg:pt-5 lg:pb-10">
-        <Container> 
-        </Container>
-      </section>
+      <UniversityDetails_Banner university={universities}/>
+      <UniversityDetails_About university={universities}/>
+      <UniversityDetails_Accreditation university={universities}/>
+      <UniversityDetails_Admission university={universities}/>
+      <UniversityDetails_TuitionFees university={universities}/>
+      <UniversityDetails_Intakes university={universities}/>
+      <UniversityDetails_Scholarships university={universities}/>
+      <UniversityDetails_Courses university={universities}/>
     </>
   );
 };

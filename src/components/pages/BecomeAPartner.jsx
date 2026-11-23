@@ -1,12 +1,23 @@
 import Container from "../Container";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Flip, toast } from "react-toastify";
 import PBase from "../PBase";
 import Heading from "../Heading";
 import partnerImage from "/src/assets/become-a-partner/become-partner.svg";
-import axios from "axios";
+
+// ====Apps Script=======
+const convertFileToBase64 = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.readAsDataURL(file);
+
+    reader.onload = () => resolve(reader.result.split(",")[1]);
+    reader.onerror = reject;
+  });
 
 const BecomeAPartner = () => {
+  const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -75,8 +86,14 @@ const BecomeAPartner = () => {
       });
       return;
     }
-    if (formData.universities.length === 0) {
-      toast.error("Select at least one university");
+    // if (formData.universities.length === 0) {
+    //   toast.error("Select at least one university");
+    //   return;
+    // }
+
+    // file validation
+    if (!formData.nid_passport || !formData.company_license) {
+      toast.error("Please upload both required documents");
       return;
     }
     // file require size depends on backend file size limit
@@ -92,33 +109,54 @@ const BecomeAPartner = () => {
       toast.error("Company license file too large (Max 2MB)");
       return;
     }
-    console.log("Form Data", formData);
+
+    // === clear input
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      company_name: "",
+      address: "",
+      universities: "",
+      nid_passport: null,
+      company_license: null,
+    });
+
+    formRef.current?.reset();
+    // === clear input
 
     try {
       setLoading(true);
 
       // ======FormData =========
-      const data = new FormData();
-      data.append("name", formData.name);
-      data.append("email", formData.email);
-      data.append("phone", formData.phone);
-      data.append("company_name", formData.company_name);
-      data.append("address", formData.address);
+      const data = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company_name: formData.company_name,
+        address: formData.address,
 
-      // universities name same name as backend
-      formData.universities.forEach((uni) =>
-        data.append("universities[]", uni),
-      );
-
-      data.append("nid_passport", formData.nid_passport);
-      data.append("company_license", formData.company_license);
-
-      // ====dummy backend API=======
-      await axios.post("https://httpbin.org/post", data, {
-        headers: {
-          "Content-Type": "multipart/form-data",
+        nid_passport: {
+          name: formData.nid_passport.name,
+          mimeType: formData.nid_passport.type,
+          data: await convertFileToBase64(formData.nid_passport),
         },
-      });
+
+        company_license: {
+          name: formData.company_license.name,
+          mimeType: formData.company_license.type,
+          data: await convertFileToBase64(formData.company_license),
+        },
+      };
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbzgbsXFHLprcrDn9jPmdXlZdUVEEjsFwO_AZB7fYuIIHYN2m6LpBeJCmSf_YKAkyyc/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: JSON.stringify(data),
+        },
+      );
 
       //   if (res.data.success) {
       //     toast.success(res.data.message || "Successfully Submited!");
@@ -191,18 +229,25 @@ const BecomeAPartner = () => {
                 />
                 <div className="max-w-4xl mx-auto px-4 mt-8">
                   <form
+                    ref={formRef}
                     onSubmit={handleSubmit}
                     className="bg-white p-6 rounded-2xl shadow-sm space-y-6"
                   >
                     {/* grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div className="flex flex-col gap-y-2">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-name"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Applicant Name <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-name"
                           type="text"
                           name="name"
+                          aria-label="Your Name"
+                          autoComplete="name"
                           placeholder="e.g John Doe"
                           value={formData.name}
                           onChange={handleChange}
@@ -211,12 +256,18 @@ const BecomeAPartner = () => {
                       </div>
 
                       <div className="flex flex-col gap-y-2">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-company-name"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Company Name <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-company-name"
                           type="text"
                           name="company_name"
+                          aria-label="Your Company Name"
+                          autoComplete="organization"
                           placeholder="e.g John Doe Education"
                           value={formData.company_name}
                           onChange={handleChange}
@@ -225,12 +276,18 @@ const BecomeAPartner = () => {
                       </div>
 
                       <div className="flex flex-col gap-y-2">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-email"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Email <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-email"
                           type="email"
                           name="email"
+                          aria-label="Your email"
+                          autoComplete="email"
                           placeholder="e.g johndoe@example.com"
                           value={formData.email}
                           onChange={handleChange}
@@ -238,12 +295,18 @@ const BecomeAPartner = () => {
                         />
                       </div>
                       <div className="flex flex-col gap-y-2">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-phone"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Contact Number <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-phone"
                           type="tel"
                           name="phone"
+                          aria-label="Your Phone"
+                          autoComplete="tel"
                           placeholder="e.g 010000000000"
                           value={formData.phone}
                           onChange={handleChange}
@@ -254,11 +317,17 @@ const BecomeAPartner = () => {
 
                     {/* textarea */}
                     <div className="flex flex-col gap-y-2">
-                      <label className="text-sm font-medium text-gray-700">
+                      <label
+                        htmlFor="partner-address"
+                        className="text-sm font-medium text-gray-700"
+                      >
                         Address <span className="text-red-500">*</span>
                       </label>
                       <textarea
+                        id="partner-address"
                         name="address"
+                        aria-label="Your Address"
+                        autoComplete="street-address"
                         placeholder="123 Main Street, New York, NY 10001"
                         value={formData.address}
                         onChange={handleChange}
@@ -297,13 +366,18 @@ const BecomeAPartner = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       {/* NID / Passport */}
                       <div className="flex flex-col gap-y-2 cursor-pointer">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-passport"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           NID / Passport Copy{" "}
                           <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-passport"
                           type="file"
                           name="nid_passport"
+                          aria-label="Your Passport"
                           accept=".jpg,.jpeg,.png,.pdf"
                           onChange={handleFileChange}
                           className="input file:mr-4 file:px-4 file:py-2 file:rounded-full file:border-0 file:bg-secondary file:text-white cursor-pointer"
@@ -312,13 +386,18 @@ const BecomeAPartner = () => {
 
                       {/* Company License */}
                       <div className="flex flex-col gap-y-2 cursor-pointer">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label
+                          htmlFor="partner-license"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Company License{" "}
                           <span className="text-red-500">*</span>
                         </label>
                         <input
+                          id="partner-license"
                           type="file"
                           name="company_license"
+                          aria-label="Your Company License"
                           accept=".jpg,.jpeg,.png,.pdf"
                           onChange={handleFileChange}
                           className="input file:mr-4 file:px-4 file:py-2 file:rounded-full file:border-0 file:bg-secondary file:text-white cursor-pointer"

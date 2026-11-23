@@ -6,7 +6,6 @@ import PBase from "../../PBase";
 import Heading from "../../Heading";
 import { useState } from "react";
 import { Flip, toast } from "react-toastify";
-import axios from "axios";
 import { useInView } from "/src/hooks/useInView";
 import SubHeading from "../../SubHeading";
 
@@ -63,17 +62,20 @@ const ContactFormAddress = () => {
       return;
     }
 
-    console.log("Form Data", formData);
 
     try {
       setLoading(true);
 
-      // ====dummy backend API=======
-      await axios.post("https://httpbin.org/post", formData, {
-        headers: {
-          "Content-Type": "application/json",
+      // ==== Apps Script =======
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxhFjvWtslLag_C8isl43OqXNM8Uu2xRZaGOFsCuciG_n6hRg-dL2JqA8CinAmPIs8r/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: new URLSearchParams(formData),
         },
-      });
+      );
+      // ==== Apps Script =======
 
       //   if (res.data.success) {
       //     toast.success(res.data.message || "Successfully Submited!");
@@ -203,7 +205,7 @@ const ContactFormAddress = () => {
               {/* ============ email box ========= */}
             </div>
 
-            {/* =================================================================== */}
+            {/* =================== input boxe ================================================ */}
 
             <div className="md:w-[63%]">
               <div className="p-7 bg-secondary rounded-xl">
@@ -228,8 +230,11 @@ const ContactFormAddress = () => {
                     {/* grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <input
+                      id="contact-name"
                         type="text"
                         name="name"
+                        aria-label="Your Name"
+                        autoComplete="name"
                         placeholder="Your Name*"
                         value={formData.name}
                         onChange={handleChange}
@@ -237,8 +242,11 @@ const ContactFormAddress = () => {
                       />
 
                       <input
+                      id="contact-phone"
                         type="tel"
                         name="phone"
+                        aria-label="Your phone"
+                        autoComplete="tel"
                         placeholder="Phone Number*"
                         value={formData.phone}
                         onChange={handleChange}
@@ -246,8 +254,11 @@ const ContactFormAddress = () => {
                       />
 
                       <input
+                      id="contact-email"
                         type="email"
                         name="email"
+                        aria-label="Your email"
+                        autoComplete="email"
                         placeholder="Email Address*"
                         value={formData.email}
                         onChange={handleChange}
@@ -255,8 +266,11 @@ const ContactFormAddress = () => {
                       />
 
                       <input
+                      id="contact-subject"
                         type="text"
                         name="subject"
+                        aria-label="Your subject"
+                        autoComplete="off"
                         placeholder="Subject"
                         value={formData.subject}
                         onChange={handleChange}
@@ -266,7 +280,10 @@ const ContactFormAddress = () => {
 
                     {/* textarea */}
                     <textarea
+                    id="contact-message"
                       name="message"
+                      aria-label="Your message"
+                      autoComplete="message"
                       placeholder="Your Message*"
                       value={formData.message}
                       onChange={handleChange}
@@ -290,7 +307,7 @@ const ContactFormAddress = () => {
             </div>
           </div>
         </Container>
-        <style jsx global>{`
+        <style>{`
           @keyframes reveal {
             from {
               opacity: 0;

@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import Container from "../Container";
-import universitiesandcourses from "../../data/universitiesandcourses.json";
+import universitiesData from "../../data/universities.json";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 import Select from "react-select";
@@ -20,7 +20,7 @@ const University = ({ id }) => {
   const filteredUniversities = useMemo(() => {
     // if (!searchText) return universitiesandcourses.universitiesandcourses;
 
-    return universitiesandcourses.universitiesandcourses.filter((item) => {
+    return universitiesData.universities.filter((item) => {
       //university name search
       if (searchType === "name" && searchText) {
         // return item.name.toLowerCase().includes(searchText);
@@ -176,7 +176,7 @@ const University = ({ id }) => {
                     <button
                       onClick={() =>{
                         console.log("clicked" , uni.id)
-                         navigate(`/university-details/${uni.id}`)
+                         navigate(`/university-details/${uni.slug}`)
                       }}
                       className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 cursor-pointer"
                     >
