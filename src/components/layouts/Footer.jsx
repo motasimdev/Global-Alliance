@@ -49,6 +49,16 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="destination">
+                  <PBase
+                    text={"Destination"}
+                    className={
+                      "font-semibold text-secondary hover:text-primary transition duration-300"
+                    }
+                  />
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="university">
                   <PBase
                     text={"Universities"}
@@ -59,9 +69,9 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="our-services">
+                <NavLink to="recruiter">
                   <PBase
-                    text={"Our Services"}
+                    text={"Recruiter"}
                     className={
                       "font-semibold text-secondary hover:text-primary transition duration-300"
                     }
@@ -94,7 +104,7 @@ const Footer = () => {
             {/* =========icon list========== */}
             <div className="flex items-center justify-center gap-x-3 pt-2 pb-8 lg:pb-15">
               <NavLink
-                to={"https://www.facebook.com/profile.php?id=61588417710246"}
+                to={"https://www.facebook.com/"}
                 target="_blank"
               >
                 <div className="group hover:bg-gray-300 hover:-translate-y-1 transition duration-300 py-3 px-3 bg-secondary rounded-full ">

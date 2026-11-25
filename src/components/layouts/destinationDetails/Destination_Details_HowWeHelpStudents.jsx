@@ -87,7 +87,7 @@ const ChallengeHelpCard = ({ item, index }) => {
           ? `reveal 700ms ease-out ${index * 100}ms both`
           : "none",
       }}
-      className="bg-white rounded-xl border border-secondary/10 overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5"
+      className="flex flex-col bg-white rounded-xl border border-secondary/10 overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5"
     >
       <div className="bg-primary/5 border-b border-secondary/10 p-4">
         <div className="flex items-center gap-2 mb-2">
@@ -102,7 +102,7 @@ const ChallengeHelpCard = ({ item, index }) => {
         </p>
       </div>
 
-      <div className="p-4">
+      <div className="flex-1 p-4 bg-green-100/70">
         <div className="flex items-center gap-2 mb-2">
           <FaHandshake className="text-secondary" />
           <span className="text-sm font-semibold text-secondary uppercase tracking-wide">

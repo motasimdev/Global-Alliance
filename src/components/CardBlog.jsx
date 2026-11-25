@@ -79,7 +79,7 @@ const CardBlog = ({
           {/* Meta Info */}
           <div className="mb-3 flex items-center justify-between text-xs text-gray-500">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 ">
+              {/* <div className="h-10 w-10 ">
                 <img
                   src={miniLogo}
                   alt="logo"
@@ -87,7 +87,7 @@ const CardBlog = ({
                   loading="lazy"
                   decoding="async"
                 />
-              </div>
+              </div> */}
               <FaCalendarAlt size={14} />
               <span>{date}</span>
             </div>

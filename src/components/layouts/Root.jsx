@@ -21,27 +21,21 @@ const Root = () => {
   }, [location.pathname]);
   // =====page navigate to top=====
 
-  useEffect(() => {
-    let throttleTimeout = null;
+ useEffect(() => {
+  const handleScroll = () => {
+    setShow(window.scrollY > 600);
+  };
 
-    // Throttled Scroll Function
-    const handleScroll = () => {
-      if (!throttleTimeout) {
-        throttleTimeout = setTimeout(() => {
-          setShow(window.scrollY > 600);
-          throttleTimeout = null;
-        }, 120); // প্রতি ১২০ মিলিসেকেন্ডে একবার স্টেট চেক হবে, প্রতি ফ্রেমে নয়
-      }
-    };
+  handleScroll();
 
-    // passive: true ব্রাউজারকে স্ক্রোলিং পারফরম্যান্স সর্বোচ্চ করতে সাহায্য করে
-    window.addEventListener("scroll", handleScroll, { passive: true });
+  window.addEventListener("scroll", handleScroll, {
+    passive: true,
+  });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      if (throttleTimeout) clearTimeout(throttleTimeout);
-    };
-  }, []);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
 
   const scrollTop = () => {
     window.scrollTo({
@@ -55,15 +49,16 @@ const Root = () => {
         <Navbar />
         <main>
           <Outlet />
-          <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center gap-3">
+          <div className="fixed bottom-5 right-5 z-1100 flex flex-col items-center gap-3">
             {/* Back-to-top Button (শর্তসাপেক্ষে স্ট্যাকের ওপরে রেন্ডার হবে) */}
             {show && (
               <button
+              type="button"
                 onClick={scrollTop}
-                className="w-11 h-11 md:w-7 md:h-7 bg-white dark:bg-zinc-800 text-secondary rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all hover:scale-110 active:scale-95 border border-gray-100 dark:border-zinc-700"
+                className="w-7 h-7 bg-white dark:bg-zinc-800 text-secondary rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-transform duration-200 hover:scale-110 active:scale-95 border border-gray-100 dark:border-zinc-700"
                 aria-label="Scroll to top"
               >
-                <FaChevronCircleUp className="text-2xl text-white" />
+                <FaChevronCircleUp className="text-2xl text-white pointer-events-none" />
               </button>
             )}
 
@@ -84,7 +79,7 @@ const Root = () => {
               </a>
               {/* মডার্ন ক্লিন পিং অ্যানিমেশন (Tailwind-Safe Standard) */}
               <span
-                className="absolute inset-0 bg-green-600 rounded-full animate-ping opacity-60"
+                className="pointer-events-none absolute inset-0 bg-green-600 rounded-full animate-ping opacity-60"
                 style={{ animationDuration: "2s" }}
               />
             </div>

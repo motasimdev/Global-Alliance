@@ -40,7 +40,7 @@ const UniversityDetails_Accreditation = ({ university }) => {
           </div>
 
           {/* responsive grid of well-designed cards */}
-          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
             {university.accreditation.map((item, index) => (
               <AccreditationCard key={index} item={item} index={index} />
             ))}
@@ -88,7 +88,7 @@ const AccreditationCard = ({ item, index }) => {
           ? `uda-reveal 700ms ease-out ${index * 100}ms both`
           : "none",
       }}
-      className="group relative flex flex-col items-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-md"
+      className="group relative flex w-full flex-col items-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-md sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]"
     >
       <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-tertiary/30 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
         <FaAward className="text-2xl" />

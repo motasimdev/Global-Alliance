@@ -1812,7 +1812,7 @@
       "image": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795600336/Universit%C3%A9-Grenoble-Alpes-image.jpg",
       "logo": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795586749/Logo_Universit%C3%A9_Grenoble_Alpes.svg.webp",
       "website": "https://www.univ-grenoble-alpes.fr/english/",
-      "featured": true,
+      "featured": false,
       "established": 2020,
       "accreditation": [
         "French Ministry of Higher Education and Research (national degrees)",
@@ -1998,7 +1998,7 @@
       "image": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795600455/University-of-Strasbourg-image.jpg",
       "logo": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795586750/Universit%C3%A4t_Stra%C3%9Fburg_logo.svg.webp",
       "website": "https://en.unistra.fr/",
-      "featured": false,
+      "featured": true,
       "established": 1538,
       "accreditation": [
         "French Ministry of Higher Education and Research (national degrees)",
@@ -4057,7 +4057,7 @@
       "image": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795600496/Korea-University-image.jpg",
       "logo": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795586753/Korea_University_logo.svg.webp",
       "website": "https://www.korea.edu/",
-      "featured": false,
+      "featured": true,
       "established": 1905,
       "accreditation": [
         "Ministry of Education, Republic of Korea (recognised university); programme-level accreditations not verified here"
@@ -4263,7 +4263,7 @@
       "image": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795600494/KAIST-image.jpg",
       "logo": "https://res.cloudinary.com/wppvfo9v/image/upload/v1795586753/KAIST_University_logo.svg.webp",
       "website": "https://www.kaist.ac.kr/en/",
-      "featured": true,
+      "featured": false,
       "established": 1971,
       "accreditation": [
         "Established under the KAIST Act (Republic of Korea); programme-level accreditations not verified here"
