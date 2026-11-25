@@ -57,8 +57,8 @@ const Destination_Details_AtAGlance = ({ destination }) => {
       descriptionClassName: "text-secondary/70",
     },
     {
-      title: "Post-Study Options",
-      description: destination.postStudyOverview,
+      title: "Scholarships and Funding",
+      description: destination.scholarshipsAndFunding.overview,
       icon: FaRoute,
       className: "bg-secondary/5 text-secondary lg:col-span-2",
       iconClassName: "bg-secondary/7 text-primary",

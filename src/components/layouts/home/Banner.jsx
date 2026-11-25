@@ -2,13 +2,6 @@ import { useInView } from "../../../hooks/useInView";
 import Container from "../../Container";
 import Select from "react-select";
 import { PiGraduationCapFill } from "react-icons/pi";
-import APU from "/src/assets/university-logos/APU-logo.webp";
-import INTI from "/src/assets/university-logos/INTI-40.webp";
-import NILAI from "/src/assets/university-logos/nilai.webp";
-import LINCOLN from "/src/assets/university-logos/lincoln.webp";
-import UNIRAZAK from "/src/assets/university-logos/Official-UNIRAZAK-Logo.webp";
-import SEGI from "/src/assets/university-logos/SEGi-University-logo.webp";
-import UOW from "/src/assets/university-logos/UOW-logoo.webp";
 import P18 from "../../P18";
 
 import Marquee from "react-fast-marquee";
@@ -32,41 +25,23 @@ const Banner = () => {
   const [ref5, inView5] = useInView(observerOptions);
   const [ref6, inView6] = useInView(observerOptions);
   //counter up
-  const onComplete = () => {
-    console.log("Completed");
-  };
 
-  const onStart = () => {
-    console.log("Started");
-  };
-  //counter up
-
-  //react select
-
-  // const universities = [
-  //   { value: "um", label: "University of Malaya (UM)" },
-  //   { value: "utm", label: "Universiti Teknologi Malaysia (UTM)" },
-  //   { value: "upm", label: "Universiti Putra Malaysia (UPM)" },
-  //   { value: "ukm", label: "Universiti Kebangsaan Malaysia (UKM)" },
-  //   { value: "usm", label: "Universiti Sains Malaysia (USM)" },
-  //   { value: "uim", label: "International Islamic University Malaysia (IIUM)" },
-  //   { value: "monash-my", label: "Monash University Malaysia" },
-  //   { value: "taylor", label: "Taylor’s University" },
-  //   { value: "sunway", label: "Sunway University" },
-  //   { value: "apu", label: "Asia Pacific University (APU)" },
-  // ];
-
-  //react select
-
-  const university_logo = [
-    { name: "APU", logo: APU },
-    { name: "INTI", logo: INTI },
-    { name: "NILAI", logo: NILAI },
-    { name: "LINCOLN", logo: LINCOLN },
-    { name: "UNIRAZAK", logo: UNIRAZAK },
-    { name: "SEGI", logo: SEGI },
-    { name: "UOW", logo: UOW },
-  ];
+const university_logo = Object.entries(
+  import.meta.glob(
+    "/src/assets/university-logos/*.{png,jpg,jpeg,svg,webp}",
+    {
+      eager: true,
+      import: "default",
+    },
+  ),
+).map(([path, logo]) => ({
+  name: path
+    .split("/")
+    .pop()
+    .replace(/\.[^/.]+$/, "")
+    .toUpperCase(),
+  logo,
+}));
   return (
     <>
       <section className="relative bg-linear-to-b from-white to-[#e6e6ec] pt-10 pb-5 md:pb-20 lg:pt-15 lg:pb-30">

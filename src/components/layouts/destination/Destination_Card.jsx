@@ -29,7 +29,7 @@ const Destination_Card = ({ destination = {}, index }) => {
         style={{
           opacity: 0,
           animation: inView
-            ? `reveal 700ms ease-out ${index * 200}ms both`
+            ? `reveal 700ms ease-out ${(index % 3) * 100}ms both`
             : "none",
         }}
         className="group relative h-full bg-white rounded-2xl overflow-hidden border border-secondary/20 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-secondary/80 transition-all duration-300 flex flex-col"

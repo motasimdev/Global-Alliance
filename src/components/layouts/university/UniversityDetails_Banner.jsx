@@ -73,7 +73,7 @@ const UniversityDetails_Banner = ({ university }) => {
             <img
               src={logoImage}
               alt={`${university.name} logo`}
-              className="h-16 w-16 shrink-0 rounded-xl border-2 border-white/30 bg-white/10 object-contain shadow-lg backdrop-blur-sm md:h-20 md:w-20"
+              className="h-16 w-16 shrink-0 rounded-xl border-2 border-white/30 bg-white/50 object-contain shadow-lg backdrop-blur-sm md:h-20 md:w-20"
               onError={(e) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = PLACEHOLDER_LOGO;

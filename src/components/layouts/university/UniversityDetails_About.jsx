@@ -10,6 +10,8 @@ const observerOptions = {
 
 const UniversityDetails_About = ({ university }) => {
   const [ref, inView] = useInView(observerOptions);
+  const [ref2, inView2] = useInView(observerOptions);
+  const [ref3, inView3] = useInView(observerOptions);
 
   if (!university) return null;
 
@@ -26,16 +28,16 @@ const UniversityDetails_About = ({ university }) => {
       />
 
       <Container className="relative z-10">
-        <div
-          ref={ref}
-          style={{
-            opacity: 0,
-            animation: inView ? `uda-reveal 700ms ease-out both` : "none",
-          }}
-          className="mx-auto max-w-4xl"
-        >
+        <div className="mx-auto max-w-4xl">
           {/* section label */}
-          <div className="mb-4 flex items-center justify-center gap-2 md:mb-5">
+          <div
+            ref={ref}
+            style={{
+              opacity: 0,
+              animation: inView ? `uda-reveal 700ms 0ms both` : "none",
+            }}
+            className="mb-4 flex items-center justify-center gap-2 md:mb-5"
+          >
             <span className="inline-flex items-center gap-1.5 rounded-full border border-tertiary bg-tertiary/30 px-3.5 py-1 text-xs font-bold tracking-[0.16em] text-secondary uppercase md:text-sm">
               <HiOutlineBookOpen className="text-primary text-base" />
               About Institution
@@ -43,7 +45,14 @@ const UniversityDetails_About = ({ university }) => {
           </div>
 
           {/* heading */}
-          <h3 className="text-center text-3xl font-bold tracking-tight text-secondary md:text-4xl lg:text-[40px]">
+          <h3
+            ref={ref2}
+            style={{
+              opacity: 0,
+              animation: inView2 ? `uda-reveal 700ms 100ms both` : "none",
+            }}
+            className="text-center text-3xl font-bold tracking-tight text-secondary md:text-4xl lg:text-[40px]"
+          >
             Overview of <span className="text-primary">{university.name}</span>
           </h3>
 
@@ -51,7 +60,14 @@ const UniversityDetails_About = ({ university }) => {
           <div className="mx-auto my-6 h-1 w-20 rounded-full bg-primary md:my-8" />
 
           {/* description box with subtle border and shadow */}
-          <div className="rounded-2xl border border-gray-100 bg-gray-50/70 p-6 shadow-xs backdrop-blur-xs md:p-10 lg:p-6">
+          <div
+            ref={ref3}
+            style={{
+              opacity: 0,
+              animation: inView3 ? `uda-reveal 700ms 100ms both` : "none",
+            }}
+            className="rounded-2xl border border-gray-100 bg-gray-50/70 p-6 shadow-xs backdrop-blur-xs md:p-10 lg:p-6"
+          >
             <p className="text-base leading-relaxed text-gray-700 md:text-lg md:leading-8 whitespace-pre-line">
               {university.description ||
                 `Welcome to ${university.name}. Dedicated to academic excellence, innovative research, and global engagement, this institution provides a vibrant learning environment for students pursuing undergraduate, postgraduate, and doctoral studies.`}
