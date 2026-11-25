@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../../Container";
-import Heading from "../../Heading";
 import PBase from "../../PBase";
 import { useInView } from "/src/hooks/useInView";
 
@@ -33,7 +32,7 @@ const AboutMission = () => {
               }}
               className="lg:col-span-5 lg:col-start-2 lg:row-span-2 lg:row-start-1 group"
             >
-              <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-[2/2] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
+              <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-2/2 rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
                 <img
                   src={
                     "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124584/handshake.jpg"
@@ -43,7 +42,7 @@ const AboutMission = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
 
@@ -80,7 +79,7 @@ const AboutMission = () => {
               }}
               className="lg:col-span-5 lg:col-start-7 lg:row-start-2 lg:row-span-2 group"
             >
-              <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-[2/2] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
+              <div className="relative aspect-3/2 md:aspect-4/2 lg:aspect-2/2 rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl transition-all  duration-400 group-hover:scale-[1.02] group-hover:shadow-[0_0_60px_rgba(67,67,137,0.3)]">
                 <img
                   src={
                     "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794124585/world-wide.jpg"
@@ -90,7 +89,7 @@ const AboutMission = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
             

@@ -74,7 +74,7 @@ const WhyUs = () => {
                       ? "reveal 700ms ease-out 250ms both"
                       : "none",
                   }}
-                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)]"
+                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 "
                 >
                   <div className=" flex gap-x-2 md:gap-x-3 mb-3">
                     <BsCheck2Square className="mt-0.5 md:mt-1 text-sm md:text-base lg:text-[18px] text-secondary transition-all duration-300 group-hover:scale-125 group-hover:text-primary group-hover:rotate-12" />
@@ -97,7 +97,7 @@ const WhyUs = () => {
                       ? "reveal 700ms ease-out 350ms both"
                       : "none",
                   }}
-                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)]"
+                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1"
                 >
                   <div className=" flex gap-x-2 md:gap-x-3 mb-3">
                     <BsCheck2Square className="mt-0.5 md:mt-1 text-sm md:text-base lg:text-[18px] text-secondary transition-all duration-300 group-hover:scale-125 group-hover:text-primary group-hover:rotate-12" />
@@ -120,7 +120,7 @@ const WhyUs = () => {
                       ? "reveal 700ms ease-out 450ms both"
                       : "none",
                   }}
-                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)]"
+                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1"
                 >
                   <div className=" flex gap-x-2 md:gap-x-3 mb-3">
                     <BsCheck2Square className="mt-0.5 md:mt-1 text-sm md:text-base lg:text-[18px] text-secondary transition-all duration-300 group-hover:scale-125 group-hover:text-primary group-hover:rotate-12" />
@@ -143,7 +143,7 @@ const WhyUs = () => {
                       ? "reveal 700ms ease-out 550ms both"
                       : "none",
                   }}
-                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)]"
+                  className="relative bg-white py-4 px-4 group transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1"
                 >
                   <div className=" flex gap-x-2 md:gap-x-3 mb-3">
                     <BsCheck2Square className="mt-0.5 md:mt-1 text-sm md:text-base lg:text-[18px] text-secondary transition-all duration-300 group-hover:scale-125 group-hover:text-primary group-hover:rotate-12" />

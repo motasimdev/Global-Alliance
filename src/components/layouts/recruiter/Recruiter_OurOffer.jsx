@@ -72,7 +72,7 @@ const Recruiter_OurOffer = () => {
               animation: inView ? "reveal 700ms ease-out 300ms both" : "none",
             }}
             F
-            className="relative aspect-[7/5] lg:aspect-[5/4] rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl group"
+            className="relative aspect-7/5 lg:aspect-5/4 rounded-2xl overflow-hidden bg-tertiary/50 shadow-xl group"
           >
             <img
               src={
@@ -96,9 +96,9 @@ const Recruiter_OurOffer = () => {
                       : "none",
                   }}
                   key={index}
-                  className="flex gap-4 p-5 md:p-6 bg-tertiary/30 rounded-xl border border-secondary/10 hover:border-primary/30 hover:shadow-xl hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(67,67,137,0.15)] transition-all duration-300 group"
+                  className="flex gap-4 p-5 md:p-6 bg-tertiary/30 rounded-xl border border-secondary/10 hover:border-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white border border-secondary/10 flex items-center justify-center shadow-sm transition-all duration-300 group-hover:border-primary/30 group-hover:scale-105 group-hover:shadow-[0_10px_30px_rgba(221,21,25,0.2)]">
+                  <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white border border-secondary/10 flex items-center justify-center shadow-sm transition-all duration-300 group-hover:border-primary/30 group-hover:scale-105 group-hover:shadow-[0_10px_30px_rgba(221,21,25,0.2)]">
                     <service.icon className="text-2xl md:text-3xl text-primary strokeWidth={1.5} transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary/90" />
                   </div>
                   <div>

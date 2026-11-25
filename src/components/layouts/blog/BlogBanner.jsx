@@ -1,7 +1,5 @@
 import React from "react";
 import Container from "../../Container";
-import Heading from "../../Heading";
-import P18 from "../../P18";
 import { useInView } from "/src/hooks/useInView";
 import SubHeading from "../../SubHeading";
 

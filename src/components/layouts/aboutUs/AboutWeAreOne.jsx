@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "../../Container";
 import Heading from "../../Heading";
 import PBase from "../../PBase";
@@ -7,7 +7,6 @@ import {
   FiShield,
   FiLink,
   FiHelpCircle,
-  FiArrowRight,
 } from "react-icons/fi";
 import { useInView } from "/src/hooks/useInView";
 import Kicker from "../../Kicker";
@@ -119,22 +118,6 @@ const FeatureCard = ({ feature, index }) => {
           text={feature.description}
           className="text-secondary/80 leading-relaxed"
         />
-
-        {/* <div className="mt-6 pt-4 border-t border-secondary/10 flex items-center justify-between">
-          <span className="text-sm font-medium text-secondary/60">
-            Learn more
-          </span>
-          <div className="relative">
-            <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
-              <FiArrowRight
-                className="text-secondary group-hover:text-white transition-colors duration-300"
-                size={18}
-                strokeWidth={2.5}
-              />
-            </div>
-            <div className="absolute -bottom-2 -right-2 w-16 h-16 rounded-full border-2 border-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div> */}
       </div>
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-3">

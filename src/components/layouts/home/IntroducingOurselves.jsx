@@ -43,7 +43,10 @@ const IntroducingOurselves = () => {
             {/* ============================================================ */}
             <div className="relative lg:flex">
               {/* ================= 1st round  =======-=-=-= */}
-              <div ref={ref} className="group relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+              <div
+                ref={ref}
+                className="group relative bg-tertiary shadow-2xl lg:w-1/2 py-14 px-9 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden"
+              >
                 <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute top-28 right-0"></div>
                 <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute top-60 right-0"></div>
                 <div className="hidden lg:block px-3 py-2 bg-[#434389] absolute bottom-60 right-0"></div>
@@ -55,7 +58,7 @@ const IntroducingOurselves = () => {
                 </div>
                 <LuCircleArrowOutUpRight
                   style={{
-                    opacity:0,
+                    opacity: 0,
                     animation: inView
                       ? "reveal 700ms ease-out 300ms both"
                       : "none",
@@ -64,7 +67,7 @@ const IntroducingOurselves = () => {
                 />
                 <h4
                   style={{
-                    opacity:0,
+                    opacity: 0,
                     animation: inView
                       ? "reveal 700ms ease-out 500ms both"
                       : "none",
@@ -75,7 +78,7 @@ const IntroducingOurselves = () => {
                 </h4>
                 <h4
                   style={{
-                    opacity:0,
+                    opacity: 0,
                     animation: inView
                       ? "reveal 700ms ease-out 700ms both"
                       : "none",
@@ -86,7 +89,7 @@ const IntroducingOurselves = () => {
                 </h4>
                 <p
                   style={{
-                    opacity:0,
+                    opacity: 0,
                     animation: inView
                       ? "reveal 700ms ease-out 900ms both"
                       : "none",
@@ -98,7 +101,7 @@ const IntroducingOurselves = () => {
                 </p>
                 <p
                   style={{
-                    opacity:0,
+                    opacity: 0,
                     animation: inView
                       ? "reveal 700ms ease-out 1100ms both"
                       : "none",
@@ -112,7 +115,10 @@ const IntroducingOurselves = () => {
                 </p>
               </div>
               {/* ================= 2nd round =======-=-=-= */}
-              <div ref={ref2} className="group relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden">
+              <div
+                ref={ref2}
+                className="group relative bg-[#434389] shadow-2xl shadow-gray-600 lg:w-1/2 p-14 md:px-35 md:py-10 lg:px-24 lg:py-16 text-center overflow-hidden"
+              >
                 <div className="hidden lg:block px-3 py-2 bg-tertiary absolute top-28 left-0"></div>
                 <div className="hidden lg:block px-3 py-2 bg-tertiary absolute top-60 left-0"></div>
                 <div className="hidden lg:block px-3 py-2 bg-tertiary absolute bottom-60 left-0"></div>
@@ -122,57 +128,75 @@ const IntroducingOurselves = () => {
                     WHAT WE DO
                   </p>
                 </div>
-                <IoCheckmarkDoneCircleOutline style={{
-                    opacity:0,
+                <IoCheckmarkDoneCircleOutline
+                  style={{
+                    opacity: 0,
                     animation: inView2
                       ? "reveal 700ms ease-out 300ms both"
                       : "none",
-                  }} className="text-4xl lg:text-[50px] text-white mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary" />
-                <h4 style={{
-                    opacity:0,
+                  }}
+                  className="text-4xl lg:text-[50px] text-white mx-auto mb-3 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary"
+                />
+                <h4
+                  style={{
+                    opacity: 0,
                     animation: inView2
                       ? "reveal 700ms ease-out 500ms both"
                       : "none",
-                  }} className="text-base md:text-lg lg:text-[22px] font-semibold text-primary">
+                  }}
+                  className="text-base md:text-lg lg:text-[22px] font-semibold text-primary"
+                >
                   What We Do
                 </h4>
                 <div className="text-left">
-                  <h4 style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 700ms both"
-                      : "none",
-                  }} className="text-2xl md:text-3xl text-white font-bold pt-3">
+                  <h4
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 700ms both"
+                        : "none",
+                    }}
+                    className="text-2xl md:text-3xl text-white font-bold pt-3"
+                  >
                     For Universities
                   </h4>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 800ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 800ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Discover & onboard verified recruitment agents
                     </p>
                   </div>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 800ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 800ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Expand global reach without operational overload
                     </p>
                   </div>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 800ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 800ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Monitor performance, compliance, and pipeline in real-time
@@ -180,42 +204,54 @@ const IntroducingOurselves = () => {
                   </div>
                 </div>
                 <div className="text-left mt-3">
-                  <h4 style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 1000ms both"
-                      : "none",
-                  }} className="text-2xl md:text-3xl text-white font-bold">
+                  <h4
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 1000ms both"
+                        : "none",
+                    }}
+                    className="text-2xl md:text-3xl text-white font-bold"
+                  >
                     For Education Agents
                   </h4>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 1100ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 1100ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white ">
                       Get connected to top institutions worldwide
                     </p>
                   </div>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 1100ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 1100ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Access a streamlined application and reporting system
                     </p>
                   </div>
-                  <div style={{
-                    opacity:0,
-                    animation: inView2
-                      ? "reveal 700ms ease-out 1100ms both"
-                      : "none",
-                  }} className="flex items-start gap-x-1">
+                  <div
+                    style={{
+                      opacity: 0,
+                      animation: inView2
+                        ? "reveal 700ms ease-out 1100ms both"
+                        : "none",
+                    }}
+                    className="flex items-start gap-x-1"
+                  >
                     <MdOutlineDoneAll className="text-sm md:text-base lg:text-[18px] font-medium text-white shrink-0 mt-1" />
                     <p className="text-sm md:text-base lg:text-[18px] font-medium text-white">
                       Strengthen credibility through verification and

@@ -55,7 +55,7 @@ const Recruiter_HowItWork = () => {
 
         <div className="relative">
           <div className="hidden lg:block absolute top-20 left-1/2 -translate-x-1/2 w-full h-px bg-secondary/10" />
-          <div className="hidden lg:block absolute top-20 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
+          <div className="hidden lg:block absolute top-20 left-1/2 -translate-x-1/2 w-full h-px bg-linear-to-r from-transparent via-secondary/30 to-transparent" />
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {steps.map((step, index) => (
@@ -71,7 +71,7 @@ const Recruiter_HowItWork = () => {
                 className="relative flex flex-col items-center text-center group"
               >
                 <div className="relative z-10 mb-6">
-                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border-1 border-secondary/10 flex items-center justify-center shadow-lg relative transition-all duration-500 group-hover:border-primary/50 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.3)]">
+                  <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border border-secondary/10 flex items-center justify-center shadow-lg relative transition-all duration-500 group-hover:border-primary/50 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(221,21,25,0.3)]">
                     <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-secondary transition-all duration-500 group-hover:text-primary group-hover:scale-110">
                       {step.number}
                     </span>

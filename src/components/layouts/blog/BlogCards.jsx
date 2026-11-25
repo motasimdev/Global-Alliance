@@ -18,7 +18,6 @@ const BlogCards = () => {
       <section className="py-11 lg:py-10 ">
         <Container>
           <div className="relative md:w-1/2 m-auto mb-7 md:mb-10">
-            {/* <label className="text-gray-500 md:pl-3">Search by University</label> */}
             <input
               onChange={(e) => setSearch(e.target.value)}
               type="search"

@@ -77,11 +77,6 @@ const ContactFormAddress = () => {
       );
       // ==== Apps Script =======
 
-      //   if (res.data.success) {
-      //     toast.success(res.data.message || "Successfully Submited!");
-      //   } else {
-      //     toast.error(res.data.message || "Something went wrong!");
-      //   }
       toast.success("Successfully Submited!", {
         position: "top-center",
         autoClose: 1000,
