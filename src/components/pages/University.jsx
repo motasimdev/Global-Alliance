@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Container from "../Container";
 import universitiesData from "../../data/universities.json";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
@@ -55,7 +55,7 @@ const University = ({ id }) => {
         const degrees = selectedDegrees.map((d) => d.value);
         if (
           !item.courses.some((c) =>
-            c.labelofinterest.some((l) => degrees.includes(l)),
+            c.studyLevels?.some((level) => degrees.includes(level)),
           )
         ) {
           return false;
@@ -81,8 +81,8 @@ const University = ({ id }) => {
   };
 
   const degreeOptions = [
-    { value: "Bachelor", label: "Bachelor" },
-    { value: "Masters", label: "Masters" },
+    { value: "Bachelor's", label: "Bachelor's" },
+    { value: "Master's", label: "Master's" },
     { value: "PhD", label: "PhD" },
     { value: "MBA", label: "MBA" },
     { value: "MBBS", label: "MBBS" },
@@ -101,33 +101,63 @@ const University = ({ id }) => {
           <div className="lg:py-4">
             {/* Search & Filter */}
 
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center md:space-x-4 space-y-4 md:space-y-0 mb-6 bg-tertiary p-3">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center md:space-x-4 space-y-4 md:space-y-0 mb-6 bg-gray-200 p-3">
               {/* ======= search name ======== */}
-              <div className="relative  md:w-1/3">
+              <div className="relative md:w-1/3">
                 <label className="text-gray-500">Search by University</label>
 
                 <input
+                  value={searchType === "name" ? searchText : ""}
                   onChange={(e) => handleSearch(e, "name")}
                   type="text"
                   placeholder="Search by university"
-                  className="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none bg-white"
+                  className="border border-gray-300 rounded px-4 py-2 pr-10 w-full focus:outline-none bg-white"
                 />
+
+                {searchType === "name" && searchText && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchText("");
+                      setCurrentPage(0);
+                    }}
+                    className="absolute right-3 bottom-2.5 text-gray-400 hover:text-gray-700 cursor-pointer"
+                    aria-label="Clear university search"
+                  >
+                    <FaTimes />
+                  </button>
+                )}
               </div>
               {/* ======= search name ======== */}
 
               {/* ======= search coures ======== */}
-              <div className="relative  md:w-1/3">
+              <div className="relative md:w-1/3">
                 <label className="text-gray-500">Search by Course</label>
 
                 <input
+                  value={searchType === "course" ? searchText : ""}
                   onChange={(e) => handleSearch(e, "course")}
                   type="text"
                   placeholder="Search by course"
-                  className="border border-gray-300 rounded px-4 py-2 w-full focus:outline-none bg-white"
+                  className="border border-gray-300 rounded px-4 py-2 pr-10 w-full focus:outline-none bg-white"
                 />
-              </div>
 
+                {searchType === "course" && searchText && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchText("");
+                      setCurrentPage(0);
+                    }}
+                    className="absolute right-3 bottom-2.5 text-gray-400 hover:text-gray-700 cursor-pointer"
+                    aria-label="Clear course search"
+                  >
+                    <FaTimes />
+                  </button>
+                )}
+              </div>
               {/* ======= search coures ======== */}
+
 
               {/* ========== dropdown menus ===== */}
 
@@ -140,10 +170,23 @@ const University = ({ id }) => {
                   onChange={(options) => setSelectedDegrees(options || [])}
                   isMulti
                   options={degreeOptions}
+                  isSearchable={false}
                 />
               </div>
               {/* ========== dropdown menus ===== */}
             </div>
+
+            {/* Result Count */}
+            <div className="flex items-center justify-between mb-4">
+              <p className="text-secondary font-medium">
+                Showing{" "}
+                <span className="text-primary font-bold">
+                  {filteredUniversities.length}
+                </span>{" "}
+                Universities
+              </p>
+            </div>
+            {/* Result Count */}
 
             {/* University List */}
             <div className="space-y-4">
@@ -213,7 +256,7 @@ const UniversityCard = ({ uni, index, navigate }) => {
           ? `university-reveal 700ms ease-out ${(index % 3) * 100}ms both`
           : "none",
       }}
-      className="text-center md:text-left flex flex-col md:flex-row items-center md:items-start bg-secondary/90 border border-gray-300 rounded px-4 py-8 hover:shadow-lg transition-shadow"
+      className="text-center md:text-left flex flex-col md:flex-row items-center md:items-start bg-secondary border border-gray-300 rounded px-4 py-8 hover:shadow-lg transition-shadow"
     >
       {/* Image */}
       <img

@@ -13,126 +13,21 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Kicker from "../../Kicker";
 import SubHeading from "../../SubHeading";
 import { useInView } from "/src/hooks/useInView";
+import universitiesData from "/src/data/universities.json";
 
-const universities = [
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124634/asia-pacific-university.webp",
-    name: "Asia Pacific University",
-    heading: "Asia Pacific University of Technology & Innovation",
-    country: "Malaysia",
-    city: "Kuala Lumpur",
-    description:
-      "A leading university in technology, innovation, and creative industries with strong industry partnerships and global recognition.",
-    studyLevels: "Foundation, Bachelor's, Master's, PhD",
-    type: "Private University",
-    to: "https://www.apu.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/cyberjaya-university.webp",
-    name: "Cyberjaya University",
-    heading: "Cyberjaya University College of Medical Sciences",
-    country: "Malaysia",
-    city: "Cyberjaya",
-    description:
-      "Specialized in medical sciences and henamehcare education with modern facilities and clinical partnerships.",
-    studyLevels: "Diploma, Bachelor's, Master's",
-    type: "Medical University",
-    to: "https://cyberjaya.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/inti-university.webp",
-    name: "INTI International University",
-    heading: "INTI International University & Colleges",
-    country: "Malaysia",
-    city: "Nilai",
-    description:
-      "Part of the Laureate International Universities network, offering diverse programs with global pathways.",
-    studyLevels: "Foundation, Bachelor's, Master's",
-    type: "Private University",
-    to: "https://newinti.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124635/lincoln-university.webp",
-    name: "Lincoln University College",
-    heading: "Lincoln University College",
-    country: "Malaysia",
-    city: "Petaling Jaya",
-    description:
-      "Established institution with focus on henameh sciences, engineering, and business programs.",
-    studyLevels: "Diploma, Bachelor's, Master's, PhD",
-    type: "Private University",
-    to: "https://www.lincoln.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124636/nilai-university.webp",
-    name: "Nilai University",
-    heading: "Nilai University",
-    country: "Malaysia",
-    city: "Nilai",
-    description:
-      "Offers industry-relevant programs with emphasis on hospitality, business, and engineering fields.",
-    studyLevels: "Diploma, Bachelor's, Master's",
-    type: "Private University",
-    to: "https://www.nilai.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794337308/segi-university.webp",
-    name: "SEGi University",
-    heading: "SEGi University & Colleges",
-    country: "Malaysia",
-    city: "Kota Damansara",
-    description:
-      "One of Malaysia's largest private higher education groups with diverse program offerings.",
-    studyLevels: "Foundation, Bachelor's, Master's, PhD",
-    type: "Private University",
-    to: "https://www.segi.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124637/Taylors-University.webp",
-    name: "Taylor's University",
-    heading: "Taylor's University",
-    country: "Malaysia",
-    city: "Subang Jaya",
-    description:
-      "Renowned for hospitality, business, and communication programs with strong global rankings.",
-    studyLevels: "Foundation, Bachelor's, Master's, PhD",
-    type: "Private University",
-    to: "https://university.taylors.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124638/unirazak-university.webp",
-    name: "UNIRAZAK",
-    heading: "Universiti Tun Abdul Razak (UNIRAZAK)",
-    country: "Malaysia",
-    city: "Kuala Lumpur",
-    description:
-      "Specialized in business, governance, and leadership education with flexible learning options.",
-    studyLevels: "Bachelor's, Master's, PhD",
-    type: "Private University",
-    to: "https://unirazak.edu.my/",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/wppvfo9v/image/upload/v1794124638/wollongong-university.webp",
-    name: "University of Wollongong Malaysia",
-    heading: "University of Wollongong Malaysia",
-    country: "Malaysia",
-    city: "Kota Damansara",
-    description:
-      "Australian university branch campus delivering globally recognized degrees in Malaysia.",
-    studyLevels: "Foundation, Bachelor's, Master's",
-    type: "International Branch Campus",
-    to: "https://www.uow.edu.my/",
-  },
-];
+const universities = universitiesData.universities
+  .filter((uni) => uni.featured)
+  .map((uni) => ({
+    image: uni.image,
+    name: uni.name || uni.shortname,
+    heading: uni.name,
+    country: uni.country,
+    city: uni.city,
+    description: uni.description,
+    studyLevels: uni.studyLevels?.join(", ") || "",
+    type: uni.type,
+    to: uni.website,
+  }));
 
 const OurPartnersU = () => {
   const observerOptions = {
