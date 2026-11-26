@@ -1743,5 +1743,586 @@
         "notes": "Growing across all sectors"
       }
     ]
+  },
+  {
+    "id": 4,
+    "slug": "uk",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "flag": "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794148266/irelandflag.jpg",
+    "image": "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794125485/ireland.jpg",
+    "banner": "https://res.cloudinary.com/wppvfo9v/image/upload/f_auto,q_auto,w_800/v1794148413/irelandbanner.jpg",
+    "shortDescription": "One-year masters, Russell Group brands and the two-year Graduate Route.",
+    "intakeOverview": "September, January, and select May intakes",
+    "tuitionFeesOverview": "£14,000–32,000 / year for master’s programmes.",
+    "workRightOverview": "20 hours/week during term, 40 hours/week during holidays. Third Level Graduate Scheme: 1–2 years post-study work depending on qualification.",
+    "postStudyOverview": "Third Level Graduate Scheme: generally 12 months for eligible Level 8 graduates and up to 24 months for eligible Level 9 or higher graduates, subject to scheme conditions.",
+    "overview": "The UK’s one-year master’s format keeps total cost competitive despite higher tuition, and the Graduate Route still grants two years (three for PhD) of unsponsored work. The 2025 restriction of dependant visas to research programmes changed family-planning advice, but demand from Indian students remains strong for business, data and engineering masters.",
+    "featured": true,
+
+    "tuitionFees": {
+      "public": {
+        "low": 10000,
+        "typical": 14000,
+        "high": 18000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Actual fees depend on the university, region, degree and student status."
+      },
+      "private": {
+        "low": 18000,
+        "typical": 22000,
+        "high": 25000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "Dummy estimates. Verify fees for each institution and program."
+      }
+    },
+
+    "costOfLivingBreakdown": {
+      "description": "€1,000–1,500 / month; Dublin highest, Galway and Limerick more affordable.",
+      "underDescription": "Use the figure above as a planning baseline; actual spend varies by city and lifestyle."
+    },
+
+    "workRightsDuringAndAfterStudy": {
+      "duringStudy": {
+        "headline": "Work Rights During Study (Stamp 2)",
+        "opportunity": "20 hours/week during term time; 40 hours/week during designated holidays.",
+        "summary": "International students on Stamp 2 are legally authorized to work part-time during academic terms and full-time during official holiday periods.",
+        "rules": [
+          "Limited to 20 hours/week during academic terms and 40 hours/week during summer and winter breaks.",
+          "National Minimum Wage is €14.15/hour (2026), making monthly part-time earnings of €1,000–€1,300 realistic.",
+          "On-campus roles and graduate teaching assistantships typically pay €14–€18/hour.",
+          "Tech internships offer €2,000–€3,500/month and frequently transition into full-time graduate roles.",
+          "A Personal Public Service (PPS) number must be obtained upon arrival before starting any paid employment."
+        ]
+      },
+      "afterStudy": {
+        "headline": "Post-Study Work Visa (Stamp 1G / Third Level Graduate Scheme)",
+        "opportunity": "12-month (Bachelor's Level 8) or 24-month (Master's Level 9 / PhD Level 10) post-study work authorization.",
+        "summary": "Eligible non-EU graduates can obtain Stamp 1G permission to work full-time (up to 40 hours/week) while seeking skilled employment in Ireland.",
+        "rules": [
+          "Must graduate from an eligible program listed on the Interim List of Eligible Programmes (ILEP).",
+          "Stamp 1G allows full-time job search and employment without requiring employer sponsorship initially.",
+          "Graduates can transition from Stamp 1G to a Critical Skills Employment Permit (CSEP) or General Employment Permit (GEP) upon securing a qualifying job offer."
+        ]
+      }
+    },
+
+    "intakesAndDeadlines": [
+      {
+        "intake": "Autumn (Primary)",
+        "starts": "September",
+        "applicationWindow": "October–May (rolling)",
+        "notes": "Full programme catalogue"
+      },
+      {
+        "intake": "Spring (secondary)",
+        "starts": "January",
+        "applicationWindow": "August-October",
+        "notes": "Limited programmes; genuine second chance"
+      }
+    ],
+
+    "admissionRequirementsAndEligibility": {
+      "academic": [
+        "Relevant previous academic qualification.",
+        "60%+ for most universities, 65%+ for Trinity and UCD; backlogs assessed case by case.",
+        "Three-year and four-year bachelor's accepted for master's.",
+        "Equivalence/recognition of degree required; formal Homologation may be needed for regulated professions."
+      ],
+      "language": [
+        "English: IELTS 6.5 (no band below 6.0) or TOEFL 88–90; some programmes ask for 7.0.",
+        "Medium of Instruction (MOI) certificate may be accepted by select private institutions."
+      ],
+      "financial": [
+        "Proof of sufficient financial means (e.g., bank statement) to cover tuition fees and living expenses as required for university admission and visa application."
+      ],
+      "other": [
+        "GMAT: required for some MBA and finance programmes; GRE rarely required.",
+        "SOP, CV, two LORs and proof of funds.",
+        "Work experience: 0–2 years for most master's; 3+ for MBA.",
+        "RCSI medicine: separate entrance requirements and higher English threshold."
+      ],
+      "notes": "Requirements vary by institution, degree level, program and applicant circumstances."
+    },
+
+    "applicationProcessStepByStep": [
+      {
+        "step": 1,
+        "title": "Program Shortlisting",
+        "description": "Shortlist 5–8 programmes across reach, match and safe categories."
+      },
+      {
+        "step": 2,
+        "title": "Direct Application Submission",
+        "description": "Apply directly on each university's portal (no centralised system)."
+      },
+      {
+        "step": 3,
+        "title": "Document Submission & Fee Payment",
+        "description": "Submit transcripts, IELTS, SOP, CV and LORs; pay application fee where applicable."
+      },
+      {
+        "step": 4,
+        "title": "Receive Admission Decision",
+        "description": "Receive offer (conditional or unconditional) within 2–6 weeks."
+      },
+      {
+        "step": 5,
+        "title": "Offer Acceptance & Deposit",
+        "description": "Accept and pay the tuition deposit to secure the place."
+      },
+      {
+        "step": 6,
+        "title": "Prepare Visa Documentation",
+        "description": "Build the visa file: AVATS application, €10,000 proof of funds, insurance."
+      },
+      {
+        "step": 7,
+        "title": "Biometrics & Visa Processing",
+        "description": "Biometrics at VFS; decision in 4–8 weeks."
+      },
+      {
+        "step": 8,
+        "title": "IRP Registration on Arrival",
+        "description": "IRP registration within 90 days of arrival."
+      }
+    ],
+
+    "popularCourses": [
+      "MSc Computer Science and AI",
+      "MSc Data Science and Analytics ",
+      "MSc Business Analytics and Finance ",
+      "MSc Pharmaceutical and Biotech",
+      "MSc Mechanical and Electronic Engineering",
+      "MSc Cybersecurity",
+      "MSc Cloud Computing and Software Development"
+    ],
+
+    "scholarshipsAndFunding": {
+      "description": "Map eligibility at the shortlisting stage, not after the offer. The same student who looks expensive at headline tuition frequently becomes viable once one of these awards is secured.",
+      "overview": "Government of Ireland International Education Scholarships (€10,000), university merit awards, HEA-funded programmes.",
+      "fundingOptions": [
+        {
+          "name": "UCD Ad Astra / merit awards",
+          "fundingAmount": "€2,000–6,000",
+          "details": "Top-ranked applicants; varies by programme.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "name": "Maynooth University / UL awards",
+          "fundingAmount": "€1,000–3,000",
+          "details": "Programme-specific merit awards for international students.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "name": "Trinity College Global Excellence",
+          "fundingAmount": "€2,000–5,000",
+          "details": "Postgraduate applicants with strong academics; automatic consideration.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "name": "University of Galway merit scholarships",
+          "fundingAmount": "€1,500–4,000",
+          "details": "Bangladesh and international postgraduate applicants.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        },
+        {
+          "name": "Research Ireland funding",
+          "fundingAmount": "Full stipend + fees",
+          "details": "Research master's/PhD in SFI-funded centres; via supervisor.",
+          "eligibility": "Depends on the university, programme, academic results and scholarship rules."
+        }
+      ]
+    },
+
+    "postStudyWorkAndPRPathway": {
+      "summary": "Eligible graduates may receive post-study permission under the Third Level Graduate Scheme. With a qualifying job offer, they may be eligible for a Critical Skills Employment Permit or General Employment Permit, subject to current salary thresholds and permit conditions. Critical Skills permit holders may become eligible for Stamp 4 permission after 21 months of qualifying employment. Long-term residence and citizenship have separate eligibility and reckonable-residence requirements.",
+      "pathways": [
+        {
+          "name": "Third Level Graduate Scheme",
+          "description": " 24 months stay-back (Stamp 1G) for master's graduates.",
+          "eligibility": ""
+        },
+        {
+          "name": "Critical Skills Permit",
+          "description": "shortage occupations, €40,900–68,900 salary; no labour-market test.",
+          "eligibility": ""
+        },
+        {
+          "name": "General Employment Permit",
+          "description": "Requires a qualifying job offer and compliance with the applicable salary threshold, occupation rules and labour-market test requirements, where applicable.",
+          "eligibility": ""
+        },
+        {
+          "name": "Long-term residence",
+          "description": "Generally requires five years of qualifying residence based on eligible employment-permit conditions; student and graduate permissions do not automatically count.",
+          "eligibility": ""
+        },
+        {
+          "name": "Citizenship",
+          "description": "Generally requires five years of reckonable residence, subject to immigration-status and other eligibility requirements.",
+          "eligibility": ""
+        }
+      ],
+      "prNotes": ""
+    },
+
+    "challengesAndHowWeHelp": [
+      {
+        "challenge": "Choosing the right university",
+        "howWeHelp": "Help compare programs, entry requirements and study options."
+      },
+      {
+        "challenge": "Preparing application documents",
+        "howWeHelp": "Provide document checklists and application coordination."
+      },
+      {
+        "challenge": "Understanding visa requirements",
+        "howWeHelp": "Share current official guidance and help organize the required documents."
+      },
+      {
+        "challenge": "Planning the budget",
+        "howWeHelp": "Help students estimate tuition and living costs using institution-specific information."
+      }
+    ],
+
+    "whoThisDestinationSuitsBest": [
+      "Ireland suits English-speaking, tech- and pharma-focused students who want to study in an English-speaking EU country and a clean post-study work route — especially CS, data, cybersecurity and pharma graduates who can manage Dublin’s tighter accommodation market."
+    ],
+
+    "currentTrendsAndB2BOpportunities": {
+      "description": "Ireland’s tech and pharma sectors continue hiring international graduates. The Critical Skills Employment Permit list expands for STEM and healthcare. English-taught, EU-based, and PR-achievable — a strong UK alternative.",
+      "trends": [
+        "Interest in international study options across different degree levels.",
+        "Demand for clear guidance on tuition, admission and visa processes."
+      ],
+      "b2bOpportunities": [
+        "Develop relationships with eligible education institutions.",
+        "Provide accurate program information to recruitment partners.",
+        "Improve application coordination and student support."
+      ],
+      "notes": "These are illustrative ideas, not verified market-trend findings."
+    },
+
+    "faqs": [
+      {
+        "question": "Is there a blocked account for Ireland?",
+        "answer": "No. Ireland requires proof of funds rather than a blocked account, plus private medical insurance. This makes the financial setup simpler than Germany’s."
+      },
+      {
+        "question": "Is accommodation really that hard in Dublin?",
+        "answer": "Dublin student housing is scarce and expensive — we set realistic expectations early and help arrange confirmed accommodation before travel where possible."
+      },
+      {
+        "question": "How long can I work after graduating in Ireland?",
+        "answer": "Eligible graduates may qualify for 12 months of post-study permission at Level 8 or up to 24 months at Level 9 or higher, subject to the Third Level Graduate Scheme conditions."
+      },
+      {
+        "question": "Is Ireland cheaper than the UK?",
+        "answer": "Tuition is comparable (€10,000–25,000 vs £14,000–32,000),but costs vary by city and programme. Ireland is an EU member but is not part of the Schengen Area, and student dependants are generally not permitted under the standard student permission. Dublin living costs rival London, so consider Cork, Galway or Limerick for better value."
+      },
+      {
+        "question": "What is the Critical Skills Employment Permit?",
+        "answer": "The Critical Skills Employment Permit is available for eligible occupations and qualifying job offers that meet the applicable salary and permit conditions. It does not require a labour-market needs test. Eligible permit holders may qualify for Stamp 4 permission after 21 months of qualifying employment."
+      },
+      {
+        "question": "Do I need to show proof of funds for the visa?",
+        "answer": "Yes — €10,000 per year of study plus tuition, held in accessible funds. The source of funds is scrutinised, so keep a clean 3–6 month trail before applying."
+      },
+      {
+        "question": "Can my spouse join me in Ireland?",
+        "answer": "Yes — Critical Skills permit holders can bring dependants with work rights. On the student visa, dependants are generally not permitted, so plan the family timeline around the post-study permit."
+      },
+      {
+        "question": "Are there January intakes in Ireland?",
+        "answer": "Yes — many universities offer a January intake with a limited programme set. It is a genuine second chance for students who miss the September deadlines."
+      }
+    ],
+
+    "completeBrief": [
+      "Ireland is the clearest English-language alternative inside the European Union. It hosts the European headquarters of Google, Meta, Apple, Intel, Pfizer and a dense pharmaceutical cluster, and its Third Level Graduate Scheme gives master's graduates 24 months to find work without sponsorship. For students who want a UK-style education while staying inside the EU, Ireland is usually the strongest fit.",
+      "The constraint is cost, particularly housing. Dublin rents are among the highest in Europe and supply is genuinely tight, so accommodation must be secured before departure rather than on arrival. Universities outside Dublin — Cork, Galway, Limerick — offer materially better value with comparable programme quality and strong regional employer links.",
+      "Ireland's Critical Skills Employment Permit is the fastest work-permit route for graduates in shortage occupations (IT, engineering, healthcare, finance), and it does not require a labour-market test. Eligible Critical Skills Employment Permit holders may qualify for Stamp 4 permission after 21 months of qualifying employment. Long-term residence and citizenship follow separate eligibility rules.",
+      "For partners, Ireland converts best when financial documentation is impeccable and accommodation is treated as a pipeline stage rather than an afterthought. Refusals here trace to funds-source questions more often than academic weakness, so verify the source of funds before the visa file is built."
+    ],
+
+    "fullCostBreakdown": [
+      {
+        "costItem": "Tuition (master)",
+        "low": 10000,
+        "typical": 18000,
+        "high": 25000,
+        "currency": "EUR",
+        "period": "year",
+        "notes": "public"
+      },
+      {
+        "costItem": "Rent (shared, outside Dublin)",
+        "low": 500,
+        "typical": 750,
+        "high": 1300,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "in Dublin"
+      },
+      {
+        "costItem": "Phone, internet, leisure",
+        "low": 100,
+        "typical": 150,
+        "high": 220,
+        "currency": "EUR",
+        "period": "month",
+        "notes": ""
+      },
+      {
+        "costItem": "Food and groceries",
+        "low": 250,
+        "typical": 320,
+        "high": 420,
+        "currency": "EUR",
+        "period": "month",
+        "notes": ""
+      },
+      {
+        "costItem": "Transport (student pass)",
+        "low": 40,
+        "typical": 65,
+        "high": 100,
+        "currency": "EUR",
+        "period": "month",
+        "notes": "local transport plans vary."
+      },
+      {
+        "costItem": "Health insurance",
+        "low": 40,
+        "typical": 60,
+        "high": 80,
+        "currency": "EUR",
+        "period": "month",
+        "notes": ""
+      },
+      {
+        "costItem": "Monthly total (excl. tuition)",
+        "low": 930,
+        "typical": 1345,
+        "high": 2120,
+        "currency": "EUR",
+        "period": "month",
+        "notes": ""
+      }
+    ],
+
+    "prosAndCons": {
+      "advantages": [
+        "Fully English-taught with EU membership.",
+        "24-month post-study stay-back under the Third Level Graduate Scheme.",
+        "Critical Skills Employment Permit provides a fast route to long-term residence.",
+        "Dense employer base in technology, pharmaceuticals, medtech and financial services.",
+        "Two intakes (September and January) give a genuine second chance.",
+        "Spouse reunion available for Critical Skills permit holders."
+      ],
+      "tradeOffsToDisclose": [
+        "Tuition of €10,000–25,000 plus high living costs makes it a mid-to-premium option.",
+        "Dublin housing shortage is severe; late applicants struggle.",
+        "Proof of funds of €10,000 per year must be demonstrated before the visa decision.",
+        "Competition for graduate roles is high in Dublin's concentrated market.",
+        "Stamp 2 work limit of 20 hours/week term-time is strictly enforced."
+      ]
+    },
+
+    "applicationAndVisaProcess": [
+      {
+        "step": 1,
+        "title": "Application and offer",
+        "description": "Apply directly to the university, typically between October and May for a September start."
+      },
+      {
+        "step": 2,
+        "title": "Deposit payment",
+        "description": "Pay the tuition deposit or full fee; the receipt is required for the visa application."
+      },
+      {
+        "step": 3,
+        "title": "Accommodation",
+        "description": "Secure housing before applying for the visa where possible — Dublin supply disappears by July."
+      },
+      {
+        "step": 4,
+        "title": "AVATS online application",
+        "description": "Complete the D-study visa application, upload financials showing €10,000 available, insurance and academic records."
+      },
+      {
+        "step": 5,
+        "title": "Biometrics and submission",
+        "description": "Submit at VFS with the summary form, passport and supporting documents. Processing runs 4–8 weeks."
+      },
+      {
+        "step": 6,
+        "title": "IRP registration",
+        "description": "Register with immigration within 90 days of arrival and receive the Irish Residence Permit."
+      }
+    ],
+
+    "documentChecklist": [
+      "Unconditional offer letter from an Irish institution",
+      "Tuition payment or deposit receipt",
+      "Evidence of €10,000 in accessible funds (plus tuition)",
+      "Private medical insurance covering the study period",
+      "Academic transcripts and English proficiency certificate",
+      "Statement of purpose explaining study and career plan",
+      "Passport and AVATS application summary",
+      "Accommodation confirmation where available"
+    ],
+
+    "partnerOperatingNotes": [
+      "Financial documentation quality drives refusals here more than academics — verify the source of funds.",
+      "Book accommodation as a pipeline stage, not an afterthought; it affects arrival and enrolment.",
+      "January intakes are a genuine second chance for students who miss September.",
+      "Position Ireland as the English-speaking EU alternative to the UK without the dependant restrictions."
+    ],
+
+    "practicalTips": [
+      "Look beyond Dublin: Cork, Galway and Limerick cut living costs by 30% with strong employers nearby.",
+      "Apply for on-campus accommodation the day you accept the offer.",
+      "Use the 20-hour term-time work allowance from the first month; hourly rates are among the EU's highest.",
+      "Target Critical Skills list occupations to shorten the route to long-term residence.",
+      "Hold the €10,000 proof-of-funds in a single account for 3–6 months before applying.",
+      "Register for the IRP within 90 days of arrival or your legal status lapses."
+    ],
+
+    "accommodation": {
+      "options": [
+        {
+          "type": "On-campus residence",
+          "costRange": {
+            "low": 500,
+            "high": 900,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Apply the day you accept the offer — waitlists are long.",
+          "bestFor": "Students wanting cheapest option."
+        },
+        {
+          "type": "Shared apartment",
+          "costRange": {
+            "low": 600,
+            "high": 1100,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "In Dublin, €450–750 elsewhere.",
+          "bestFor": "Budget-conscious students looking to share living expenses."
+        },
+        {
+          "type": "Private studio",
+          "costRange": {
+            "low": 900,
+            "high": 1500,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "In Dublin; scarce.",
+          "bestFor": "Students preferring complete privacy."
+        },
+        {
+          "type": "Homestay",
+          "costRange": {
+            "low": 600,
+            "high": 800,
+            "currency": "EUR",
+            "period": "month"
+          },
+          "details": "Good for the first semester.",
+          "bestFor": "Great for language learning and cultural immersion."
+        }
+      ],
+      "generalTips": [
+        "Dublin is the tightest market in Europe — secure housing before the visa appointment where possible.",
+        "Cork, Galway, Limerick offer 30% lower rents with comparable employer access."
+      ]
+    },
+
+    "partTimeWorkRulesOpportunitiesAndEarnings": {
+      "description": "Eligible international students with Stamp 2 permission may generally work up to 20 hours per week during term time and up to 40 hours during designated holiday periods, subject to current immigration conditions.. Ireland's minimum wage is €14.15/hour (2026), among the EU's highest, so part-time earnings of €1,000–1,300/month are realistic. On-campus roles, retail, hospitality and tech internships are the common options.",
+      "rules": [
+        "Term-time: generally up to 20 hours/week; designated holiday periods: up to 40 hours/week, subject to Stamp 2 conditions.",
+        "Minimum wage: €14.15/hour (2026); €1,000–1,300/month typical.",
+        "On-campus and graduate teaching assistant roles pay €14–18/hour.",
+        "Tech internships: €2,000–3,500/month, often converting to graduate offers.",
+        "PPS number required before starting any paid work — apply on arrival."
+      ]
+    },
+
+    "careerOpportunitiesAndSalaryRanges": [
+      {
+        "field": "Software / Cloud / DevOps",
+        "typicalStartingSalary": {
+          "low": 42000,
+          "high": 58000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Very high",
+        "notes": "Dublin tech cluster; English-only roles"
+      },
+      {
+        "field": "Data / AI / Analytics",
+        "typicalStartingSalary": {
+          "low": 40000,
+          "high": 55000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Very high",
+        "notes": "Pharma, finance and tech employers"
+      },
+      {
+        "field": "Pharma / Biotech",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 50000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "High",
+        "notes": "Dublin and Galway clusters"
+      },
+      {
+        "field": "Medtech / Engineering",
+        "typicalStartingSalary": {
+          "low": 38000,
+          "high": 48000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "High",
+        "notes": "Galway medtech hub"
+      },
+      {
+        "field": "Finance / Accounting",
+        "typicalStartingSalary": {
+          "low": 40000,
+          "high": 52000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "Medium-high",
+        "notes": "IFSC and global funds"
+      },
+      {
+        "field": "Cybersecurity",
+        "typicalStartingSalary": {
+          "low": 45000,
+          "high": 60000,
+          "currency": "EUR",
+          "period": "year"
+        },
+        "demandLevel": "High",
+        "notes": "Growing across all sectors"
+      }
+    ]
   }
 ]
